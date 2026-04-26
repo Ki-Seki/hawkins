@@ -217,7 +217,7 @@ Hawkins 是一个**纯静态单页 React + Vite + TypeScript** 应用，部署�
 
 所有改动必须遵循以下流程：
 
-1. 从 `main` 新建 feature/fix 分支：`git checkout -b feat/your-feature`
+1. 从 `main` 新建 `feat/` 或 `fix/` 分支：`git checkout -b feat/your-feature`
 2. 在分支上开发、提交
 3. 开 Pull Request，至少 1 位 reviewer 批准后才能合并
 4. PR 有新 commit 时旧 approval 自动失效（dismiss stale reviews）
