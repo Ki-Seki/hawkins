@@ -1,0 +1,11 @@
+{
+  "canvasWidth": 1200,
+  "canvasHeight": 800,
+  "svgPath": "/map.svg",
+  "defaultTheme": "default",
+  "regions": [
+    { "id": "downtown", "label": "Downtown Hawkins", "bounds": { "x": 30, "y": 30, "w": 25, "h": 25 } },
+    { "id": "mirkwood", "label": "Mirkwood", "bounds": { "x": 60, "y": 35, "w": 20, "h": 30 } },
+    { "id": "lab-area", "label": "Lab District", "bounds": { "x": 68, "y": 10, "w": 18, "h": 20 } }
+  ]
+}

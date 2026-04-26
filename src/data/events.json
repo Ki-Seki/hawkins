@@ -1,0 +1,92 @@
+[
+  {
+    "id": "will-disappears",
+    "title": "Will Vanishes",
+    "description": "While cycling home through Mirkwood after a D&D session, Will Byers is taken by the Demogorgon and dragged into the Upside Down.",
+    "episodeIds": ["s01e01"],
+    "locationIds": ["mirkwood"],
+    "characterIds": ["will-byers", "demogorgon"],
+    "tags": ["inciting-incident", "disappearance"]
+  },
+  {
+    "id": "eleven-escapes",
+    "title": "Eleven Escapes Hawkins Lab",
+    "description": "Subject 011 breaks free from Hawkins Lab after a traumatic sensory deprivation experiment goes wrong, using her powers to kill her guards.",
+    "episodeIds": ["s01e01"],
+    "locationIds": ["hawkins-lab"],
+    "characterIds": ["eleven"],
+    "tags": ["escape", "powers"]
+  },
+  {
+    "id": "party-finds-eleven",
+    "title": "The Party Finds Eleven",
+    "description": "Mike, Dustin, and Lucas discover a shaved-head girl in the forest while searching for Will. She can only say her lab number: 'Eleven'.",
+    "episodeIds": ["s01e01"],
+    "locationIds": ["mirkwood"],
+    "characterIds": ["eleven", "mike-wheeler", "dustin-henderson", "lucas-sinclair"],
+    "tags": ["first-meeting"]
+  },
+  {
+    "id": "joyce-christmas-lights",
+    "title": "Will Speaks Through the Lights",
+    "description": "Joyce realizes Will is communicating with her through electrical disturbances. She strings Christmas lights across the wall and he spells out letters.",
+    "episodeIds": ["s01e03", "s01e04"],
+    "locationIds": ["byers-house"],
+    "characterIds": ["joyce-byers", "will-byers"],
+    "tags": ["communication", "supernatural"]
+  },
+  {
+    "id": "barb-taken",
+    "title": "Barb Is Taken",
+    "description": "Barbara Holland is dragged into the Upside Down by the Demogorgon while waiting at the Harrington pool. She does not survive.",
+    "episodeIds": ["s01e03"],
+    "locationIds": ["mirkwood"],
+    "characterIds": ["demogorgon"],
+    "tags": ["death", "taken"]
+  },
+  {
+    "id": "decoy-body-found",
+    "title": "Body Found at the Quarry",
+    "description": "A body believed to be Will's is found in Sattler Quarry. Joyce refuses to believe it is real — she is right; it is a fake planted by the lab.",
+    "episodeIds": ["s01e04"],
+    "locationIds": ["hawkins-quarry"],
+    "characterIds": ["will-byers", "jim-hopper", "joyce-byers"],
+    "tags": ["deception", "lab-cover-up"]
+  },
+  {
+    "id": "hopper-infiltrates-lab",
+    "title": "Hopper Infiltrates the Lab",
+    "description": "Chief Hopper breaks into Hawkins Lab and discovers the Gate — a portal to the Upside Down — confirming that the government is hiding the truth about Will.",
+    "episodeIds": ["s01e06", "s01e07"],
+    "locationIds": ["hawkins-lab", "upside-down-gate"],
+    "characterIds": ["jim-hopper"],
+    "tags": ["investigation", "discovery"]
+  },
+  {
+    "id": "eleven-sensory-deprivation",
+    "title": "Eleven Locates Will",
+    "description": "Using a makeshift sensory deprivation tank in the Hawkins Middle School gym, Eleven reaches out into the Void and finds Will alive in the Upside Down.",
+    "episodeIds": ["s01e07"],
+    "locationIds": ["hawkins-middle-school"],
+    "characterIds": ["eleven", "will-byers", "mike-wheeler", "dustin-henderson", "lucas-sinclair"],
+    "tags": ["powers", "discovery"]
+  },
+  {
+    "id": "final-showdown",
+    "title": "The Final Showdown",
+    "description": "The Demogorgon attacks the Party in the Hawkins Middle School classroom. Eleven sacrifices herself to destroy the creature, disintegrating alongside it.",
+    "episodeIds": ["s01e08"],
+    "locationIds": ["hawkins-middle-school"],
+    "characterIds": ["eleven", "demogorgon", "mike-wheeler", "dustin-henderson", "lucas-sinclair"],
+    "tags": ["climax", "sacrifice", "powers"]
+  },
+  {
+    "id": "will-rescued",
+    "title": "Will Is Rescued",
+    "description": "Joyce and Hopper enter the Upside Down through the Gate at Hawkins Lab and pull Will's body free. He is resuscitated and returns home.",
+    "episodeIds": ["s01e08"],
+    "locationIds": ["hawkins-lab", "upside-down-gate", "byers-house"],
+    "characterIds": ["will-byers", "joyce-byers", "jim-hopper"],
+    "tags": ["rescue", "resolution"]
+  }
+]

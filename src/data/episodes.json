@@ -1,0 +1,10 @@
+[
+  { "id": "s01e01", "season": 1, "episode": 1, "title": "The Vanishing of Will Byers" },
+  { "id": "s01e02", "season": 1, "episode": 2, "title": "The Weirdo on Maple Street" },
+  { "id": "s01e03", "season": 1, "episode": 3, "title": "Holly, Jolly" },
+  { "id": "s01e04", "season": 1, "episode": 4, "title": "The Body" },
+  { "id": "s01e05", "season": 1, "episode": 5, "title": "The Flea and the Acrobat" },
+  { "id": "s01e06", "season": 1, "episode": 6, "title": "The Monster" },
+  { "id": "s01e07", "season": 1, "episode": 7, "title": "The Bathtub" },
+  { "id": "s01e08", "season": 1, "episode": 8, "title": "The Upside Down" }
+]

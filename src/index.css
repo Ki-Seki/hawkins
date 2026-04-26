@@ -1,3 +1,6 @@
+/* IBM Plex Mono for data / body text — must be first */
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&display=swap');
+
 /* ITC Benguiat Std (licensed) — files live in public/fonts/, excluded from git */
 @font-face {
   font-family: 'ITC Benguiat Std';
@@ -27,9 +30,6 @@
   font-style: normal;
   font-display: swap;
 }
-
-/* IBM Plex Mono for data / body text */
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&display=swap');
 
 @tailwind base;
 @tailwind components;
