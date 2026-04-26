@@ -1,0 +1,128 @@
+name: Copilot Code Review
+
+# 手动触发，可选填 focus 领域
+on:
+  workflow_dispatch:
+    inputs:
+      focus:
+        description: "Review focus areas (comma-separated)"
+        required: false
+        default: "refactor,duplication,simplification,performance,types"
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  review:
+    name: AI code review via Copilot CLI
+    runs-on: ubuntu-latest
+    env:
+      FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+
+      - name: Install project dependencies
+        run: npm ci
+
+      # --- Static analysis (typecheck / lint / build) ---
+      - name: TypeScript check
+        run: npm run typecheck 2>&1 | tee /tmp/typecheck.txt
+        continue-on-error: true
+
+      - name: ESLint
+        run: npm run lint 2>&1 | tee /tmp/lint.txt
+        continue-on-error: true
+
+      - name: Build & collect bundle size
+        run: |
+          npm run build 2>&1 | tee /tmp/build.txt
+          if [ -d dist ]; then
+            echo "--- dist size ---" >> /tmp/build.txt
+            du -sh dist/ >> /tmp/build.txt
+          fi
+        continue-on-error: true
+
+      # --- Install Copilot CLI ---
+      - name: Install GitHub Copilot CLI
+        run: npm install -g @github/copilot
+
+      # --- Run Copilot CLI to produce AI review ---
+      # Requires a fine-grained PAT with "Copilot requests" permission
+      # stored as repository secret COPILOT_PAT
+      - name: Run Copilot CLI review
+        env:
+          COPILOT_GITHUB_TOKEN: ${{ secrets.COPILOT_PAT }}
+        run: |
+          FOCUS="${{ github.event.inputs.focus }}"
+          TYPECHECK=$(cat /tmp/typecheck.txt | head -40)
+          LINT=$(cat /tmp/lint.txt | head -40)
+          BUILD_OUT=$(cat /tmp/build.txt | tail -20)
+
+          copilot -p "You are a senior TypeScript/React engineer performing a code quality review of the Hawkins project (a static React+Vite+TS app). \
+          Analyse all source files under the \`src/\` directory, plus \`vite.config.ts\`, \`tailwind.config.ts\`, and \`eslint.config.js\`. \
+          Focus specifically on: ${FOCUS}. \
+          \
+          Static analysis results from this run: \
+          TypeScript check: ${TYPECHECK} \
+          ESLint: ${LINT} \
+          Build output: ${BUILD_OUT} \
+          \
+          For each issue found, provide: \
+          - **File** (path + line range) \
+          - **Problem** (what is wrong and why it matters) \
+          - **Suggestion** (concrete fix, with a code snippet where helpful) \
+          - **Priority**: 🔴 high / 🟡 medium / 🟢 low \
+          \
+          Start with an executive summary (max 150 words). \
+          Write the complete review to review.md." \
+          --allow-tool='shell(git:*)' \
+          --allow-tool='shell(find:*)' \
+          --allow-tool='shell(cat:*)' \
+          --allow-tool=read \
+          --allow-tool=write \
+          --no-ask-user
+
+      # --- Open GitHub Issue with the review ---
+      - name: Create review issue
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const fs = require('fs');
+            const date = new Date().toISOString().split('T')[0];
+            const focus = `${{ github.event.inputs.focus }}`;
+            const runUrl = `${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}`;
+
+            let review = '';
+            try {
+              review = fs.readFileSync('review.md', 'utf8');
+            } catch {
+              review = '_Copilot CLI did not produce a review file. Check the Actions log for details._';
+            }
+
+            const body = [
+              `> **Triggered by**: @${{ github.actor }} · [Actions run](${runUrl})`,
+              `> **Focus**: ${focus}`,
+              '',
+              review,
+            ].join('\n');
+
+            const issue = await github.rest.issues.create({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              title: `🔍 Code Review: ${focus} — ${date}`,
+              body,
+              labels: ['code-review'],
+            });
+
+            core.summary.addHeading('Review issue created', 3);
+            core.summary.addLink(`Issue #${issue.data.number}`, issue.data.html_url);
+            await core.summary.write();
+            console.log(`Created: ${issue.data.html_url}`);
