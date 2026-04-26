@@ -3,6 +3,7 @@ import { useAtlasStore } from '../../store/atlasStore'
 import { useMomentState } from '../../hooks/useMomentState'
 import { LocationMarker } from './LocationMarker'
 import { CharacterMarker } from './CharacterMarker'
+import { ThemeOverlay } from '../ThemeOverlay/ThemeOverlay'
 
 export function HawkinsMap() {
   const { currentMomentId, selectedEntity } = useAtlasStore()
@@ -29,16 +30,8 @@ export function HawkinsMap() {
         draggable={false}
       />
 
-      {/* Fog overlay driven by momentState */}
-      {resolved && (
-        <div
-          className="absolute inset-0 pointer-events-none"
-          style={{
-            background: `rgba(13,13,20,${resolved.momentState.visual.fog * 0.6})`,
-            transition: 'background 0.4s ease',
-          }}
-        />
-      )}
+      {/* Theme-based atmospheric overlay */}
+      <ThemeOverlay />
 
       {/* SVG overlay for markers */}
       <AnimatePresence mode="wait">
