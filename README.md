@@ -2,8 +2,8 @@
 
 **一个《怪奇物语》的互动地理时空地图** — 在艺术化的霍金斯小镇地图上，随时间轴漫游第一季的每一个关键时刻。
 
-[![CI](https://github.com/YOUR_USERNAME/hawkins/actions/workflows/ci.yml/badge.svg)](https://github.com/YOUR_USERNAME/hawkins/actions/workflows/ci.yml)
-[![Deploy](https://github.com/YOUR_USERNAME/hawkins/actions/workflows/deploy.yml/badge.svg)](https://github.com/YOUR_USERNAME/hawkins/actions/workflows/deploy.yml)
+[![CI](https://github.com/Ki-Seki/hawkins/actions/workflows/ci.yml/badge.svg)](https://github.com/Ki-Seki/hawkins/actions/workflows/ci.yml)
+[![Deploy](https://github.com/Ki-Seki/hawkins/actions/workflows/deploy.yml/badge.svg)](https://github.com/Ki-Seki/hawkins/actions/workflows/deploy.yml)
 
 ---
 
