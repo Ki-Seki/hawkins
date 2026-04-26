@@ -1,80 +1,54 @@
-import { motion } from 'framer-motion'
+import { useEffect, useRef } from 'react'
+import { useAtlasStore } from './store/atlasStore'
+import { useTimeline } from './hooks/useTimeline'
+import { HawkinsMap } from './components/Map/HawkinsMap'
+import { Timeline } from './components/Timeline/Timeline'
+import { InfoCard } from './components/InfoCard/InfoCard'
 
 export default function App() {
+  const { isPlaying } = useAtlasStore()
+  const { currentMoment, next, hasNext } = useTimeline()
+  const timerRef = useRef<ReturnType<typeof setInterval> | null>(null)
+
+  // Autoplay: advance every 6 seconds when isPlaying
+  useEffect(() => {
+    if (isPlaying) {
+      timerRef.current = setInterval(() => {
+        if (hasNext) next()
+      }, 6000)
+    }
+    return () => {
+      if (timerRef.current) clearInterval(timerRef.current)
+    }
+  }, [isPlaying, hasNext, next])
+
   return (
-    <div className="relative min-h-screen bg-dim flex items-center justify-center overflow-hidden">
-      {/* Atmospheric effects */}
-      <div className="grain" />
-      <div className="vignette" />
+    <div className="relative w-screen h-screen overflow-hidden bg-dim">
+      {/* Atmospheric overlays from index.css */}
+      <div className="vignette pointer-events-none" />
+      <div className="grain pointer-events-none" />
 
-      {/* Subtle background grid */}
-      <div
-        className="absolute inset-0 opacity-[0.03]"
-        style={{
-          backgroundImage:
-            'linear-gradient(rgba(197,40,40,0.5) 1px, transparent 1px), linear-gradient(90deg, rgba(197,40,40,0.5) 1px, transparent 1px)',
-          backgroundSize: '60px 60px',
-        }}
-      />
+      {/* Main map */}
+      <HawkinsMap />
 
-      <motion.div
-        initial={{ opacity: 0, y: 24 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 1, ease: 'easeOut' }}
-        className="relative z-10 text-center px-6"
-      >
-        {/* Season / year badge */}
-        <motion.p
-          initial={{ opacity: 0, letterSpacing: '0.4em' }}
-          animate={{ opacity: 0.45, letterSpacing: '0.5em' }}
-          transition={{ duration: 1.2, delay: 0.3 }}
-          className="font-body text-xs text-hawkins-amber uppercase mb-8"
-        >
-          Hawkins, Indiana · 1983
-        </motion.p>
+      {/* Moment title overlay (top-left) */}
+      <div className="absolute top-6 left-6 pointer-events-none z-10">
+        <p className="text-xs text-hawkins-amber font-mono tracking-widest uppercase opacity-70">
+          {currentMoment?.timeLabel}
+        </p>
+        <h1 className="text-2xl font-display text-white mt-1 drop-shadow-lg">
+          {currentMoment?.title}
+        </h1>
+        <p className="text-sm text-white/60 mt-1 max-w-xs leading-relaxed">
+          {currentMoment?.summary}
+        </p>
+      </div>
 
-        {/* Title */}
-        <motion.h1
-          className="font-display text-6xl md:text-8xl text-hawkins-red uppercase tracking-widest"
-          animate={{
-            textShadow: [
-              '0 0 20px rgba(198,40,40,0.4)',
-              '0 0 45px rgba(198,40,40,0.7)',
-              '0 0 20px rgba(198,40,40,0.4)',
-            ],
-          }}
-          transition={{ duration: 3.5, repeat: Infinity, ease: 'easeInOut' }}
-        >
-          Hawkins
-        </motion.h1>
+      {/* Timeline scrubber */}
+      <Timeline />
 
-        {/* Tagline */}
-        <motion.p
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 0.6 }}
-          transition={{ duration: 1, delay: 0.6 }}
-          className="font-body text-sm text-hawkins-amber tracking-widest mt-4"
-        >
-          An Interactive Geospatial Timeline of Stranger Things
-        </motion.p>
-
-        {/* Animated divider */}
-        <motion.div
-          className="mx-auto mt-10 w-px bg-hawkins-amber"
-          animate={{ height: [32, 56, 32], opacity: [0.3, 0.7, 0.3] }}
-          transition={{ duration: 2.5, repeat: Infinity, ease: 'easeInOut' }}
-        />
-
-        {/* Coming soon */}
-        <motion.p
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 0.25 }}
-          transition={{ duration: 1, delay: 1 }}
-          className="font-body text-xs text-white uppercase tracking-[0.3em] mt-6"
-        >
-          Coming Soon — Season 1
-        </motion.p>
-      </motion.div>
+      {/* InfoCard overlay */}
+      <InfoCard />
     </div>
   )
 }

@@ -1,0 +1,90 @@
+[
+  {
+    "id": "eleven",
+    "name": "Eleven",
+    "aliases": ["El", "Jane Hopper", "011"],
+    "description": "A girl with psychokinetic abilities who escaped from Hawkins Lab. She becomes the Party's most powerful ally against the Demogorgon.",
+    "tags": ["main", "lab-escapee", "party", "powered"],
+    "homeLocationId": "hawkins-lab",
+    "color": "#E91E63",
+    "image": "/images/characters/eleven.png",
+    "thumbnail": "/images/characters/eleven-thumb.png"
+  },
+  {
+    "id": "will-byers",
+    "name": "Will Byers",
+    "aliases": ["Will the Wise"],
+    "description": "A quiet, artistic boy who vanishes into the Upside Down on the night of November 6, 1983, triggering the events of Season 1.",
+    "tags": ["main", "party", "missing", "upside-down"],
+    "homeLocationId": "byers-house",
+    "color": "#FF9800",
+    "image": "/images/characters/will.png",
+    "thumbnail": "/images/characters/will-thumb.png"
+  },
+  {
+    "id": "mike-wheeler",
+    "name": "Mike Wheeler",
+    "aliases": [],
+    "description": "The de facto leader of the Party. He gives Eleven shelter and leads the search for Will.",
+    "tags": ["main", "party"],
+    "homeLocationId": "wheeler-house",
+    "color": "#2196F3",
+    "image": "/images/characters/mike.png",
+    "thumbnail": "/images/characters/mike-thumb.png"
+  },
+  {
+    "id": "dustin-henderson",
+    "name": "Dustin Henderson",
+    "aliases": [],
+    "description": "The Party's science expert. His curiosity and optimism help the group navigate impossible situations.",
+    "tags": ["main", "party"],
+    "homeLocationId": "wheeler-house",
+    "color": "#4CAF50",
+    "image": "/images/characters/dustin.png",
+    "thumbnail": "/images/characters/dustin-thumb.png"
+  },
+  {
+    "id": "lucas-sinclair",
+    "name": "Lucas Sinclair",
+    "aliases": [],
+    "description": "The group's pragmatic strategist. Initially skeptical of Eleven, he becomes a key ally in the fight against the Demogorgon.",
+    "tags": ["main", "party"],
+    "homeLocationId": "wheeler-house",
+    "color": "#FFC107",
+    "image": "/images/characters/lucas.png",
+    "thumbnail": "/images/characters/lucas-thumb.png"
+  },
+  {
+    "id": "joyce-byers",
+    "name": "Joyce Byers",
+    "aliases": [],
+    "description": "Will's resilient mother. She refuses to believe Will is dead and communicates with him through Christmas lights.",
+    "tags": ["main", "adult"],
+    "homeLocationId": "byers-house",
+    "color": "#FF5722",
+    "image": "/images/characters/joyce.png",
+    "thumbnail": "/images/characters/joyce-thumb.png"
+  },
+  {
+    "id": "jim-hopper",
+    "name": "Jim Hopper",
+    "aliases": ["Hop", "Chief Hopper"],
+    "description": "Hawkins' Police Chief. A troubled man haunted by the death of his daughter, who ultimately uncovers the truth about Hawkins Lab.",
+    "tags": ["main", "adult", "authority"],
+    "homeLocationId": "hopper-cabin",
+    "color": "#795548",
+    "image": "/images/characters/hopper.png",
+    "thumbnail": "/images/characters/hopper-thumb.png"
+  },
+  {
+    "id": "demogorgon",
+    "name": "The Demogorgon",
+    "aliases": ["The Monster"],
+    "description": "A predatory creature from the Upside Down. It hunts by tracking blood and is drawn to the Gate at Hawkins Lab.",
+    "tags": ["antagonist", "upside-down", "creature"],
+    "homeLocationId": "upside-down-gate",
+    "color": "#B71C1C",
+    "image": "/images/characters/demogorgon.png",
+    "thumbnail": "/images/characters/demogorgon-thumb.png"
+  }
+]
