@@ -211,9 +211,25 @@ Hawkins 是一个**纯静态单页 React + Vite + TypeScript** 应用，部署�
 
 ---
 
+## 分支与 PR 规范
+
+**`main` 分支已启用保护，禁止任何人直接 push（含管理员）。**
+
+所有改动必须遵循以下流程：
+
+1. 从 `main` 新建 feature/fix 分支：`git checkout -b feat/your-feature`
+2. 在分支上开发、提交
+3. 开 Pull Request，至少 1 位 reviewer 批准后才能合并
+4. PR 有新 commit 时旧 approval 自动失效（dismiss stale reviews）
+5. 禁止 force push 和删除 `main` 分支
+
+分支命名建议：`feat/<slug>`、`fix/<slug>`、`chore/<slug>`、`docs/<slug>`
+
+---
+
 ## GitHub Pages 部署
 
-推送到 `main` 分支时自动部署。
+PR 合并到 `main` 后自动触发部署。
 
 ```yaml
 # .github/workflows/deploy.yml
