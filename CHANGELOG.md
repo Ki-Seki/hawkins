@@ -1,4 +1,4 @@
-# CHANGELOG — Hawkins Atlas
+# CHANGELOG — Hawkins
 
 所有重要的设计变更、功能决策、架构调整都记录在这里。
 格式参考 [Keep a Changelog](https://keepachangelog.com/zh-CN/1.1.0/)。
@@ -15,7 +15,7 @@
 ## [Unreleased]
 
 ### Added
-- **项目初始化**：确立项目名 Hawkins Atlas，定位为纯静态单页面怪奇物语时空地图
+- **项目初始化**：确立项目名 Hawkins，定位为纯静态单页面怪奇物语时空地图
 - **技术栈选型**：React + Vite + TypeScript + Tailwind CSS + Framer Motion + Zustand，部署到 GitHub Pages
 - **核心数据模型设计**：6 个 JSON 文件——`characters`、`locations`、`episodes`、`events`、`moments`、`moment-states`；剧情事实与视觉展示层分离
 - **媒体资产架构**：图片（v1 必须）、音频（v2 预留）、视频（v2+ 预留）三层接口设计，`moment-states` 中预留 `audio` / `video` 字段
@@ -28,14 +28,15 @@
   - `deploy.yml` — 推送到 `main` 后自动构建并部署到 GitHub Pages（使用 OIDC + `actions/deploy-pages`）
   - `ci.yml` — PR / push 触发类型检查 → lint → 构建，保证主干质量
 - **Copilot Agents**：内置 4 个专用 agent 到 `.github/agents/`：`expert-react-frontend-engineer`、`gem-designer`、`github-actions-expert`、`context7`
-- **内容参考来源**：新增 IMDB 和 Wikipedia 到 PRD 参考资料表
+- **内容参考来源**：新增 IMDB 和 Wikipedia 到参考资料
 - **20 个设计决策确认**（见下方 Decision 节）：时间轴粒度、地图层级、布局、字体、测试、License 等核心决策全部锁定
+- **文档重组**：删除 `PRD.md`，内容拆分到 `README.md`（项目说明 / 路线图）和 `copilot-instructions.md`（完整 JSON Schema）；新增 `README.md`
 
 ### Decision
 - **为什么不用 Next.js**：静态站不需要 SSR，Vite 构建更轻；GitHub Pages 直接支持静态输出
 - **为什么用 SVG 而不是 Canvas / WebGL**：地图热点交互、精确点击、DOM 动画更容易控制；v1 不需要高性能渲染
 - **为什么音频 v1 不上**：版权风险未评估；v1 核心是视觉体验；架构已预留字段，不影响后续加入
-- **`VITE_BASE_PATH` 动态注入**：`configure-pages` action 自动输出正确的 base path，避免仓库名硬编码在 `vite.config.ts`；本地预览回退到 `/hawkins-atlas/`
+- **`VITE_BASE_PATH` 动态注入**：`configure-pages` action 自动输出正确的 base path，避免仓库名硬编码在 `vite.config.ts`；本地预览回退到 `/hawkins/`
 - **时间轴粒度**：每集 3–5 个关键节点，第 1 季约 30–50 个时刻
 - **地图来源**：参考真实印第安纳州地图追描 SVG，保持大致地理关系，允许艺术变形
 - **地图层级**：地点标注 + 人物标记 + 事件图标，三层叠加展示

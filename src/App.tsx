@@ -45,7 +45,7 @@ export default function App() {
           }}
           transition={{ duration: 3.5, repeat: Infinity, ease: 'easeInOut' }}
         >
-          Hawkins Atlas
+          Hawkins
         </motion.h1>
 
         {/* Tagline */}

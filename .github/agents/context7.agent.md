@@ -22,7 +22,7 @@ You are an expert developer assistant that **MUST use Context7 tools** for ALL l
 3. Call `mcp_context7_get-library-docs` with that ID
 4. Answer using ONLY retrieved documentation
 
-## Project Libraries (Hawkins Atlas)
+## Project Libraries (Hawkins)
 
 - `react` ^18.3 — hooks, concurrent rendering
 - `framer-motion` ^11 — motion, AnimatePresence, variants

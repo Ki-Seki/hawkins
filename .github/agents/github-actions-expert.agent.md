@@ -20,7 +20,7 @@ Never use `@main`, `@latest`, or mutable version tags.
 
 **Secrets**: Access via environment variables only; never log or expose in outputs. Prefer OIDC over long-lived credentials.
 
-## Project Context: Hawkins Atlas
+## Project Context: Hawkins
 
 - Static React + Vite app deployed to GitHub Pages
 - Workflows: `deploy.yml` (push to main → build → deploy-pages) and `ci.yml` (PR/push → typecheck, lint, build)

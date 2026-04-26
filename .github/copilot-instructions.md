@@ -1,8 +1,8 @@
-# Copilot 开发指引 — Hawkins Atlas
+# Copilot 开发指引 — Hawkins
 
 ## 项目简介
 
-Hawkins Atlas 是一个**纯静态单页 React + Vite + TypeScript** 应用，部署到 GitHub Pages。
+Hawkins 是一个**纯静态单页 React + Vite + TypeScript** 应用，部署到 GitHub Pages。
 渲染《怪奇物语》霍金斯镇的艺术化 SVG 地图，配合时间轴滑块，切换时地图上的人物、地点、事件随之变化。
 
 **没有后端。** 所有内容存放在 `src/data/*.json`。应用只需构建为 `dist/` 下的静态资源。
@@ -54,6 +54,128 @@ Hawkins Atlas 是一个**纯静态单页 React + Vite + TypeScript** 应用，�
 
 ---
 
+## JSON Schema 完整定义
+
+### `characters.json`
+```ts
+{
+  id: string               // "eleven"
+  name: string             // "Eleven"（英文展示名）
+  aliases: string[]        // ["El", "Jane Hopper"]
+  description: string      // 英文人物简介
+  tags: string[]           // ["main", "lab-escapee", "party"]
+  homeLocationId: string   // 无时刻覆盖时的默认位置
+  color: string            // hex，标记 / 卡片强调色
+  image: string            // "/images/characters/eleven.png"
+  thumbnail?: string       // 小头像，用于时间轴标记
+}
+```
+
+### `locations.json`
+```ts
+{
+  id: string               // "hawkins-lab"
+  name: string             // 英文地点名
+  type: "house" | "school" | "lab" | "woods" | "road" | "other"
+  description: string      // 英文描述
+  tags: string[]
+  map: {
+    x: number              // SVG 画布宽度的 0–100 百分比
+    y: number              // SVG 画布高度的 0–100 百分比
+    labelOffset?: { x: number; y: number }
+    radius?: number        // 点击热区半径，默认 20
+  }
+  image?: string
+}
+```
+
+### `episodes.json`
+```ts
+{
+  id: string               // "s01e01"
+  season: number           // 1
+  episode: number          // 1
+  title: string            // "Chapter One: The Vanishing of Will Byers"
+}
+```
+
+### `events.json`
+```ts
+{
+  id: string               // "will-disappears"
+  title: string            // 英文标题
+  description: string      // 英文描述
+  episodeIds: string[]
+  locationIds: string[]
+  characterIds: string[]
+  tags: string[]
+}
+```
+
+### `moments.json` ← 时间轴核心（剧情事实层）
+```ts
+{
+  id: string               // "s01e01-will-vanishes"
+  title: string            // "Will Vanishes"（时间轴展示，英文）
+  timeLabel: string        // "Night — November 6, 1983"
+  sortKey: number          // SSEEII 格式：10102 = S01E01 第 2 节点
+  episodeId: string
+  eventIds: string[]
+  activeCharacterIds: string[]
+  activeLocationIds: string[]
+  focusLocationId?: string
+  summary: string          // 1–2 句英文叙事说明
+  nextMomentId?: string
+}
+```
+
+### `moment-states.json` ← 视觉展示层（与剧情事实严格分离）
+```ts
+{
+  momentId: string
+  locationStates: Array<{
+    locationId: string
+    status: "active" | "foreshadowed" | "dim" | "hidden"
+    emphasis: number       // 0.0–1.0，控制光晕强度
+  }>
+  characterStates: Array<{
+    characterId: string
+    locationId: string
+    status: "present" | "missing" | "trapped" | "dead"
+  }>
+  visual: {
+    theme: "default" | "tense" | "nightmare" | "upside-down"
+    fog: number            // 0.0–1.0
+    glow: string           // hex 颜色
+    cameraTarget?: string
+  }
+  audio?: {
+    ambient?: string       // 环境音路径（v2，v1 留空）
+    sfx?: string           // 时刻音效路径（v2，v1 留空）
+  }
+  video?: {
+    background?: string    // 背景视频路径（v2+，v1 留空）
+  }
+}
+```
+
+### `map-layout.json`
+```ts
+{
+  canvasWidth: number      // SVG 逻辑宽度，如 1200
+  canvasHeight: number     // SVG 逻辑高度，如 800
+  svgPath: string          // 底图路径，如 "/map.svg"
+  defaultTheme: string
+  regions: Array<{
+    id: string
+    label: string          // 英文区域名
+    bounds: { x: number; y: number; w: number; h: number }
+  }>
+}
+```
+
+---
+
 ## 组件规范
 
 - 每个组件单独一个文件，文件名与组件名一致（PascalCase）
@@ -96,11 +218,10 @@ Hawkins Atlas 是一个**纯静态单页 React + Vite + TypeScript** 应用，�
 ```yaml
 # .github/workflows/deploy.yml
 # 构建：npm run build → dist/
-# 部署：peaceiris/actions-gh-pages → gh-pages 分支
+# 部署：actions/deploy-pages（OIDC）→ GitHub Pages
 ```
 
-`vite.config.ts` 必须设置 `base: '/hawkins-atlas/'`（或仓库名）以确保 GitHub Pages 资源路径正确。
-如果仓库挂载在自定义域名根路径，则 `base: '/'`。
+`vite.config.ts` 已设置 `base: '/hawkins/'`；`VITE_BASE_PATH` 环境变量由 `configure-pages` action 自动注入，覆盖此默认值。
 
 ---
 
@@ -151,8 +272,8 @@ Hawkins Atlas 是一个**纯静态单页 React + Vite + TypeScript** 应用，�
 
 | 文件 | 更新时机 |
 |---|---|
-| `PRD.md` | 功能范围变化、新决策、废弃功能 |
-| `.github/copilot-instructions.md` | 架构约定变化、新禁止事项、新规范 |
+| `README.md` | 功能范围变化、路线图进度、新的使用说明 |
+| `.github/copilot-instructions.md` | 架构约定变化、新 Schema 字段、新禁止事项 |
 | `CHANGELOG.md` | 每次有意义的变更，说明做了什么、为什么 |
 
 ---
