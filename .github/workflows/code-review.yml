@@ -1,13 +1,13 @@
 name: Copilot Code Review
 
-# 手动触发，可选填 focus 领域
+# 手动触发，可选填关注领域
 on:
   workflow_dispatch:
     inputs:
       focus:
-        description: "Review focus areas (comma-separated)"
+        description: "关注领域（逗号分隔，留空则审查全部）"
         required: false
-        default: "refactor,duplication,simplification,performance,types"
+        default: "重构,重复代码,简化,性能,类型安全"
 
 permissions:
   contents: read
@@ -66,23 +66,23 @@ jobs:
           LINT=$(cat /tmp/lint.txt | head -40)
           BUILD_OUT=$(cat /tmp/build.txt | tail -20)
 
-          copilot -p "You are a senior TypeScript/React engineer performing a code quality review of the Hawkins project (a static React+Vite+TS app). \
-          Analyse all source files under the \`src/\` directory, plus \`vite.config.ts\`, \`tailwind.config.ts\`, and \`eslint.config.js\`. \
-          Focus specifically on: ${FOCUS}. \
+          copilot -p "你是一位资深 TypeScript/React 工程师，正在对 Hawkins 项目（一个纯静态 React+Vite+TS 应用）进行代码质量审查。\
+          请分析 src/ 目录下的所有源文件，以及 vite.config.ts、tailwind.config.ts、eslint.config.js。\
+          重点关注以下方面：${FOCUS}。\
           \
-          Static analysis results from this run: \
-          TypeScript check: ${TYPECHECK} \
-          ESLint: ${LINT} \
-          Build output: ${BUILD_OUT} \
+          本次运行的静态分析结果：\
+          TypeScript 检查：${TYPECHECK}\
+          ESLint：${LINT}\
+          构建输出：${BUILD_OUT}\
           \
-          For each issue found, provide: \
-          - **File** (path + line range) \
-          - **Problem** (what is wrong and why it matters) \
-          - **Suggestion** (concrete fix, with a code snippet where helpful) \
-          - **Priority**: 🔴 high / 🟡 medium / 🟢 low \
+          对于发现的每个问题，请提供：\
+          - **文件**（路径 + 行号范围）\
+          - **问题描述**（问题是什么，为什么重要）\
+          - **改进建议**（具体修复方案，必要时附代码片段）\
+          - **优先级**：🔴 高 / 🟡 中 / 🟢 低\
           \
-          Start with an executive summary (max 150 words). \
-          Write the complete review to review.md." \
+          请在开头写一段执行摘要（不超过 150 字）。\
+          请用中文写作，将完整的审查报告写入 review.md。" \
           --allow-tool='shell(git:*)' \
           --allow-tool='shell(find:*)' \
           --allow-tool='shell(cat:*)' \
@@ -90,7 +90,7 @@ jobs:
           --allow-tool=write \
           --no-ask-user
 
-      # --- Open GitHub Issue with the review ---
+      # --- 将审查结果开成 GitHub Issue ---
       - name: Create review issue
         uses: actions/github-script@v7
         with:
@@ -104,12 +104,12 @@ jobs:
             try {
               review = fs.readFileSync('review.md', 'utf8');
             } catch {
-              review = '_Copilot CLI did not produce a review file. Check the Actions log for details._';
+              review = '_Copilot CLI 未生成审查文件，请查看 Actions 日志了解详情。_';
             }
 
             const body = [
-              `> **Triggered by**: @${{ github.actor }} · [Actions run](${runUrl})`,
-              `> **Focus**: ${focus}`,
+              `> **触发人**：@${{ github.actor }} · [查看本次运行](${runUrl})`,
+              `> **关注领域**：${focus}`,
               '',
               review,
             ].join('\n');
@@ -117,12 +117,12 @@ jobs:
             const issue = await github.rest.issues.create({
               owner: context.repo.owner,
               repo: context.repo.repo,
-              title: `🔍 Code Review: ${focus} — ${date}`,
+              title: `🔍 代码审查：${focus} — ${date}`,
               body,
               labels: ['code-review'],
             });
 
-            core.summary.addHeading('Review issue created', 3);
+            core.summary.addHeading('审查 Issue 已创建', 3);
             core.summary.addLink(`Issue #${issue.data.number}`, issue.data.html_url);
             await core.summary.write();
             console.log(`Created: ${issue.data.html_url}`);
