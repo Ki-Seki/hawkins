@@ -1,14 +1,16 @@
-import { useEffect, useRef } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import { useAtlasStore } from './store/atlasStore'
 import { useTimeline } from './hooks/useTimeline'
 import { HawkinsMap } from './components/Map/HawkinsMap'
 import { Timeline } from './components/Timeline/Timeline'
 import { InfoCard } from './components/InfoCard/InfoCard'
+import { IntroAnimation } from './components/IntroAnimation/IntroAnimation'
 
 export default function App() {
   const { isPlaying } = useAtlasStore()
   const { currentMoment, next, hasNext } = useTimeline()
   const timerRef = useRef<ReturnType<typeof setInterval> | null>(null)
+  const [showIntro, setShowIntro] = useState(true)
 
   // Autoplay: advance every 6 seconds when isPlaying
   useEffect(() => {
@@ -24,6 +26,9 @@ export default function App() {
 
   return (
     <div className="relative w-screen h-screen overflow-hidden bg-dim">
+      {/* Intro animation */}
+      {showIntro && <IntroAnimation onComplete={() => setShowIntro(false)} />}
+
       {/* Atmospheric overlays from index.css */}
       <div className="vignette pointer-events-none" />
       <div className="grain pointer-events-none" />
