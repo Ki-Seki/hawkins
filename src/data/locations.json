@@ -5,7 +5,7 @@
     "type": "lab",
     "description": "A covert government facility run by Dr. Martin Brenner. It houses the Gate to the Upside Down and was used to develop Eleven's psychic abilities.",
     "tags": ["main", "government", "dangerous"],
-    "map": { "x": 76, "y": 18, "radius": 22 }
+    "map": { "x": 83, "y": 91, "radius": 22 }
   },
   {
     "id": "byers-house",
@@ -13,15 +13,15 @@
     "type": "house",
     "description": "The modest home of Joyce Byers and her sons Will and Jonathan. The Christmas-light communication board was strung across its living room wall.",
     "tags": ["main", "residential"],
-    "map": { "x": 66, "y": 55, "radius": 18 }
+    "map": { "x": 93, "y": 93, "radius": 18 }
   },
   {
     "id": "wheeler-house",
     "name": "Wheeler House",
     "type": "house",
-    "description": "Home of the Wheeler family. Mike's basement serves as the Party's headquarters and Eleven's first refuge.",
+    "description": "Home of the Wheeler family on Cornwallis Avenue. Mike's basement serves as the Party's headquarters and Eleven's first refuge.",
     "tags": ["main", "residential", "party-hq"],
-    "map": { "x": 34, "y": 42, "radius": 18 }
+    "map": { "x": 38, "y": 8, "radius": 18 }
   },
   {
     "id": "hawkins-middle-school",
@@ -29,23 +29,23 @@
     "type": "school",
     "description": "Where Mike, Will, Dustin, and Lucas attend school. The final showdown with the Demogorgon takes place here.",
     "tags": ["main", "school"],
-    "map": { "x": 45, "y": 35, "radius": 20 }
+    "map": { "x": 38, "y": 84, "radius": 20 }
   },
   {
     "id": "mirkwood",
     "name": "Mirkwood",
     "type": "woods",
-    "description": "A stretch of forest east of Hawkins where Will was last seen before vanishing. The Party uses it as a shortcut.",
+    "description": "A stretch of forest road southeast of Hawkins where Will was last seen. Kerley Road runs through it toward the Lab.",
     "tags": ["main", "woods", "dangerous"],
-    "map": { "x": 70, "y": 45, "radius": 24 }
+    "map": { "x": 78, "y": 88, "radius": 24 }
   },
   {
     "id": "castle-byers",
     "name": "Castle Byers",
     "type": "woods",
-    "description": "Will's secret hideout in the woods behind his house — a fort made of scavenged wood and sheets. It exists as a pale shadow in the Upside Down.",
+    "description": "Will's secret hideout in the woods — a fort of scavenged wood and sheets. Its Upside Down mirror is where Will hides from the Demogorgon.",
     "tags": ["will", "woods"],
-    "map": { "x": 73, "y": 58, "radius": 14 }
+    "map": { "x": 91, "y": 92, "radius": 14 }
   },
   {
     "id": "hawkins-pd",
@@ -53,46 +53,46 @@
     "type": "other",
     "description": "Chief Hopper's base of operations. Small-town and underfunded, it becomes the nerve center for the search for Will.",
     "tags": ["authority", "downtown"],
-    "map": { "x": 42, "y": 48, "radius": 16 }
+    "map": { "x": 27, "y": 60, "radius": 16 }
   },
   {
     "id": "palace-arcade",
     "name": "Palace Arcade",
     "type": "other",
-    "description": "The local arcade where the boys spend their free time. Dustin spots a mysterious high score left by a player named 'MADMAX' here in Season 2.",
+    "description": "The local arcade where the boys spend their free time. A mysterious high score by 'MADMAX' is spotted here in Season 2.",
     "tags": ["downtown", "hangout"],
-    "map": { "x": 38, "y": 52, "radius": 15 }
+    "map": { "x": 38, "y": 67, "radius": 15 }
   },
   {
     "id": "hawkins-quarry",
     "name": "Sattler Quarry",
     "type": "other",
-    "description": "A flooded quarry on the outskirts of Hawkins. A body — later revealed to be a decoy — is found here.",
+    "description": "A flooded quarry on the far east outskirts of Hawkins. A decoy body is found here, leading the town to believe Will is dead.",
     "tags": ["outskirts", "water"],
-    "map": { "x": 58, "y": 72, "radius": 18 }
+    "map": { "x": 92, "y": 77, "radius": 18 }
   },
   {
     "id": "hopper-cabin",
     "name": "Hopper's Cabin",
     "type": "house",
-    "description": "Chief Hopper's remote cabin in the woods. Later becomes Eleven's secret home after the events of Season 1.",
+    "description": "Chief Hopper's remote cabin in the southwest woods. Later becomes Eleven's secret home after the events of Season 1.",
     "tags": ["residential", "woods"],
-    "map": { "x": 22, "y": 28, "radius": 14 }
+    "map": { "x": 26, "y": 87, "radius": 14 }
   },
   {
     "id": "upside-down-gate",
     "name": "The Gate",
     "type": "lab",
-    "description": "A tear in reality at the heart of Hawkins Lab, created when Eleven made contact with the Demogorgon. It is the source of all the Upside Down's intrusions.",
+    "description": "A tear in reality at the heart of Hawkins Lab, created when Eleven made contact with the Demogorgon. The source of all Upside Down intrusions.",
     "tags": ["supernatural", "lab", "dangerous"],
-    "map": { "x": 76, "y": 22, "radius": 16 }
+    "map": { "x": 83, "y": 93, "radius": 16 }
   },
   {
     "id": "bennys-burgers",
     "name": "Benny's Burgers",
     "type": "other",
     "description": "A diner run by Benny Hammond, who gives Eleven food after her escape from the lab — before agents from Hawkins Lab silence him.",
-    "tags": ["downtown", "diner"],
-    "map": { "x": 28, "y": 62, "radius": 14 }
+    "tags": ["south", "diner"],
+    "map": { "x": 65, "y": 96, "radius": 14 }
   }
 ]
