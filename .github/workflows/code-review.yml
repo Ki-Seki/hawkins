@@ -1,0 +1,185 @@
+name: Copilot Code Review
+
+on:
+  workflow_dispatch:
+    inputs:
+      focus:
+        description: "Review focus areas (comma-separated, or leave blank for all)"
+        required: false
+        default: "refactor,duplication,simplification,performance,types"
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  analyse:
+    name: Analyse codebase
+    runs-on: ubuntu-latest
+    env:
+      FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+    outputs:
+      report: ${{ steps.build-report.outputs.report }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: TypeScript check
+        id: typecheck
+        run: npm run typecheck 2>&1 | tee /tmp/typecheck.txt; echo "exit=$?" >> "$GITHUB_OUTPUT"
+        continue-on-error: true
+
+      - name: ESLint
+        id: lint
+        run: npm run lint 2>&1 | tee /tmp/lint.txt; echo "exit=$?" >> "$GITHUB_OUTPUT"
+        continue-on-error: true
+
+      - name: Build & bundle size
+        id: build
+        run: |
+          npm run build 2>&1 | tee /tmp/build.txt
+          echo "exit=$?" >> "$GITHUB_OUTPUT"
+          # Summarise dist sizes
+          if [ -d dist ]; then
+            du -sh dist/ >> /tmp/build.txt
+            find dist -name "*.js" -o -name "*.css" | xargs wc -c 2>/dev/null | tail -1 >> /tmp/build.txt
+          fi
+        continue-on-error: true
+
+      - name: Collect file stats
+        id: stats
+        run: |
+          echo "=== Source file count ===" > /tmp/stats.txt
+          find src -type f | wc -l >> /tmp/stats.txt
+          echo "=== Lines of code (src/**/*.{ts,tsx}) ===" >> /tmp/stats.txt
+          find src -name "*.ts" -o -name "*.tsx" | xargs wc -l 2>/dev/null | tail -1 >> /tmp/stats.txt
+          echo "=== Largest source files ===" >> /tmp/stats.txt
+          find src -name "*.ts" -o -name "*.tsx" | xargs wc -l 2>/dev/null | sort -rn | head -10 >> /tmp/stats.txt
+          echo "=== Dependency count ===" >> /tmp/stats.txt
+          node -e "const p=require('./package.json'); console.log('prod:', Object.keys(p.dependencies||{}).length, 'dev:', Object.keys(p.devDependencies||{}).length)" >> /tmp/stats.txt
+
+      - name: Build report
+        id: build-report
+        run: |
+          FOCUS="${{ github.event.inputs.focus }}"
+          TYPECHECK=$(cat /tmp/typecheck.txt | head -30)
+          LINT=$(cat /tmp/lint.txt | head -30)
+          BUILD=$(cat /tmp/build.txt | tail -15)
+          STATS=$(cat /tmp/stats.txt)
+          TRIGGERED_BY="${{ github.actor }}"
+          RUN_URL="${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}"
+
+          REPORT=$(cat <<REPORT_EOF
+          ## Context
+          - **Repo**: ${{ github.repository }}
+          - **Branch**: ${{ github.ref_name }}
+          - **Triggered by**: ${TRIGGERED_BY}
+          - **Focus areas**: ${FOCUS}
+          - **Actions run**: ${RUN_URL}
+
+          ## Static analysis results
+
+          <details><summary>TypeScript check</summary>
+
+          \`\`\`
+          ${TYPECHECK}
+          \`\`\`
+
+          </details>
+
+          <details><summary>ESLint</summary>
+
+          \`\`\`
+          ${LINT}
+          \`\`\`
+
+          </details>
+
+          <details><summary>Build & bundle</summary>
+
+          \`\`\`
+          ${BUILD}
+          \`\`\`
+
+          </details>
+
+          <details><summary>File stats</summary>
+
+          \`\`\`
+          ${STATS}
+          \`\`\`
+
+          </details>
+          REPORT_EOF
+          )
+
+          # Write to file to avoid multiline env issues
+          echo "$REPORT" > /tmp/report.txt
+          # Escape for GitHub output
+          {
+            echo 'report<<REPORT_DELIMITER'
+            cat /tmp/report.txt
+            echo 'REPORT_DELIMITER'
+          } >> "$GITHUB_OUTPUT"
+
+  open-issue:
+    name: Open Copilot review issue
+    needs: analyse
+    runs-on: ubuntu-latest
+    env:
+      FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+    steps:
+      - name: Create review issue
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const focus = `${{ github.event.inputs.focus }}` || 'refactor,duplication,simplification,performance,types';
+            const report = `${{ needs.analyse.outputs.report }}`;
+            const date = new Date().toISOString().split('T')[0];
+
+            const body = `
+            ## Code Review Request — ${date}
+
+            Please perform a code quality review of the \`src/\` directory in this repository. Focus on the following areas: **${focus}**.
+
+            For each issue found, please:
+            1. Identify the file and line range
+            2. Describe the problem
+            3. Suggest a concrete improvement (with code snippet if helpful)
+            4. Indicate priority: 🔴 high / 🟡 medium / 🟢 low
+
+            ### Analysis snapshot from this run
+
+            ${report}
+
+            ### Review checklist
+
+            - [ ] Dead code / unused exports
+            - [ ] Duplicate logic that can be extracted into shared utilities
+            - [ ] Overly complex components that should be split
+            - [ ] Type safety improvements (avoid implicit \`any\`, strengthen generics)
+            - [ ] Bundle size opportunities (dynamic imports, tree-shaking)
+            - [ ] Zustand store structure — unnecessary re-renders or stale closures
+            - [ ] JSON data schema consistency
+
+            Once the review is complete, please open one PR per logical change group, or leave inline suggestions for the maintainer to act on.
+            `.trim();
+
+            const issue = await github.rest.issues.create({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              title: `🔍 Code Review: ${focus} — ${date}`,
+              body,
+              labels: ['copilot', 'code-review'],
+            });
+
+            console.log(`Created issue #${issue.data.number}: ${issue.data.html_url}`);
+            core.summary.addLink(`Review issue #${issue.data.number}`, issue.data.html_url);
+            await core.summary.write();
