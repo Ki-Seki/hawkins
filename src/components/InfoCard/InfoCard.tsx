@@ -18,7 +18,7 @@ function resolveEntity(type: string, id: string) {
 
 function getEntityName(entity: Character | Location | StrangerEvent): string {
   if ('name' in entity) return entity.name
-  if ('title' in entity) return (entity as StrangerEvent).title
+  if ('title' in entity) return entity.title
   return ''
 }
 
@@ -31,7 +31,7 @@ function getEntityTags(entity: Character | Location | StrangerEvent): string[] {
 }
 
 function getEntityColor(entity: Character | Location | StrangerEvent): string | undefined {
-  if ('color' in entity) return (entity as Character).color
+  if ('color' in entity) return entity.color
   return undefined
 }
 
@@ -48,9 +48,9 @@ export function InfoCard() {
 
   return (
     <AnimatePresence>
-      {entity && (
+      {entity && selectedEntity && (
         <motion.div
-          key={selectedEntity!.id}
+          key={selectedEntity.id}
           initial={{ x: 40, opacity: 0 }}
           animate={{ x: 0, opacity: 1 }}
           exit={{ x: 40, opacity: 0 }}
@@ -69,7 +69,7 @@ export function InfoCard() {
           <div className="flex items-start justify-between p-4 pb-2">
             <div className="flex-1 min-w-0 pr-2">
               <p className="text-hawkins-amber font-mono text-xs uppercase tracking-widest mb-1 opacity-60">
-                {selectedEntity!.type}
+                {selectedEntity.type}
               </p>
               <h2 className="text-white font-display text-lg leading-tight">
                 {getEntityName(entity)}
@@ -92,7 +92,7 @@ export function InfoCard() {
                 alt={getEntityName(entity)}
                 className="w-full h-full object-cover"
                 onError={(e) => {
-                  (e.currentTarget as HTMLImageElement).style.display = 'none'
+                  e.currentTarget.style.display = 'none'
                 }}
               />
             ) : (

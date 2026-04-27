@@ -1,5 +1,9 @@
-/* IBM Plex Mono for data / body text — must be first */
+/* IBM Plex Mono for data / body text — @import must be first per CSS spec */
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 /* ITC Benguiat Std (licensed) — files live in public/fonts/, excluded from git */
 @font-face {
@@ -31,10 +35,6 @@
   font-display: swap;
 }
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
 @layer base {
   body {
     background-color: #0d0d14;
@@ -61,5 +61,42 @@
     pointer-events: none;
     z-index: 40;
     background: radial-gradient(ellipse at center, transparent 45%, rgba(0, 0, 0, 0.75) 100%);
+  }
+
+  /* Continuous animations — optimized for decorative effects */
+  @keyframes glow-pulse {
+    0%, 100% { opacity: 0.5; }
+    50% { opacity: 1; }
+  }
+
+  @keyframes ambient-glow-pulse {
+    0%, 100% { opacity: 0.1; }
+    50% { opacity: 0.2; }
+  }
+
+  @keyframes character-pulse {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.4); }
+  }
+
+  .animate-glow-pulse {
+    animation: glow-pulse 2.5s ease-in-out infinite;
+  }
+
+  .animate-ambient-glow-pulse {
+    animation: ambient-glow-pulse 4s ease-in-out infinite;
+  }
+
+  .animate-character-pulse {
+    animation: character-pulse 1s ease-in-out infinite;
+  }
+
+  /* Respect user motion preferences */
+  @media (prefers-reduced-motion: reduce) {
+    .animate-glow-pulse,
+    .animate-ambient-glow-pulse,
+    .animate-character-pulse {
+      animation: none;
+    }
   }
 }

@@ -50,10 +50,10 @@ export function ThemeOverlay() {
       {/* Ambient glow pulse effect */}
       <motion.div
         key={`glow-${currentMomentId}`}
-        className="absolute inset-0 pointer-events-none"
+        className="absolute inset-0 pointer-events-none animate-ambient-glow-pulse"
         initial={{ opacity: 0 }}
-        animate={{ opacity: [0.1, 0.2, 0.1] }}
-        transition={{ duration: 4, repeat: Infinity, ease: 'easeInOut' }}
+        animate={{ opacity: 0.1 }}
+        transition={{ duration: 0.6 }}
         style={{
           background: `radial-gradient(circle at 50% 50%, ${glowColor}33 0%, transparent 60%)`,
         }}

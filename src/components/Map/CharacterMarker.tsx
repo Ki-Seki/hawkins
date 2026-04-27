@@ -41,19 +41,13 @@ export function CharacterMarker({
       fill={character.color}
       opacity={opacity}
       initial={{ scale: 0, opacity: 0 }}
-      animate={
-        isSelected
-          ? { scale: [1, 1.4, 1], opacity }
-          : { scale: 1, opacity }
-      }
-      transition={
-        isSelected
-          ? { duration: 1, repeat: Infinity, ease: 'easeInOut' }
-          : { duration: 0.3 }
-      }
+      animate={{ scale: 1, opacity }}
+      transition={{ duration: 0.3 }}
+      className={isSelected ? 'animate-character-pulse' : ''}
       style={{
         cursor: 'pointer',
         filter: isSelected ? `drop-shadow(0 0 4px ${character.color})` : undefined,
+        transformOrigin: `${cx}px ${cy}px`,
       }}
       onClick={(e) => {
         e.stopPropagation()
