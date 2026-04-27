@@ -43,23 +43,54 @@
 }
 
 @layer utilities {
-  /* Film grain overlay — pure CSS, no canvas */
+  /* Film grain overlay — animated noise for a living texture */
   .grain {
     position: fixed;
     inset: 0;
     pointer-events: none;
     z-index: 50;
-    opacity: 0.045;
-    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
-    background-size: 200px 200px;
+    opacity: 0.06;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+    background-size: 180px 180px;
+    animation: grain-shift 0.18s steps(1) infinite;
   }
 
-  /* Radial vignette */
+  @keyframes grain-shift {
+    0%   { background-position: 0 0; }
+    10%  { background-position: -5% -10%; }
+    20%  { background-position: -15% 5%; }
+    30%  { background-position: 7% -25%; }
+    40%  { background-position: -5% 25%; }
+    50%  { background-position: -15% 10%; }
+    60%  { background-position: 15% 0%; }
+    70%  { background-position: 0 15%; }
+    80%  { background-position: 3% 35%; }
+    90%  { background-position: -10% 10%; }
+    100% { background-position: 0 0; }
+  }
+
+  /* Radial vignette — stronger for atmosphere */
   .vignette {
     position: fixed;
     inset: 0;
     pointer-events: none;
     z-index: 40;
-    background: radial-gradient(ellipse at center, transparent 45%, rgba(0, 0, 0, 0.75) 100%);
+    background: radial-gradient(ellipse at center, transparent 35%, rgba(0, 0, 0, 0.65) 80%, rgba(0, 0, 0, 0.88) 100%);
+  }
+
+  /* Subtle horizontal scanlines */
+  .scanlines {
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    z-index: 49;
+    opacity: 0.025;
+    background-image: repeating-linear-gradient(
+      0deg,
+      transparent,
+      transparent 2px,
+      rgba(0, 0, 0, 0.4) 2px,
+      rgba(0, 0, 0, 0.4) 4px
+    );
   }
 }

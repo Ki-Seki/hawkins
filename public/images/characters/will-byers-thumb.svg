@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <defs>
+    <radialGradient id="tbg-will-byers" cx="50%" cy="40%" r="60%">
+      <stop offset="0%" stop-color="#2a1900"/>
+      <stop offset="100%" stop-color="#0d0d14"/>
+    </radialGradient>
+  </defs>
+  <rect width="64" height="64" fill="#0d0d14"/>
+  <rect width="64" height="64" fill="url(#tbg-will-byers)"/>
+  <circle cx="32" cy="32" r="30" fill="none" stroke="#FF9800" stroke-width="2" opacity="0.7"/>
+  <text x="32" y="32" text-anchor="middle" dominant-baseline="central"
+        font-size="20" font-weight="bold" fill="#FF9800"
+        font-family="'IBM Plex Mono', monospace">WB</text>
+</svg>
