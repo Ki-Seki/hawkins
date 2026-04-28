@@ -34,8 +34,10 @@ export default function App() {
       <div className="grain pointer-events-none" />
       <div className="scanlines pointer-events-none" />
 
-      {/* Main map */}
-      <HawkinsMap />
+      {/* Main map — height avoids overlap with the h-14 timeline bar */}
+      <div className="absolute inset-0 bottom-14">
+        <HawkinsMap />
+      </div>
 
       {/* Moment title overlay (top-left) */}
       <div className="absolute top-6 left-6 pointer-events-none z-10 max-w-sm">

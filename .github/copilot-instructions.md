@@ -282,7 +282,93 @@ PR 合并到 `main` 后自动触发部署。
 
 ---
 
-## 文档维护规则
+## 美学规范
+
+本项目视觉风格定位：**1983 年代小镇夜景 × Upside Down 压抑氛围**。所有视觉变更必须对照此规范。
+
+### 调色板
+
+| 角色 | 色值 | 用途 |
+|---|---|---|
+| 背景 | `#0D0D14` (`dim`) | 页面底色 |
+| 道路 | `#4a4a68` | 地图道路线 |
+| 水体 | `#1f4a72` | 湖泊河流 |
+| 森林 | `#172e17` | 植被区域 |
+| 琥珀强调 | `#F57F17` (`hawkins-amber`) | 激活标记、时间轴、选中环 |
+| 危机红 | `#C62828` (`hawkins-red`) | 警告、Demogorgon |
+| Upside Down 蓝 | `#1A237E` (`upside-blue`) | 维度切换主题 |
+
+### 地图底图
+- 当前使用程序生成的 SVG；可用 **高精度 PNG（推荐 2400×1600px）** 替换，视觉效果更好
+- 替换时修改 `HawkinsMap.tsx` 中的 `src`，坐标系统（0–100 百分比）不需要变化
+- 路径必须用 `${import.meta.env.BASE_URL}map.png`，不能用绝对路径 `/map.png`
+
+### 标记尺寸
+- Location marker 半径：`r = 2.0`（普通）/ `2.6`（选中）SVG 单位
+- Character marker 半径：`r = 1.8`（普通）/ `2.2`（选中）SVG 单位
+- Pulse/glow 动画最大缩放：≤ 1.5× 防止光晕过大
+
+### InfoCard
+- 人物/地点头图：**1:1 方形**（`aspect-square`），`object-cover`
+- 宽度固定 `320px`，从右侧滑入（`x: 40 → 0`）
+
+### 时间轴
+- 高度：`h-14`（56px），极简单行布局
+- 地图容器必须设置 `bottom-14` 偏移，确保底部标记不被遮挡
+- 按钮使用 SVG 内联图标，禁止 emoji 按钮
+
+### 氛围层（CSS, `index.css`）
+- `grain`：animated CSS keyframe 颗粒，opacity ≈ 0.03
+- `vignette`：80% 暗角 radial-gradient
+- `scanlines`：细微扫描线
+
+---
+
+## 视觉调试
+
+**强烈推荐**在做任何 UI / 样式 / 布局更改后，用 Playwright 截图验证效果。
+
+```bash
+# 启动开发服务器（在项目目录）
+npm run dev
+
+# 在另一个终端，快速截图（Playwright 须已安装）
+cd /tmp && npm install playwright   # 一次性安装
+node -e "
+const { chromium } = require('playwright');
+(async () => {
+  const browser = await chromium.launch({ args: ['--no-sandbox'] });
+  const page = await browser.newPage();
+  await page.setViewportSize({ width: 1440, height: 900 });
+  await page.goto('http://localhost:5173/hawkins/', { waitUntil: 'networkidle' });
+  await page.waitForTimeout(2000);          // 等动画稳定
+  await page.screenshot({ path: '/tmp/debug.png' });
+
+  // 模拟点击标记打开 InfoCard
+  await page.mouse.click(X, Y);            // 根据标记坐标计算
+  await page.waitForTimeout(600);
+  await page.screenshot({ path: '/tmp/debug-infocard.png' });
+
+  await browser.close();
+})();
+"
+```
+
+**坐标换算**（SVG `xMidYMid meet`，1440×(900-56) 视口）：
+- SVG 渲染为 `844×844`，水平居中（偏移 298px）
+- `screen_x = 298 + loc.map.x / 100 * 844`
+- `screen_y = loc.map.y / 100 * 844`
+
+**截图检查清单**：
+- [ ] 地图路网、水体、森林对比度是否可读
+- [ ] 标记不被时间轴遮挡
+- [ ] 选中标记有琥珀色光晕
+- [ ] InfoCard 头图为方形 1:1
+- [ ] 时间轴单行，不占用过多高度
+
+---
+
+
 
 设计或架构有任何变更时，**必须同步更新**以下文件，不能只改代码：
 
@@ -312,8 +398,8 @@ PR 合并到 `main` 后自动触发部署。
 | 时间轴粒度 | 每集 3–5 关键节点，第 1 季 30–50 个时刻 |
 | 地图来源 | 追描真实地图 SVG，允许艺术变形 |
 | 地图层级 | 地点 + 人物 + 事件三层叠加 |
-| InfoCard | 右侧滑入 overlay；仅名称 + 短描述；单击触发 |
-| 页面布局 | 地图全屏 viewport，控件浮层 |
+| InfoCard | 右侧滑入 overlay；**1:1 方形头图**；仅名称 + 短描述；单击触发 |
+| 页面布局 | 地图全屏 viewport，控件浮层；地图容器设 `bottom-14` 避开时间轴 |
 | 开场动画 | Upside Down 风格，圆形 iris 揭幕，蓝紫滤镜 |
 | 自动播放速度 | 6 秒/时刻 |
 | 字体 | ITC Benguiat Std（授权 OTF，gitignore）+ IBM Plex Mono |

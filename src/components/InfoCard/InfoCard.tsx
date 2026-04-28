@@ -84,8 +84,8 @@ export function InfoCard() {
             </button>
           </div>
 
-          {/* Image placeholder or actual image */}
-          <div className="mx-4 mb-3 rounded overflow-hidden bg-white/5 flex-shrink-0" style={{ height: '120px' }}>
+          {/* Image placeholder or actual image — square 1:1 */}
+          <div className="mx-4 mb-3 rounded overflow-hidden bg-white/5 flex-shrink-0 aspect-square w-[calc(100%-2rem)]">
             {getEntityImage(entity) ? (
               <img
                 src={`${import.meta.env.BASE_URL}${getEntityImage(entity)}`}
