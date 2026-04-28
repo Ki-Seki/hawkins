@@ -110,6 +110,37 @@
     50% { transform: scale(1.4); }
   }
 
+  @keyframes location-pulse {
+    0%, 100% {
+      transform: scale(1);
+      opacity: 0.4;
+    }
+    50% {
+      transform: scale(1.8);
+      opacity: 0;
+    }
+  }
+
+  @keyframes character-glow {
+    0%, 100% {
+      transform: scale(1);
+      opacity: 0.8;
+    }
+    50% {
+      transform: scale(1.5);
+      opacity: 0.3;
+    }
+  }
+
+  @keyframes selection-ring {
+    0%, 100% {
+      opacity: 0.9;
+    }
+    50% {
+      opacity: 0.4;
+    }
+  }
+
   .animate-glow-pulse {
     animation: glow-pulse 2.5s ease-in-out infinite;
   }
@@ -122,11 +153,26 @@
     animation: character-pulse 1s ease-in-out infinite;
   }
 
+  .animate-location-pulse {
+    animation: location-pulse 2.5s ease-in-out infinite;
+  }
+
+  .animate-character-glow {
+    animation: character-glow 1.5s ease-in-out infinite;
+  }
+
+  .animate-selection-ring {
+    animation: selection-ring 1.5s ease-in-out infinite;
+  }
+
   /* Respect user motion preferences */
   @media (prefers-reduced-motion: reduce) {
     .animate-glow-pulse,
     .animate-ambient-glow-pulse,
-    .animate-character-pulse {
+    .animate-character-pulse,
+    .animate-location-pulse,
+    .animate-character-glow,
+    .animate-selection-ring {
       animation: none;
     }
   }
