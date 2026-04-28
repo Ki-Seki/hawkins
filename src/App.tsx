@@ -34,27 +34,23 @@ export default function App() {
       <div className="grain pointer-events-none" />
       <div className="scanlines pointer-events-none" />
 
-      {/* Main map */}
-      <HawkinsMap />
+      {/* Main map — height avoids overlap with the h-14 timeline bar */}
+      <div className="absolute inset-0 bottom-14">
+        <HawkinsMap />
+      </div>
 
       {/* Moment title overlay (top-left) */}
-      <div className="absolute top-6 left-6 pointer-events-none z-10 max-w-sm">
-        <div className="flex gap-3">
-          <div className="w-0.5 bg-hawkins-amber/60 rounded-full flex-shrink-0" />
-          <div>
-            <p className="text-[10px] text-hawkins-amber font-mono tracking-[0.2em] uppercase opacity-80">
-              {currentMoment?.timeLabel}
-            </p>
-            <h1
-              className="text-2xl font-display text-white mt-1 leading-tight"
-              style={{ textShadow: '0 0 20px rgba(245,127,23,0.3), 0 2px 8px rgba(0,0,0,0.8)' }}
-            >
-              {currentMoment?.title}
-            </h1>
-            <p className="text-xs text-white/50 mt-1.5 leading-relaxed font-body">
-              {currentMoment?.summary}
-            </p>
-          </div>
+      <div className="absolute top-4 left-4 pointer-events-none z-10 max-w-xs">
+        <div className="bg-black/50 backdrop-blur-sm border border-white/10 rounded-lg px-4 py-3">
+          <p className="text-hawkins-amber/80 font-mono text-[10px] uppercase tracking-[0.2em] mb-1">
+            {currentMoment?.timeLabel}
+          </p>
+          <h1 className="text-white font-display text-xl leading-tight font-medium">
+            {currentMoment?.title}
+          </h1>
+          <p className="text-white/55 text-xs mt-1.5 leading-relaxed font-sans">
+            {currentMoment?.summary}
+          </p>
         </div>
       </div>
 

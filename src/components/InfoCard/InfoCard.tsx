@@ -55,7 +55,7 @@ export function InfoCard() {
           animate={{ x: 0, opacity: 1 }}
           exit={{ x: 40, opacity: 0 }}
           transition={{ duration: 0.25, ease: 'easeOut' }}
-          className="fixed right-0 top-0 bottom-24 z-20 w-80 bg-dim/95 backdrop-blur-md border-l border-white/10 flex flex-col overflow-hidden"
+          className="fixed right-0 top-0 bottom-14 z-20 w-80 bg-dim/95 backdrop-blur-md border-l border-white/10 flex flex-col overflow-hidden"
         >
           {/* Color accent strip */}
           {getEntityColor(entity) && (
@@ -66,9 +66,12 @@ export function InfoCard() {
           )}
 
           {/* Header */}
-          <div className="flex items-start justify-between p-4 pb-2">
+          <div className="flex items-start justify-between p-5 pb-3">
             <div className="flex-1 min-w-0 pr-2">
-              <p className="text-hawkins-amber font-mono text-xs uppercase tracking-widest mb-1 opacity-60">
+              <p
+                className="font-mono text-xs uppercase tracking-widest mb-1 opacity-70"
+                style={{ color: getEntityColor(entity) ?? '#F57F17' }}
+              >
                 {selectedEntity.type}
               </p>
               <h2 className="text-white font-display text-lg leading-tight">
@@ -77,15 +80,15 @@ export function InfoCard() {
             </div>
             <button
               onClick={clearSelected}
-              className="flex-shrink-0 w-7 h-7 flex items-center justify-center rounded text-white/40 hover:text-white hover:bg-white/10 transition-colors"
+              className="flex-shrink-0 w-7 h-7 flex items-center justify-center rounded text-white/50 hover:text-white hover:bg-white/10 transition-colors"
               aria-label="Close"
             >
               ×
             </button>
           </div>
 
-          {/* Image placeholder or actual image */}
-          <div className="mx-4 mb-3 rounded overflow-hidden bg-white/5 flex-shrink-0" style={{ height: '120px' }}>
+          {/* Image placeholder or actual image — square 1:1 */}
+          <div className="mx-4 mb-3 rounded overflow-hidden bg-white/5 flex-shrink-0 aspect-square w-[calc(100%-2rem)]">
             {getEntityImage(entity) ? (
               <img
                 src={`${import.meta.env.BASE_URL}${getEntityImage(entity)}`}
@@ -106,7 +109,7 @@ export function InfoCard() {
 
           {/* Description */}
           <div className="px-4 flex-1 overflow-y-auto">
-            <p className="text-white/70 text-sm leading-relaxed font-body">
+            <p className="text-white/80 text-sm leading-relaxed font-sans">
               {getEntityDescription(entity)}
             </p>
 
@@ -116,7 +119,7 @@ export function InfoCard() {
                 {getEntityTags(entity).map((tag) => (
                   <span
                     key={tag}
-                    className="px-2 py-0.5 rounded-full bg-white/8 border border-white/15 text-white/50 font-mono text-xs"
+                    className="px-2 py-0.5 rounded-full bg-white/10 border border-white/20 text-white/60 font-mono text-xs"
                   >
                     {tag}
                   </span>

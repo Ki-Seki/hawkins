@@ -17,30 +17,44 @@ export function Timeline() {
   const { isPlaying, setPlaying } = useAtlasStore()
 
   return (
-    <div className="fixed bottom-0 left-0 right-0 z-30 h-24 border-t border-white/8"
-      style={{ background: 'linear-gradient(to top, rgba(13,13,20,0.98) 0%, rgba(13,13,20,0.9) 100%)', backdropFilter: 'blur(12px)' }}>
-      <div className="flex items-center h-full px-4 gap-4">
+    <div
+      className="fixed bottom-0 left-0 right-0 z-30 h-14"
+      style={{
+        background: 'linear-gradient(to top, rgba(8,8,14,0.97) 0%, rgba(13,13,20,0.7) 100%)',
+        backdropFilter: 'blur(16px)',
+        borderTop: '1px solid rgba(245,127,23,0.12)',
+      }}
+    >
+      <div className="flex items-center h-full px-5 gap-3">
 
-        {/* Episode label */}
-        <div className="flex-shrink-0 w-16 text-center">
-          <span className="text-hawkins-amber font-mono text-xs tracking-[0.2em] uppercase"
-            style={{ textShadow: '0 0 8px rgba(245,127,23,0.5)' }}>
+        {/* Episode + moment title */}
+        <div className="flex-shrink-0 flex items-center gap-2 min-w-0 w-52">
+          <span
+            className="font-mono text-[11px] tracking-[0.25em] uppercase text-hawkins-amber flex-shrink-0"
+            style={{ textShadow: '0 0 10px rgba(245,127,23,0.6)' }}
+          >
             {getEpisodeLabel(currentMoment?.episodeId ?? '')}
+          </span>
+          <span className="text-hawkins-amber/30 text-xs flex-shrink-0">·</span>
+          <span className="text-white/50 font-mono text-[10px] truncate tracking-wide">
+            {currentMoment?.title}
           </span>
         </div>
 
-        {/* Prev button */}
+        {/* Prev */}
         <button
           onClick={prev}
           disabled={!hasPrev}
-          className="flex-shrink-0 w-8 h-8 flex items-center justify-center text-white/50 hover:text-hawkins-amber disabled:opacity-20 transition-colors text-xs"
+          className="flex-shrink-0 text-white/30 hover:text-hawkins-amber disabled:opacity-15 transition-colors"
           aria-label="Previous moment"
         >
-          ◀
+          <svg width="14" height="14" viewBox="0 0 14 14" fill="currentColor">
+            <polygon points="10,2 4,7 10,12" />
+          </svg>
         </button>
 
-        {/* Timeline scrubber */}
-        <div className="flex-1 flex items-center gap-1 overflow-x-auto scrollbar-none py-1">
+        {/* Timeline dots */}
+        <div className="flex-1 flex items-center gap-[3px] overflow-x-auto" style={{ scrollbarWidth: 'none' }}>
           {moments.map((m, idx) => {
             const isActive = m.id === currentMoment?.id
             const isPast = idx < currentIndex
@@ -52,47 +66,52 @@ export function Timeline() {
                 className={[
                   'flex-shrink-0 rounded-full transition-all duration-300',
                   isActive
-                    ? 'h-3 w-7 bg-hawkins-amber'
+                    ? 'h-[5px] w-5 bg-hawkins-amber'
                     : isPast
-                    ? 'h-1.5 w-1.5 bg-white/35 hover:bg-white/55 hover:h-2.5'
-                    : 'h-1.5 w-1.5 bg-white/12 hover:bg-white/30 hover:h-2.5',
+                    ? 'h-[3px] w-[3px] bg-white/40 hover:bg-white/60'
+                    : 'h-[3px] w-[3px] bg-white/15 hover:bg-white/35',
                 ].join(' ')}
-                style={isActive ? { boxShadow: '0 0 8px #F57F17, 0 0 16px rgba(245,127,23,0.4)' } : undefined}
+                style={isActive ? { boxShadow: '0 0 6px #F57F17, 0 0 12px rgba(245,127,23,0.35)' } : undefined}
                 aria-label={m.title}
               />
             )
           })}
         </div>
 
-        {/* Next button */}
+        {/* Next */}
         <button
           onClick={next}
           disabled={!hasNext}
-          className="flex-shrink-0 w-8 h-8 flex items-center justify-center text-white/50 hover:text-hawkins-amber disabled:opacity-20 transition-colors text-xs"
+          className="flex-shrink-0 text-white/30 hover:text-hawkins-amber disabled:opacity-15 transition-colors"
           aria-label="Next moment"
         >
-          ▶
+          <svg width="14" height="14" viewBox="0 0 14 14" fill="currentColor">
+            <polygon points="4,2 10,7 4,12" />
+          </svg>
         </button>
 
         {/* Play/pause */}
         <button
           onClick={() => setPlaying(!isPlaying)}
-          className="flex-shrink-0 w-10 h-10 flex items-center justify-center rounded-full border border-hawkins-amber/50 text-hawkins-amber hover:bg-hawkins-amber/15 transition-all text-sm"
-          style={isPlaying ? { boxShadow: '0 0 12px rgba(245,127,23,0.3)' } : undefined}
-          aria-label={isPlaying ? 'Pause autoplay' : 'Start autoplay'}
+          className="flex-shrink-0 flex items-center justify-center w-7 h-7 rounded-full border transition-all"
+          style={
+            isPlaying
+              ? { borderColor: 'rgba(245,127,23,0.7)', color: '#F57F17', boxShadow: '0 0 10px rgba(245,127,23,0.25)' }
+              : { borderColor: 'rgba(255,255,255,0.15)', color: 'rgba(255,255,255,0.35)' }
+          }
+          aria-label={isPlaying ? 'Pause' : 'Play'}
         >
-          {isPlaying ? '⏸' : '⏵'}
+          {isPlaying ? (
+            <svg width="8" height="10" viewBox="0 0 8 10" fill="currentColor">
+              <rect x="0" y="0" width="3" height="10" />
+              <rect x="5" y="0" width="3" height="10" />
+            </svg>
+          ) : (
+            <svg width="8" height="10" viewBox="0 0 8 10" fill="currentColor">
+              <polygon points="0,0 8,5 0,10" />
+            </svg>
+          )}
         </button>
-
-        {/* Moment info (center, overlapping) */}
-        <div className="absolute left-1/2 bottom-5 -translate-x-1/2 text-center pointer-events-none">
-          <p className="text-white font-display text-sm leading-none tracking-wide">
-            {currentMoment?.title}
-          </p>
-          <p className="text-hawkins-amber/60 font-mono text-[10px] mt-0.5 tracking-widest uppercase">
-            {currentMoment?.timeLabel}
-          </p>
-        </div>
 
       </div>
     </div>

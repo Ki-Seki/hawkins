@@ -80,7 +80,60 @@ npm run lint
 
 ---
 
-## 路线图
+## 视觉调试
+
+开发时可用 [Playwright](https://playwright.dev/) 截图验证页面视觉质量：
+
+```bash
+# 全局安装 Playwright（一次性）
+npm install -g playwright
+playwright install chromium
+
+# 或者临时使用 /tmp 下的安装
+cd /tmp && npm install playwright
+
+# 截图脚本示例
+node -e "
+const { chromium } = require('playwright');
+(async () => {
+  const browser = await chromium.launch({ args: ['--no-sandbox'] });
+  const page = await browser.newPage();
+  await page.setViewportSize({ width: 1440, height: 900 });
+  await page.goto('http://localhost:5173/hawkins/', { waitUntil: 'networkidle' });
+  await page.waitForTimeout(2000);
+  await page.screenshot({ path: '/tmp/hawkins-debug.png' });
+  await browser.close();
+})();
+"
+```
+
+截图可验证：地图对比度、标记大小、时间轴样式、InfoCard 显示是否正常。
+
+---
+
+## 美学规范
+
+本项目的视觉风格定位：**1983 年代小镇夜景 + Upside Down 压抑氛围**。
+
+| 要素 | 规范 |
+|---|---|
+| 配色 | 近黑背景 (`#0D0D14`)，琥珀色强调 (`#F57F17`)，冷蓝 Upside Down (`#1A237E`) |
+| 地图 | 深色 SVG：道路 `#4a4a68`，水体 `#1f4a72`，森林 `#172e17`；可用高精度 PNG 替换 |
+| 标记 | SVG 矢量图标 + drop-shadow 光晕，尺寸≤ 2–3 SVG 单位（约 30px） |
+| 人物头像 | 圆形剪裁 + 彩色边环，点击弹出 1:1 方形大图 InfoCard |
+| 字体 | ITC Benguiat Std（标题）+ IBM Plex Mono（数据/标签）|
+| 纹理 | CSS animated grain + 暗角 vignette + scanlines |
+| 动效 | 切换 ≤ 400ms；InfoCard 滑入 ≤ 250ms；标记 pulse 柔和 |
+| 时间轴 | 底部极简单行栏 (`h-14`)，不遮挡地图内容 |
+
+地图资产替换指南：
+- 提供 `2400 × 1600` PNG 底图 → 替换 `public/map.svg`
+- 保持 `vite.config.ts` 中的 `base` 配置；路径用 `${import.meta.env.BASE_URL}map.png`
+- 地点坐标 (`map.x / map.y`) 以画面百分比为单位，PNG/SVG 均适用
+
+---
+
+
 
 | 阶段 | 内容 | 状态 |
 |---|---|---|
