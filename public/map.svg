@@ -45,11 +45,11 @@
   <!-- ══════════════════════════════════════════════
        TOPOGRAPHIC CONTOUR LINES (subtle but visible)
   ══════════════════════════════════════════════ -->
-  <ellipse cx="240" cy="680" rx="180" ry="120" fill="none" stroke="#1e1e2e" stroke-width="1" opacity="0.6"/>
-  <ellipse cx="240" cy="680" rx="140" ry="90" fill="none" stroke="#20202e" stroke-width="1" opacity="0.5"/>
-  <ellipse cx="980" cy="720" rx="200" ry="130" fill="none" stroke="#1e1e2e" stroke-width="1" opacity="0.6"/>
-  <ellipse cx="980" cy="720" rx="150" ry="95" fill="none" stroke="#20202e" stroke-width="1" opacity="0.5"/>
-  <ellipse cx="460" cy="200" rx="250" ry="160" fill="none" stroke="#1c1c2a" stroke-width="1" opacity="0.5"/>
+  <ellipse cx="240" cy="680" rx="180" ry="120" fill="none" stroke="#2a2a3e" stroke-width="1" opacity="0.6"/>
+  <ellipse cx="240" cy="680" rx="140" ry="90" fill="none" stroke="#2e2e42" stroke-width="1" opacity="0.5"/>
+  <ellipse cx="980" cy="720" rx="200" ry="130" fill="none" stroke="#2a2a3e" stroke-width="1" opacity="0.6"/>
+  <ellipse cx="980" cy="720" rx="150" ry="95" fill="none" stroke="#2e2e42" stroke-width="1" opacity="0.5"/>
+  <ellipse cx="460" cy="200" rx="250" ry="160" fill="none" stroke="#282838" stroke-width="1" opacity="0.5"/>
 
   <!-- ══════════════════════════════════════════════
        FOREST / WOODS AREAS
@@ -116,10 +116,10 @@
   <!-- ══════════════════════════════════════════════
        TRAIN TRACKS — clearly visible dashed line
   ══════════════════════════════════════════════ -->
-  <line x1="996" y1="0" x2="996" y2="680" stroke="#2e2e44" stroke-width="7" opacity="0.9"/>
-  <line x1="990" y1="0" x2="990" y2="680" stroke="#38384e" stroke-width="2" opacity="0.8"/>
-  <line x1="1002" y1="0" x2="1002" y2="680" stroke="#38384e" stroke-width="2" opacity="0.8"/>
-  <g stroke="#30304a" stroke-width="3" opacity="0.7">
+  <line x1="996" y1="0" x2="996" y2="680" stroke="#4a4a62" stroke-width="7" opacity="0.9"/>
+  <line x1="990" y1="0" x2="990" y2="680" stroke="#505068" stroke-width="2" opacity="0.8"/>
+  <line x1="1002" y1="0" x2="1002" y2="680" stroke="#505068" stroke-width="2" opacity="0.8"/>
+  <g stroke="#484860" stroke-width="3" opacity="0.7">
     <line x1="984" y1="20" x2="1008" y2="20"/><line x1="984" y1="44" x2="1008" y2="44"/>
     <line x1="984" y1="68" x2="1008" y2="68"/><line x1="984" y1="92" x2="1008" y2="92"/>
     <line x1="984" y1="116" x2="1008" y2="116"/><line x1="984" y1="140" x2="1008" y2="140"/>
@@ -139,42 +139,42 @@
   <!-- ══════════════════════════════════════════════
        POWER LINES
   ══════════════════════════════════════════════ -->
-  <line x1="440" y1="0" x2="996" y2="320" stroke="#28283a" stroke-width="1.5" stroke-dasharray="4 8" opacity="0.7"/>
+  <line x1="440" y1="0" x2="996" y2="320" stroke="#3a3a50" stroke-width="1.5" stroke-dasharray="4 8" opacity="0.7"/>
 
   <!-- ══════════════════════════════════════════════
        ROAD NETWORK — visible dark gray-purple lines
   ══════════════════════════════════════════════ -->
 
   <!-- Major diagonal roads -->
-  <line x1="540" y1="480" x2="80" y2="800" stroke="#33334c" stroke-width="5" opacity="0.85"/>
-  <line x1="540" y1="480" x2="1000" y2="800" stroke="#33334c" stroke-width="5" opacity="0.85"/>
-  <line x1="560" y1="600" x2="700" y2="800" stroke="#2c2c42" stroke-width="3.5" opacity="0.75"/>
-  <line x1="700" y1="560" x2="870" y2="740" stroke="#33334c" stroke-width="4" opacity="0.85"/>
+  <line x1="540" y1="480" x2="80" y2="800" stroke="#555570" stroke-width="5" opacity="0.85"/>
+  <line x1="540" y1="480" x2="1000" y2="800" stroke="#555570" stroke-width="5" opacity="0.85"/>
+  <line x1="560" y1="600" x2="700" y2="800" stroke="#464660" stroke-width="3.5" opacity="0.75"/>
+  <line x1="700" y1="560" x2="870" y2="740" stroke="#555570" stroke-width="4" opacity="0.85"/>
 
   <!-- N-S streets -->
-  <line x1="400" y1="0" x2="400" y2="600" stroke="#33334c" stroke-width="3.5" opacity="0.8"/>
-  <line x1="520" y1="0" x2="520" y2="620" stroke="#33334c" stroke-width="3.5" opacity="0.8"/>
-  <line x1="360" y1="80" x2="360" y2="580" stroke="#2c2c42" stroke-width="3" opacity="0.7"/>
-  <line x1="440" y1="280" x2="440" y2="640" stroke="#2c2c42" stroke-width="3" opacity="0.7"/>
-  <line x1="480" y1="120" x2="480" y2="480" stroke="#282838" stroke-width="2.5" opacity="0.65"/>
-  <line x1="700" y1="300" x2="700" y2="580" stroke="#2c2c42" stroke-width="3" opacity="0.7"/>
+  <line x1="400" y1="0" x2="400" y2="600" stroke="#555570" stroke-width="3.5" opacity="0.8"/>
+  <line x1="520" y1="0" x2="520" y2="620" stroke="#555570" stroke-width="3.5" opacity="0.8"/>
+  <line x1="360" y1="80" x2="360" y2="580" stroke="#464660" stroke-width="3" opacity="0.7"/>
+  <line x1="440" y1="280" x2="440" y2="640" stroke="#464660" stroke-width="3" opacity="0.7"/>
+  <line x1="480" y1="120" x2="480" y2="480" stroke="#3a3a58" stroke-width="2.5" opacity="0.65"/>
+  <line x1="700" y1="300" x2="700" y2="580" stroke="#464660" stroke-width="3" opacity="0.7"/>
 
   <!-- E-W streets -->
-  <line x1="300" y1="128" x2="700" y2="128" stroke="#2c2c42" stroke-width="3" opacity="0.7"/>
-  <line x1="300" y1="192" x2="700" y2="192" stroke="#2c2c42" stroke-width="3" opacity="0.7"/>
-  <line x1="80" y1="320" x2="760" y2="320" stroke="#33334c" stroke-width="4" opacity="0.85"/>
-  <line x1="80" y1="448" x2="860" y2="448" stroke="#3a3a55" stroke-width="5" opacity="0.9"/>
-  <line x1="80" y1="560" x2="560" y2="560" stroke="#2c2c42" stroke-width="3" opacity="0.7"/>
-  <line x1="300" y1="600" x2="760" y2="600" stroke="#2c2c42" stroke-width="3" opacity="0.7"/>
-  <line x1="120" y1="680" x2="560" y2="680" stroke="#28283c" stroke-width="2.5" opacity="0.65"/>
-  <line x1="80" y1="760" x2="400" y2="760" stroke="#28283c" stroke-width="2.5" opacity="0.65"/>
+  <line x1="300" y1="128" x2="700" y2="128" stroke="#464660" stroke-width="3" opacity="0.7"/>
+  <line x1="300" y1="192" x2="700" y2="192" stroke="#464660" stroke-width="3" opacity="0.7"/>
+  <line x1="80" y1="320" x2="760" y2="320" stroke="#555570" stroke-width="4" opacity="0.85"/>
+  <line x1="80" y1="448" x2="860" y2="448" stroke="#555570" stroke-width="5" opacity="0.9"/>
+  <line x1="80" y1="560" x2="560" y2="560" stroke="#464660" stroke-width="3" opacity="0.7"/>
+  <line x1="300" y1="600" x2="760" y2="600" stroke="#464660" stroke-width="3" opacity="0.7"/>
+  <line x1="120" y1="680" x2="560" y2="680" stroke="#3a3a58" stroke-width="2.5" opacity="0.65"/>
+  <line x1="80" y1="760" x2="400" y2="760" stroke="#3a3a58" stroke-width="2.5" opacity="0.65"/>
 
   <!-- Secondary connectors -->
-  <line x1="300" y1="128" x2="300" y2="640" stroke="#28283c" stroke-width="2.5" opacity="0.65"/>
-  <line x1="560" y1="320" x2="560" y2="640" stroke="#28283c" stroke-width="2.5" opacity="0.65"/>
-  <line x1="640" y1="192" x2="640" y2="480" stroke="#262636" stroke-width="2" opacity="0.55"/>
-  <line x1="760" y1="192" x2="760" y2="448" stroke="#262636" stroke-width="2" opacity="0.55"/>
-  <line x1="840" y1="320" x2="840" y2="560" stroke="#262636" stroke-width="2" opacity="0.55"/>
+  <line x1="300" y1="128" x2="300" y2="640" stroke="#3a3a58" stroke-width="2.5" opacity="0.65"/>
+  <line x1="560" y1="320" x2="560" y2="640" stroke="#3a3a58" stroke-width="2.5" opacity="0.65"/>
+  <line x1="640" y1="192" x2="640" y2="480" stroke="#3a3a55" stroke-width="2" opacity="0.55"/>
+  <line x1="760" y1="192" x2="760" y2="448" stroke="#3a3a55" stroke-width="2" opacity="0.55"/>
+  <line x1="840" y1="320" x2="840" y2="560" stroke="#3a3a55" stroke-width="2" opacity="0.55"/>
 
   <!-- ══════════════════════════════════════════════
        DOWNTOWN BLOCK FILL (subtle warm center)
@@ -190,9 +190,9 @@
   <!-- ══════════════════════════════════════════════
        WATER LABELS (very faint)
   ══════════════════════════════════════════════ -->
-  <text x="156" y="310" text-anchor="middle" font-size="9" fill="#2a5a80" opacity="0.6"
+  <text x="156" y="310" text-anchor="middle" font-size="9" fill="#4a6a8a" opacity="0.6"
         font-family="'IBM Plex Mono', monospace" letter-spacing="0.08em">LOCH NORA</text>
-  <text x="1104" y="620" text-anchor="middle" font-size="9" fill="#2a5a80" opacity="0.6"
+  <text x="1104" y="620" text-anchor="middle" font-size="9" fill="#4a6a8a" opacity="0.6"
         font-family="'IBM Plex Mono', monospace" letter-spacing="0.08em">QUARRY</text>
   <text x="936" y="715" text-anchor="middle" font-size="10" fill="#1a3018" opacity="0.7"
         font-family="'IBM Plex Mono', monospace" letter-spacing="0.06em">MIRKWOOD</text>

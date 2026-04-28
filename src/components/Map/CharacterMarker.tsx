@@ -12,10 +12,10 @@ interface CharacterMarkerProps {
 
 const STACK_OFFSETS = [
   { dx: 0, dy: 0 },
-  { dx: 4, dy: -4 },
-  { dx: -4, dy: -4 },
-  { dx: 4, dy: 4 },
-  { dx: -4, dy: 4 },
+  { dx: 2, dy: -2 },
+  { dx: -2, dy: -2 },
+  { dx: 2, dy: 2 },
+  { dx: -2, dy: 2 },
 ]
 
 // Initials from a character name
@@ -38,7 +38,7 @@ export function CharacterMarker({
   const { setSelected } = useAtlasStore()
   const offset = STACK_OFFSETS[index % STACK_OFFSETS.length]
   const cx = locationX + offset.dx
-  const cy = locationY + offset.dy - 4
+  const cy = locationY + offset.dy - 3
   const r = isSelected ? 2.2 : 1.8
 
   const opacity =
@@ -94,7 +94,7 @@ export function CharacterMarker({
       <circle
         cx={cx}
         cy={cy}
-        r={r + 0.8}
+        r={r + 0.5}
         fill={character.color}
         opacity={isSelected ? 1 : 0.9}
         style={isSelected ? { filter: `drop-shadow(0 0 3px ${character.color})` } : undefined}

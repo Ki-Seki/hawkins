@@ -26,7 +26,7 @@ export function HawkinsMap() {
         src={`${import.meta.env.BASE_URL}map.svg`}
         alt="Hawkins map"
         className="absolute inset-0 w-full h-full"
-        style={{ objectFit: 'cover' }}
+        style={{ objectFit: 'fill' }}
         draggable={false}
       />
 
@@ -39,7 +39,7 @@ export function HawkinsMap() {
           key={currentMomentId}
           className="absolute inset-0 w-full h-full"
           viewBox="0 0 100 100"
-          preserveAspectRatio="xMidYMid meet"
+          preserveAspectRatio="none"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
