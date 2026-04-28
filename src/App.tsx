@@ -32,21 +32,30 @@ export default function App() {
       {/* Atmospheric overlays from index.css */}
       <div className="vignette pointer-events-none" />
       <div className="grain pointer-events-none" />
+      <div className="scanlines pointer-events-none" />
 
       {/* Main map */}
       <HawkinsMap />
 
       {/* Moment title overlay (top-left) */}
-      <div className="absolute top-6 left-6 pointer-events-none z-10">
-        <p className="text-xs text-hawkins-amber font-mono tracking-widest uppercase opacity-70">
-          {currentMoment?.timeLabel}
-        </p>
-        <h1 className="text-2xl font-display text-white mt-1 drop-shadow-lg">
-          {currentMoment?.title}
-        </h1>
-        <p className="text-sm text-white/60 mt-1 max-w-xs leading-relaxed">
-          {currentMoment?.summary}
-        </p>
+      <div className="absolute top-6 left-6 pointer-events-none z-10 max-w-sm">
+        <div className="flex gap-3">
+          <div className="w-0.5 bg-hawkins-amber/60 rounded-full flex-shrink-0" />
+          <div>
+            <p className="text-[10px] text-hawkins-amber font-mono tracking-[0.2em] uppercase opacity-80">
+              {currentMoment?.timeLabel}
+            </p>
+            <h1
+              className="text-2xl font-display text-white mt-1 leading-tight"
+              style={{ textShadow: '0 0 20px rgba(245,127,23,0.3), 0 2px 8px rgba(0,0,0,0.8)' }}
+            >
+              {currentMoment?.title}
+            </h1>
+            <p className="text-xs text-white/50 mt-1.5 leading-relaxed font-body">
+              {currentMoment?.summary}
+            </p>
+          </div>
+        </div>
       </div>
 
       {/* Timeline scrubber */}

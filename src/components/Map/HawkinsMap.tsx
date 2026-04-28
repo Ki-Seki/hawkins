@@ -23,7 +23,7 @@ export function HawkinsMap() {
     <div className="relative w-full h-full">
       {/* Base map image */}
       <img
-        src="/map.svg"
+        src={`${import.meta.env.BASE_URL}map.svg`}
         alt="Hawkins map"
         className="absolute inset-0 w-full h-full"
         style={{ objectFit: 'cover' }}

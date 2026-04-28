@@ -88,7 +88,7 @@ export function InfoCard() {
           <div className="mx-4 mb-3 rounded overflow-hidden bg-white/5 flex-shrink-0" style={{ height: '120px' }}>
             {getEntityImage(entity) ? (
               <img
-                src={getEntityImage(entity)}
+                src={`${import.meta.env.BASE_URL}${getEntityImage(entity)}`}
                 alt={getEntityName(entity)}
                 className="w-full h-full object-cover"
                 onError={(e) => {
