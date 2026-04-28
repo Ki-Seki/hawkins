@@ -63,7 +63,11 @@ export function CharacterMarker({
           ? { duration: 1.2, repeat: Infinity, ease: 'easeInOut' }
           : { duration: 0.35, ease: 'backOut' }
       }
-      style={{ cursor: 'pointer', transformOrigin: `${cx} ${cy}` }}
+      style={{
+        cursor: 'pointer',
+        filter: isSelected ? `drop-shadow(0 0 4px ${character.color})` : undefined,
+        transformOrigin: `${cx}px ${cy}px`,
+      }}
       onClick={(e) => {
         e.stopPropagation()
         setSelected({ type: 'character', id: character.id })
