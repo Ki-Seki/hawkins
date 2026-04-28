@@ -45,7 +45,7 @@ export function Timeline() {
         <button
           onClick={prev}
           disabled={!hasPrev}
-          className="flex-shrink-0 text-white/30 hover:text-hawkins-amber disabled:opacity-15 transition-colors"
+          className="flex-shrink-0 text-white/30 hover:text-hawkins-amber hover:scale-110 disabled:opacity-15 disabled:hover:scale-100 transition-all duration-200"
           aria-label="Previous moment"
         >
           <svg width="14" height="14" viewBox="0 0 14 14" fill="currentColor">
@@ -68,11 +68,12 @@ export function Timeline() {
                   isActive
                     ? 'h-[5px] w-5 bg-hawkins-amber'
                     : isPast
-                    ? 'h-[3px] w-[3px] bg-white/40 hover:bg-white/60'
-                    : 'h-[3px] w-[3px] bg-white/15 hover:bg-white/35',
+                    ? 'h-[3px] w-[3px] bg-white/40 hover:bg-white/60 hover:scale-150'
+                    : 'h-[3px] w-[3px] bg-white/15 hover:bg-white/35 hover:scale-150',
                 ].join(' ')}
                 style={isActive ? { boxShadow: '0 0 6px #F57F17, 0 0 12px rgba(245,127,23,0.35)' } : undefined}
                 aria-label={m.title}
+                aria-current={isActive ? 'true' : undefined}
               />
             )
           })}
@@ -82,7 +83,7 @@ export function Timeline() {
         <button
           onClick={next}
           disabled={!hasNext}
-          className="flex-shrink-0 text-white/30 hover:text-hawkins-amber disabled:opacity-15 transition-colors"
+          className="flex-shrink-0 text-white/30 hover:text-hawkins-amber hover:scale-110 disabled:opacity-15 disabled:hover:scale-100 transition-all duration-200"
           aria-label="Next moment"
         >
           <svg width="14" height="14" viewBox="0 0 14 14" fill="currentColor">
@@ -93,13 +94,14 @@ export function Timeline() {
         {/* Play/pause */}
         <button
           onClick={() => setPlaying(!isPlaying)}
-          className="flex-shrink-0 flex items-center justify-center w-7 h-7 rounded-full border transition-all"
+          className="flex-shrink-0 flex items-center justify-center w-7 h-7 rounded-full border transition-all hover:scale-110 duration-200"
           style={
             isPlaying
               ? { borderColor: 'rgba(245,127,23,0.7)', color: '#F57F17', boxShadow: '0 0 10px rgba(245,127,23,0.25)' }
               : { borderColor: 'rgba(255,255,255,0.15)', color: 'rgba(255,255,255,0.35)' }
           }
           aria-label={isPlaying ? 'Pause' : 'Play'}
+          aria-pressed={isPlaying}
         >
           {isPlaying ? (
             <svg width="8" height="10" viewBox="0 0 8 10" fill="currentColor">
