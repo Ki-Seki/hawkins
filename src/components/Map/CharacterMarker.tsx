@@ -115,7 +115,7 @@ export function CharacterMarker({
           clipPath={`url(#${clipId})`}
           preserveAspectRatio="xMidYMid slice"
           onError={(e) => {
-            ;(e.currentTarget as SVGImageElement).style.display = 'none'
+            e.currentTarget.style.display = 'none'
           }}
         />
       ) : (
