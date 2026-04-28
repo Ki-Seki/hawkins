@@ -16,8 +16,8 @@
     ],
     "homeLocationId": "hawkins-lab",
     "color": "#E91E63",
-    "image": "images/characters/eleven.svg",
-    "thumbnail": "images/characters/eleven-thumb.svg"
+    "image": "images/characters/eleven.png",
+    "thumbnail": "images/characters/eleven.png"
   },
   {
     "id": "will-byers",
@@ -34,8 +34,8 @@
     ],
     "homeLocationId": "byers-house",
     "color": "#FF9800",
-    "image": "images/characters/will-byers.svg",
-    "thumbnail": "images/characters/will-byers-thumb.svg"
+    "image": "images/characters/will-byers.png",
+    "thumbnail": "images/characters/will-byers.png"
   },
   {
     "id": "mike-wheeler",
@@ -48,8 +48,8 @@
     ],
     "homeLocationId": "wheeler-house",
     "color": "#2196F3",
-    "image": "images/characters/mike-wheeler.svg",
-    "thumbnail": "images/characters/mike-wheeler-thumb.svg"
+    "image": "images/characters/mike-wheeler.png",
+    "thumbnail": "images/characters/mike-wheeler.png"
   },
   {
     "id": "dustin-henderson",
@@ -62,8 +62,8 @@
     ],
     "homeLocationId": "wheeler-house",
     "color": "#4CAF50",
-    "image": "images/characters/dustin-henderson.svg",
-    "thumbnail": "images/characters/dustin-henderson-thumb.svg"
+    "image": "images/characters/dustin-henderson.png",
+    "thumbnail": "images/characters/dustin-henderson.png"
   },
   {
     "id": "lucas-sinclair",
@@ -76,8 +76,8 @@
     ],
     "homeLocationId": "wheeler-house",
     "color": "#FFC107",
-    "image": "images/characters/lucas-sinclair.svg",
-    "thumbnail": "images/characters/lucas-sinclair-thumb.svg"
+    "image": "images/characters/lucas-sinclair.png",
+    "thumbnail": "images/characters/lucas-sinclair.png"
   },
   {
     "id": "joyce-byers",
@@ -90,8 +90,8 @@
     ],
     "homeLocationId": "byers-house",
     "color": "#FF5722",
-    "image": "images/characters/joyce-byers.svg",
-    "thumbnail": "images/characters/joyce-byers-thumb.svg"
+    "image": "images/characters/joyce-byers.png",
+    "thumbnail": "images/characters/joyce-byers.png"
   },
   {
     "id": "jim-hopper",
@@ -108,8 +108,8 @@
     ],
     "homeLocationId": "hopper-cabin",
     "color": "#795548",
-    "image": "images/characters/jim-hopper.svg",
-    "thumbnail": "images/characters/jim-hopper-thumb.svg"
+    "image": "images/characters/jim-hopper.png",
+    "thumbnail": "images/characters/jim-hopper.png"
   },
   {
     "id": "demogorgon",
@@ -125,7 +125,7 @@
     ],
     "homeLocationId": "upside-down-gate",
     "color": "#B71C1C",
-    "image": "images/characters/demogorgon.svg",
-    "thumbnail": "images/characters/demogorgon-thumb.svg"
+    "image": "images/characters/demogorgon.png",
+    "thumbnail": "images/characters/demogorgon.png"
   }
 ]
