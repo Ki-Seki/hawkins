@@ -2,6 +2,7 @@ import { AnimatePresence, motion } from 'framer-motion'
 import { useEffect, useRef, useState } from 'react'
 import { useAtlasStore } from '../../store/atlasStore'
 import { useMomentState } from '../../hooks/useMomentState'
+import { mapLayout } from '../../data/catalog'
 import { LocationMarker } from './LocationMarker'
 import { CharacterMarker } from './CharacterMarker'
 import { ThemeOverlay } from '../ThemeOverlay/ThemeOverlay'
@@ -12,6 +13,9 @@ export function HawkinsMap() {
   const resolved = useMomentState(currentMomentId)
   const containerRef = useRef<HTMLDivElement>(null)
   const [size, setSize] = useState({ w: 1440, h: 844 })
+
+  // Cast to typed layout for accessing svgPath
+  const layout = mapLayout as { svgPath: string }
 
   // Track actual container pixel dimensions so SVG circles stay circular
   useEffect(() => {
@@ -37,9 +41,9 @@ export function HawkinsMap() {
 
   return (
     <div ref={containerRef} className="relative w-full h-full">
-      {/* Base map image */}
+      {/* Base map image — path from mapLayout */}
       <img
-        src={`${import.meta.env.BASE_URL}map.svg`}
+        src={`${import.meta.env.BASE_URL}${layout.svgPath}`}
         alt="Hawkins map"
         className="absolute inset-0 w-full h-full"
         style={{ objectFit: 'fill' }}

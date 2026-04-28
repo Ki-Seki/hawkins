@@ -57,7 +57,8 @@ export function LocationMarker({ location, containerSize, isSelected }: Location
   }
 
   // Active: pin-dot with pulsing ring and label
-  const r = isSelected ? 7 : 6
+  const baseRadius = location.map.radius ?? 6
+  const r = isSelected ? baseRadius + 1 : baseRadius
   const glowRadius = r + 6
 
   return (

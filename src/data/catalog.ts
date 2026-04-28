@@ -147,11 +147,8 @@ export const episodes = EpisodeSchema.array().parse(rawEpisodes) as Episode[]
 export const events = EventSchema.array().parse(rawEvents) as StrangerEvent[]
 export const moments = MomentSchema.array().parse(rawMoments) as Moment[]
 export const momentStates = MomentStateSchema.array().parse(rawMomentStates) as MomentState[]
-
-// Note: mapLayout is parsed but not yet consumed by UI - kept for future use
-// @ts-expect-error - Validated but not exported yet; will be used when HawkinsMap reads from map-layout.json
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
-const mapLayout = MapLayoutSchema.parse(rawMapLayout)
+// Not typed to avoid pulling MapLayout into every catalog consumer; cast in HawkinsMap if needed
+export const mapLayout = MapLayoutSchema.parse(rawMapLayout)
 
 // Build indexed lookups for O(1) access
 export const charactersById = new Map(characters.map((c) => [c.id, c]))
