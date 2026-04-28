@@ -15,7 +15,7 @@ const STATUS_COLORS: Record<string, string> = {
 }
 
 export function LocationMarker({ location, containerSize, isSelected }: LocationMarkerProps) {
-  const { setSelected } = useAtlasStore()
+  const setSelected = useAtlasStore((s) => s.setSelected)
 
   if (location.status === 'hidden') return null
 

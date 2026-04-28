@@ -1,20 +1,7 @@
 import { AnimatePresence, motion } from 'framer-motion'
 import { useAtlasStore } from '../../store/atlasStore'
-import charactersData from '../../data/characters.json'
-import locationsData from '../../data/locations.json'
-import eventsData from '../../data/events.json'
+import { getEntityById } from '../../data/catalog'
 import type { Character, Location, StrangerEvent } from '../../types'
-
-const characters = charactersData as Character[]
-const locations = locationsData as Location[]
-const events = eventsData as StrangerEvent[]
-
-function resolveEntity(type: string, id: string) {
-  if (type === 'character') return characters.find((c) => c.id === id) ?? null
-  if (type === 'location') return locations.find((l) => l.id === id) ?? null
-  if (type === 'event') return events.find((e) => e.id === id) ?? null
-  return null
-}
 
 function getEntityName(entity: Character | Location | StrangerEvent): string {
   if ('name' in entity) return entity.name
@@ -41,10 +28,10 @@ function getEntityImage(entity: Character | Location | StrangerEvent): string | 
 }
 
 export function InfoCard() {
-  const { selectedEntity, clearSelected } = useAtlasStore()
+  const selectedEntity = useAtlasStore((s) => s.selectedEntity)
+  const clearSelected = useAtlasStore((s) => s.clearSelected)
 
-  const entity =
-    selectedEntity ? resolveEntity(selectedEntity.type, selectedEntity.id) : null
+  const entity = selectedEntity ? getEntityById(selectedEntity.type, selectedEntity.id) : null
 
   return (
     <AnimatePresence>

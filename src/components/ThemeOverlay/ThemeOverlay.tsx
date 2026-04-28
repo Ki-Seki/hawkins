@@ -22,7 +22,7 @@ const THEME_COLORS: Record<string, { glow: string; fog: string }> = {
 }
 
 export function ThemeOverlay() {
-  const { currentMomentId } = useAtlasStore()
+  const currentMomentId = useAtlasStore((s) => s.currentMomentId)
   const resolved = useMomentState(currentMomentId)
 
   if (!resolved) return null

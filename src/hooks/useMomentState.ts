@@ -1,7 +1,9 @@
-import momentsData from '../data/moments.json'
-import momentStatesData from '../data/moment-states.json'
-import charactersData from '../data/characters.json'
-import locationsData from '../data/locations.json'
+import {
+  momentsById,
+  momentStatesById,
+  charactersById,
+  locationsById,
+} from '../data/catalog'
 import type { Moment, MomentState, Character, Location } from '../types'
 
 export interface ResolvedMomentState {
@@ -12,14 +14,15 @@ export interface ResolvedMomentState {
 }
 
 export function useMomentState(momentId: string): ResolvedMomentState | null {
-  const moment = (momentsData as Moment[]).find((m) => m.id === momentId)
-  const momentState = (momentStatesData as MomentState[]).find((ms) => ms.momentId === momentId)
+  const moment = momentsById.get(momentId)
+  const momentState = momentStatesById.get(momentId)
+
   if (!moment || !momentState) return null
 
   const activeLocations = momentState.locationStates
     .filter((ls) => ls.status !== 'hidden')
     .map((ls) => {
-      const loc = (locationsData as Location[]).find((l) => l.id === ls.locationId)
+      const loc = locationsById.get(ls.locationId)
       if (!loc) return null
       return { ...loc, status: ls.status, emphasis: ls.emphasis }
     })
@@ -27,7 +30,7 @@ export function useMomentState(momentId: string): ResolvedMomentState | null {
 
   const activeCharacters = momentState.characterStates
     .map((cs) => {
-      const char = (charactersData as Character[]).find((c) => c.id === cs.characterId)
+      const char = charactersById.get(cs.characterId)
       if (!char) return null
       return { ...char, locationId: cs.locationId, status: cs.status }
     })

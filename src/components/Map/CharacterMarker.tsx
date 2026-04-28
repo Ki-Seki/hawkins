@@ -37,7 +37,7 @@ export function CharacterMarker({
   index,
   isSelected,
 }: CharacterMarkerProps) {
-  const { setSelected } = useAtlasStore()
+  const setSelected = useAtlasStore((s) => s.setSelected)
   const offset = STACK_OFFSETS[index % STACK_OFFSETS.length]
 
   // Convert % coords to pixels, then apply offset and raise above location pin

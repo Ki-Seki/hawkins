@@ -7,7 +7,8 @@ import { CharacterMarker } from './CharacterMarker'
 import { ThemeOverlay } from '../ThemeOverlay/ThemeOverlay'
 
 export function HawkinsMap() {
-  const { currentMomentId, selectedEntity } = useAtlasStore()
+  const currentMomentId = useAtlasStore((s) => s.currentMomentId)
+  const selectedEntity = useAtlasStore((s) => s.selectedEntity)
   const resolved = useMomentState(currentMomentId)
   const containerRef = useRef<HTMLDivElement>(null)
   const [size, setSize] = useState({ w: 1440, h: 844 })
