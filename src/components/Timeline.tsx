@@ -1,6 +1,5 @@
-import { useTimeline } from '../../hooks/useTimeline'
-import { useAtlasStore } from '../../store/atlasStore'
-import { episodesById } from '../../data/catalog'
+import { useTimeline, useAtlasStore } from '../store'
+import { episodesById } from '../data/catalog'
 
 function getEpisodeLabel(episodeId: string): string {
   const ep = episodesById.get(episodeId)
@@ -9,8 +8,7 @@ function getEpisodeLabel(episodeId: string): string {
 }
 
 export function Timeline() {
-  const { moments, currentMoment, currentIndex, seek, next, prev, hasNext, hasPrev } =
-    useTimeline()
+  const { moments, currentMoment, currentIndex, seek, next, prev, hasNext, hasPrev } = useTimeline()
   const isPlaying = useAtlasStore((s) => s.isPlaying)
   const setPlaying = useAtlasStore((s) => s.setPlaying)
 

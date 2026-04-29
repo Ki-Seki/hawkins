@@ -1,14 +1,5 @@
-/**
- * Unified data catalog with runtime validation
- *
- * This module provides a single entry point for all JSON data with Zod validation.
- * It replaces scattered `as Type[]` assertions throughout the codebase with
- * validated data and pre-built indexes for O(1) lookups.
- */
-
 import { z } from 'zod'
 
-// Import raw JSON data
 import rawCharacters from './characters.json'
 import rawLocations from './locations.json'
 import rawEpisodes from './episodes.json'
@@ -17,15 +8,103 @@ import rawMoments from './moments.json'
 import rawMomentStates from './moment-states.json'
 import rawMapLayout from './map-layout.json'
 
-// Import types
-import type {
-  Character,
-  Location,
-  Episode,
-  StrangerEvent,
-  Moment,
-  MomentState,
-} from '../types'
+// ─── Types ───────────────────────────────────────────────────────────────────
+
+export interface Character {
+  id: string
+  name: string
+  aliases: string[]
+  description: string
+  tags: string[]
+  homeLocationId: string
+  color: string
+  image: string
+  thumbnail?: string
+}
+
+export interface Location {
+  id: string
+  name: string
+  type: 'house' | 'school' | 'lab' | 'woods' | 'road' | 'other'
+  description: string
+  tags: string[]
+  map: {
+    x: number
+    y: number
+    labelOffset?: { x: number; y: number }
+    radius?: number
+  }
+  image?: string
+}
+
+export interface Episode {
+  id: string
+  season: number
+  episode: number
+  title: string
+}
+
+export interface StrangerEvent {
+  id: string
+  title: string
+  description: string
+  episodeIds: string[]
+  locationIds: string[]
+  characterIds: string[]
+  tags: string[]
+}
+
+export interface Moment {
+  id: string
+  title: string
+  timeLabel: string
+  sortKey: number
+  episodeId: string
+  eventIds: string[]
+  activeCharacterIds: string[]
+  activeLocationIds: string[]
+  focusLocationId?: string
+  summary: string
+  nextMomentId?: string | null
+}
+
+export interface LocationState {
+  locationId: string
+  status: 'active' | 'foreshadowed' | 'dim' | 'hidden'
+  emphasis: number
+}
+
+export interface CharacterState {
+  characterId: string
+  locationId: string
+  status: 'present' | 'missing' | 'trapped' | 'dead'
+}
+
+export interface MomentState {
+  momentId: string
+  locationStates: LocationState[]
+  characterStates: CharacterState[]
+  visual: {
+    theme: 'default' | 'tense' | 'nightmare' | 'upside-down'
+    fog: number
+    glow: string
+    cameraTarget?: string
+  }
+  audio?: { ambient?: string; sfx?: string }
+  video?: { background?: string }
+}
+
+export interface MapLayout {
+  canvasWidth: number
+  canvasHeight: number
+  svgPath: string
+  defaultTheme: string
+  regions: Array<{
+    id: string
+    label: string
+    bounds: { x: number; y: number; w: number; h: number }
+  }>
+}
 
 // Zod schemas for runtime validation
 const CharacterSchema = z.object({

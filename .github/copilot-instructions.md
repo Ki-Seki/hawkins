@@ -1,5 +1,15 @@
 # Copilot 开发指引 — Hawkins
 
+## 代码修改与文档同步
+
+**每次代码修改都要揣摩用户意图，然后把长期意图适当更新到 copilot-instructions 中。**
+
+- 不仅改代码，还要同步更新设计文档
+- 临时修复不需要更新文档，但有明确长期影响的改动必须更新
+- 修改规范、新的禁止事项、架构约定有变化时，一定要更新 `.github/copilot-instructions.md`
+
+---
+
 ## 项目简介
 
 Hawkins 是一个**纯静态单页 React + Vite + TypeScript** 应用，部署到 GitHub Pages。
@@ -7,6 +17,21 @@ Hawkins 是一个**纯静态单页 React + Vite + TypeScript** 应用，部署�
 
 **没有后端。** 所有内容存放在 `src/data/*.json`。应用只需构建为 `dist/` 下的静态资源。
 **网站所有展示给用户的文字内容（UI 文案、卡片内容、地点描述等）全部使用英文。**
+
+---
+
+## 技术栈
+
+| | |
+|---|---|
+| 框架 | React 18 + Vite 5 + TypeScript 5 |
+| 样式 | Tailwind CSS 3 |
+| 动画 | Framer Motion 11 |
+| 状态管理 | Zustand 5 |
+| Schema 验证 | Zod 3（开发期） |
+| 部署 | GitHub Pages + GitHub Actions |
+
+所有内容数据存放于 `src/data/*.json`，静态导入，**零运行时请求**。
 
 ---
 
@@ -26,15 +51,28 @@ Hawkins 是一个**纯静态单页 React + Vite + TypeScript** 应用，部署�
 | 路径 | 作用 |
 |---|---|
 | `src/data/*.json` | 全部内容 — 人物、地点、事件、时刻 |
-| `src/types/index.ts` | 与每个 JSON schema 对应的 TypeScript 接口 |
-| `src/store/atlasStore.ts` | Zustand store — 当前时刻、选中实体、播放状态 |
-| `src/hooks/useTimeline.ts` | 推进、跳转、解析当前时刻状态 |
-| `src/hooks/useMomentState.ts` | 合并指定 momentId 的 `moments` + `moment-states` |
-| `src/components/Map/HawkinsMap.tsx` | 主 SVG 地图，以 props 接收解析后的状态 |
-| `src/components/Timeline/Timeline.tsx` | 底部滑块，触发 `onSeek(momentId)` |
-| `src/components/InfoCard/InfoCard.tsx` | 右侧地点 / 人物 / 事件详情卡片 |
+| `src/data/catalog.ts` | TypeScript 接口 + Zod 校验 + 数据索引（单一数据入口）|
+| `src/store.ts` | Zustand store + `useTimeline` + `useMomentState` hooks |
+| `src/components/Map.tsx` | 主 SVG 地图 + LocationMarker + CharacterMarker + ThemeOverlay |
+| `src/components/Timeline.tsx` | 底部时间轴滑块 |
+| `src/components/InfoCard.tsx` | 右侧地点 / 人物 / 事件详情卡片 |
 | `public/map.svg` | 霍金斯底图 SVG 资源 |
 | `.github/workflows/deploy.yml` | GitHub Actions → GitHub Pages 部署 |
+
+---
+
+## 数据结构
+
+所有内容数据在 `src/data/` 下，6 个扁平化 JSON 文件：
+
+| 文件 | 内容 |
+|---|---|
+| `characters.json` | 人物档案（ID、英文名、描述、图片路径） |
+| `locations.json` | 地点档案（ID、坐标、描述） |
+| `episodes.json` | 剧集索引（S01E01 等） |
+| `events.json` | 剧情事件（关联人物 / 地点 / 剧集） |
+| `moments.json` | 时间轴节点（**剧情事实层**） |
+| `moment-states.json` | 时刻地图状态（**视觉展示层**，与剧情事实分离） |
 
 ---
 
@@ -49,130 +87,8 @@ Hawkins 是一个**纯静态单页 React + Vite + TypeScript** 应用，部署�
 
 新增 JSON 条目时：
 1. 加入对应的 `src/data/*.json` 文件
-2. `src/types/index.ts` 中的 TypeScript 类型必须同步
+2. `src/data/catalog.ts` 中的 TypeScript 类型必须同步
 3. 不同文件间不复制实体数据 — 用 ID 引用
-
----
-
-## JSON Schema 完整定义
-
-### `characters.json`
-```ts
-{
-  id: string               // "eleven"
-  name: string             // "Eleven"（英文展示名）
-  aliases: string[]        // ["El", "Jane Hopper"]
-  description: string      // 英文人物简介
-  tags: string[]           // ["main", "lab-escapee", "party"]
-  homeLocationId: string   // 无时刻覆盖时的默认位置
-  color: string            // hex，标记 / 卡片强调色
-  image: string            // "/images/characters/eleven.png"
-  thumbnail?: string       // 小头像，用于时间轴标记
-}
-```
-
-### `locations.json`
-```ts
-{
-  id: string               // "hawkins-lab"
-  name: string             // 英文地点名
-  type: "house" | "school" | "lab" | "woods" | "road" | "other"
-  description: string      // 英文描述
-  tags: string[]
-  map: {
-    x: number              // SVG 画布宽度的 0–100 百分比
-    y: number              // SVG 画布高度的 0–100 百分比
-    labelOffset?: { x: number; y: number }
-    radius?: number        // 点击热区半径，默认 20
-  }
-  image?: string
-}
-```
-
-### `episodes.json`
-```ts
-{
-  id: string               // "s01e01"
-  season: number           // 1
-  episode: number          // 1
-  title: string            // "Chapter One: The Vanishing of Will Byers"
-}
-```
-
-### `events.json`
-```ts
-{
-  id: string               // "will-disappears"
-  title: string            // 英文标题
-  description: string      // 英文描述
-  episodeIds: string[]
-  locationIds: string[]
-  characterIds: string[]
-  tags: string[]
-}
-```
-
-### `moments.json` ← 时间轴核心（剧情事实层）
-```ts
-{
-  id: string               // "s01e01-will-vanishes"
-  title: string            // "Will Vanishes"（时间轴展示，英文）
-  timeLabel: string        // "Night — November 6, 1983"
-  sortKey: number          // SSEEII 格式：10102 = S01E01 第 2 节点
-  episodeId: string
-  eventIds: string[]
-  activeCharacterIds: string[]
-  activeLocationIds: string[]
-  focusLocationId?: string
-  summary: string          // 1–2 句英文叙事说明
-  nextMomentId?: string
-}
-```
-
-### `moment-states.json` ← 视觉展示层（与剧情事实严格分离）
-```ts
-{
-  momentId: string
-  locationStates: Array<{
-    locationId: string
-    status: "active" | "foreshadowed" | "dim" | "hidden"
-    emphasis: number       // 0.0–1.0，控制光晕强度
-  }>
-  characterStates: Array<{
-    characterId: string
-    locationId: string
-    status: "present" | "missing" | "trapped" | "dead"
-  }>
-  visual: {
-    theme: "default" | "tense" | "nightmare" | "upside-down"
-    fog: number            // 0.0–1.0
-    glow: string           // hex 颜色
-    cameraTarget?: string
-  }
-  audio?: {
-    ambient?: string       // 环境音路径（v2，v1 留空）
-    sfx?: string           // 时刻音效路径（v2，v1 留空）
-  }
-  video?: {
-    background?: string    // 背景视频路径（v2+，v1 留空）
-  }
-}
-```
-
-### `map-layout.json`
-```ts
-{
-  canvasWidth: number      // SVG 逻辑宽度，如 1200
-  canvasHeight: number     // SVG 逻辑高度，如 800
-  svgPath: string          // 底图路径，如 "/map.svg"
-  defaultTheme: string
-  regions: Array<{
-    id: string
-    label: string          // 英文区域名
-    bounds: { x: number; y: number; w: number; h: number }
-  }>
-}
-```
 
 ---
 
@@ -215,29 +131,7 @@ Hawkins 是一个**纯静态单页 React + Vite + TypeScript** 应用，部署�
 
 **`main` 分支已启用保护，禁止任何人直接 push（含管理员）。**
 
-所有改动必须遵循以下流程：
-
-1. 从 `main` 新建 `feat/` 或 `fix/` 分支：`git checkout -b feat/your-feature`
-2. 在分支上开发、提交
-3. 开 Pull Request，至少 1 位 reviewer 批准后才能合并
-4. PR 有新 commit 时旧 approval 自动失效（dismiss stale reviews）
-5. 禁止 force push 和删除 `main` 分支
-
-分支命名建议：`feat/<slug>`、`fix/<slug>`、`chore/<slug>`、`docs/<slug>`
-
----
-
-## GitHub Pages 部署
-
-PR 合并到 `main` 后自动触发部署。
-
-```yaml
-# .github/workflows/deploy.yml
-# 构建：npm run build → dist/
-# 部署：actions/deploy-pages（OIDC）→ GitHub Pages
-```
-
-`vite.config.ts` 已设置 `base: '/hawkins/'`；`VITE_BASE_PATH` 环境变量由 `configure-pages` action 自动注入，覆盖此默认值。
+所有改动必须遵循以下流程：从 `main` 新建 `feat/` 或 `fix/` 分支：`git checkout -b feat/your-feature`；在分支上开发、提交。
 
 ---
 
@@ -247,7 +141,7 @@ PR 合并到 `main` 后自动触发部署。
 - **不要添加后端** — 本项目刻意设计为完全静态
 - **不要添加路由** — 单页面；`InfoCard` 是 overlay，不是路由页
 - **不要嵌套数据** — moment 里不内嵌完整人物对象，用 ID 引用
-- **TypeScript 中不要使用 `any`** — 所有数据形状必须通过 `src/types/index.ts` 类型化
+- **TypeScript 中不要使用 `any`** — 所有数据形状必须通过 `src/data/catalog.ts` 类型化
 - **不要引入 Three.js 或 PixiJS**（除非明确要求）— v1 用 SVG 足够
 - **不要在组件文件里写剧情内容** — 所有文案存在 JSON 中
 - **不要硬编码媒体路径** — 图片 / 音频 / 视频路径必须来自 JSON 字段
@@ -368,27 +262,6 @@ const { chromium } = require('playwright');
 
 ---
 
-
-
-设计或架构有任何变更时，**必须同步更新**以下文件，不能只改代码：
-
-| 文件 | 更新时机 |
-|---|---|
-| `README.md` | 功能范围变化、路线图进度、新的使用说明 |
-| `.github/copilot-instructions.md` | 架构约定变化、新 Schema 字段、新禁止事项 |
-| `CHANGELOG.md` | 每次有意义的变更，说明做了什么、为什么 |
-
----
-
-## 社区贡献原则
-
-本项目对怪奇物语爱好者开放贡献：
-- JSON 格式简单，任何人可直接编辑添加内容
-- 贡献者添加新地点 / 人物 / 时刻只需改 JSON，不需要改代码
-- 新字段必须同步更新 `src/types/index.ts`
-
----
-
 ## 锁定设计决策
 
 以下决策已确认，开发时直接遵守，不需要再讨论：
@@ -412,19 +285,6 @@ const { chromium } = require('playwright');
 
 ---
 
-## 开发命令
-
-```bash
-npm run dev       # 本地开发服务器
-npm run build     # 生产构建 → dist/
-npm run preview   # 本地预览生产构建
-npm run typecheck # tsc --noEmit 类型检查
-npm run lint      # ESLint 检查
-npm test          # Vitest 单元测试（待配置）
-```
-
----
-
 ## 内容参考
 
 - Fandom Wiki（剧集、人物、地点详情）：https://strangerthings.fandom.com/wiki/Stranger_Things_Wiki
@@ -433,18 +293,3 @@ npm test          # Vitest 单元测试（待配置）
 - v1 专注第 1 季；架构必须支持第 1–5 季，无需重构
 - **所有 UI 文字和数据内容使用英文**
 - 剧集 ID 格式：`s{SS}e{EE}` 补零，范围 `s01e01` 到 `s04e09`
-
----
-
-## 推荐 Copilot Agents
-
-项目 `.github/agents/` 目录已内置以下专用 agent，遇到对应任务时优先调用：
-
-| Agent 文件 | 用途 |
-|---|---|
-| `expert-react-frontend-engineer.agent.md` | React 组件、hooks、TypeScript、Framer Motion 动画 |
-| `gem-designer.agent.md` | UI/UX 设计规范、色彩方案、布局、无障碍（只输出规范，不写代码） |
-| `github-actions-expert.agent.md` | CI/CD 工作流、action pinning、OIDC、安全加固 |
-| `context7.agent.md` | 获取 Framer Motion / Zustand / Tailwind 等库的最新文档 |
-
-使用方式：在 Copilot Chat 中输入 `@agent-name` 或通过 `/agents` 命令调用。

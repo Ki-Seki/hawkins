@@ -1,10 +1,70 @@
 import { useEffect, useRef, useState } from 'react'
-import { useAtlasStore } from './store/atlasStore'
-import { useTimeline } from './hooks/useTimeline'
-import { HawkinsMap } from './components/Map/HawkinsMap'
-import { Timeline } from './components/Timeline/Timeline'
-import { InfoCard } from './components/InfoCard/InfoCard'
-import { IntroAnimation } from './components/IntroAnimation/IntroAnimation'
+import { motion, AnimatePresence } from 'framer-motion'
+import { useAtlasStore, useTimeline } from './store'
+import { HawkinsMap } from './components/Map'
+import { Timeline } from './components/Timeline'
+import { InfoCard } from './components/InfoCard'
+
+// ─── IntroAnimation ───────────────────────────────────────────────────────────
+
+function IntroAnimation({ onComplete }: { onComplete: () => void }) {
+  const [stage, setStage] = useState<'start' | 'reveal' | 'fade' | 'complete'>('start')
+
+  useEffect(() => {
+    const t1 = setTimeout(() => setStage('reveal'), 100)
+    const t2 = setTimeout(() => setStage('fade'), 2600)
+    const t3 = setTimeout(() => { setStage('complete'); onComplete() }, 3400)
+    return () => { clearTimeout(t1); clearTimeout(t2); clearTimeout(t3) }
+  }, [onComplete])
+
+  if (stage === 'complete') return null
+
+  return (
+    <AnimatePresence>
+      <motion.div
+        className="fixed inset-0 z-50"
+        initial={{ opacity: 1 }}
+        animate={{ opacity: stage === 'fade' ? 0 : 1 }}
+        exit={{ opacity: 0 }}
+        transition={{ duration: 0.8, ease: 'easeOut' }}
+        style={{ pointerEvents: 'none' }}
+      >
+        <svg className="absolute inset-0 w-full h-full" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid slice">
+          <defs>
+            <mask id="irisMask">
+              <rect width="100" height="100" fill="white" />
+              <motion.circle cx="50" cy="50" fill="black"
+                initial={{ r: 0 }} animate={{ r: stage === 'start' ? 0 : 80 }}
+                transition={{ duration: 2.5, ease: 'easeInOut' }} />
+            </mask>
+            <filter id="blur"><feGaussianBlur in="SourceGraphic" stdDeviation="0.8" /></filter>
+          </defs>
+          <rect width="100" height="100" fill="#000" mask="url(#irisMask)" filter="url(#blur)" />
+        </svg>
+        <motion.div
+          className="absolute inset-0"
+          style={{ background: 'linear-gradient(135deg, #1A237E 0%, #4A148C 100%)', mixBlendMode: 'color' }}
+          initial={{ opacity: 0.6 }}
+          animate={{ opacity: stage === 'fade' ? 0 : 0.6 }}
+          transition={{ duration: 0.8 }}
+        />
+        <motion.div
+          className="absolute inset-0 flex items-center justify-center"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: stage === 'start' ? 0 : stage === 'reveal' ? 1 : 0 }}
+          transition={{ duration: 0.8 }}
+        >
+          <h1
+            className="font-display text-6xl text-white tracking-widest select-none"
+            style={{ textShadow: '0 0 30px rgba(74,20,140,0.9), 0 0 60px rgba(26,35,126,0.6)', letterSpacing: '0.3em' }}
+          >
+            HAWKINS
+          </h1>
+        </motion.div>
+      </motion.div>
+    </AnimatePresence>
+  )
+}
 
 export default function App() {
   const isPlaying = useAtlasStore((s) => s.isPlaying)
