@@ -10,6 +10,21 @@ Hawkins 是一个**纯静态单页 React + Vite + TypeScript** 应用，部署�
 
 ---
 
+## 技术栈
+
+| | |
+|---|---|
+| 框架 | React 18 + Vite 5 + TypeScript 5 |
+| 样式 | Tailwind CSS 3 |
+| 动画 | Framer Motion 11 |
+| 状态管理 | Zustand 5 |
+| Schema 验证 | Zod 3（开发期） |
+| 部署 | GitHub Pages + GitHub Actions |
+
+所有内容数据存放于 `src/data/*.json`，静态导入，**零运行时请求**。
+
+---
+
 ## 架构一句话
 
 > **数据层（JSON）→ 类型层（TypeScript/Zod）→ 状态层（Zustand）→ UI 层（React + SVG + Framer Motion）**
@@ -36,6 +51,21 @@ Hawkins 是一个**纯静态单页 React + Vite + TypeScript** 应用，部署�
 
 ---
 
+## 数据结构
+
+所有内容数据在 `src/data/` 下，6 个扁平化 JSON 文件：
+
+| 文件 | 内容 |
+|---|---|
+| `characters.json` | 人物档案（ID、英文名、描述、图片路径） |
+| `locations.json` | 地点档案（ID、坐标、描述） |
+| `episodes.json` | 剧集索引（S01E01 等） |
+| `events.json` | 剧情事件（关联人物 / 地点 / 剧集） |
+| `moments.json` | 时间轴节点（**剧情事实层**） |
+| `moment-states.json` | 时刻地图状态（**视觉展示层**，与剧情事实分离） |
+
+---
+
 ## 数据规范
 
 - 所有实体 ID 使用 **kebab-case 字符串**：`"eleven"`、`"hawkins-lab"`、`"s01e01"`
@@ -49,128 +79,6 @@ Hawkins 是一个**纯静态单页 React + Vite + TypeScript** 应用，部署�
 1. 加入对应的 `src/data/*.json` 文件
 2. `src/data/catalog.ts` 中的 TypeScript 类型必须同步
 3. 不同文件间不复制实体数据 — 用 ID 引用
-
----
-
-## JSON Schema 完整定义
-
-### `characters.json`
-```ts
-{
-  id: string               // "eleven"
-  name: string             // "Eleven"（英文展示名）
-  aliases: string[]        // ["El", "Jane Hopper"]
-  description: string      // 英文人物简介
-  tags: string[]           // ["main", "lab-escapee", "party"]
-  homeLocationId: string   // 无时刻覆盖时的默认位置
-  color: string            // hex，标记 / 卡片强调色
-  image: string            // "/images/characters/eleven.png"
-  thumbnail?: string       // 小头像，用于时间轴标记
-}
-```
-
-### `locations.json`
-```ts
-{
-  id: string               // "hawkins-lab"
-  name: string             // 英文地点名
-  type: "house" | "school" | "lab" | "woods" | "road" | "other"
-  description: string      // 英文描述
-  tags: string[]
-  map: {
-    x: number              // SVG 画布宽度的 0–100 百分比
-    y: number              // SVG 画布高度的 0–100 百分比
-    labelOffset?: { x: number; y: number }
-    radius?: number        // 点击热区半径，默认 20
-  }
-  image?: string
-}
-```
-
-### `episodes.json`
-```ts
-{
-  id: string               // "s01e01"
-  season: number           // 1
-  episode: number          // 1
-  title: string            // "Chapter One: The Vanishing of Will Byers"
-}
-```
-
-### `events.json`
-```ts
-{
-  id: string               // "will-disappears"
-  title: string            // 英文标题
-  description: string      // 英文描述
-  episodeIds: string[]
-  locationIds: string[]
-  characterIds: string[]
-  tags: string[]
-}
-```
-
-### `moments.json` ← 时间轴核心（剧情事实层）
-```ts
-{
-  id: string               // "s01e01-will-vanishes"
-  title: string            // "Will Vanishes"（时间轴展示，英文）
-  timeLabel: string        // "Night — November 6, 1983"
-  sortKey: number          // SSEEII 格式：10102 = S01E01 第 2 节点
-  episodeId: string
-  eventIds: string[]
-  activeCharacterIds: string[]
-  activeLocationIds: string[]
-  focusLocationId?: string
-  summary: string          // 1–2 句英文叙事说明
-  nextMomentId?: string
-}
-```
-
-### `moment-states.json` ← 视觉展示层（与剧情事实严格分离）
-```ts
-{
-  momentId: string
-  locationStates: Array<{
-    locationId: string
-    status: "active" | "foreshadowed" | "dim" | "hidden"
-    emphasis: number       // 0.0–1.0，控制光晕强度
-  }>
-  characterStates: Array<{
-    characterId: string
-    locationId: string
-    status: "present" | "missing" | "trapped" | "dead"
-  }>
-  visual: {
-    theme: "default" | "tense" | "nightmare" | "upside-down"
-    fog: number            // 0.0–1.0
-    glow: string           // hex 颜色
-    cameraTarget?: string
-  }
-  audio?: {
-    ambient?: string       // 环境音路径（v2，v1 留空）
-    sfx?: string           // 时刻音效路径（v2，v1 留空）
-  }
-  video?: {
-    background?: string    // 背景视频路径（v2+，v1 留空）
-  }
-}
-```
-
-### `map-layout.json`
-```ts
-{
-  canvasWidth: number      // SVG 逻辑宽度，如 1200
-  canvasHeight: number     // SVG 逻辑高度，如 800
-  svgPath: string          // 底图路径，如 "/map.svg"
-  defaultTheme: string
-  regions: Array<{
-    id: string
-    label: string          // 英文区域名
-    bounds: { x: number; y: number; w: number; h: number }
-  }>
-}
-```
 
 ---
 
@@ -213,29 +121,7 @@ Hawkins 是一个**纯静态单页 React + Vite + TypeScript** 应用，部署�
 
 **`main` 分支已启用保护，禁止任何人直接 push（含管理员）。**
 
-所有改动必须遵循以下流程：
-
-1. 从 `main` 新建 `feat/` 或 `fix/` 分支：`git checkout -b feat/your-feature`
-2. 在分支上开发、提交
-3. 开 Pull Request，至少 1 位 reviewer 批准后才能合并
-4. PR 有新 commit 时旧 approval 自动失效（dismiss stale reviews）
-5. 禁止 force push 和删除 `main` 分支
-
-分支命名建议：`feat/<slug>`、`fix/<slug>`、`chore/<slug>`、`docs/<slug>`
-
----
-
-## GitHub Pages 部署
-
-PR 合并到 `main` 后自动触发部署。
-
-```yaml
-# .github/workflows/deploy.yml
-# 构建：npm run build → dist/
-# 部署：actions/deploy-pages（OIDC）→ GitHub Pages
-```
-
-`vite.config.ts` 已设置 `base: '/hawkins/'`；`VITE_BASE_PATH` 环境变量由 `configure-pages` action 自动注入，覆盖此默认值。
+所有改动必须遵循以下流程：从 `main` 新建 `feat/` 或 `fix/` 分支：`git checkout -b feat/your-feature`；在分支上开发、提交。
 
 ---
 
@@ -384,15 +270,6 @@ const { chromium } = require('playwright');
 
 ---
 
-## 社区贡献原则
-
-本项目对怪奇物语爱好者开放贡献：
-- JSON 格式简单，任何人可直接编辑添加内容
-- 贡献者添加新地点 / 人物 / 时刻只需改 JSON，不需要改代码
-- 新字段必须同步更新 `src/data/catalog.ts`
-
----
-
 ## 锁定设计决策
 
 以下决策已确认，开发时直接遵守，不需要再讨论：
@@ -413,19 +290,6 @@ const { chromium } = require('playwright');
 | 贡献流程 | Issue 模板 + PR |
 | 移动端 | v1 不做，桌面端优先 |
 | 自定义域名 | 无，GitHub Pages 默认地址 |
-
----
-
-## 开发命令
-
-```bash
-npm run dev       # 本地开发服务器
-npm run build     # 生产构建 → dist/
-npm run preview   # 本地预览生产构建
-npm run typecheck # tsc --noEmit 类型检查
-npm run lint      # ESLint 检查
-npm test          # Vitest 单元测试（待配置）
-```
 
 ---
 
