@@ -2,7 +2,7 @@
 name: Context7-Expert
 description: "Expert in latest library versions, best practices, and correct syntax using up-to-date documentation"
 argument-hint: "Ask about specific libraries/frameworks (e.g., 'Framer Motion variants', 'Zustand selectors', 'Tailwind v3 dark mode')"
-tools: ["read", "search", "web", "context7/*", "agent/runSubagent"]
+tools: ["read", "search", "web", "agent/runSubagent"]
 mcp-servers:
   context7:
     type: http
