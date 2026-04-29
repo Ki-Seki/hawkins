@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion'
+import { memo } from 'react'
 import type { Character } from '../../types'
 import { useAtlasStore } from '../../store/atlasStore'
 
@@ -29,7 +30,7 @@ function getInitials(name: string): string {
     .toUpperCase()
 }
 
-export function CharacterMarker({
+function CharacterMarkerComponent({
   character,
   locationX,
   locationY,
@@ -157,3 +158,5 @@ export function CharacterMarker({
     </motion.g>
   )
 }
+
+export const CharacterMarker = memo(CharacterMarkerComponent)

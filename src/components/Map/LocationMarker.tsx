@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion'
+import { memo } from 'react'
 import type { Location } from '../../types'
 import { useAtlasStore } from '../../store/atlasStore'
 
@@ -14,7 +15,7 @@ const STATUS_COLORS: Record<string, string> = {
   dim: '#3a3a60',
 }
 
-export function LocationMarker({ location, containerSize, isSelected }: LocationMarkerProps) {
+function LocationMarkerComponent({ location, containerSize, isSelected }: LocationMarkerProps) {
   const setSelected = useAtlasStore((s) => s.setSelected)
 
   if (location.status === 'hidden') return null
@@ -143,3 +144,5 @@ export function LocationMarker({ location, containerSize, isSelected }: Location
     </motion.g>
   )
 }
+
+export const LocationMarker = memo(LocationMarkerComponent)

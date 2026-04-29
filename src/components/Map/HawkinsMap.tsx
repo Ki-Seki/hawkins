@@ -1,5 +1,5 @@
 import { AnimatePresence, motion } from 'framer-motion'
-import { useEffect, useRef, useState } from 'react'
+import { useEffect, useRef, useState, useMemo, useCallback } from 'react'
 import { useAtlasStore } from '../../store/atlasStore'
 import { useMomentState } from '../../hooks/useMomentState'
 import { mapLayout } from '../../data/catalog'
@@ -10,6 +10,7 @@ import { ThemeOverlay } from '../ThemeOverlay/ThemeOverlay'
 export function HawkinsMap() {
   const currentMomentId = useAtlasStore((s) => s.currentMomentId)
   const selectedEntity = useAtlasStore((s) => s.selectedEntity)
+  const clearSelected = useAtlasStore((s) => s.clearSelected)
   const resolved = useMomentState(currentMomentId)
   const containerRef = useRef<HTMLDivElement>(null)
   const [size, setSize] = useState({ w: 1440, h: 844 })
@@ -29,18 +30,29 @@ export function HawkinsMap() {
     return () => obs.disconnect()
   }, [])
 
-  // Group characters by locationId for stacking offset
-  type ActiveChar = NonNullable<typeof resolved>['activeCharacters'][number]
-  const charsByLocation: Record<string, ActiveChar[]> = {}
-  if (resolved) {
-    for (const char of resolved.activeCharacters) {
-      if (!charsByLocation[char.locationId]) charsByLocation[char.locationId] = []
-      charsByLocation[char.locationId].push(char)
+  // Close InfoCard when clicking map background
+  const handleMapClick = useCallback((e: React.MouseEvent) => {
+    // Only clear if clicking the container directly (not markers)
+    if (e.target === e.currentTarget && selectedEntity) {
+      clearSelected()
     }
-  }
+  }, [selectedEntity, clearSelected])
+
+  // Group characters by locationId for stacking offset (memoized)
+  type ActiveChar = NonNullable<typeof resolved>['activeCharacters'][number]
+  const charsByLocation = useMemo(() => {
+    const result: Record<string, ActiveChar[]> = {}
+    if (resolved) {
+      for (const char of resolved.activeCharacters) {
+        if (!result[char.locationId]) result[char.locationId] = []
+        result[char.locationId].push(char)
+      }
+    }
+    return result
+  }, [resolved])
 
   return (
-    <div ref={containerRef} className="relative w-full h-full">
+    <div ref={containerRef} className="relative w-full h-full" onClick={handleMapClick}>
       {/* Base map image — path from mapLayout */}
       <img
         src={`${import.meta.env.BASE_URL}${layout.svgPath}`}
