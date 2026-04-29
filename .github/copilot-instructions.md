@@ -26,13 +26,11 @@ Hawkins 是一个**纯静态单页 React + Vite + TypeScript** 应用，部署�
 | 路径 | 作用 |
 |---|---|
 | `src/data/*.json` | 全部内容 — 人物、地点、事件、时刻 |
-| `src/types/index.ts` | 与每个 JSON schema 对应的 TypeScript 接口 |
-| `src/store/atlasStore.ts` | Zustand store — 当前时刻、选中实体、播放状态 |
-| `src/hooks/useTimeline.ts` | 推进、跳转、解析当前时刻状态 |
-| `src/hooks/useMomentState.ts` | 合并指定 momentId 的 `moments` + `moment-states` |
-| `src/components/Map/HawkinsMap.tsx` | 主 SVG 地图，以 props 接收解析后的状态 |
-| `src/components/Timeline/Timeline.tsx` | 底部滑块，触发 `onSeek(momentId)` |
-| `src/components/InfoCard/InfoCard.tsx` | 右侧地点 / 人物 / 事件详情卡片 |
+| `src/data/catalog.ts` | TypeScript 接口 + Zod 校验 + 数据索引（单一数据入口）|
+| `src/store.ts` | Zustand store + `useTimeline` + `useMomentState` hooks |
+| `src/components/Map.tsx` | 主 SVG 地图 + LocationMarker + CharacterMarker + ThemeOverlay |
+| `src/components/Timeline.tsx` | 底部时间轴滑块 |
+| `src/components/InfoCard.tsx` | 右侧地点 / 人物 / 事件详情卡片 |
 | `public/map.svg` | 霍金斯底图 SVG 资源 |
 | `.github/workflows/deploy.yml` | GitHub Actions → GitHub Pages 部署 |
 
@@ -49,7 +47,7 @@ Hawkins 是一个**纯静态单页 React + Vite + TypeScript** 应用，部署�
 
 新增 JSON 条目时：
 1. 加入对应的 `src/data/*.json` 文件
-2. `src/types/index.ts` 中的 TypeScript 类型必须同步
+2. `src/data/catalog.ts` 中的 TypeScript 类型必须同步
 3. 不同文件间不复制实体数据 — 用 ID 引用
 
 ---
@@ -247,7 +245,7 @@ PR 合并到 `main` 后自动触发部署。
 - **不要添加后端** — 本项目刻意设计为完全静态
 - **不要添加路由** — 单页面；`InfoCard` 是 overlay，不是路由页
 - **不要嵌套数据** — moment 里不内嵌完整人物对象，用 ID 引用
-- **TypeScript 中不要使用 `any`** — 所有数据形状必须通过 `src/types/index.ts` 类型化
+- **TypeScript 中不要使用 `any`** — 所有数据形状必须通过 `src/data/catalog.ts` 类型化
 - **不要引入 Three.js 或 PixiJS**（除非明确要求）— v1 用 SVG 足够
 - **不要在组件文件里写剧情内容** — 所有文案存在 JSON 中
 - **不要硬编码媒体路径** — 图片 / 音频 / 视频路径必须来自 JSON 字段
@@ -391,7 +389,7 @@ const { chromium } = require('playwright');
 本项目对怪奇物语爱好者开放贡献：
 - JSON 格式简单，任何人可直接编辑添加内容
 - 贡献者添加新地点 / 人物 / 时刻只需改 JSON，不需要改代码
-- 新字段必须同步更新 `src/types/index.ts`
+- 新字段必须同步更新 `src/data/catalog.ts`
 
 ---
 

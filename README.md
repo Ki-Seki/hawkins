@@ -155,7 +155,7 @@ v1 目标：第 1 季 ≥ 20 个完整时刻，≥ 8 个核心人物，所有主
 2. **提交地图坐标调整** — 修改 `locations.json` 中的 `map.x / map.y`
 3. **提交流程** — 通过 GitHub Issue 描述想添加的内容，然后提交 PR
 
-新字段必须同步更新 `src/types/index.ts`。
+新字段必须同步更新 `src/data/catalog.ts`。
 
 ---
 
