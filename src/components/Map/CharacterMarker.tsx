@@ -38,7 +38,7 @@ function CharacterMarkerComponent({
   index,
   isSelected,
 }: CharacterMarkerProps) {
-  const { setSelected } = useAtlasStore()
+  const setSelected = useAtlasStore((s) => s.setSelected)
   const offset = STACK_OFFSETS[index % STACK_OFFSETS.length]
 
   // Convert % coords to pixels, then apply offset and raise above location pin
@@ -82,15 +82,20 @@ function CharacterMarkerComponent({
         </clipPath>
       </defs>
 
-      {/* Glow ring on selection */}
+      {/* Glow ring on selection — CSS animation for persistent effect */}
       {isSelected && (
-        <motion.g
-          style={{ transformOrigin: `${cx}px ${cy}px` }}
-          animate={{ scale: [1, 1.5, 1], opacity: [0.8, 0.3, 0.8] }}
-          transition={{ duration: 1.5, repeat: Infinity }}
-        >
-          <circle cx={cx} cy={cy} r={r + 7} fill="none" stroke={character.color} strokeWidth="2" opacity={0.8} />
-        </motion.g>
+        <g style={{ transformOrigin: `${cx}px ${cy}px` }}>
+          <circle
+            cx={cx}
+            cy={cy}
+            r={r + 7}
+            fill="none"
+            stroke={character.color}
+            strokeWidth="2"
+            className="animate-character-glow"
+            style={{ transformOrigin: `${cx}px ${cy}px` }}
+          />
+        </g>
       )}
 
       {/* Colored border ring */}

@@ -1,26 +1,29 @@
-import momentsData from '../data/moments.json'
-import type { Moment } from '../types'
+import { momentsSorted, momentsById } from '../data/catalog'
 import { useAtlasStore } from '../store/atlasStore'
 
-const moments = [...(momentsData as Moment[])].sort((a, b) => a.sortKey - b.sortKey)
-
 export function useTimeline() {
-  const { currentMomentId, setMoment } = useAtlasStore()
-  const currentIndex = moments.findIndex((m) => m.id === currentMomentId)
-  const currentMoment = moments[currentIndex] ?? moments[0]
+  const currentMomentId = useAtlasStore((s) => s.currentMomentId)
+  const setMoment = useAtlasStore((s) => s.setMoment)
+
+  const currentIndex = momentsSorted.findIndex((m) => m.id === currentMomentId)
+  const currentMoment = momentsById.get(currentMomentId) ?? momentsSorted[0]
 
   return {
-    moments,
+    moments: momentsSorted,
     currentMoment,
     currentIndex,
     seek: setMoment,
     next: () => {
-      if (currentIndex < moments.length - 1) setMoment(moments[currentIndex + 1].id)
+      if (currentIndex < momentsSorted.length - 1) {
+        setMoment(momentsSorted[currentIndex + 1].id)
+      }
     },
     prev: () => {
-      if (currentIndex > 0) setMoment(moments[currentIndex - 1].id)
+      if (currentIndex > 0) {
+        setMoment(momentsSorted[currentIndex - 1].id)
+      }
     },
-    hasNext: currentIndex < moments.length - 1,
+    hasNext: currentIndex < momentsSorted.length - 1,
     hasPrev: currentIndex > 0,
   }
 }

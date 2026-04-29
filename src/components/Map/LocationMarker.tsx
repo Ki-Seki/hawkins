@@ -16,7 +16,7 @@ const STATUS_COLORS: Record<string, string> = {
 }
 
 function LocationMarkerComponent({ location, containerSize, isSelected }: LocationMarkerProps) {
-  const { setSelected } = useAtlasStore()
+  const setSelected = useAtlasStore((s) => s.setSelected)
 
   if (location.status === 'hidden') return null
 
@@ -58,7 +58,8 @@ function LocationMarkerComponent({ location, containerSize, isSelected }: Locati
   }
 
   // Active: pin-dot with pulsing ring and label
-  const r = isSelected ? 7 : 6
+  const baseRadius = location.map.radius ?? 6
+  const r = isSelected ? baseRadius + 1 : baseRadius
   const glowRadius = r + 6
 
   return (
@@ -69,17 +70,16 @@ function LocationMarkerComponent({ location, containerSize, isSelected }: Locati
       style={{ cursor: 'pointer' }}
       onClick={() => setSelected({ type: 'location', id: location.id })}
     >
-      {/* Outer pulse ring */}
-      <motion.circle
+      {/* Outer pulse ring — CSS animation for persistent effect */}
+      <circle
         cx={cx}
         cy={cy}
         r={r + 8}
         fill="none"
         stroke={color}
         strokeWidth="1"
+        className="animate-location-pulse"
         style={{ transformOrigin: `${cx}px ${cy}px` }}
-        animate={{ scale: [1, 1.8, 1], opacity: [0.4, 0, 0.4] }}
-        transition={{ duration: 2.5, repeat: Infinity, ease: 'easeInOut' }}
       />
 
       {/* Soft ambient glow */}
@@ -109,18 +109,17 @@ function LocationMarkerComponent({ location, containerSize, isSelected }: Locati
       {/* White center dot */}
       <circle cx={cx} cy={cy} r={2} fill="white" opacity={0.9} />
 
-      {/* Selected extra ring */}
+      {/* Selected extra ring — CSS animation for persistent effect */}
       {isSelected && (
-        <motion.circle
+        <circle
           cx={cx}
           cy={cy}
           r={r + 5}
           fill="none"
           stroke="#FF9800"
           strokeWidth="1.5"
+          className="animate-selection-ring"
           style={{ transformOrigin: `${cx}px ${cy}px` }}
-          animate={{ opacity: [0.9, 0.4, 0.9] }}
-          transition={{ duration: 1.5, repeat: Infinity }}
         />
       )}
 

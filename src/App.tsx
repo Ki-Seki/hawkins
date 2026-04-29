@@ -7,7 +7,10 @@ import { InfoCard } from './components/InfoCard/InfoCard'
 import { IntroAnimation } from './components/IntroAnimation/IntroAnimation'
 
 export default function App() {
-  const { isPlaying, setPlaying, selectedEntity, clearSelected } = useAtlasStore()
+  const isPlaying = useAtlasStore((s) => s.isPlaying)
+  const setPlaying = useAtlasStore((s) => s.setPlaying)
+  const selectedEntity = useAtlasStore((s) => s.selectedEntity)
+  const clearSelected = useAtlasStore((s) => s.clearSelected)
   const { currentMoment, next, prev, hasNext, hasPrev } = useTimeline()
   const timerRef = useRef<ReturnType<typeof setInterval> | null>(null)
   const [showIntro, setShowIntro] = useState(true)

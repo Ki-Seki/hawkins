@@ -1,12 +1,9 @@
 import { useTimeline } from '../../hooks/useTimeline'
 import { useAtlasStore } from '../../store/atlasStore'
-import episodesData from '../../data/episodes.json'
-import type { Episode } from '../../types'
-
-const episodes = episodesData as Episode[]
+import { episodesById } from '../../data/catalog'
 
 function getEpisodeLabel(episodeId: string): string {
-  const ep = episodes.find((e) => e.id === episodeId)
+  const ep = episodesById.get(episodeId)
   if (!ep) return ''
   return `S${String(ep.season).padStart(2, '0')}E${String(ep.episode).padStart(2, '0')}`
 }
@@ -14,7 +11,8 @@ function getEpisodeLabel(episodeId: string): string {
 export function Timeline() {
   const { moments, currentMoment, currentIndex, seek, next, prev, hasNext, hasPrev } =
     useTimeline()
-  const { isPlaying, setPlaying } = useAtlasStore()
+  const isPlaying = useAtlasStore((s) => s.isPlaying)
+  const setPlaying = useAtlasStore((s) => s.setPlaying)
 
   return (
     <div
