@@ -1,5 +1,15 @@
 # Copilot 开发指引 — Hawkins
 
+## 代码修改与文档同步
+
+**每次代码修改都要揣摩用户意图，然后把长期意图适当更新到 copilot-instructions 中。**
+
+- 不仅改代码，还要同步更新设计文档
+- 临时修复不需要更新文档，但有明确长期影响的改动必须更新
+- 修改规范、新的禁止事项、架构约定有变化时，一定要更新 `.github/copilot-instructions.md`
+
+---
+
 ## 项目简介
 
 Hawkins 是一个**纯静态单页 React + Vite + TypeScript** 应用，部署到 GitHub Pages。
@@ -249,24 +259,6 @@ const { chromium } = require('playwright');
 - [ ] 选中标记有琥珀色光晕
 - [ ] InfoCard 头图为方形 1:1
 - [ ] 时间轴单行，不占用过多高度
-
----
-
-## 代码修改与文档同步
-
-**每次代码修改都要揣摩用户意图，然后把长期意图适当更新到 README、copilot-instructions 中。**
-
-- 不仅改代码，还要同步更新设计文档
-- 临时修复不需要更新文档，但有明确长期影响的改动必须更新
-- 修改规范、新的禁止事项、架构约定有变化时，一定要更新 `.github/copilot-instructions.md`
-
-设计或架构有任何变更时，**必须同步更新**以下文件，不能只改代码：
-
-| 文件 | 更新时机 |
-|---|---|
-| `README.md` | 功能范围变化、路线图进度、新的使用说明 |
-| `.github/copilot-instructions.md` | 架构约定变化、新 Schema 字段、新禁止事项、工作流原则变化 |
-| `CHANGELOG.md` | 每次有意义的变更，说明做了什么、为什么 |
 
 ---
 
