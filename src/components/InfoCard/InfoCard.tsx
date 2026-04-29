@@ -1,4 +1,5 @@
 import { AnimatePresence, motion } from 'framer-motion'
+import { useState, useEffect } from 'react'
 import { useAtlasStore } from '../../store/atlasStore'
 import charactersData from '../../data/characters.json'
 import locationsData from '../../data/locations.json'
@@ -42,9 +43,17 @@ function getEntityImage(entity: Character | Location | StrangerEvent): string | 
 
 export function InfoCard() {
   const { selectedEntity, clearSelected } = useAtlasStore()
+  const [imageLoaded, setImageLoaded] = useState(false)
+  const [imageError, setImageError] = useState(false)
 
   const entity =
     selectedEntity ? resolveEntity(selectedEntity.type, selectedEntity.id) : null
+
+  // Reset image loading state when entity changes
+  useEffect(() => {
+    setImageLoaded(false)
+    setImageError(false)
+  }, [selectedEntity?.id])
 
   return (
     <AnimatePresence>
@@ -56,12 +65,17 @@ export function InfoCard() {
           exit={{ x: 40, opacity: 0 }}
           transition={{ duration: 0.25, ease: 'easeOut' }}
           className="fixed right-0 top-0 bottom-14 z-20 w-80 bg-dim/95 backdrop-blur-md border-l border-white/10 flex flex-col overflow-hidden"
+          role="dialog"
+          aria-labelledby="infocard-title"
+          aria-describedby="infocard-description"
+          aria-modal="true"
         >
           {/* Color accent strip */}
           {getEntityColor(entity) && (
             <div
               className="h-1 flex-shrink-0"
               style={{ backgroundColor: getEntityColor(entity) }}
+              aria-hidden="true"
             />
           )}
 
@@ -71,33 +85,55 @@ export function InfoCard() {
               <p
                 className="font-mono text-xs uppercase tracking-widest mb-1 opacity-70"
                 style={{ color: getEntityColor(entity) ?? '#F57F17' }}
+                aria-label={`Type: ${selectedEntity.type}`}
               >
                 {selectedEntity.type}
               </p>
-              <h2 className="text-white font-display text-lg leading-tight">
+              <h2 id="infocard-title" className="text-white font-display text-lg leading-tight">
                 {getEntityName(entity)}
               </h2>
             </div>
             <button
               onClick={clearSelected}
               className="flex-shrink-0 w-7 h-7 flex items-center justify-center rounded text-white/50 hover:text-white hover:bg-white/10 transition-colors"
-              aria-label="Close"
+              aria-label={`Close ${getEntityName(entity)} details`}
             >
               ×
             </button>
           </div>
 
           {/* Image placeholder or actual image — square 1:1 */}
-          <div className="mx-4 mb-3 rounded overflow-hidden bg-white/5 flex-shrink-0 aspect-square w-[calc(100%-2rem)]">
+          <div className="mx-4 mb-3 rounded overflow-hidden bg-white/5 flex-shrink-0 aspect-square w-[calc(100%-2rem)] relative">
             {getEntityImage(entity) ? (
-              <img
-                src={`${import.meta.env.BASE_URL}${getEntityImage(entity)}`}
-                alt={getEntityName(entity)}
-                className="w-full h-full object-cover"
-                onError={(e) => {
-                  e.currentTarget.style.display = 'none'
-                }}
-              />
+              <>
+                {!imageLoaded && !imageError && (
+                  <div className="absolute inset-0 flex items-center justify-center">
+                    <motion.div
+                      className="w-8 h-8 border-2 border-hawkins-amber/30 border-t-hawkins-amber rounded-full"
+                      animate={{ rotate: 360 }}
+                      transition={{ duration: 1, repeat: Infinity, ease: 'linear' }}
+                    />
+                  </div>
+                )}
+                <img
+                  src={`${import.meta.env.BASE_URL}${getEntityImage(entity)}`}
+                  alt={getEntityName(entity)}
+                  className="w-full h-full object-cover"
+                  style={{ opacity: imageLoaded ? 1 : 0 }}
+                  onLoad={() => setImageLoaded(true)}
+                  onError={() => {
+                    setImageError(true)
+                    setImageLoaded(false)
+                  }}
+                />
+                {imageError && (
+                  <div className="absolute inset-0 flex items-center justify-center">
+                    <span className="text-white/15 font-mono text-xs uppercase tracking-widest">
+                      Image Failed
+                    </span>
+                  </div>
+                )}
+              </>
             ) : (
               <div className="w-full h-full flex items-center justify-center">
                 <span className="text-white/15 font-mono text-xs uppercase tracking-widest">
@@ -109,16 +145,17 @@ export function InfoCard() {
 
           {/* Description */}
           <div className="px-4 flex-1 overflow-y-auto">
-            <p className="text-white/80 text-sm leading-relaxed font-sans">
+            <p id="infocard-description" className="text-white/80 text-sm leading-relaxed font-sans">
               {getEntityDescription(entity)}
             </p>
 
             {/* Tags */}
             {getEntityTags(entity).length > 0 && (
-              <div className="flex flex-wrap gap-1.5 mt-3">
+              <div className="flex flex-wrap gap-1.5 mt-3" role="list" aria-label="Tags">
                 {getEntityTags(entity).map((tag) => (
                   <span
                     key={tag}
+                    role="listitem"
                     className="px-2 py-0.5 rounded-full bg-white/10 border border-white/20 text-white/60 font-mono text-xs"
                   >
                     {tag}
