@@ -6,5 +6,5 @@ export default defineConfig({
   plugins: [react()],
   // Use VITE_BASE_PATH env var injected by GitHub Actions configure-pages,
   // falling back to /hawkins/ for local preview of production build.
-  base: process.env.VITE_BASE_PATH ?? '/hawkins/',
+  base: (process.env.VITE_BASE_PATH ?? '/hawkins/').replace(/\/?$/, '/'),
 })
