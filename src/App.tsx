@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from 'react'
-import { motion, AnimatePresence } from 'framer-motion'
+import { motion } from 'framer-motion'
 import { useAtlasStore, useTimeline } from './store'
 import { HawkinsMap } from './components/Map'
 import { Timeline } from './components/Timeline'
@@ -8,61 +8,54 @@ import { InfoCard } from './components/InfoCard'
 // ─── IntroAnimation ───────────────────────────────────────────────────────────
 
 function IntroAnimation({ onComplete }: { onComplete: () => void }) {
-  const [stage, setStage] = useState<'start' | 'reveal' | 'fade' | 'complete'>('start')
+  const [stage, setStage] = useState<'flicker' | 'steady' | 'fade' | 'done'>('flicker')
 
   useEffect(() => {
-    const t1 = setTimeout(() => setStage('reveal'), 100)
-    const t2 = setTimeout(() => setStage('fade'), 2600)
-    const t3 = setTimeout(() => { setStage('complete'); onComplete() }, 3400)
+    const t1 = setTimeout(() => setStage('steady'), 1200)
+    const t2 = setTimeout(() => setStage('fade'), 2400)
+    const t3 = setTimeout(() => { setStage('done'); onComplete() }, 3000)
     return () => { clearTimeout(t1); clearTimeout(t2); clearTimeout(t3) }
   }, [onComplete])
 
-  if (stage === 'complete') return null
+  if (stage === 'done') return null
+
+  const titleStyle: React.CSSProperties = {
+    textShadow:
+      '0 0 10px #E53935, 0 0 30px #E53935, 0 0 60px #B71C1C, 0 0 100px #B71C1C',
+    letterSpacing: '0.25em',
+    animation: stage === 'flicker' ? 'st-flicker 0.15s steps(1) infinite' : 'none',
+  }
 
   return (
-    <AnimatePresence>
-      <motion.div
-        className="fixed inset-0 z-50"
-        initial={{ opacity: 1 }}
-        animate={{ opacity: stage === 'fade' ? 0 : 1 }}
-        exit={{ opacity: 0 }}
-        transition={{ duration: 0.8, ease: 'easeOut' }}
-        style={{ pointerEvents: 'none' }}
+    <motion.div
+      className="fixed inset-0 z-50 flex items-center justify-center bg-black"
+      initial={{ opacity: 1 }}
+      animate={{ opacity: stage === 'fade' ? 0 : 1 }}
+      transition={{ duration: 0.6, ease: 'easeOut' }}
+      style={{ pointerEvents: 'none' }}
+    >
+      <h1
+        className="font-display text-7xl text-[#E53935] select-none tracking-widest"
+        style={titleStyle}
       >
-        <svg className="absolute inset-0 w-full h-full" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid slice">
-          <defs>
-            <mask id="irisMask">
-              <rect width="100" height="100" fill="white" />
-              <motion.circle cx="50" cy="50" fill="black"
-                initial={{ r: 0 }} animate={{ r: stage === 'start' ? 0 : 80 }}
-                transition={{ duration: 2.5, ease: 'easeInOut' }} />
-            </mask>
-            <filter id="blur"><feGaussianBlur in="SourceGraphic" stdDeviation="0.8" /></filter>
-          </defs>
-          <rect width="100" height="100" fill="#000" mask="url(#irisMask)" filter="url(#blur)" />
-        </svg>
-        <motion.div
-          className="absolute inset-0"
-          style={{ background: 'linear-gradient(135deg, #1A237E 0%, #4A148C 100%)', mixBlendMode: 'color' }}
-          initial={{ opacity: 0.6 }}
-          animate={{ opacity: stage === 'fade' ? 0 : 0.6 }}
-          transition={{ duration: 0.8 }}
-        />
-        <motion.div
-          className="absolute inset-0 flex items-center justify-center"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: stage === 'start' ? 0 : stage === 'reveal' ? 1 : 0 }}
-          transition={{ duration: 0.8 }}
-        >
-          <h1
-            className="font-display text-6xl text-white tracking-widest select-none"
-            style={{ textShadow: '0 0 30px rgba(74,20,140,0.9), 0 0 60px rgba(26,35,126,0.6)', letterSpacing: '0.3em' }}
-          >
-            HAWKINS
-          </h1>
-        </motion.div>
-      </motion.div>
-    </AnimatePresence>
+        HAWKINS
+      </h1>
+      <style>{`
+        @keyframes st-flicker {
+          0%   { opacity: 1; }
+          10%  { opacity: 0.4; }
+          20%  { opacity: 1; }
+          30%  { opacity: 0.7; }
+          40%  { opacity: 1; }
+          50%  { opacity: 0.3; }
+          60%  { opacity: 1; }
+          70%  { opacity: 0.8; }
+          80%  { opacity: 0.4; }
+          90%  { opacity: 1; }
+          100% { opacity: 0.6; }
+        }
+      `}</style>
+    </motion.div>
   )
 }
 
