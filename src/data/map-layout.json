@@ -1,7 +1,7 @@
 {
   "canvasWidth": 1200,
   "canvasHeight": 800,
-  "svgPath": "/map.svg",
+  "svgPath": "/map.png",
   "defaultTheme": "default",
   "regions": [
     { "id": "downtown", "label": "Downtown Hawkins", "bounds": { "x": 30, "y": 30, "w": 25, "h": 25 } },

@@ -5,7 +5,7 @@
     "type": "lab",
     "description": "A covert government facility run by Dr. Martin Brenner. It houses the Gate to the Upside Down and was used to develop Eleven's psychic abilities.",
     "tags": ["main", "government", "dangerous"],
-    "map": { "x": 83, "y": 91, "radius": 22 }
+    "map": { "x": 82, "y": 76, "radius": 22 }
   },
   {
     "id": "byers-house",
@@ -13,7 +13,7 @@
     "type": "house",
     "description": "The modest home of Joyce Byers and her sons Will and Jonathan. The Christmas-light communication board was strung across its living room wall.",
     "tags": ["main", "residential"],
-    "map": { "x": 93, "y": 93, "radius": 18 }
+    "map": { "x": 68, "y": 88, "radius": 18 }
   },
   {
     "id": "wheeler-house",
@@ -21,7 +21,7 @@
     "type": "house",
     "description": "Home of the Wheeler family on Cornwallis Avenue. Mike's basement serves as the Party's headquarters and Eleven's first refuge.",
     "tags": ["main", "residential", "party-hq"],
-    "map": { "x": 38, "y": 8, "radius": 18 }
+    "map": { "x": 35, "y": 22, "radius": 18 }
   },
   {
     "id": "hawkins-middle-school",
@@ -29,7 +29,7 @@
     "type": "school",
     "description": "Where Mike, Will, Dustin, and Lucas attend school. The final showdown with the Demogorgon takes place here.",
     "tags": ["main", "school"],
-    "map": { "x": 38, "y": 84, "radius": 20 }
+    "map": { "x": 35, "y": 38, "radius": 20 }
   },
   {
     "id": "mirkwood",
@@ -37,7 +37,7 @@
     "type": "woods",
     "description": "A stretch of forest road southeast of Hawkins where Will was last seen. Kerley Road runs through it toward the Lab.",
     "tags": ["main", "woods", "dangerous"],
-    "map": { "x": 78, "y": 88, "radius": 24 }
+    "map": { "x": 65, "y": 72, "radius": 24 }
   },
   {
     "id": "castle-byers",
@@ -45,7 +45,7 @@
     "type": "woods",
     "description": "Will's secret hideout in the woods — a fort of scavenged wood and sheets. Its Upside Down mirror is where Will hides from the Demogorgon.",
     "tags": ["will", "woods"],
-    "map": { "x": 91, "y": 92, "radius": 14 }
+    "map": { "x": 78, "y": 85, "radius": 14 }
   },
   {
     "id": "hawkins-pd",
@@ -53,7 +53,7 @@
     "type": "other",
     "description": "Chief Hopper's base of operations. Small-town and underfunded, it becomes the nerve center for the search for Will.",
     "tags": ["authority", "downtown"],
-    "map": { "x": 27, "y": 60, "radius": 16 }
+    "map": { "x": 30, "y": 45, "radius": 16 }
   },
   {
     "id": "palace-arcade",
@@ -61,7 +61,7 @@
     "type": "other",
     "description": "The local arcade where the boys spend their free time. A mysterious high score by 'MADMAX' is spotted here in Season 2.",
     "tags": ["downtown", "hangout"],
-    "map": { "x": 38, "y": 67, "radius": 15 }
+    "map": { "x": 40, "y": 50, "radius": 15 }
   },
   {
     "id": "hawkins-quarry",
@@ -69,7 +69,7 @@
     "type": "other",
     "description": "A flooded quarry on the far east outskirts of Hawkins. A decoy body is found here, leading the town to believe Will is dead.",
     "tags": ["outskirts", "water"],
-    "map": { "x": 92, "y": 77, "radius": 18 }
+    "map": { "x": 88, "y": 35, "radius": 18 }
   },
   {
     "id": "hopper-cabin",
@@ -77,7 +77,7 @@
     "type": "house",
     "description": "Chief Hopper's remote cabin in the southwest woods. Later becomes Eleven's secret home after the events of Season 1.",
     "tags": ["residential", "woods"],
-    "map": { "x": 26, "y": 87, "radius": 14 }
+    "map": { "x": 18, "y": 80, "radius": 14 }
   },
   {
     "id": "upside-down-gate",
@@ -85,7 +85,7 @@
     "type": "lab",
     "description": "A tear in reality at the heart of Hawkins Lab, created when Eleven made contact with the Demogorgon. The source of all Upside Down intrusions.",
     "tags": ["supernatural", "lab", "dangerous"],
-    "map": { "x": 83, "y": 93, "radius": 16 }
+    "map": { "x": 82, "y": 82, "radius": 16 }
   },
   {
     "id": "bennys-burgers",
@@ -93,6 +93,6 @@
     "type": "other",
     "description": "A diner run by Benny Hammond, who gives Eleven food after her escape from the lab — before agents from Hawkins Lab silence him.",
     "tags": ["south", "diner"],
-    "map": { "x": 65, "y": 96, "radius": 14 }
+    "map": { "x": 50, "y": 82, "radius": 14 }
   }
 ]
