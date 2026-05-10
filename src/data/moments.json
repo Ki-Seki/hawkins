@@ -10,6 +10,19 @@
     "activeLocationIds": ["hawkins-lab"],
     "focusLocationId": "hawkins-lab",
     "summary": "An unseen creature breaks free from a corridor in Hawkins Lab. A scientist is dragged into the darkness. Eleven flees into the night.",
+    "nextMomentId": "s01e01-benny-finds-eleven"
+  },
+  {
+    "id": "s01e01-benny-finds-eleven",
+    "title": "Benny Finds a Girl",
+    "timeLabel": "Evening — November 6, 1983",
+    "sortKey": 10101.5,
+    "episodeId": "s01e01",
+    "eventIds": [],
+    "activeCharacterIds": ["eleven"],
+    "activeLocationIds": ["bennys-burgers"],
+    "focusLocationId": "bennys-burgers",
+    "summary": "Eleven breaks into Benny's Burgers, ravenous. Benny Hammond finds her eating fries and tries to help — calling Social Services. She doesn't understand.",
     "nextMomentId": "s01e01-will-vanishes"
   },
   {
@@ -23,6 +36,19 @@
     "activeLocationIds": ["mirkwood"],
     "focusLocationId": "mirkwood",
     "summary": "Cycling home through Mirkwood, Will encounters something terrifying. His bike is found abandoned. Will is gone.",
+    "nextMomentId": "s01e01-party-dnd"
+  },
+  {
+    "id": "s01e01-party-dnd",
+    "title": "The Demogorgon Campaign",
+    "timeLabel": "Night — November 6, 1983",
+    "sortKey": 10102.5,
+    "episodeId": "s01e01",
+    "eventIds": [],
+    "activeCharacterIds": ["mike-wheeler", "dustin-henderson", "lucas-sinclair", "will-byers"],
+    "activeLocationIds": ["wheeler-house"],
+    "focusLocationId": "wheeler-house",
+    "summary": "The Party's D&D campaign reaches its climax in the Wheeler basement. Will rolls a 7 — the Demogorgon attacks. The game ends. Will bikes home alone into the dark.",
     "nextMomentId": "s01e01-party-finds-eleven"
   },
   {
@@ -49,6 +75,19 @@
     "activeLocationIds": ["wheeler-house"],
     "focusLocationId": "wheeler-house",
     "summary": "Mike sneaks Eleven into his basement. She sleeps in the fort, discovers the TV set, and begins to trust Mike. The hunt for Will intensifies.",
+    "nextMomentId": "s01e02-bennys-death"
+  },
+  {
+    "id": "s01e02-bennys-death",
+    "title": "Benny Is Silenced",
+    "timeLabel": "November 8, 1983",
+    "sortKey": 10201.5,
+    "episodeId": "s01e02",
+    "eventIds": [],
+    "activeCharacterIds": ["eleven"],
+    "activeLocationIds": ["bennys-burgers"],
+    "focusLocationId": "bennys-burgers",
+    "summary": "A woman from Social Services arrives — but she's an agent from Hawkins Lab. Benny is shot. Eleven uses her power to kill the agents and escapes again.",
     "nextMomentId": "s01e02-joyce-hears-will"
   },
   {
@@ -75,6 +114,19 @@
     "activeLocationIds": ["mirkwood"],
     "focusLocationId": "mirkwood",
     "summary": "Left alone at the Harrington pool, Barb Holland is dragged through a portal by the Demogorgon. She is never seen alive again.",
+    "nextMomentId": "s01e03-joyce-investigates"
+  },
+  {
+    "id": "s01e03-joyce-investigates",
+    "title": "Joyce Investigates the Lights",
+    "timeLabel": "November 9, 1983",
+    "sortKey": 10301.5,
+    "episodeId": "s01e03",
+    "eventIds": [],
+    "activeCharacterIds": ["joyce-byers"],
+    "activeLocationIds": ["byers-house"],
+    "focusLocationId": "byers-house",
+    "summary": "The lights in the Byers house flicker and surge. Joyce follows them down the hallway — something is in the walls. She tears at the wallpaper. A face pushes through.",
     "nextMomentId": "s01e03-christmas-lights"
   },
   {
@@ -114,6 +166,19 @@
     "activeLocationIds": ["hawkins-pd", "hawkins-lab"],
     "focusLocationId": "hawkins-pd",
     "summary": "The autopsy doesn't add up. Hopper traces the evidence back to Hawkins Lab and a classified project called MKUltra.",
+    "nextMomentId": "s01e04-joyce-refuses"
+  },
+  {
+    "id": "s01e04-joyce-refuses",
+    "title": "Joyce Refuses to Believe",
+    "timeLabel": "November 11, 1983",
+    "sortKey": 10402.5,
+    "episodeId": "s01e04",
+    "eventIds": ["decoy-body-found"],
+    "activeCharacterIds": ["joyce-byers"],
+    "activeLocationIds": ["byers-house"],
+    "focusLocationId": "byers-house",
+    "summary": "The town holds a funeral for Will. Joyce stands alone in her conviction: that is not her son. She can still feel him. The town thinks she's lost her mind.",
     "nextMomentId": "s01e05-upside-down-theory"
   },
   {
@@ -127,6 +192,19 @@
     "activeLocationIds": ["hawkins-middle-school"],
     "focusLocationId": "hawkins-middle-school",
     "summary": "Mr. Clarke explains theoretical dimensions. Eleven demonstrates the Upside Down using a folded piece of paper — a dimension parallel to ours, dark and decaying.",
+    "nextMomentId": "s01e05-search-for-gate"
+  },
+  {
+    "id": "s01e05-search-for-gate",
+    "title": "The Boys Search for the Gate",
+    "timeLabel": "November 12, 1983",
+    "sortKey": 10501.5,
+    "episodeId": "s01e05",
+    "eventIds": [],
+    "activeCharacterIds": ["mike-wheeler", "dustin-henderson", "lucas-sinclair"],
+    "activeLocationIds": ["mirkwood"],
+    "focusLocationId": "mirkwood",
+    "summary": "Armed with compasses, the boys search Mirkwood for the Gate. Lucas and Mike fight over Eleven's trust. The compasses spin wildly — then suddenly agree on a direction.",
     "nextMomentId": "s01e05-eleven-compasses"
   },
   {
@@ -166,6 +244,32 @@
     "activeLocationIds": ["wheeler-house"],
     "focusLocationId": "wheeler-house",
     "summary": "Mike discovers Eleven has been keeping secrets. She confesses: she made contact with the Demogorgon. She opened the Gate. It's all her fault.",
+    "nextMomentId": "s01e06-lucas-reconciles"
+  },
+  {
+    "id": "s01e06-lucas-reconciles",
+    "title": "Lucas Returns",
+    "timeLabel": "November 13, 1983",
+    "sortKey": 10602.5,
+    "episodeId": "s01e06",
+    "eventIds": [],
+    "activeCharacterIds": ["eleven", "mike-wheeler", "dustin-henderson", "lucas-sinclair"],
+    "activeLocationIds": ["wheeler-house"],
+    "focusLocationId": "wheeler-house",
+    "summary": "Lucas returns after witnessing Eleven's power firsthand. He apologizes. The Party is whole again — and they realize Eleven may be the only one who can find Will.",
+    "nextMomentId": "s01e06-eleven-powers"
+  },
+  {
+    "id": "s01e06-eleven-powers",
+    "title": "Eleven Shows Her Power",
+    "timeLabel": "November 13, 1983",
+    "sortKey": 10603,
+    "episodeId": "s01e06",
+    "eventIds": [],
+    "activeCharacterIds": ["eleven", "mike-wheeler", "dustin-henderson", "lucas-sinclair"],
+    "activeLocationIds": ["wheeler-house"],
+    "focusLocationId": "wheeler-house",
+    "summary": "In Mike's basement, Eleven flips a game board with her mind to prove what she can do. The boys stare in awe. She points at the wall: Will is on the other side.",
     "nextMomentId": "s01e07-bathtub"
   },
   {
@@ -179,6 +283,19 @@
     "activeLocationIds": ["hawkins-middle-school"],
     "focusLocationId": "hawkins-middle-school",
     "summary": "The Party floods the school gym with Epsom salt to recreate Eleven's sensory deprivation tank. She enters the Void — and finds Will. He is hiding in Castle Byers.",
+    "nextMomentId": "s01e07-tunnel-search"
+  },
+  {
+    "id": "s01e07-tunnel-search",
+    "title": "Searching the Tunnels",
+    "timeLabel": "November 14, 1983",
+    "sortKey": 10701.5,
+    "episodeId": "s01e07",
+    "eventIds": [],
+    "activeCharacterIds": ["jim-hopper"],
+    "activeLocationIds": ["hawkins-lab", "upside-down-gate"],
+    "focusLocationId": "upside-down-gate",
+    "summary": "Hopper and Joyce enter the Gate and descend into the Upside Down's tunnels beneath Hawkins Lab. The walls pulse with tendrils. They follow the vines deeper.",
     "nextMomentId": "s01e07-hopper-deal"
   },
   {
@@ -192,6 +309,19 @@
     "activeLocationIds": ["hawkins-lab"],
     "focusLocationId": "hawkins-lab",
     "summary": "Hopper cuts a deal with Dr. Brenner: give up Joyce and Jonathan's location in exchange for safe passage through the Gate to find Will.",
+    "nextMomentId": "s01e08-encounter"
+  },
+  {
+    "id": "s01e08-encounter",
+    "title": "Something in the Woods",
+    "timeLabel": "Night — November 14, 1983",
+    "sortKey": 10702.5,
+    "episodeId": "s01e08",
+    "eventIds": [],
+    "activeCharacterIds": ["demogorgon"],
+    "activeLocationIds": ["mirkwood"],
+    "focusLocationId": "mirkwood",
+    "summary": "In the woods near the Byers house, something moves through the trees. A deer carcass is found torn apart. The Demogorgon is hunting — and it's getting closer.",
     "nextMomentId": "s01e08-into-the-upside-down"
   },
   {
