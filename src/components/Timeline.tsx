@@ -1,5 +1,12 @@
 import { useTimeline, useAtlasStore } from '../store'
-import { episodesById } from '../data/catalog'
+import { episodesById, momentsSorted } from '../data/catalog'
+
+const SEASONS = [1, 2, 3, 4, 5] as const
+
+function getSeason(moment: { episodeId: string }): number {
+  const ep = episodesById.get(moment.episodeId)
+  return ep?.season ?? 1
+}
 
 function getEpisodeLabel(episodeId: string): string {
   const ep = episodesById.get(episodeId)
@@ -11,6 +18,8 @@ export function Timeline() {
   const { moments, currentMoment, currentIndex, seek, next, prev, hasNext, hasPrev } = useTimeline()
   const isPlaying = useAtlasStore((s) => s.isPlaying)
   const setPlaying = useAtlasStore((s) => s.setPlaying)
+  const currentSeason = useAtlasStore((s) => s.currentSeason)
+  const setCurrentSeason = useAtlasStore((s) => s.setCurrentSeason)
 
   return (
     <div
@@ -23,8 +32,32 @@ export function Timeline() {
     >
       <div className="flex items-center h-full px-5 gap-3">
 
+        {/* Season selector */}
+        <div className="flex-shrink-0 flex items-center gap-1">
+          {SEASONS.map((s) => (
+            <button
+              key={s}
+              onClick={() => {
+                if (s === currentSeason) return
+                setCurrentSeason(s)
+                const firstOfSeason = momentsSorted.find((m) => getSeason(m) === s)
+                if (firstOfSeason) seek(firstOfSeason.id)
+              }}
+              className={[
+                'flex-shrink-0 font-mono text-[10px] tracking-[0.15em] uppercase px-1.5 py-0.5 rounded transition-all duration-200',
+                currentSeason === s
+                  ? 'text-hawkins-amber bg-hawkins-amber/15 border border-hawkins-amber/30'
+                  : 'text-white/30 hover:text-white/50 hover:bg-white/5 border border-transparent',
+              ].join(' ')}
+              style={currentSeason === s ? { textShadow: '0 0 8px rgba(245,127,23,0.5)' } : undefined}
+            >
+              S{s}
+            </button>
+          ))}
+        </div>
+
         {/* Episode + moment title */}
-        <div className="flex-shrink-0 flex items-center gap-2 min-w-0 w-52">
+        <div className="flex-shrink-0 flex items-center gap-2 min-w-0 w-44">
           <span
             className="font-mono text-[11px] tracking-[0.25em] uppercase text-hawkins-amber flex-shrink-0"
             style={{ textShadow: '0 0 10px rgba(245,127,23,0.6)' }}

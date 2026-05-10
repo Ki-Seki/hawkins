@@ -2,452 +2,5562 @@
   {
     "momentId": "s01e01-cold-open",
     "locationStates": [
-      { "locationId": "hawkins-lab", "status": "active", "emphasis": 0.8 },
-      { "locationId": "upside-down-gate", "status": "foreshadowed", "emphasis": 0.4 },
-      { "locationId": "mirkwood", "status": "dim", "emphasis": 0.2 },
-      { "locationId": "byers-house", "status": "dim", "emphasis": 0.2 },
-      { "locationId": "wheeler-house", "status": "dim", "emphasis": 0.1 },
-      { "locationId": "hawkins-middle-school", "status": "dim", "emphasis": 0.1 },
-      { "locationId": "castle-byers", "status": "dim", "emphasis": 0.1 },
-      { "locationId": "hawkins-pd", "status": "dim", "emphasis": 0.1 },
-      { "locationId": "palace-arcade", "status": "dim", "emphasis": 0.1 },
-      { "locationId": "hawkins-quarry", "status": "dim", "emphasis": 0.1 },
-      { "locationId": "hopper-cabin", "status": "dim", "emphasis": 0.1 },
-      { "locationId": "bennys-burgers", "status": "dim", "emphasis": 0.1 }
+      {
+        "locationId": "hawkins-lab",
+        "status": "active",
+        "emphasis": 0.8
+      },
+      {
+        "locationId": "upside-down-gate",
+        "status": "foreshadowed",
+        "emphasis": 0.4
+      },
+      {
+        "locationId": "mirkwood",
+        "status": "dim",
+        "emphasis": 0.2
+      },
+      {
+        "locationId": "byers-house",
+        "status": "dim",
+        "emphasis": 0.2
+      },
+      {
+        "locationId": "wheeler-house",
+        "status": "dim",
+        "emphasis": 0.1
+      },
+      {
+        "locationId": "hawkins-middle-school",
+        "status": "dim",
+        "emphasis": 0.1
+      },
+      {
+        "locationId": "castle-byers",
+        "status": "dim",
+        "emphasis": 0.1
+      },
+      {
+        "locationId": "hawkins-pd",
+        "status": "dim",
+        "emphasis": 0.1
+      },
+      {
+        "locationId": "palace-arcade",
+        "status": "dim",
+        "emphasis": 0.1
+      },
+      {
+        "locationId": "hawkins-quarry",
+        "status": "dim",
+        "emphasis": 0.1
+      },
+      {
+        "locationId": "hopper-cabin",
+        "status": "dim",
+        "emphasis": 0.1
+      },
+      {
+        "locationId": "bennys-burgers",
+        "status": "dim",
+        "emphasis": 0.1
+      }
     ],
     "characterStates": [
-      { "characterId": "eleven", "locationId": "hawkins-lab", "status": "present" }
+      {
+        "characterId": "eleven",
+        "locationId": "hawkins-lab",
+        "status": "present"
+      }
     ],
-    "visual": { "theme": "default", "fog": 0.3, "glow": "#FF9800" }
+    "visual": {
+      "theme": "default",
+      "fog": 0.3,
+      "glow": "#FF9800"
+    }
+  },
+  {
+    "momentId": "s01e01-benny-finds-eleven",
+    "locationStates": [
+      {
+        "locationId": "bennys-burgers",
+        "status": "active",
+        "emphasis": 0.8
+      },
+      {
+        "locationId": "hawkins-lab",
+        "status": "foreshadowed",
+        "emphasis": 0.3
+      },
+      {
+        "locationId": "mirkwood",
+        "status": "dim",
+        "emphasis": 0.2
+      },
+      {
+        "locationId": "byers-house",
+        "status": "dim",
+        "emphasis": 0.1
+      },
+      {
+        "locationId": "wheeler-house",
+        "status": "dim",
+        "emphasis": 0.1
+      },
+      {
+        "locationId": "hawkins-middle-school",
+        "status": "dim",
+        "emphasis": 0.1
+      },
+      {
+        "locationId": "castle-byers",
+        "status": "dim",
+        "emphasis": 0.1
+      },
+      {
+        "locationId": "hawkins-pd",
+        "status": "dim",
+        "emphasis": 0.1
+      },
+      {
+        "locationId": "palace-arcade",
+        "status": "dim",
+        "emphasis": 0.1
+      },
+      {
+        "locationId": "hawkins-quarry",
+        "status": "dim",
+        "emphasis": 0.1
+      },
+      {
+        "locationId": "hopper-cabin",
+        "status": "dim",
+        "emphasis": 0.1
+      },
+      {
+        "locationId": "upside-down-gate",
+        "status": "dim",
+        "emphasis": 0.1
+      }
+    ],
+    "characterStates": [
+      {
+        "characterId": "eleven",
+        "locationId": "bennys-burgers",
+        "status": "present"
+      }
+    ],
+    "visual": {
+      "theme": "default",
+      "fog": 0.3,
+      "glow": "#FF9800"
+    }
   },
   {
     "momentId": "s01e01-will-vanishes",
     "locationStates": [
-      { "locationId": "mirkwood", "status": "active", "emphasis": 0.8 },
-      { "locationId": "hawkins-lab", "status": "foreshadowed", "emphasis": 0.3 },
-      { "locationId": "byers-house", "status": "dim", "emphasis": 0.2 },
-      { "locationId": "wheeler-house", "status": "dim", "emphasis": 0.1 },
-      { "locationId": "hawkins-middle-school", "status": "dim", "emphasis": 0.1 },
-      { "locationId": "castle-byers", "status": "dim", "emphasis": 0.1 },
-      { "locationId": "hawkins-pd", "status": "dim", "emphasis": 0.1 },
-      { "locationId": "palace-arcade", "status": "dim", "emphasis": 0.1 },
-      { "locationId": "hawkins-quarry", "status": "dim", "emphasis": 0.1 },
-      { "locationId": "hopper-cabin", "status": "dim", "emphasis": 0.1 },
-      { "locationId": "upside-down-gate", "status": "dim", "emphasis": 0.1 },
-      { "locationId": "bennys-burgers", "status": "dim", "emphasis": 0.1 }
+      {
+        "locationId": "mirkwood",
+        "status": "active",
+        "emphasis": 0.8
+      },
+      {
+        "locationId": "hawkins-lab",
+        "status": "foreshadowed",
+        "emphasis": 0.3
+      },
+      {
+        "locationId": "byers-house",
+        "status": "dim",
+        "emphasis": 0.2
+      },
+      {
+        "locationId": "wheeler-house",
+        "status": "dim",
+        "emphasis": 0.1
+      },
+      {
+        "locationId": "hawkins-middle-school",
+        "status": "dim",
+        "emphasis": 0.1
+      },
+      {
+        "locationId": "castle-byers",
+        "status": "dim",
+        "emphasis": 0.1
+      },
+      {
+        "locationId": "hawkins-pd",
+        "status": "dim",
+        "emphasis": 0.1
+      },
+      {
+        "locationId": "palace-arcade",
+        "status": "dim",
+        "emphasis": 0.1
+      },
+      {
+        "locationId": "hawkins-quarry",
+        "status": "dim",
+        "emphasis": 0.1
+      },
+      {
+        "locationId": "hopper-cabin",
+        "status": "dim",
+        "emphasis": 0.1
+      },
+      {
+        "locationId": "upside-down-gate",
+        "status": "dim",
+        "emphasis": 0.1
+      },
+      {
+        "locationId": "bennys-burgers",
+        "status": "dim",
+        "emphasis": 0.1
+      }
     ],
     "characterStates": [
-      { "characterId": "will-byers", "locationId": "mirkwood", "status": "missing" },
-      { "characterId": "demogorgon", "locationId": "mirkwood", "status": "present" }
+      {
+        "characterId": "will-byers",
+        "locationId": "mirkwood",
+        "status": "missing"
+      },
+      {
+        "characterId": "demogorgon",
+        "locationId": "mirkwood",
+        "status": "present"
+      }
     ],
-    "visual": { "theme": "default", "fog": 0.3, "glow": "#FF9800" }
+    "visual": {
+      "theme": "default",
+      "fog": 0.3,
+      "glow": "#FF9800"
+    }
+  },
+  {
+    "momentId": "s01e01-party-dnd",
+    "locationStates": [
+      {
+        "locationId": "wheeler-house",
+        "status": "active",
+        "emphasis": 0.8
+      },
+      {
+        "locationId": "mirkwood",
+        "status": "foreshadowed",
+        "emphasis": 0.3
+      },
+      {
+        "locationId": "byers-house",
+        "status": "dim",
+        "emphasis": 0.2
+      },
+      {
+        "locationId": "hawkins-lab",
+        "status": "dim",
+        "emphasis": 0.2
+      },
+      {
+        "locationId": "hawkins-middle-school",
+        "status": "dim",
+        "emphasis": 0.1
+      },
+      {
+        "locationId": "castle-byers",
+        "status": "dim",
+        "emphasis": 0.1
+      },
+      {
+        "locationId": "hawkins-pd",
+        "status": "dim",
+        "emphasis": 0.1
+      },
+      {
+        "locationId": "palace-arcade",
+        "status": "dim",
+        "emphasis": 0.1
+      },
+      {
+        "locationId": "hawkins-quarry",
+        "status": "dim",
+        "emphasis": 0.1
+      },
+      {
+        "locationId": "hopper-cabin",
+        "status": "dim",
+        "emphasis": 0.1
+      },
+      {
+        "locationId": "upside-down-gate",
+        "status": "dim",
+        "emphasis": 0.1
+      },
+      {
+        "locationId": "bennys-burgers",
+        "status": "dim",
+        "emphasis": 0.1
+      }
+    ],
+    "characterStates": [
+      {
+        "characterId": "mike-wheeler",
+        "locationId": "wheeler-house",
+        "status": "present"
+      },
+      {
+        "characterId": "dustin-henderson",
+        "locationId": "wheeler-house",
+        "status": "present"
+      },
+      {
+        "characterId": "lucas-sinclair",
+        "locationId": "wheeler-house",
+        "status": "present"
+      },
+      {
+        "characterId": "will-byers",
+        "locationId": "wheeler-house",
+        "status": "present"
+      }
+    ],
+    "visual": {
+      "theme": "default",
+      "fog": 0.3,
+      "glow": "#FF9800"
+    }
   },
   {
     "momentId": "s01e01-party-finds-eleven",
     "locationStates": [
-      { "locationId": "mirkwood", "status": "active", "emphasis": 0.8 },
-      { "locationId": "wheeler-house", "status": "foreshadowed", "emphasis": 0.3 },
-      { "locationId": "hawkins-lab", "status": "dim", "emphasis": 0.2 },
-      { "locationId": "byers-house", "status": "dim", "emphasis": 0.2 },
-      { "locationId": "hawkins-middle-school", "status": "dim", "emphasis": 0.1 },
-      { "locationId": "castle-byers", "status": "dim", "emphasis": 0.1 },
-      { "locationId": "hawkins-pd", "status": "dim", "emphasis": 0.1 },
-      { "locationId": "palace-arcade", "status": "dim", "emphasis": 0.1 },
-      { "locationId": "hawkins-quarry", "status": "dim", "emphasis": 0.1 },
-      { "locationId": "hopper-cabin", "status": "dim", "emphasis": 0.1 },
-      { "locationId": "upside-down-gate", "status": "dim", "emphasis": 0.1 },
-      { "locationId": "bennys-burgers", "status": "dim", "emphasis": 0.1 }
+      {
+        "locationId": "mirkwood",
+        "status": "active",
+        "emphasis": 0.8
+      },
+      {
+        "locationId": "wheeler-house",
+        "status": "foreshadowed",
+        "emphasis": 0.3
+      },
+      {
+        "locationId": "hawkins-lab",
+        "status": "dim",
+        "emphasis": 0.2
+      },
+      {
+        "locationId": "byers-house",
+        "status": "dim",
+        "emphasis": 0.2
+      },
+      {
+        "locationId": "hawkins-middle-school",
+        "status": "dim",
+        "emphasis": 0.1
+      },
+      {
+        "locationId": "castle-byers",
+        "status": "dim",
+        "emphasis": 0.1
+      },
+      {
+        "locationId": "hawkins-pd",
+        "status": "dim",
+        "emphasis": 0.1
+      },
+      {
+        "locationId": "palace-arcade",
+        "status": "dim",
+        "emphasis": 0.1
+      },
+      {
+        "locationId": "hawkins-quarry",
+        "status": "dim",
+        "emphasis": 0.1
+      },
+      {
+        "locationId": "hopper-cabin",
+        "status": "dim",
+        "emphasis": 0.1
+      },
+      {
+        "locationId": "upside-down-gate",
+        "status": "dim",
+        "emphasis": 0.1
+      },
+      {
+        "locationId": "bennys-burgers",
+        "status": "dim",
+        "emphasis": 0.1
+      }
     ],
     "characterStates": [
-      { "characterId": "eleven", "locationId": "mirkwood", "status": "present" },
-      { "characterId": "mike-wheeler", "locationId": "mirkwood", "status": "present" },
-      { "characterId": "dustin-henderson", "locationId": "mirkwood", "status": "present" },
-      { "characterId": "lucas-sinclair", "locationId": "mirkwood", "status": "present" }
+      {
+        "characterId": "eleven",
+        "locationId": "mirkwood",
+        "status": "present"
+      },
+      {
+        "characterId": "mike-wheeler",
+        "locationId": "mirkwood",
+        "status": "present"
+      },
+      {
+        "characterId": "dustin-henderson",
+        "locationId": "mirkwood",
+        "status": "present"
+      },
+      {
+        "characterId": "lucas-sinclair",
+        "locationId": "mirkwood",
+        "status": "present"
+      }
     ],
-    "visual": { "theme": "default", "fog": 0.3, "glow": "#FF9800" }
+    "visual": {
+      "theme": "default",
+      "fog": 0.3,
+      "glow": "#FF9800"
+    }
   },
   {
     "momentId": "s01e02-eleven-at-wheeler",
     "locationStates": [
-      { "locationId": "wheeler-house", "status": "active", "emphasis": 0.8 },
-      { "locationId": "byers-house", "status": "foreshadowed", "emphasis": 0.4 },
-      { "locationId": "mirkwood", "status": "dim", "emphasis": 0.2 },
-      { "locationId": "hawkins-lab", "status": "dim", "emphasis": 0.2 },
-      { "locationId": "hawkins-middle-school", "status": "dim", "emphasis": 0.1 },
-      { "locationId": "castle-byers", "status": "dim", "emphasis": 0.1 },
-      { "locationId": "hawkins-pd", "status": "dim", "emphasis": 0.1 },
-      { "locationId": "palace-arcade", "status": "dim", "emphasis": 0.1 },
-      { "locationId": "hawkins-quarry", "status": "dim", "emphasis": 0.1 },
-      { "locationId": "hopper-cabin", "status": "dim", "emphasis": 0.1 },
-      { "locationId": "upside-down-gate", "status": "dim", "emphasis": 0.1 },
-      { "locationId": "bennys-burgers", "status": "dim", "emphasis": 0.1 }
+      {
+        "locationId": "wheeler-house",
+        "status": "active",
+        "emphasis": 0.8
+      },
+      {
+        "locationId": "byers-house",
+        "status": "foreshadowed",
+        "emphasis": 0.4
+      },
+      {
+        "locationId": "mirkwood",
+        "status": "dim",
+        "emphasis": 0.2
+      },
+      {
+        "locationId": "hawkins-lab",
+        "status": "dim",
+        "emphasis": 0.2
+      },
+      {
+        "locationId": "hawkins-middle-school",
+        "status": "dim",
+        "emphasis": 0.1
+      },
+      {
+        "locationId": "castle-byers",
+        "status": "dim",
+        "emphasis": 0.1
+      },
+      {
+        "locationId": "hawkins-pd",
+        "status": "dim",
+        "emphasis": 0.1
+      },
+      {
+        "locationId": "palace-arcade",
+        "status": "dim",
+        "emphasis": 0.1
+      },
+      {
+        "locationId": "hawkins-quarry",
+        "status": "dim",
+        "emphasis": 0.1
+      },
+      {
+        "locationId": "hopper-cabin",
+        "status": "dim",
+        "emphasis": 0.1
+      },
+      {
+        "locationId": "upside-down-gate",
+        "status": "dim",
+        "emphasis": 0.1
+      },
+      {
+        "locationId": "bennys-burgers",
+        "status": "dim",
+        "emphasis": 0.1
+      }
     ],
     "characterStates": [
-      { "characterId": "eleven", "locationId": "wheeler-house", "status": "present" },
-      { "characterId": "mike-wheeler", "locationId": "wheeler-house", "status": "present" }
+      {
+        "characterId": "eleven",
+        "locationId": "wheeler-house",
+        "status": "present"
+      },
+      {
+        "characterId": "mike-wheeler",
+        "locationId": "wheeler-house",
+        "status": "present"
+      }
     ],
-    "visual": { "theme": "tense", "fog": 0.4, "glow": "#C62828" }
+    "visual": {
+      "theme": "tense",
+      "fog": 0.4,
+      "glow": "#C62828"
+    }
+  },
+  {
+    "momentId": "s01e02-bennys-death",
+    "locationStates": [
+      {
+        "locationId": "bennys-burgers",
+        "status": "active",
+        "emphasis": 0.8
+      },
+      {
+        "locationId": "hawkins-lab",
+        "status": "foreshadowed",
+        "emphasis": 0.4
+      },
+      {
+        "locationId": "wheeler-house",
+        "status": "dim",
+        "emphasis": 0.2
+      },
+      {
+        "locationId": "mirkwood",
+        "status": "dim",
+        "emphasis": 0.2
+      },
+      {
+        "locationId": "byers-house",
+        "status": "dim",
+        "emphasis": 0.1
+      },
+      {
+        "locationId": "hawkins-middle-school",
+        "status": "dim",
+        "emphasis": 0.1
+      },
+      {
+        "locationId": "castle-byers",
+        "status": "dim",
+        "emphasis": 0.1
+      },
+      {
+        "locationId": "hawkins-pd",
+        "status": "dim",
+        "emphasis": 0.1
+      },
+      {
+        "locationId": "palace-arcade",
+        "status": "dim",
+        "emphasis": 0.1
+      },
+      {
+        "locationId": "hawkins-quarry",
+        "status": "dim",
+        "emphasis": 0.1
+      },
+      {
+        "locationId": "hopper-cabin",
+        "status": "dim",
+        "emphasis": 0.1
+      },
+      {
+        "locationId": "upside-down-gate",
+        "status": "dim",
+        "emphasis": 0.1
+      }
+    ],
+    "characterStates": [
+      {
+        "characterId": "eleven",
+        "locationId": "bennys-burgers",
+        "status": "present"
+      }
+    ],
+    "visual": {
+      "theme": "tense",
+      "fog": 0.4,
+      "glow": "#C62828"
+    }
   },
   {
     "momentId": "s01e02-joyce-hears-will",
     "locationStates": [
-      { "locationId": "byers-house", "status": "active", "emphasis": 0.8 },
-      { "locationId": "wheeler-house", "status": "dim", "emphasis": 0.2 },
-      { "locationId": "mirkwood", "status": "dim", "emphasis": 0.2 },
-      { "locationId": "hawkins-lab", "status": "foreshadowed", "emphasis": 0.3 },
-      { "locationId": "hawkins-middle-school", "status": "dim", "emphasis": 0.1 },
-      { "locationId": "castle-byers", "status": "foreshadowed", "emphasis": 0.3 },
-      { "locationId": "hawkins-pd", "status": "dim", "emphasis": 0.1 },
-      { "locationId": "palace-arcade", "status": "dim", "emphasis": 0.1 },
-      { "locationId": "hawkins-quarry", "status": "dim", "emphasis": 0.1 },
-      { "locationId": "hopper-cabin", "status": "dim", "emphasis": 0.1 },
-      { "locationId": "upside-down-gate", "status": "dim", "emphasis": 0.1 },
-      { "locationId": "bennys-burgers", "status": "dim", "emphasis": 0.1 }
+      {
+        "locationId": "byers-house",
+        "status": "active",
+        "emphasis": 0.8
+      },
+      {
+        "locationId": "wheeler-house",
+        "status": "dim",
+        "emphasis": 0.2
+      },
+      {
+        "locationId": "mirkwood",
+        "status": "dim",
+        "emphasis": 0.2
+      },
+      {
+        "locationId": "hawkins-lab",
+        "status": "foreshadowed",
+        "emphasis": 0.3
+      },
+      {
+        "locationId": "hawkins-middle-school",
+        "status": "dim",
+        "emphasis": 0.1
+      },
+      {
+        "locationId": "castle-byers",
+        "status": "foreshadowed",
+        "emphasis": 0.3
+      },
+      {
+        "locationId": "hawkins-pd",
+        "status": "dim",
+        "emphasis": 0.1
+      },
+      {
+        "locationId": "palace-arcade",
+        "status": "dim",
+        "emphasis": 0.1
+      },
+      {
+        "locationId": "hawkins-quarry",
+        "status": "dim",
+        "emphasis": 0.1
+      },
+      {
+        "locationId": "hopper-cabin",
+        "status": "dim",
+        "emphasis": 0.1
+      },
+      {
+        "locationId": "upside-down-gate",
+        "status": "dim",
+        "emphasis": 0.1
+      },
+      {
+        "locationId": "bennys-burgers",
+        "status": "dim",
+        "emphasis": 0.1
+      }
     ],
     "characterStates": [
-      { "characterId": "joyce-byers", "locationId": "byers-house", "status": "present" },
-      { "characterId": "will-byers", "locationId": "byers-house", "status": "trapped" }
+      {
+        "characterId": "joyce-byers",
+        "locationId": "byers-house",
+        "status": "present"
+      },
+      {
+        "characterId": "will-byers",
+        "locationId": "byers-house",
+        "status": "trapped"
+      }
     ],
-    "visual": { "theme": "tense", "fog": 0.4, "glow": "#C62828" }
+    "visual": {
+      "theme": "tense",
+      "fog": 0.4,
+      "glow": "#C62828"
+    }
   },
   {
     "momentId": "s01e03-barb-taken",
     "locationStates": [
-      { "locationId": "mirkwood", "status": "active", "emphasis": 0.8 },
-      { "locationId": "byers-house", "status": "dim", "emphasis": 0.2 },
-      { "locationId": "wheeler-house", "status": "dim", "emphasis": 0.2 },
-      { "locationId": "hawkins-lab", "status": "foreshadowed", "emphasis": 0.3 },
-      { "locationId": "hawkins-middle-school", "status": "dim", "emphasis": 0.1 },
-      { "locationId": "castle-byers", "status": "dim", "emphasis": 0.1 },
-      { "locationId": "hawkins-pd", "status": "dim", "emphasis": 0.1 },
-      { "locationId": "palace-arcade", "status": "dim", "emphasis": 0.1 },
-      { "locationId": "hawkins-quarry", "status": "dim", "emphasis": 0.1 },
-      { "locationId": "hopper-cabin", "status": "dim", "emphasis": 0.1 },
-      { "locationId": "upside-down-gate", "status": "dim", "emphasis": 0.1 },
-      { "locationId": "bennys-burgers", "status": "dim", "emphasis": 0.1 }
+      {
+        "locationId": "mirkwood",
+        "status": "active",
+        "emphasis": 0.8
+      },
+      {
+        "locationId": "byers-house",
+        "status": "dim",
+        "emphasis": 0.2
+      },
+      {
+        "locationId": "wheeler-house",
+        "status": "dim",
+        "emphasis": 0.2
+      },
+      {
+        "locationId": "hawkins-lab",
+        "status": "foreshadowed",
+        "emphasis": 0.3
+      },
+      {
+        "locationId": "hawkins-middle-school",
+        "status": "dim",
+        "emphasis": 0.1
+      },
+      {
+        "locationId": "castle-byers",
+        "status": "dim",
+        "emphasis": 0.1
+      },
+      {
+        "locationId": "hawkins-pd",
+        "status": "dim",
+        "emphasis": 0.1
+      },
+      {
+        "locationId": "palace-arcade",
+        "status": "dim",
+        "emphasis": 0.1
+      },
+      {
+        "locationId": "hawkins-quarry",
+        "status": "dim",
+        "emphasis": 0.1
+      },
+      {
+        "locationId": "hopper-cabin",
+        "status": "dim",
+        "emphasis": 0.1
+      },
+      {
+        "locationId": "upside-down-gate",
+        "status": "dim",
+        "emphasis": 0.1
+      },
+      {
+        "locationId": "bennys-burgers",
+        "status": "dim",
+        "emphasis": 0.1
+      }
     ],
     "characterStates": [
-      { "characterId": "demogorgon", "locationId": "mirkwood", "status": "present" }
+      {
+        "characterId": "demogorgon",
+        "locationId": "mirkwood",
+        "status": "present"
+      }
     ],
-    "visual": { "theme": "tense", "fog": 0.4, "glow": "#C62828" }
+    "visual": {
+      "theme": "tense",
+      "fog": 0.4,
+      "glow": "#C62828"
+    }
+  },
+  {
+    "momentId": "s01e03-joyce-investigates",
+    "locationStates": [
+      {
+        "locationId": "byers-house",
+        "status": "active",
+        "emphasis": 0.8
+      },
+      {
+        "locationId": "upside-down-gate",
+        "status": "foreshadowed",
+        "emphasis": 0.3
+      },
+      {
+        "locationId": "hawkins-lab",
+        "status": "foreshadowed",
+        "emphasis": 0.3
+      },
+      {
+        "locationId": "mirkwood",
+        "status": "dim",
+        "emphasis": 0.2
+      },
+      {
+        "locationId": "wheeler-house",
+        "status": "dim",
+        "emphasis": 0.1
+      },
+      {
+        "locationId": "hawkins-middle-school",
+        "status": "dim",
+        "emphasis": 0.1
+      },
+      {
+        "locationId": "castle-byers",
+        "status": "dim",
+        "emphasis": 0.1
+      },
+      {
+        "locationId": "hawkins-pd",
+        "status": "dim",
+        "emphasis": 0.1
+      },
+      {
+        "locationId": "palace-arcade",
+        "status": "dim",
+        "emphasis": 0.1
+      },
+      {
+        "locationId": "hawkins-quarry",
+        "status": "dim",
+        "emphasis": 0.1
+      },
+      {
+        "locationId": "hopper-cabin",
+        "status": "dim",
+        "emphasis": 0.1
+      },
+      {
+        "locationId": "bennys-burgers",
+        "status": "dim",
+        "emphasis": 0.1
+      }
+    ],
+    "characterStates": [
+      {
+        "characterId": "joyce-byers",
+        "locationId": "byers-house",
+        "status": "present"
+      }
+    ],
+    "visual": {
+      "theme": "tense",
+      "fog": 0.5,
+      "glow": "#C62828"
+    }
   },
   {
     "momentId": "s01e03-christmas-lights",
     "locationStates": [
-      { "locationId": "byers-house", "status": "active", "emphasis": 0.8 },
-      { "locationId": "castle-byers", "status": "foreshadowed", "emphasis": 0.5 },
-      { "locationId": "mirkwood", "status": "dim", "emphasis": 0.2 },
-      { "locationId": "hawkins-lab", "status": "dim", "emphasis": 0.2 },
-      { "locationId": "wheeler-house", "status": "dim", "emphasis": 0.2 },
-      { "locationId": "hawkins-middle-school", "status": "dim", "emphasis": 0.1 },
-      { "locationId": "hawkins-pd", "status": "dim", "emphasis": 0.1 },
-      { "locationId": "palace-arcade", "status": "dim", "emphasis": 0.1 },
-      { "locationId": "hawkins-quarry", "status": "dim", "emphasis": 0.1 },
-      { "locationId": "hopper-cabin", "status": "dim", "emphasis": 0.1 },
-      { "locationId": "upside-down-gate", "status": "dim", "emphasis": 0.1 },
-      { "locationId": "bennys-burgers", "status": "dim", "emphasis": 0.1 }
+      {
+        "locationId": "byers-house",
+        "status": "active",
+        "emphasis": 0.8
+      },
+      {
+        "locationId": "castle-byers",
+        "status": "foreshadowed",
+        "emphasis": 0.5
+      },
+      {
+        "locationId": "mirkwood",
+        "status": "dim",
+        "emphasis": 0.2
+      },
+      {
+        "locationId": "hawkins-lab",
+        "status": "dim",
+        "emphasis": 0.2
+      },
+      {
+        "locationId": "wheeler-house",
+        "status": "dim",
+        "emphasis": 0.2
+      },
+      {
+        "locationId": "hawkins-middle-school",
+        "status": "dim",
+        "emphasis": 0.1
+      },
+      {
+        "locationId": "hawkins-pd",
+        "status": "dim",
+        "emphasis": 0.1
+      },
+      {
+        "locationId": "palace-arcade",
+        "status": "dim",
+        "emphasis": 0.1
+      },
+      {
+        "locationId": "hawkins-quarry",
+        "status": "dim",
+        "emphasis": 0.1
+      },
+      {
+        "locationId": "hopper-cabin",
+        "status": "dim",
+        "emphasis": 0.1
+      },
+      {
+        "locationId": "upside-down-gate",
+        "status": "dim",
+        "emphasis": 0.1
+      },
+      {
+        "locationId": "bennys-burgers",
+        "status": "dim",
+        "emphasis": 0.1
+      }
     ],
     "characterStates": [
-      { "characterId": "joyce-byers", "locationId": "byers-house", "status": "present" },
-      { "characterId": "will-byers", "locationId": "byers-house", "status": "trapped" }
+      {
+        "characterId": "joyce-byers",
+        "locationId": "byers-house",
+        "status": "present"
+      },
+      {
+        "characterId": "will-byers",
+        "locationId": "byers-house",
+        "status": "trapped"
+      }
     ],
-    "visual": { "theme": "tense", "fog": 0.4, "glow": "#C62828" }
+    "visual": {
+      "theme": "tense",
+      "fog": 0.4,
+      "glow": "#C62828"
+    }
   },
   {
     "momentId": "s01e04-decoy-body",
     "locationStates": [
-      { "locationId": "hawkins-quarry", "status": "active", "emphasis": 0.8 },
-      { "locationId": "byers-house", "status": "foreshadowed", "emphasis": 0.4 },
-      { "locationId": "hawkins-pd", "status": "foreshadowed", "emphasis": 0.4 },
-      { "locationId": "hawkins-lab", "status": "dim", "emphasis": 0.2 },
-      { "locationId": "mirkwood", "status": "dim", "emphasis": 0.2 },
-      { "locationId": "wheeler-house", "status": "dim", "emphasis": 0.1 },
-      { "locationId": "hawkins-middle-school", "status": "dim", "emphasis": 0.1 },
-      { "locationId": "castle-byers", "status": "dim", "emphasis": 0.1 },
-      { "locationId": "palace-arcade", "status": "dim", "emphasis": 0.1 },
-      { "locationId": "hopper-cabin", "status": "dim", "emphasis": 0.1 },
-      { "locationId": "upside-down-gate", "status": "dim", "emphasis": 0.1 },
-      { "locationId": "bennys-burgers", "status": "dim", "emphasis": 0.1 }
+      {
+        "locationId": "hawkins-quarry",
+        "status": "active",
+        "emphasis": 0.8
+      },
+      {
+        "locationId": "byers-house",
+        "status": "foreshadowed",
+        "emphasis": 0.4
+      },
+      {
+        "locationId": "hawkins-pd",
+        "status": "foreshadowed",
+        "emphasis": 0.4
+      },
+      {
+        "locationId": "hawkins-lab",
+        "status": "dim",
+        "emphasis": 0.2
+      },
+      {
+        "locationId": "mirkwood",
+        "status": "dim",
+        "emphasis": 0.2
+      },
+      {
+        "locationId": "wheeler-house",
+        "status": "dim",
+        "emphasis": 0.1
+      },
+      {
+        "locationId": "hawkins-middle-school",
+        "status": "dim",
+        "emphasis": 0.1
+      },
+      {
+        "locationId": "castle-byers",
+        "status": "dim",
+        "emphasis": 0.1
+      },
+      {
+        "locationId": "palace-arcade",
+        "status": "dim",
+        "emphasis": 0.1
+      },
+      {
+        "locationId": "hopper-cabin",
+        "status": "dim",
+        "emphasis": 0.1
+      },
+      {
+        "locationId": "upside-down-gate",
+        "status": "dim",
+        "emphasis": 0.1
+      },
+      {
+        "locationId": "bennys-burgers",
+        "status": "dim",
+        "emphasis": 0.1
+      }
     ],
     "characterStates": [
-      { "characterId": "jim-hopper", "locationId": "hawkins-quarry", "status": "present" },
-      { "characterId": "joyce-byers", "locationId": "hawkins-quarry", "status": "present" }
+      {
+        "characterId": "jim-hopper",
+        "locationId": "hawkins-quarry",
+        "status": "present"
+      },
+      {
+        "characterId": "joyce-byers",
+        "locationId": "hawkins-quarry",
+        "status": "present"
+      }
     ],
-    "visual": { "theme": "tense", "fog": 0.4, "glow": "#C62828" }
+    "visual": {
+      "theme": "tense",
+      "fog": 0.4,
+      "glow": "#C62828"
+    }
   },
   {
     "momentId": "s01e04-hopper-suspects",
     "locationStates": [
-      { "locationId": "hawkins-pd", "status": "active", "emphasis": 0.8 },
-      { "locationId": "hawkins-lab", "status": "active", "emphasis": 0.7 },
-      { "locationId": "hawkins-quarry", "status": "dim", "emphasis": 0.2 },
-      { "locationId": "byers-house", "status": "dim", "emphasis": 0.2 },
-      { "locationId": "mirkwood", "status": "dim", "emphasis": 0.2 },
-      { "locationId": "wheeler-house", "status": "dim", "emphasis": 0.1 },
-      { "locationId": "hawkins-middle-school", "status": "dim", "emphasis": 0.1 },
-      { "locationId": "castle-byers", "status": "dim", "emphasis": 0.1 },
-      { "locationId": "palace-arcade", "status": "dim", "emphasis": 0.1 },
-      { "locationId": "hopper-cabin", "status": "dim", "emphasis": 0.1 },
-      { "locationId": "upside-down-gate", "status": "dim", "emphasis": 0.1 },
-      { "locationId": "bennys-burgers", "status": "dim", "emphasis": 0.1 }
+      {
+        "locationId": "hawkins-pd",
+        "status": "active",
+        "emphasis": 0.8
+      },
+      {
+        "locationId": "hawkins-lab",
+        "status": "active",
+        "emphasis": 0.7
+      },
+      {
+        "locationId": "hawkins-quarry",
+        "status": "dim",
+        "emphasis": 0.2
+      },
+      {
+        "locationId": "byers-house",
+        "status": "dim",
+        "emphasis": 0.2
+      },
+      {
+        "locationId": "mirkwood",
+        "status": "dim",
+        "emphasis": 0.2
+      },
+      {
+        "locationId": "wheeler-house",
+        "status": "dim",
+        "emphasis": 0.1
+      },
+      {
+        "locationId": "hawkins-middle-school",
+        "status": "dim",
+        "emphasis": 0.1
+      },
+      {
+        "locationId": "castle-byers",
+        "status": "dim",
+        "emphasis": 0.1
+      },
+      {
+        "locationId": "palace-arcade",
+        "status": "dim",
+        "emphasis": 0.1
+      },
+      {
+        "locationId": "hopper-cabin",
+        "status": "dim",
+        "emphasis": 0.1
+      },
+      {
+        "locationId": "upside-down-gate",
+        "status": "dim",
+        "emphasis": 0.1
+      },
+      {
+        "locationId": "bennys-burgers",
+        "status": "dim",
+        "emphasis": 0.1
+      }
     ],
     "characterStates": [
-      { "characterId": "jim-hopper", "locationId": "hawkins-pd", "status": "present" }
+      {
+        "characterId": "jim-hopper",
+        "locationId": "hawkins-pd",
+        "status": "present"
+      }
     ],
-    "visual": { "theme": "tense", "fog": 0.4, "glow": "#C62828" }
+    "visual": {
+      "theme": "tense",
+      "fog": 0.4,
+      "glow": "#C62828"
+    }
+  },
+  {
+    "momentId": "s01e04-joyce-refuses",
+    "locationStates": [
+      {
+        "locationId": "byers-house",
+        "status": "active",
+        "emphasis": 0.8
+      },
+      {
+        "locationId": "hawkins-quarry",
+        "status": "dim",
+        "emphasis": 0.2
+      },
+      {
+        "locationId": "hawkins-lab",
+        "status": "foreshadowed",
+        "emphasis": 0.3
+      },
+      {
+        "locationId": "mirkwood",
+        "status": "dim",
+        "emphasis": 0.2
+      },
+      {
+        "locationId": "wheeler-house",
+        "status": "dim",
+        "emphasis": 0.1
+      },
+      {
+        "locationId": "hawkins-middle-school",
+        "status": "dim",
+        "emphasis": 0.1
+      },
+      {
+        "locationId": "castle-byers",
+        "status": "dim",
+        "emphasis": 0.1
+      },
+      {
+        "locationId": "hawkins-pd",
+        "status": "dim",
+        "emphasis": 0.1
+      },
+      {
+        "locationId": "palace-arcade",
+        "status": "dim",
+        "emphasis": 0.1
+      },
+      {
+        "locationId": "hopper-cabin",
+        "status": "dim",
+        "emphasis": 0.1
+      },
+      {
+        "locationId": "upside-down-gate",
+        "status": "dim",
+        "emphasis": 0.1
+      },
+      {
+        "locationId": "bennys-burgers",
+        "status": "dim",
+        "emphasis": 0.1
+      }
+    ],
+    "characterStates": [
+      {
+        "characterId": "joyce-byers",
+        "locationId": "byers-house",
+        "status": "present"
+      }
+    ],
+    "visual": {
+      "theme": "tense",
+      "fog": 0.4,
+      "glow": "#C62828"
+    }
   },
   {
     "momentId": "s01e05-upside-down-theory",
     "locationStates": [
-      { "locationId": "hawkins-middle-school", "status": "active", "emphasis": 0.8 },
-      { "locationId": "mirkwood", "status": "foreshadowed", "emphasis": 0.4 },
-      { "locationId": "hawkins-lab", "status": "foreshadowed", "emphasis": 0.4 },
-      { "locationId": "upside-down-gate", "status": "foreshadowed", "emphasis": 0.4 },
-      { "locationId": "byers-house", "status": "dim", "emphasis": 0.2 },
-      { "locationId": "wheeler-house", "status": "dim", "emphasis": 0.2 },
-      { "locationId": "castle-byers", "status": "dim", "emphasis": 0.1 },
-      { "locationId": "hawkins-pd", "status": "dim", "emphasis": 0.1 },
-      { "locationId": "palace-arcade", "status": "dim", "emphasis": 0.1 },
-      { "locationId": "hawkins-quarry", "status": "dim", "emphasis": 0.1 },
-      { "locationId": "hopper-cabin", "status": "dim", "emphasis": 0.1 },
-      { "locationId": "bennys-burgers", "status": "dim", "emphasis": 0.1 }
+      {
+        "locationId": "hawkins-middle-school",
+        "status": "active",
+        "emphasis": 0.8
+      },
+      {
+        "locationId": "mirkwood",
+        "status": "foreshadowed",
+        "emphasis": 0.4
+      },
+      {
+        "locationId": "hawkins-lab",
+        "status": "foreshadowed",
+        "emphasis": 0.4
+      },
+      {
+        "locationId": "upside-down-gate",
+        "status": "foreshadowed",
+        "emphasis": 0.4
+      },
+      {
+        "locationId": "byers-house",
+        "status": "dim",
+        "emphasis": 0.2
+      },
+      {
+        "locationId": "wheeler-house",
+        "status": "dim",
+        "emphasis": 0.2
+      },
+      {
+        "locationId": "castle-byers",
+        "status": "dim",
+        "emphasis": 0.1
+      },
+      {
+        "locationId": "hawkins-pd",
+        "status": "dim",
+        "emphasis": 0.1
+      },
+      {
+        "locationId": "palace-arcade",
+        "status": "dim",
+        "emphasis": 0.1
+      },
+      {
+        "locationId": "hawkins-quarry",
+        "status": "dim",
+        "emphasis": 0.1
+      },
+      {
+        "locationId": "hopper-cabin",
+        "status": "dim",
+        "emphasis": 0.1
+      },
+      {
+        "locationId": "bennys-burgers",
+        "status": "dim",
+        "emphasis": 0.1
+      }
     ],
     "characterStates": [
-      { "characterId": "eleven", "locationId": "hawkins-middle-school", "status": "present" },
-      { "characterId": "mike-wheeler", "locationId": "hawkins-middle-school", "status": "present" },
-      { "characterId": "dustin-henderson", "locationId": "hawkins-middle-school", "status": "present" },
-      { "characterId": "lucas-sinclair", "locationId": "hawkins-middle-school", "status": "present" }
+      {
+        "characterId": "eleven",
+        "locationId": "hawkins-middle-school",
+        "status": "present"
+      },
+      {
+        "characterId": "mike-wheeler",
+        "locationId": "hawkins-middle-school",
+        "status": "present"
+      },
+      {
+        "characterId": "dustin-henderson",
+        "locationId": "hawkins-middle-school",
+        "status": "present"
+      },
+      {
+        "characterId": "lucas-sinclair",
+        "locationId": "hawkins-middle-school",
+        "status": "present"
+      }
     ],
-    "visual": { "theme": "tense", "fog": 0.5, "glow": "#C62828" }
+    "visual": {
+      "theme": "tense",
+      "fog": 0.5,
+      "glow": "#C62828"
+    }
+  },
+  {
+    "momentId": "s01e05-search-for-gate",
+    "locationStates": [
+      {
+        "locationId": "mirkwood",
+        "status": "active",
+        "emphasis": 0.8
+      },
+      {
+        "locationId": "hawkins-lab",
+        "status": "foreshadowed",
+        "emphasis": 0.5
+      },
+      {
+        "locationId": "upside-down-gate",
+        "status": "foreshadowed",
+        "emphasis": 0.5
+      },
+      {
+        "locationId": "hawkins-middle-school",
+        "status": "dim",
+        "emphasis": 0.2
+      },
+      {
+        "locationId": "byers-house",
+        "status": "dim",
+        "emphasis": 0.2
+      },
+      {
+        "locationId": "wheeler-house",
+        "status": "dim",
+        "emphasis": 0.1
+      },
+      {
+        "locationId": "castle-byers",
+        "status": "dim",
+        "emphasis": 0.1
+      },
+      {
+        "locationId": "hawkins-pd",
+        "status": "dim",
+        "emphasis": 0.1
+      },
+      {
+        "locationId": "palace-arcade",
+        "status": "dim",
+        "emphasis": 0.1
+      },
+      {
+        "locationId": "hawkins-quarry",
+        "status": "dim",
+        "emphasis": 0.1
+      },
+      {
+        "locationId": "hopper-cabin",
+        "status": "dim",
+        "emphasis": 0.1
+      },
+      {
+        "locationId": "bennys-burgers",
+        "status": "dim",
+        "emphasis": 0.1
+      }
+    ],
+    "characterStates": [
+      {
+        "characterId": "mike-wheeler",
+        "locationId": "mirkwood",
+        "status": "present"
+      },
+      {
+        "characterId": "dustin-henderson",
+        "locationId": "mirkwood",
+        "status": "present"
+      },
+      {
+        "characterId": "lucas-sinclair",
+        "locationId": "mirkwood",
+        "status": "present"
+      }
+    ],
+    "visual": {
+      "theme": "nightmare",
+      "fog": 0.5,
+      "glow": "#4A148C"
+    }
   },
   {
     "momentId": "s01e05-eleven-compasses",
     "locationStates": [
-      { "locationId": "mirkwood", "status": "active", "emphasis": 0.8 },
-      { "locationId": "hawkins-lab", "status": "foreshadowed", "emphasis": 0.5 },
-      { "locationId": "upside-down-gate", "status": "foreshadowed", "emphasis": 0.5 },
-      { "locationId": "hawkins-middle-school", "status": "dim", "emphasis": 0.2 },
-      { "locationId": "byers-house", "status": "dim", "emphasis": 0.2 },
-      { "locationId": "wheeler-house", "status": "dim", "emphasis": 0.1 },
-      { "locationId": "castle-byers", "status": "dim", "emphasis": 0.1 },
-      { "locationId": "hawkins-pd", "status": "dim", "emphasis": 0.1 },
-      { "locationId": "palace-arcade", "status": "dim", "emphasis": 0.1 },
-      { "locationId": "hawkins-quarry", "status": "dim", "emphasis": 0.1 },
-      { "locationId": "hopper-cabin", "status": "dim", "emphasis": 0.1 },
-      { "locationId": "bennys-burgers", "status": "dim", "emphasis": 0.1 }
+      {
+        "locationId": "mirkwood",
+        "status": "active",
+        "emphasis": 0.8
+      },
+      {
+        "locationId": "hawkins-lab",
+        "status": "foreshadowed",
+        "emphasis": 0.5
+      },
+      {
+        "locationId": "upside-down-gate",
+        "status": "foreshadowed",
+        "emphasis": 0.5
+      },
+      {
+        "locationId": "hawkins-middle-school",
+        "status": "dim",
+        "emphasis": 0.2
+      },
+      {
+        "locationId": "byers-house",
+        "status": "dim",
+        "emphasis": 0.2
+      },
+      {
+        "locationId": "wheeler-house",
+        "status": "dim",
+        "emphasis": 0.1
+      },
+      {
+        "locationId": "castle-byers",
+        "status": "dim",
+        "emphasis": 0.1
+      },
+      {
+        "locationId": "hawkins-pd",
+        "status": "dim",
+        "emphasis": 0.1
+      },
+      {
+        "locationId": "palace-arcade",
+        "status": "dim",
+        "emphasis": 0.1
+      },
+      {
+        "locationId": "hawkins-quarry",
+        "status": "dim",
+        "emphasis": 0.1
+      },
+      {
+        "locationId": "hopper-cabin",
+        "status": "dim",
+        "emphasis": 0.1
+      },
+      {
+        "locationId": "bennys-burgers",
+        "status": "dim",
+        "emphasis": 0.1
+      }
     ],
     "characterStates": [
-      { "characterId": "eleven", "locationId": "mirkwood", "status": "present" },
-      { "characterId": "mike-wheeler", "locationId": "mirkwood", "status": "present" },
-      { "characterId": "dustin-henderson", "locationId": "mirkwood", "status": "present" },
-      { "characterId": "lucas-sinclair", "locationId": "mirkwood", "status": "present" }
+      {
+        "characterId": "eleven",
+        "locationId": "mirkwood",
+        "status": "present"
+      },
+      {
+        "characterId": "mike-wheeler",
+        "locationId": "mirkwood",
+        "status": "present"
+      },
+      {
+        "characterId": "dustin-henderson",
+        "locationId": "mirkwood",
+        "status": "present"
+      },
+      {
+        "characterId": "lucas-sinclair",
+        "locationId": "mirkwood",
+        "status": "present"
+      }
     ],
-    "visual": { "theme": "nightmare", "fog": 0.5, "glow": "#4A148C" }
+    "visual": {
+      "theme": "nightmare",
+      "fog": 0.5,
+      "glow": "#4A148C"
+    }
   },
   {
     "momentId": "s01e06-hopper-infiltrates",
     "locationStates": [
-      { "locationId": "hawkins-lab", "status": "active", "emphasis": 0.8 },
-      { "locationId": "upside-down-gate", "status": "active", "emphasis": 0.8 },
-      { "locationId": "mirkwood", "status": "dim", "emphasis": 0.2 },
-      { "locationId": "byers-house", "status": "dim", "emphasis": 0.2 },
-      { "locationId": "wheeler-house", "status": "dim", "emphasis": 0.2 },
-      { "locationId": "hawkins-middle-school", "status": "dim", "emphasis": 0.1 },
-      { "locationId": "castle-byers", "status": "dim", "emphasis": 0.1 },
-      { "locationId": "hawkins-pd", "status": "dim", "emphasis": 0.1 },
-      { "locationId": "palace-arcade", "status": "dim", "emphasis": 0.1 },
-      { "locationId": "hawkins-quarry", "status": "dim", "emphasis": 0.1 },
-      { "locationId": "hopper-cabin", "status": "dim", "emphasis": 0.1 },
-      { "locationId": "bennys-burgers", "status": "dim", "emphasis": 0.1 }
+      {
+        "locationId": "hawkins-lab",
+        "status": "active",
+        "emphasis": 0.8
+      },
+      {
+        "locationId": "upside-down-gate",
+        "status": "active",
+        "emphasis": 0.8
+      },
+      {
+        "locationId": "mirkwood",
+        "status": "dim",
+        "emphasis": 0.2
+      },
+      {
+        "locationId": "byers-house",
+        "status": "dim",
+        "emphasis": 0.2
+      },
+      {
+        "locationId": "wheeler-house",
+        "status": "dim",
+        "emphasis": 0.2
+      },
+      {
+        "locationId": "hawkins-middle-school",
+        "status": "dim",
+        "emphasis": 0.1
+      },
+      {
+        "locationId": "castle-byers",
+        "status": "dim",
+        "emphasis": 0.1
+      },
+      {
+        "locationId": "hawkins-pd",
+        "status": "dim",
+        "emphasis": 0.1
+      },
+      {
+        "locationId": "palace-arcade",
+        "status": "dim",
+        "emphasis": 0.1
+      },
+      {
+        "locationId": "hawkins-quarry",
+        "status": "dim",
+        "emphasis": 0.1
+      },
+      {
+        "locationId": "hopper-cabin",
+        "status": "dim",
+        "emphasis": 0.1
+      },
+      {
+        "locationId": "bennys-burgers",
+        "status": "dim",
+        "emphasis": 0.1
+      }
     ],
     "characterStates": [
-      { "characterId": "jim-hopper", "locationId": "hawkins-lab", "status": "present" }
+      {
+        "characterId": "jim-hopper",
+        "locationId": "hawkins-lab",
+        "status": "present"
+      }
     ],
-    "visual": { "theme": "nightmare", "fog": 0.5, "glow": "#4A148C" }
+    "visual": {
+      "theme": "nightmare",
+      "fog": 0.5,
+      "glow": "#4A148C"
+    }
   },
   {
     "momentId": "s01e06-eleven-truth",
     "locationStates": [
-      { "locationId": "wheeler-house", "status": "active", "emphasis": 0.8 },
-      { "locationId": "hawkins-lab", "status": "foreshadowed", "emphasis": 0.4 },
-      { "locationId": "upside-down-gate", "status": "foreshadowed", "emphasis": 0.4 },
-      { "locationId": "mirkwood", "status": "dim", "emphasis": 0.2 },
-      { "locationId": "byers-house", "status": "dim", "emphasis": 0.2 },
-      { "locationId": "hawkins-middle-school", "status": "dim", "emphasis": 0.1 },
-      { "locationId": "castle-byers", "status": "dim", "emphasis": 0.1 },
-      { "locationId": "hawkins-pd", "status": "dim", "emphasis": 0.1 },
-      { "locationId": "palace-arcade", "status": "dim", "emphasis": 0.1 },
-      { "locationId": "hawkins-quarry", "status": "dim", "emphasis": 0.1 },
-      { "locationId": "hopper-cabin", "status": "dim", "emphasis": 0.1 },
-      { "locationId": "bennys-burgers", "status": "dim", "emphasis": 0.1 }
+      {
+        "locationId": "wheeler-house",
+        "status": "active",
+        "emphasis": 0.8
+      },
+      {
+        "locationId": "hawkins-lab",
+        "status": "foreshadowed",
+        "emphasis": 0.4
+      },
+      {
+        "locationId": "upside-down-gate",
+        "status": "foreshadowed",
+        "emphasis": 0.4
+      },
+      {
+        "locationId": "mirkwood",
+        "status": "dim",
+        "emphasis": 0.2
+      },
+      {
+        "locationId": "byers-house",
+        "status": "dim",
+        "emphasis": 0.2
+      },
+      {
+        "locationId": "hawkins-middle-school",
+        "status": "dim",
+        "emphasis": 0.1
+      },
+      {
+        "locationId": "castle-byers",
+        "status": "dim",
+        "emphasis": 0.1
+      },
+      {
+        "locationId": "hawkins-pd",
+        "status": "dim",
+        "emphasis": 0.1
+      },
+      {
+        "locationId": "palace-arcade",
+        "status": "dim",
+        "emphasis": 0.1
+      },
+      {
+        "locationId": "hawkins-quarry",
+        "status": "dim",
+        "emphasis": 0.1
+      },
+      {
+        "locationId": "hopper-cabin",
+        "status": "dim",
+        "emphasis": 0.1
+      },
+      {
+        "locationId": "bennys-burgers",
+        "status": "dim",
+        "emphasis": 0.1
+      }
     ],
     "characterStates": [
-      { "characterId": "eleven", "locationId": "wheeler-house", "status": "present" },
-      { "characterId": "mike-wheeler", "locationId": "wheeler-house", "status": "present" }
+      {
+        "characterId": "eleven",
+        "locationId": "wheeler-house",
+        "status": "present"
+      },
+      {
+        "characterId": "mike-wheeler",
+        "locationId": "wheeler-house",
+        "status": "present"
+      }
     ],
-    "visual": { "theme": "nightmare", "fog": 0.5, "glow": "#4A148C" }
+    "visual": {
+      "theme": "nightmare",
+      "fog": 0.5,
+      "glow": "#4A148C"
+    }
+  },
+  {
+    "momentId": "s01e06-lucas-reconciles",
+    "locationStates": [
+      {
+        "locationId": "wheeler-house",
+        "status": "active",
+        "emphasis": 0.8
+      },
+      {
+        "locationId": "hawkins-lab",
+        "status": "foreshadowed",
+        "emphasis": 0.3
+      },
+      {
+        "locationId": "mirkwood",
+        "status": "dim",
+        "emphasis": 0.2
+      },
+      {
+        "locationId": "byers-house",
+        "status": "dim",
+        "emphasis": 0.2
+      },
+      {
+        "locationId": "hawkins-middle-school",
+        "status": "dim",
+        "emphasis": 0.1
+      },
+      {
+        "locationId": "castle-byers",
+        "status": "dim",
+        "emphasis": 0.1
+      },
+      {
+        "locationId": "hawkins-pd",
+        "status": "dim",
+        "emphasis": 0.1
+      },
+      {
+        "locationId": "palace-arcade",
+        "status": "dim",
+        "emphasis": 0.1
+      },
+      {
+        "locationId": "hawkins-quarry",
+        "status": "dim",
+        "emphasis": 0.1
+      },
+      {
+        "locationId": "hopper-cabin",
+        "status": "dim",
+        "emphasis": 0.1
+      },
+      {
+        "locationId": "upside-down-gate",
+        "status": "dim",
+        "emphasis": 0.1
+      },
+      {
+        "locationId": "bennys-burgers",
+        "status": "dim",
+        "emphasis": 0.1
+      }
+    ],
+    "characterStates": [
+      {
+        "characterId": "eleven",
+        "locationId": "wheeler-house",
+        "status": "present"
+      },
+      {
+        "characterId": "mike-wheeler",
+        "locationId": "wheeler-house",
+        "status": "present"
+      },
+      {
+        "characterId": "dustin-henderson",
+        "locationId": "wheeler-house",
+        "status": "present"
+      },
+      {
+        "characterId": "lucas-sinclair",
+        "locationId": "wheeler-house",
+        "status": "present"
+      }
+    ],
+    "visual": {
+      "theme": "nightmare",
+      "fog": 0.5,
+      "glow": "#4A148C"
+    }
+  },
+  {
+    "momentId": "s01e06-eleven-powers",
+    "locationStates": [
+      {
+        "locationId": "wheeler-house",
+        "status": "active",
+        "emphasis": 0.8
+      },
+      {
+        "locationId": "hawkins-lab",
+        "status": "foreshadowed",
+        "emphasis": 0.4
+      },
+      {
+        "locationId": "mirkwood",
+        "status": "dim",
+        "emphasis": 0.2
+      },
+      {
+        "locationId": "byers-house",
+        "status": "dim",
+        "emphasis": 0.2
+      },
+      {
+        "locationId": "hawkins-middle-school",
+        "status": "dim",
+        "emphasis": 0.1
+      },
+      {
+        "locationId": "castle-byers",
+        "status": "dim",
+        "emphasis": 0.1
+      },
+      {
+        "locationId": "hawkins-pd",
+        "status": "dim",
+        "emphasis": 0.1
+      },
+      {
+        "locationId": "palace-arcade",
+        "status": "dim",
+        "emphasis": 0.1
+      },
+      {
+        "locationId": "hawkins-quarry",
+        "status": "dim",
+        "emphasis": 0.1
+      },
+      {
+        "locationId": "hopper-cabin",
+        "status": "dim",
+        "emphasis": 0.1
+      },
+      {
+        "locationId": "upside-down-gate",
+        "status": "dim",
+        "emphasis": 0.1
+      },
+      {
+        "locationId": "bennys-burgers",
+        "status": "dim",
+        "emphasis": 0.1
+      }
+    ],
+    "characterStates": [
+      {
+        "characterId": "eleven",
+        "locationId": "wheeler-house",
+        "status": "present"
+      },
+      {
+        "characterId": "mike-wheeler",
+        "locationId": "wheeler-house",
+        "status": "present"
+      },
+      {
+        "characterId": "dustin-henderson",
+        "locationId": "wheeler-house",
+        "status": "present"
+      },
+      {
+        "characterId": "lucas-sinclair",
+        "locationId": "wheeler-house",
+        "status": "present"
+      }
+    ],
+    "visual": {
+      "theme": "nightmare",
+      "fog": 0.5,
+      "glow": "#4A148C"
+    }
   },
   {
     "momentId": "s01e07-bathtub",
     "locationStates": [
-      { "locationId": "hawkins-middle-school", "status": "active", "emphasis": 0.8 },
-      { "locationId": "castle-byers", "status": "foreshadowed", "emphasis": 0.6 },
-      { "locationId": "byers-house", "status": "foreshadowed", "emphasis": 0.4 },
-      { "locationId": "hawkins-lab", "status": "dim", "emphasis": 0.2 },
-      { "locationId": "mirkwood", "status": "dim", "emphasis": 0.2 },
-      { "locationId": "wheeler-house", "status": "dim", "emphasis": 0.2 },
-      { "locationId": "hawkins-pd", "status": "dim", "emphasis": 0.1 },
-      { "locationId": "palace-arcade", "status": "dim", "emphasis": 0.1 },
-      { "locationId": "hawkins-quarry", "status": "dim", "emphasis": 0.1 },
-      { "locationId": "hopper-cabin", "status": "dim", "emphasis": 0.1 },
-      { "locationId": "upside-down-gate", "status": "dim", "emphasis": 0.1 },
-      { "locationId": "bennys-burgers", "status": "dim", "emphasis": 0.1 }
+      {
+        "locationId": "hawkins-middle-school",
+        "status": "active",
+        "emphasis": 0.8
+      },
+      {
+        "locationId": "castle-byers",
+        "status": "foreshadowed",
+        "emphasis": 0.6
+      },
+      {
+        "locationId": "byers-house",
+        "status": "foreshadowed",
+        "emphasis": 0.4
+      },
+      {
+        "locationId": "hawkins-lab",
+        "status": "dim",
+        "emphasis": 0.2
+      },
+      {
+        "locationId": "mirkwood",
+        "status": "dim",
+        "emphasis": 0.2
+      },
+      {
+        "locationId": "wheeler-house",
+        "status": "dim",
+        "emphasis": 0.2
+      },
+      {
+        "locationId": "hawkins-pd",
+        "status": "dim",
+        "emphasis": 0.1
+      },
+      {
+        "locationId": "palace-arcade",
+        "status": "dim",
+        "emphasis": 0.1
+      },
+      {
+        "locationId": "hawkins-quarry",
+        "status": "dim",
+        "emphasis": 0.1
+      },
+      {
+        "locationId": "hopper-cabin",
+        "status": "dim",
+        "emphasis": 0.1
+      },
+      {
+        "locationId": "upside-down-gate",
+        "status": "dim",
+        "emphasis": 0.1
+      },
+      {
+        "locationId": "bennys-burgers",
+        "status": "dim",
+        "emphasis": 0.1
+      }
     ],
     "characterStates": [
-      { "characterId": "eleven", "locationId": "hawkins-middle-school", "status": "present" },
-      { "characterId": "mike-wheeler", "locationId": "hawkins-middle-school", "status": "present" },
-      { "characterId": "dustin-henderson", "locationId": "hawkins-middle-school", "status": "present" },
-      { "characterId": "lucas-sinclair", "locationId": "hawkins-middle-school", "status": "present" }
+      {
+        "characterId": "eleven",
+        "locationId": "hawkins-middle-school",
+        "status": "present"
+      },
+      {
+        "characterId": "mike-wheeler",
+        "locationId": "hawkins-middle-school",
+        "status": "present"
+      },
+      {
+        "characterId": "dustin-henderson",
+        "locationId": "hawkins-middle-school",
+        "status": "present"
+      },
+      {
+        "characterId": "lucas-sinclair",
+        "locationId": "hawkins-middle-school",
+        "status": "present"
+      }
     ],
-    "visual": { "theme": "nightmare", "fog": 0.6, "glow": "#4A148C" }
+    "visual": {
+      "theme": "nightmare",
+      "fog": 0.6,
+      "glow": "#4A148C"
+    }
+  },
+  {
+    "momentId": "s01e07-tunnel-search",
+    "locationStates": [
+      {
+        "locationId": "hawkins-lab",
+        "status": "active",
+        "emphasis": 0.8
+      },
+      {
+        "locationId": "upside-down-gate",
+        "status": "active",
+        "emphasis": 0.9
+      },
+      {
+        "locationId": "byers-house",
+        "status": "foreshadowed",
+        "emphasis": 0.3
+      },
+      {
+        "locationId": "mirkwood",
+        "status": "dim",
+        "emphasis": 0.2
+      },
+      {
+        "locationId": "wheeler-house",
+        "status": "dim",
+        "emphasis": 0.1
+      },
+      {
+        "locationId": "hawkins-middle-school",
+        "status": "dim",
+        "emphasis": 0.1
+      },
+      {
+        "locationId": "castle-byers",
+        "status": "dim",
+        "emphasis": 0.1
+      },
+      {
+        "locationId": "hawkins-pd",
+        "status": "dim",
+        "emphasis": 0.1
+      },
+      {
+        "locationId": "palace-arcade",
+        "status": "dim",
+        "emphasis": 0.1
+      },
+      {
+        "locationId": "hawkins-quarry",
+        "status": "dim",
+        "emphasis": 0.1
+      },
+      {
+        "locationId": "hopper-cabin",
+        "status": "dim",
+        "emphasis": 0.1
+      },
+      {
+        "locationId": "bennys-burgers",
+        "status": "dim",
+        "emphasis": 0.1
+      }
+    ],
+    "characterStates": [
+      {
+        "characterId": "jim-hopper",
+        "locationId": "upside-down-gate",
+        "status": "present"
+      },
+      {
+        "characterId": "joyce-byers",
+        "locationId": "upside-down-gate",
+        "status": "present"
+      }
+    ],
+    "visual": {
+      "theme": "nightmare",
+      "fog": 0.7,
+      "glow": "#4A148C"
+    }
   },
   {
     "momentId": "s01e07-hopper-deal",
     "locationStates": [
-      { "locationId": "hawkins-lab", "status": "active", "emphasis": 0.8 },
-      { "locationId": "upside-down-gate", "status": "foreshadowed", "emphasis": 0.6 },
-      { "locationId": "byers-house", "status": "dim", "emphasis": 0.2 },
-      { "locationId": "hawkins-middle-school", "status": "dim", "emphasis": 0.2 },
-      { "locationId": "mirkwood", "status": "dim", "emphasis": 0.2 },
-      { "locationId": "wheeler-house", "status": "dim", "emphasis": 0.1 },
-      { "locationId": "castle-byers", "status": "dim", "emphasis": 0.1 },
-      { "locationId": "hawkins-pd", "status": "dim", "emphasis": 0.1 },
-      { "locationId": "palace-arcade", "status": "dim", "emphasis": 0.1 },
-      { "locationId": "hawkins-quarry", "status": "dim", "emphasis": 0.1 },
-      { "locationId": "hopper-cabin", "status": "dim", "emphasis": 0.1 },
-      { "locationId": "bennys-burgers", "status": "dim", "emphasis": 0.1 }
+      {
+        "locationId": "hawkins-lab",
+        "status": "active",
+        "emphasis": 0.8
+      },
+      {
+        "locationId": "upside-down-gate",
+        "status": "foreshadowed",
+        "emphasis": 0.6
+      },
+      {
+        "locationId": "byers-house",
+        "status": "dim",
+        "emphasis": 0.2
+      },
+      {
+        "locationId": "hawkins-middle-school",
+        "status": "dim",
+        "emphasis": 0.2
+      },
+      {
+        "locationId": "mirkwood",
+        "status": "dim",
+        "emphasis": 0.2
+      },
+      {
+        "locationId": "wheeler-house",
+        "status": "dim",
+        "emphasis": 0.1
+      },
+      {
+        "locationId": "castle-byers",
+        "status": "dim",
+        "emphasis": 0.1
+      },
+      {
+        "locationId": "hawkins-pd",
+        "status": "dim",
+        "emphasis": 0.1
+      },
+      {
+        "locationId": "palace-arcade",
+        "status": "dim",
+        "emphasis": 0.1
+      },
+      {
+        "locationId": "hawkins-quarry",
+        "status": "dim",
+        "emphasis": 0.1
+      },
+      {
+        "locationId": "hopper-cabin",
+        "status": "dim",
+        "emphasis": 0.1
+      },
+      {
+        "locationId": "bennys-burgers",
+        "status": "dim",
+        "emphasis": 0.1
+      }
     ],
     "characterStates": [
-      { "characterId": "jim-hopper", "locationId": "hawkins-lab", "status": "present" }
+      {
+        "characterId": "jim-hopper",
+        "locationId": "hawkins-lab",
+        "status": "present"
+      }
     ],
-    "visual": { "theme": "nightmare", "fog": 0.6, "glow": "#4A148C" }
+    "visual": {
+      "theme": "nightmare",
+      "fog": 0.6,
+      "glow": "#4A148C"
+    }
+  },
+  {
+    "momentId": "s01e08-encounter",
+    "locationStates": [
+      {
+        "locationId": "mirkwood",
+        "status": "active",
+        "emphasis": 0.8
+      },
+      {
+        "locationId": "hawkins-lab",
+        "status": "foreshadowed",
+        "emphasis": 0.4
+      },
+      {
+        "locationId": "upside-down-gate",
+        "status": "foreshadowed",
+        "emphasis": 0.4
+      },
+      {
+        "locationId": "byers-house",
+        "status": "dim",
+        "emphasis": 0.3
+      },
+      {
+        "locationId": "wheeler-house",
+        "status": "dim",
+        "emphasis": 0.1
+      },
+      {
+        "locationId": "hawkins-middle-school",
+        "status": "dim",
+        "emphasis": 0.1
+      },
+      {
+        "locationId": "castle-byers",
+        "status": "dim",
+        "emphasis": 0.1
+      },
+      {
+        "locationId": "hawkins-pd",
+        "status": "dim",
+        "emphasis": 0.1
+      },
+      {
+        "locationId": "palace-arcade",
+        "status": "dim",
+        "emphasis": 0.1
+      },
+      {
+        "locationId": "hawkins-quarry",
+        "status": "dim",
+        "emphasis": 0.1
+      },
+      {
+        "locationId": "hopper-cabin",
+        "status": "dim",
+        "emphasis": 0.1
+      },
+      {
+        "locationId": "bennys-burgers",
+        "status": "dim",
+        "emphasis": 0.1
+      }
+    ],
+    "characterStates": [
+      {
+        "characterId": "demogorgon",
+        "locationId": "mirkwood",
+        "status": "present"
+      }
+    ],
+    "visual": {
+      "theme": "nightmare",
+      "fog": 0.7,
+      "glow": "#4A148C"
+    }
   },
   {
     "momentId": "s01e08-into-the-upside-down",
     "locationStates": [
-      { "locationId": "hawkins-lab", "status": "active", "emphasis": 0.8 },
-      { "locationId": "upside-down-gate", "status": "active", "emphasis": 0.9 },
-      { "locationId": "byers-house", "status": "foreshadowed", "emphasis": 0.4 },
-      { "locationId": "mirkwood", "status": "dim", "emphasis": 0.2 },
-      { "locationId": "wheeler-house", "status": "dim", "emphasis": 0.1 },
-      { "locationId": "hawkins-middle-school", "status": "dim", "emphasis": 0.1 },
-      { "locationId": "castle-byers", "status": "dim", "emphasis": 0.1 },
-      { "locationId": "hawkins-pd", "status": "dim", "emphasis": 0.1 },
-      { "locationId": "palace-arcade", "status": "dim", "emphasis": 0.1 },
-      { "locationId": "hawkins-quarry", "status": "dim", "emphasis": 0.1 },
-      { "locationId": "hopper-cabin", "status": "dim", "emphasis": 0.1 },
-      { "locationId": "bennys-burgers", "status": "dim", "emphasis": 0.1 }
+      {
+        "locationId": "hawkins-lab",
+        "status": "active",
+        "emphasis": 0.8
+      },
+      {
+        "locationId": "upside-down-gate",
+        "status": "active",
+        "emphasis": 0.9
+      },
+      {
+        "locationId": "byers-house",
+        "status": "foreshadowed",
+        "emphasis": 0.4
+      },
+      {
+        "locationId": "mirkwood",
+        "status": "dim",
+        "emphasis": 0.2
+      },
+      {
+        "locationId": "wheeler-house",
+        "status": "dim",
+        "emphasis": 0.1
+      },
+      {
+        "locationId": "hawkins-middle-school",
+        "status": "dim",
+        "emphasis": 0.1
+      },
+      {
+        "locationId": "castle-byers",
+        "status": "dim",
+        "emphasis": 0.1
+      },
+      {
+        "locationId": "hawkins-pd",
+        "status": "dim",
+        "emphasis": 0.1
+      },
+      {
+        "locationId": "palace-arcade",
+        "status": "dim",
+        "emphasis": 0.1
+      },
+      {
+        "locationId": "hawkins-quarry",
+        "status": "dim",
+        "emphasis": 0.1
+      },
+      {
+        "locationId": "hopper-cabin",
+        "status": "dim",
+        "emphasis": 0.1
+      },
+      {
+        "locationId": "bennys-burgers",
+        "status": "dim",
+        "emphasis": 0.1
+      }
     ],
     "characterStates": [
-      { "characterId": "jim-hopper", "locationId": "upside-down-gate", "status": "present" },
-      { "characterId": "joyce-byers", "locationId": "upside-down-gate", "status": "present" }
+      {
+        "characterId": "jim-hopper",
+        "locationId": "upside-down-gate",
+        "status": "present"
+      },
+      {
+        "characterId": "joyce-byers",
+        "locationId": "upside-down-gate",
+        "status": "present"
+      }
     ],
-    "visual": { "theme": "nightmare", "fog": 0.7, "glow": "#4A148C" }
+    "visual": {
+      "theme": "nightmare",
+      "fog": 0.7,
+      "glow": "#4A148C"
+    }
   },
   {
     "momentId": "s01e08-demogorgon-school",
     "locationStates": [
-      { "locationId": "hawkins-middle-school", "status": "active", "emphasis": 0.9 },
-      { "locationId": "hawkins-lab", "status": "foreshadowed", "emphasis": 0.4 },
-      { "locationId": "upside-down-gate", "status": "foreshadowed", "emphasis": 0.4 },
-      { "locationId": "byers-house", "status": "dim", "emphasis": 0.2 },
-      { "locationId": "mirkwood", "status": "dim", "emphasis": 0.2 },
-      { "locationId": "wheeler-house", "status": "dim", "emphasis": 0.1 },
-      { "locationId": "castle-byers", "status": "dim", "emphasis": 0.1 },
-      { "locationId": "hawkins-pd", "status": "dim", "emphasis": 0.1 },
-      { "locationId": "palace-arcade", "status": "dim", "emphasis": 0.1 },
-      { "locationId": "hawkins-quarry", "status": "dim", "emphasis": 0.1 },
-      { "locationId": "hopper-cabin", "status": "dim", "emphasis": 0.1 },
-      { "locationId": "bennys-burgers", "status": "dim", "emphasis": 0.1 }
+      {
+        "locationId": "hawkins-middle-school",
+        "status": "active",
+        "emphasis": 0.9
+      },
+      {
+        "locationId": "hawkins-lab",
+        "status": "foreshadowed",
+        "emphasis": 0.4
+      },
+      {
+        "locationId": "upside-down-gate",
+        "status": "foreshadowed",
+        "emphasis": 0.4
+      },
+      {
+        "locationId": "byers-house",
+        "status": "dim",
+        "emphasis": 0.2
+      },
+      {
+        "locationId": "mirkwood",
+        "status": "dim",
+        "emphasis": 0.2
+      },
+      {
+        "locationId": "wheeler-house",
+        "status": "dim",
+        "emphasis": 0.1
+      },
+      {
+        "locationId": "castle-byers",
+        "status": "dim",
+        "emphasis": 0.1
+      },
+      {
+        "locationId": "hawkins-pd",
+        "status": "dim",
+        "emphasis": 0.1
+      },
+      {
+        "locationId": "palace-arcade",
+        "status": "dim",
+        "emphasis": 0.1
+      },
+      {
+        "locationId": "hawkins-quarry",
+        "status": "dim",
+        "emphasis": 0.1
+      },
+      {
+        "locationId": "hopper-cabin",
+        "status": "dim",
+        "emphasis": 0.1
+      },
+      {
+        "locationId": "bennys-burgers",
+        "status": "dim",
+        "emphasis": 0.1
+      }
     ],
     "characterStates": [
-      { "characterId": "demogorgon", "locationId": "hawkins-middle-school", "status": "present" },
-      { "characterId": "eleven", "locationId": "hawkins-middle-school", "status": "present" },
-      { "characterId": "mike-wheeler", "locationId": "hawkins-middle-school", "status": "present" },
-      { "characterId": "dustin-henderson", "locationId": "hawkins-middle-school", "status": "present" },
-      { "characterId": "lucas-sinclair", "locationId": "hawkins-middle-school", "status": "present" }
+      {
+        "characterId": "demogorgon",
+        "locationId": "hawkins-middle-school",
+        "status": "present"
+      },
+      {
+        "characterId": "eleven",
+        "locationId": "hawkins-middle-school",
+        "status": "present"
+      },
+      {
+        "characterId": "mike-wheeler",
+        "locationId": "hawkins-middle-school",
+        "status": "present"
+      },
+      {
+        "characterId": "dustin-henderson",
+        "locationId": "hawkins-middle-school",
+        "status": "present"
+      },
+      {
+        "characterId": "lucas-sinclair",
+        "locationId": "hawkins-middle-school",
+        "status": "present"
+      }
     ],
-    "visual": { "theme": "nightmare", "fog": 0.7, "glow": "#4A148C" }
+    "visual": {
+      "theme": "nightmare",
+      "fog": 0.7,
+      "glow": "#4A148C"
+    }
   },
   {
     "momentId": "s01e08-eleven-sacrifice",
     "locationStates": [
-      { "locationId": "hawkins-middle-school", "status": "active", "emphasis": 1.0 },
-      { "locationId": "upside-down-gate", "status": "foreshadowed", "emphasis": 0.6 },
-      { "locationId": "hawkins-lab", "status": "foreshadowed", "emphasis": 0.4 },
-      { "locationId": "byers-house", "status": "dim", "emphasis": 0.1 },
-      { "locationId": "mirkwood", "status": "dim", "emphasis": 0.1 },
-      { "locationId": "wheeler-house", "status": "dim", "emphasis": 0.1 },
-      { "locationId": "castle-byers", "status": "dim", "emphasis": 0.1 },
-      { "locationId": "hawkins-pd", "status": "dim", "emphasis": 0.1 },
-      { "locationId": "palace-arcade", "status": "dim", "emphasis": 0.1 },
-      { "locationId": "hawkins-quarry", "status": "dim", "emphasis": 0.1 },
-      { "locationId": "hopper-cabin", "status": "dim", "emphasis": 0.1 },
-      { "locationId": "bennys-burgers", "status": "dim", "emphasis": 0.1 }
+      {
+        "locationId": "hawkins-middle-school",
+        "status": "active",
+        "emphasis": 1
+      },
+      {
+        "locationId": "upside-down-gate",
+        "status": "foreshadowed",
+        "emphasis": 0.6
+      },
+      {
+        "locationId": "hawkins-lab",
+        "status": "foreshadowed",
+        "emphasis": 0.4
+      },
+      {
+        "locationId": "byers-house",
+        "status": "dim",
+        "emphasis": 0.1
+      },
+      {
+        "locationId": "mirkwood",
+        "status": "dim",
+        "emphasis": 0.1
+      },
+      {
+        "locationId": "wheeler-house",
+        "status": "dim",
+        "emphasis": 0.1
+      },
+      {
+        "locationId": "castle-byers",
+        "status": "dim",
+        "emphasis": 0.1
+      },
+      {
+        "locationId": "hawkins-pd",
+        "status": "dim",
+        "emphasis": 0.1
+      },
+      {
+        "locationId": "palace-arcade",
+        "status": "dim",
+        "emphasis": 0.1
+      },
+      {
+        "locationId": "hawkins-quarry",
+        "status": "dim",
+        "emphasis": 0.1
+      },
+      {
+        "locationId": "hopper-cabin",
+        "status": "dim",
+        "emphasis": 0.1
+      },
+      {
+        "locationId": "bennys-burgers",
+        "status": "dim",
+        "emphasis": 0.1
+      }
     ],
     "characterStates": [
-      { "characterId": "eleven", "locationId": "hawkins-middle-school", "status": "missing" },
-      { "characterId": "demogorgon", "locationId": "hawkins-middle-school", "status": "dead" }
+      {
+        "characterId": "eleven",
+        "locationId": "hawkins-middle-school",
+        "status": "missing"
+      },
+      {
+        "characterId": "demogorgon",
+        "locationId": "hawkins-middle-school",
+        "status": "dead"
+      }
     ],
-    "visual": { "theme": "upside-down", "fog": 0.8, "glow": "#1A237E" }
+    "visual": {
+      "theme": "upside-down",
+      "fog": 0.8,
+      "glow": "#1A237E"
+    }
   },
   {
     "momentId": "s01e08-will-rescued",
     "locationStates": [
-      { "locationId": "byers-house", "status": "active", "emphasis": 0.8 },
-      { "locationId": "hawkins-lab", "status": "dim", "emphasis": 0.2 },
-      { "locationId": "upside-down-gate", "status": "dim", "emphasis": 0.2 },
-      { "locationId": "mirkwood", "status": "dim", "emphasis": 0.1 },
-      { "locationId": "wheeler-house", "status": "dim", "emphasis": 0.1 },
-      { "locationId": "hawkins-middle-school", "status": "dim", "emphasis": 0.1 },
-      { "locationId": "castle-byers", "status": "dim", "emphasis": 0.1 },
-      { "locationId": "hawkins-pd", "status": "dim", "emphasis": 0.1 },
-      { "locationId": "palace-arcade", "status": "dim", "emphasis": 0.1 },
-      { "locationId": "hawkins-quarry", "status": "dim", "emphasis": 0.1 },
-      { "locationId": "hopper-cabin", "status": "dim", "emphasis": 0.1 },
-      { "locationId": "bennys-burgers", "status": "dim", "emphasis": 0.1 }
+      {
+        "locationId": "byers-house",
+        "status": "active",
+        "emphasis": 0.8
+      },
+      {
+        "locationId": "hawkins-lab",
+        "status": "dim",
+        "emphasis": 0.2
+      },
+      {
+        "locationId": "upside-down-gate",
+        "status": "dim",
+        "emphasis": 0.2
+      },
+      {
+        "locationId": "mirkwood",
+        "status": "dim",
+        "emphasis": 0.1
+      },
+      {
+        "locationId": "wheeler-house",
+        "status": "dim",
+        "emphasis": 0.1
+      },
+      {
+        "locationId": "hawkins-middle-school",
+        "status": "dim",
+        "emphasis": 0.1
+      },
+      {
+        "locationId": "castle-byers",
+        "status": "dim",
+        "emphasis": 0.1
+      },
+      {
+        "locationId": "hawkins-pd",
+        "status": "dim",
+        "emphasis": 0.1
+      },
+      {
+        "locationId": "palace-arcade",
+        "status": "dim",
+        "emphasis": 0.1
+      },
+      {
+        "locationId": "hawkins-quarry",
+        "status": "dim",
+        "emphasis": 0.1
+      },
+      {
+        "locationId": "hopper-cabin",
+        "status": "dim",
+        "emphasis": 0.1
+      },
+      {
+        "locationId": "bennys-burgers",
+        "status": "dim",
+        "emphasis": 0.1
+      }
     ],
     "characterStates": [
-      { "characterId": "will-byers", "locationId": "byers-house", "status": "present" },
-      { "characterId": "joyce-byers", "locationId": "byers-house", "status": "present" },
-      { "characterId": "jim-hopper", "locationId": "byers-house", "status": "present" }
+      {
+        "characterId": "will-byers",
+        "locationId": "byers-house",
+        "status": "present"
+      },
+      {
+        "characterId": "joyce-byers",
+        "locationId": "byers-house",
+        "status": "present"
+      },
+      {
+        "characterId": "jim-hopper",
+        "locationId": "byers-house",
+        "status": "present"
+      }
     ],
-    "visual": { "theme": "default", "fog": 0.2, "glow": "#FF9800" }
+    "visual": {
+      "theme": "default",
+      "fog": 0.2,
+      "glow": "#FF9800"
+    }
   },
   {
     "momentId": "s01e08-epilogue",
     "locationStates": [
-      { "locationId": "byers-house", "status": "active", "emphasis": 0.8 },
-      { "locationId": "wheeler-house", "status": "active", "emphasis": 0.7 },
-      { "locationId": "hopper-cabin", "status": "foreshadowed", "emphasis": 0.4 },
-      { "locationId": "hawkins-lab", "status": "dim", "emphasis": 0.1 },
-      { "locationId": "upside-down-gate", "status": "dim", "emphasis": 0.1 },
-      { "locationId": "mirkwood", "status": "dim", "emphasis": 0.1 },
-      { "locationId": "hawkins-middle-school", "status": "dim", "emphasis": 0.1 },
-      { "locationId": "castle-byers", "status": "dim", "emphasis": 0.1 },
-      { "locationId": "hawkins-pd", "status": "dim", "emphasis": 0.1 },
-      { "locationId": "palace-arcade", "status": "dim", "emphasis": 0.1 },
-      { "locationId": "hawkins-quarry", "status": "dim", "emphasis": 0.1 },
-      { "locationId": "bennys-burgers", "status": "dim", "emphasis": 0.1 }
+      {
+        "locationId": "byers-house",
+        "status": "active",
+        "emphasis": 0.8
+      },
+      {
+        "locationId": "wheeler-house",
+        "status": "active",
+        "emphasis": 0.7
+      },
+      {
+        "locationId": "hopper-cabin",
+        "status": "foreshadowed",
+        "emphasis": 0.4
+      },
+      {
+        "locationId": "hawkins-lab",
+        "status": "dim",
+        "emphasis": 0.1
+      },
+      {
+        "locationId": "upside-down-gate",
+        "status": "dim",
+        "emphasis": 0.1
+      },
+      {
+        "locationId": "mirkwood",
+        "status": "dim",
+        "emphasis": 0.1
+      },
+      {
+        "locationId": "hawkins-middle-school",
+        "status": "dim",
+        "emphasis": 0.1
+      },
+      {
+        "locationId": "castle-byers",
+        "status": "dim",
+        "emphasis": 0.1
+      },
+      {
+        "locationId": "hawkins-pd",
+        "status": "dim",
+        "emphasis": 0.1
+      },
+      {
+        "locationId": "palace-arcade",
+        "status": "dim",
+        "emphasis": 0.1
+      },
+      {
+        "locationId": "hawkins-quarry",
+        "status": "dim",
+        "emphasis": 0.1
+      },
+      {
+        "locationId": "bennys-burgers",
+        "status": "dim",
+        "emphasis": 0.1
+      }
     ],
     "characterStates": [
-      { "characterId": "will-byers", "locationId": "byers-house", "status": "present" },
-      { "characterId": "joyce-byers", "locationId": "byers-house", "status": "present" },
-      { "characterId": "mike-wheeler", "locationId": "wheeler-house", "status": "present" },
-      { "characterId": "dustin-henderson", "locationId": "wheeler-house", "status": "present" },
-      { "characterId": "lucas-sinclair", "locationId": "wheeler-house", "status": "present" },
-      { "characterId": "jim-hopper", "locationId": "hopper-cabin", "status": "present" }
+      {
+        "characterId": "will-byers",
+        "locationId": "byers-house",
+        "status": "present"
+      },
+      {
+        "characterId": "joyce-byers",
+        "locationId": "byers-house",
+        "status": "present"
+      },
+      {
+        "characterId": "mike-wheeler",
+        "locationId": "wheeler-house",
+        "status": "present"
+      },
+      {
+        "characterId": "dustin-henderson",
+        "locationId": "wheeler-house",
+        "status": "present"
+      },
+      {
+        "characterId": "lucas-sinclair",
+        "locationId": "wheeler-house",
+        "status": "present"
+      },
+      {
+        "characterId": "jim-hopper",
+        "locationId": "hopper-cabin",
+        "status": "present"
+      }
     ],
-    "visual": { "theme": "default", "fog": 0.2, "glow": "#FF9800" }
+    "visual": {
+      "theme": "default",
+      "fog": 0.2,
+      "glow": "#FF9800"
+    }
+  },
+  {
+    "momentId": "s02e01-arcade-mystery",
+    "locationStates": [
+      {
+        "locationId": "palace-arcade",
+        "status": "active",
+        "emphasis": 0.8
+      }
+    ],
+    "characterStates": [
+      {
+        "characterId": "dustin-henderson",
+        "locationId": "palace-arcade",
+        "status": "present"
+      },
+      {
+        "characterId": "lucas-sinclair",
+        "locationId": "palace-arcade",
+        "status": "present"
+      },
+      {
+        "characterId": "mike-wheeler",
+        "locationId": "palace-arcade",
+        "status": "present"
+      },
+      {
+        "characterId": "will-byers",
+        "locationId": "palace-arcade",
+        "status": "present"
+      }
+    ],
+    "visual": {
+      "theme": "default",
+      "fog": 0.2,
+      "glow": "#FF9800"
+    }
+  },
+  {
+    "momentId": "s02e01-will-halloween-vision",
+    "locationStates": [
+      {
+        "locationId": "pumpkin-patch",
+        "status": "active",
+        "emphasis": 0.9
+      }
+    ],
+    "characterStates": [
+      {
+        "characterId": "will-byers",
+        "locationId": "pumpkin-patch",
+        "status": "present"
+      }
+    ],
+    "visual": {
+      "theme": "tense",
+      "fog": 0.5,
+      "glow": "#C62828"
+    }
+  },
+  {
+    "momentId": "s02e01-max-arrives",
+    "locationStates": [
+      {
+        "locationId": "hawkins-middle-school",
+        "status": "active",
+        "emphasis": 0.8
+      }
+    ],
+    "characterStates": [
+      {
+        "characterId": "max-mayfield",
+        "locationId": "hawkins-middle-school",
+        "status": "present"
+      },
+      {
+        "characterId": "mike-wheeler",
+        "locationId": "hawkins-middle-school",
+        "status": "present"
+      },
+      {
+        "characterId": "dustin-henderson",
+        "locationId": "hawkins-middle-school",
+        "status": "present"
+      },
+      {
+        "characterId": "lucas-sinclair",
+        "locationId": "hawkins-middle-school",
+        "status": "present"
+      }
+    ],
+    "visual": {
+      "theme": "default",
+      "fog": 0.2,
+      "glow": "#FF9800"
+    }
+  },
+  {
+    "momentId": "s02e02-halloween-night",
+    "locationStates": [
+      {
+        "locationId": "hawkins-middle-school",
+        "status": "active",
+        "emphasis": 0.7
+      },
+      {
+        "locationId": "pumpkin-patch",
+        "status": "foreshadowed",
+        "emphasis": 0.4
+      }
+    ],
+    "characterStates": [
+      {
+        "characterId": "mike-wheeler",
+        "locationId": "hawkins-middle-school",
+        "status": "present"
+      },
+      {
+        "characterId": "dustin-henderson",
+        "locationId": "hawkins-middle-school",
+        "status": "present"
+      },
+      {
+        "characterId": "lucas-sinclair",
+        "locationId": "hawkins-middle-school",
+        "status": "present"
+      },
+      {
+        "characterId": "will-byers",
+        "locationId": "hawkins-middle-school",
+        "status": "present"
+      },
+      {
+        "characterId": "max-mayfield",
+        "locationId": "hawkins-middle-school",
+        "status": "present"
+      }
+    ],
+    "visual": {
+      "theme": "default",
+      "fog": 0.3,
+      "glow": "#FF9800"
+    }
+  },
+  {
+    "momentId": "s02e02-shadow-vision",
+    "locationStates": [
+      {
+        "locationId": "pumpkin-patch",
+        "status": "active",
+        "emphasis": 0.9
+      }
+    ],
+    "characterStates": [
+      {
+        "characterId": "will-byers",
+        "locationId": "pumpkin-patch",
+        "status": "present"
+      }
+    ],
+    "visual": {
+      "theme": "nightmare",
+      "fog": 0.7,
+      "glow": "#4A148C"
+    }
+  },
+  {
+    "momentId": "s02e02-eleven-cabin",
+    "locationStates": [
+      {
+        "locationId": "hopper-cabin",
+        "status": "active",
+        "emphasis": 0.8
+      }
+    ],
+    "characterStates": [
+      {
+        "characterId": "eleven",
+        "locationId": "hopper-cabin",
+        "status": "present"
+      },
+      {
+        "characterId": "jim-hopper",
+        "locationId": "hopper-cabin",
+        "status": "present"
+      }
+    ],
+    "visual": {
+      "theme": "default",
+      "fog": 0.2,
+      "glow": "#FF9800"
+    }
+  },
+  {
+    "momentId": "s02e03-dart-found",
+    "locationStates": [
+      {
+        "locationId": "hawkins-middle-school",
+        "status": "active",
+        "emphasis": 0.8
+      }
+    ],
+    "characterStates": [
+      {
+        "characterId": "dustin-henderson",
+        "locationId": "hawkins-middle-school",
+        "status": "present"
+      }
+    ],
+    "visual": {
+      "theme": "default",
+      "fog": 0.3,
+      "glow": "#FF9800"
+    }
+  },
+  {
+    "momentId": "s02e03-will-map",
+    "locationStates": [
+      {
+        "locationId": "byers-house",
+        "status": "active",
+        "emphasis": 0.8
+      },
+      {
+        "locationId": "hawkins-tunnels",
+        "status": "foreshadowed",
+        "emphasis": 0.5
+      }
+    ],
+    "characterStates": [
+      {
+        "characterId": "will-byers",
+        "locationId": "byers-house",
+        "status": "present"
+      },
+      {
+        "characterId": "joyce-byers",
+        "locationId": "byers-house",
+        "status": "present"
+      }
+    ],
+    "visual": {
+      "theme": "tense",
+      "fog": 0.4,
+      "glow": "#C62828"
+    }
+  },
+  {
+    "momentId": "s02e03-dart-escapes",
+    "locationStates": [
+      {
+        "locationId": "hawkins-middle-school",
+        "status": "active",
+        "emphasis": 0.8
+      }
+    ],
+    "characterStates": [
+      {
+        "characterId": "dustin-henderson",
+        "locationId": "hawkins-middle-school",
+        "status": "present"
+      }
+    ],
+    "visual": {
+      "theme": "tense",
+      "fog": 0.4,
+      "glow": "#C62828"
+    }
+  },
+  {
+    "momentId": "s02e04-will-possessed",
+    "locationStates": [
+      {
+        "locationId": "hawkins-hospital",
+        "status": "active",
+        "emphasis": 0.8
+      },
+      {
+        "locationId": "hawkins-lab",
+        "status": "foreshadowed",
+        "emphasis": 0.4
+      }
+    ],
+    "characterStates": [
+      {
+        "characterId": "will-byers",
+        "locationId": "hawkins-hospital",
+        "status": "present"
+      },
+      {
+        "characterId": "joyce-byers",
+        "locationId": "hawkins-hospital",
+        "status": "present"
+      },
+      {
+        "characterId": "jim-hopper",
+        "locationId": "hawkins-hospital",
+        "status": "present"
+      }
+    ],
+    "visual": {
+      "theme": "tense",
+      "fog": 0.5,
+      "glow": "#C62828"
+    }
+  },
+  {
+    "momentId": "s02e04-joyce-realizes",
+    "locationStates": [
+      {
+        "locationId": "byers-house",
+        "status": "active",
+        "emphasis": 0.8
+      }
+    ],
+    "characterStates": [
+      {
+        "characterId": "joyce-byers",
+        "locationId": "byers-house",
+        "status": "present"
+      },
+      {
+        "characterId": "will-byers",
+        "locationId": "byers-house",
+        "status": "trapped"
+      }
+    ],
+    "visual": {
+      "theme": "tense",
+      "fog": 0.5,
+      "glow": "#C62828"
+    }
+  },
+  {
+    "momentId": "s02e05-bob-decodes",
+    "locationStates": [
+      {
+        "locationId": "byers-house",
+        "status": "active",
+        "emphasis": 0.8
+      },
+      {
+        "locationId": "hawkins-tunnels",
+        "status": "foreshadowed",
+        "emphasis": 0.5
+      }
+    ],
+    "characterStates": [
+      {
+        "characterId": "bob-newby",
+        "locationId": "byers-house",
+        "status": "present"
+      },
+      {
+        "characterId": "joyce-byers",
+        "locationId": "byers-house",
+        "status": "present"
+      },
+      {
+        "characterId": "jim-hopper",
+        "locationId": "byers-house",
+        "status": "present"
+      }
+    ],
+    "visual": {
+      "theme": "tense",
+      "fog": 0.4,
+      "glow": "#C62828"
+    }
+  },
+  {
+    "momentId": "s02e05-hopper-trapped",
+    "locationStates": [
+      {
+        "locationId": "hawkins-tunnels",
+        "status": "active",
+        "emphasis": 0.9
+      }
+    ],
+    "characterStates": [
+      {
+        "characterId": "jim-hopper",
+        "locationId": "hawkins-tunnels",
+        "status": "present"
+      }
+    ],
+    "visual": {
+      "theme": "nightmare",
+      "fog": 0.6,
+      "glow": "#4A148C"
+    }
+  },
+  {
+    "momentId": "s02e05-eleven-opens-rift",
+    "locationStates": [
+      {
+        "locationId": "hawkins-tunnels",
+        "status": "active",
+        "emphasis": 0.8
+      },
+      {
+        "locationId": "hopper-cabin",
+        "status": "active",
+        "emphasis": 0.7
+      }
+    ],
+    "characterStates": [
+      {
+        "characterId": "eleven",
+        "locationId": "hopper-cabin",
+        "status": "present"
+      },
+      {
+        "characterId": "jim-hopper",
+        "locationId": "hawkins-tunnels",
+        "status": "present"
+      }
+    ],
+    "visual": {
+      "theme": "nightmare",
+      "fog": 0.6,
+      "glow": "#4A148C"
+    }
+  },
+  {
+    "momentId": "s02e06-will-betrays",
+    "locationStates": [
+      {
+        "locationId": "hawkins-lab",
+        "status": "active",
+        "emphasis": 0.8
+      }
+    ],
+    "characterStates": [
+      {
+        "characterId": "will-byers",
+        "locationId": "hawkins-lab",
+        "status": "trapped"
+      },
+      {
+        "characterId": "sam-owens",
+        "locationId": "hawkins-lab",
+        "status": "present"
+      }
+    ],
+    "visual": {
+      "theme": "nightmare",
+      "fog": 0.6,
+      "glow": "#4A148C"
+    }
+  },
+  {
+    "momentId": "s02e06-tunnel-ambush",
+    "locationStates": [
+      {
+        "locationId": "the-junkyard",
+        "status": "active",
+        "emphasis": 0.8
+      }
+    ],
+    "characterStates": [
+      {
+        "characterId": "mike-wheeler",
+        "locationId": "the-junkyard",
+        "status": "present"
+      },
+      {
+        "characterId": "dustin-henderson",
+        "locationId": "the-junkyard",
+        "status": "present"
+      },
+      {
+        "characterId": "lucas-sinclair",
+        "locationId": "the-junkyard",
+        "status": "present"
+      },
+      {
+        "characterId": "max-mayfield",
+        "locationId": "the-junkyard",
+        "status": "present"
+      }
+    ],
+    "visual": {
+      "theme": "tense",
+      "fog": 0.5,
+      "glow": "#C62828"
+    }
+  },
+  {
+    "momentId": "s02e06-nancy-jonathan",
+    "locationStates": [
+      {
+        "locationId": "murrays-bunker",
+        "status": "active",
+        "emphasis": 0.8
+      }
+    ],
+    "characterStates": [],
+    "visual": {
+      "theme": "default",
+      "fog": 0.2,
+      "glow": "#FF9800"
+    }
+  },
+  {
+    "momentId": "s02e07-eleven-chicago",
+    "locationStates": [
+      {
+        "locationId": "chicago",
+        "status": "active",
+        "emphasis": 0.8
+      }
+    ],
+    "characterStates": [
+      {
+        "characterId": "eleven",
+        "locationId": "chicago",
+        "status": "present"
+      },
+      {
+        "characterId": "kali-prasad",
+        "locationId": "chicago",
+        "status": "present"
+      }
+    ],
+    "visual": {
+      "theme": "default",
+      "fog": 0.3,
+      "glow": "#9C27B0"
+    }
+  },
+  {
+    "momentId": "s02e07-kali-training",
+    "locationStates": [
+      {
+        "locationId": "chicago",
+        "status": "active",
+        "emphasis": 0.9
+      }
+    ],
+    "characterStates": [
+      {
+        "characterId": "eleven",
+        "locationId": "chicago",
+        "status": "present"
+      },
+      {
+        "characterId": "kali-prasad",
+        "locationId": "chicago",
+        "status": "present"
+      }
+    ],
+    "visual": {
+      "theme": "nightmare",
+      "fog": 0.5,
+      "glow": "#9C27B0"
+    }
+  },
+  {
+    "momentId": "s02e07-eleven-returns",
+    "locationStates": [
+      {
+        "locationId": "chicago",
+        "status": "active",
+        "emphasis": 0.7
+      }
+    ],
+    "characterStates": [
+      {
+        "characterId": "eleven",
+        "locationId": "chicago",
+        "status": "present"
+      }
+    ],
+    "visual": {
+      "theme": "default",
+      "fog": 0.2,
+      "glow": "#FF9800"
+    }
+  },
+  {
+    "momentId": "s02e08-lab-lockdown",
+    "locationStates": [
+      {
+        "locationId": "hawkins-lab",
+        "status": "active",
+        "emphasis": 0.9
+      }
+    ],
+    "characterStates": [
+      {
+        "characterId": "jim-hopper",
+        "locationId": "hawkins-lab",
+        "status": "present"
+      },
+      {
+        "characterId": "joyce-byers",
+        "locationId": "hawkins-lab",
+        "status": "present"
+      },
+      {
+        "characterId": "bob-newby",
+        "locationId": "hawkins-lab",
+        "status": "present"
+      },
+      {
+        "characterId": "sam-owens",
+        "locationId": "hawkins-lab",
+        "status": "present"
+      },
+      {
+        "characterId": "will-byers",
+        "locationId": "hawkins-lab",
+        "status": "present"
+      }
+    ],
+    "visual": {
+      "theme": "nightmare",
+      "fog": 0.7,
+      "glow": "#C62828"
+    }
+  },
+  {
+    "momentId": "s02e08-bob-sacrifice",
+    "locationStates": [
+      {
+        "locationId": "hawkins-lab",
+        "status": "active",
+        "emphasis": 1
+      }
+    ],
+    "characterStates": [
+      {
+        "characterId": "bob-newby",
+        "locationId": "hawkins-lab",
+        "status": "present"
+      }
+    ],
+    "visual": {
+      "theme": "nightmare",
+      "fog": 0.7,
+      "glow": "#C62828"
+    }
+  },
+  {
+    "momentId": "s02e08-exorcism",
+    "locationStates": [
+      {
+        "locationId": "byers-house",
+        "status": "active",
+        "emphasis": 0.9
+      }
+    ],
+    "characterStates": [
+      {
+        "characterId": "will-byers",
+        "locationId": "byers-house",
+        "status": "trapped"
+      },
+      {
+        "characterId": "joyce-byers",
+        "locationId": "byers-house",
+        "status": "present"
+      }
+    ],
+    "visual": {
+      "theme": "nightmare",
+      "fog": 0.7,
+      "glow": "#C62828"
+    }
+  },
+  {
+    "momentId": "s02e09-eleven-closes-gate",
+    "locationStates": [
+      {
+        "locationId": "upside-down-gate",
+        "status": "active",
+        "emphasis": 1
+      },
+      {
+        "locationId": "hawkins-lab",
+        "status": "active",
+        "emphasis": 0.8
+      }
+    ],
+    "characterStates": [
+      {
+        "characterId": "eleven",
+        "locationId": "upside-down-gate",
+        "status": "present"
+      },
+      {
+        "characterId": "jim-hopper",
+        "locationId": "hawkins-lab",
+        "status": "present"
+      }
+    ],
+    "visual": {
+      "theme": "upside-down",
+      "fog": 0.8,
+      "glow": "#1A237E"
+    }
+  },
+  {
+    "momentId": "s02e09-gate-closed",
+    "locationStates": [
+      {
+        "locationId": "hawkins-lab",
+        "status": "active",
+        "emphasis": 0.8
+      }
+    ],
+    "characterStates": [
+      {
+        "characterId": "eleven",
+        "locationId": "hawkins-lab",
+        "status": "present"
+      },
+      {
+        "characterId": "jim-hopper",
+        "locationId": "hawkins-lab",
+        "status": "present"
+      },
+      {
+        "characterId": "joyce-byers",
+        "locationId": "hawkins-lab",
+        "status": "present"
+      }
+    ],
+    "visual": {
+      "theme": "default",
+      "fog": 0.3,
+      "glow": "#FF9800"
+    }
+  },
+  {
+    "momentId": "s02e09-snow-ball",
+    "locationStates": [
+      {
+        "locationId": "hawkins-middle-school",
+        "status": "active",
+        "emphasis": 0.8
+      }
+    ],
+    "characterStates": [
+      {
+        "characterId": "eleven",
+        "locationId": "hawkins-middle-school",
+        "status": "present"
+      },
+      {
+        "characterId": "mike-wheeler",
+        "locationId": "hawkins-middle-school",
+        "status": "present"
+      },
+      {
+        "characterId": "dustin-henderson",
+        "locationId": "hawkins-middle-school",
+        "status": "present"
+      },
+      {
+        "characterId": "lucas-sinclair",
+        "locationId": "hawkins-middle-school",
+        "status": "present"
+      },
+      {
+        "characterId": "max-mayfield",
+        "locationId": "hawkins-middle-school",
+        "status": "present"
+      },
+      {
+        "characterId": "will-byers",
+        "locationId": "hawkins-middle-school",
+        "status": "present"
+      }
+    ],
+    "visual": {
+      "theme": "default",
+      "fog": 0.1,
+      "glow": "#FF9800"
+    }
+  },
+  {
+    "momentId": "s02e04-eleven-discovers-truth",
+    "locationStates": [
+      {
+        "locationId": "hopper-cabin",
+        "status": "active",
+        "emphasis": 0.8
+      }
+    ],
+    "characterStates": [
+      {
+        "characterId": "eleven",
+        "locationId": "hopper-cabin",
+        "status": "present"
+      }
+    ],
+    "visual": {
+      "theme": "tense",
+      "fog": 0.4,
+      "glow": "#C62828"
+    }
+  },
+  {
+    "momentId": "s02e05-dustin-seeks-help",
+    "locationStates": [
+      {
+        "locationId": "hawkins-middle-school",
+        "status": "active",
+        "emphasis": 0.7
+      }
+    ],
+    "characterStates": [
+      {
+        "characterId": "dustin-henderson",
+        "locationId": "hawkins-middle-school",
+        "status": "present"
+      }
+    ],
+    "visual": {
+      "theme": "default",
+      "fog": 0.3,
+      "glow": "#FF9800"
+    }
+  },
+  {
+    "momentId": "s02e08-demodog-attack",
+    "locationStates": [
+      {
+        "locationId": "hawkins-lab",
+        "status": "active",
+        "emphasis": 0.9
+      }
+    ],
+    "characterStates": [
+      {
+        "characterId": "jim-hopper",
+        "locationId": "hawkins-lab",
+        "status": "present"
+      },
+      {
+        "characterId": "sam-owens",
+        "locationId": "hawkins-lab",
+        "status": "present"
+      }
+    ],
+    "visual": {
+      "theme": "nightmare",
+      "fog": 0.7,
+      "glow": "#C62828"
+    }
+  },
+  {
+    "momentId": "s02e09-mind-flayer-watches",
+    "locationStates": [
+      {
+        "locationId": "hawkins-middle-school",
+        "status": "active",
+        "emphasis": 0.6
+      },
+      {
+        "locationId": "upside-down-gate",
+        "status": "foreshadowed",
+        "emphasis": 0.5
+      }
+    ],
+    "characterStates": [
+      {
+        "characterId": "will-byers",
+        "locationId": "hawkins-middle-school",
+        "status": "present"
+      }
+    ],
+    "visual": {
+      "theme": "tense",
+      "fog": 0.4,
+      "glow": "#1A237E"
+    }
+  },
+  {
+    "momentId": "s03e01-rats-melting",
+    "locationStates": [
+      {
+        "locationId": "brimborn-steelworks",
+        "status": "active",
+        "emphasis": 0.8
+      }
+    ],
+    "characterStates": [],
+    "visual": {
+      "theme": "tense",
+      "fog": 0.4,
+      "glow": "#C62828"
+    }
+  },
+  {
+    "momentId": "s03e01-scoops-ahoy",
+    "locationStates": [
+      {
+        "locationId": "starcourt-mall",
+        "status": "active",
+        "emphasis": 0.8
+      }
+    ],
+    "characterStates": [
+      {
+        "characterId": "robin-buckley",
+        "locationId": "starcourt-mall",
+        "status": "present"
+      }
+    ],
+    "visual": {
+      "theme": "default",
+      "fog": 0.2,
+      "glow": "#FF9800"
+    }
+  },
+  {
+    "momentId": "s03e01-dustin-intercepts",
+    "locationStates": [
+      {
+        "locationId": "hawkins-middle-school",
+        "status": "active",
+        "emphasis": 0.7
+      }
+    ],
+    "characterStates": [
+      {
+        "characterId": "dustin-henderson",
+        "locationId": "hawkins-middle-school",
+        "status": "present"
+      }
+    ],
+    "visual": {
+      "theme": "default",
+      "fog": 0.3,
+      "glow": "#FF9800"
+    }
+  },
+  {
+    "momentId": "s03e02-eleven-and-mike",
+    "locationStates": [
+      {
+        "locationId": "starcourt-mall",
+        "status": "active",
+        "emphasis": 0.7
+      }
+    ],
+    "characterStates": [
+      {
+        "characterId": "eleven",
+        "locationId": "starcourt-mall",
+        "status": "present"
+      },
+      {
+        "characterId": "mike-wheeler",
+        "locationId": "starcourt-mall",
+        "status": "present"
+      }
+    ],
+    "visual": {
+      "theme": "default",
+      "fog": 0.1,
+      "glow": "#FF9800"
+    }
+  },
+  {
+    "momentId": "s03e02-hopper-frustrated",
+    "locationStates": [
+      {
+        "locationId": "hawkins-pd",
+        "status": "active",
+        "emphasis": 0.7
+      }
+    ],
+    "characterStates": [
+      {
+        "characterId": "jim-hopper",
+        "locationId": "hawkins-pd",
+        "status": "present"
+      },
+      {
+        "characterId": "joyce-byers",
+        "locationId": "hawkins-pd",
+        "status": "present"
+      }
+    ],
+    "visual": {
+      "theme": "default",
+      "fog": 0.2,
+      "glow": "#FF9800"
+    }
+  },
+  {
+    "momentId": "s03e02-magnets-fall",
+    "locationStates": [
+      {
+        "locationId": "byers-house",
+        "status": "active",
+        "emphasis": 0.7
+      }
+    ],
+    "characterStates": [
+      {
+        "characterId": "joyce-byers",
+        "locationId": "byers-house",
+        "status": "present"
+      }
+    ],
+    "visual": {
+      "theme": "tense",
+      "fog": 0.3,
+      "glow": "#C62828"
+    }
+  },
+  {
+    "momentId": "s03e03-billy-at-lake",
+    "locationStates": [
+      {
+        "locationId": "lovers-lake",
+        "status": "active",
+        "emphasis": 0.8
+      }
+    ],
+    "characterStates": [
+      {
+        "characterId": "billy-hargrove",
+        "locationId": "lovers-lake",
+        "status": "present"
+      }
+    ],
+    "visual": {
+      "theme": "tense",
+      "fog": 0.5,
+      "glow": "#C62828"
+    }
+  },
+  {
+    "momentId": "s03e03-billy-possessed",
+    "locationStates": [
+      {
+        "locationId": "hawkins-pool",
+        "status": "active",
+        "emphasis": 0.8
+      }
+    ],
+    "characterStates": [
+      {
+        "characterId": "billy-hargrove",
+        "locationId": "hawkins-pool",
+        "status": "present"
+      }
+    ],
+    "visual": {
+      "theme": "nightmare",
+      "fog": 0.6,
+      "glow": "#4A148C"
+    }
+  },
+  {
+    "momentId": "s03e03-max-suspicious",
+    "locationStates": [
+      {
+        "locationId": "hawkins-middle-school",
+        "status": "active",
+        "emphasis": 0.7
+      }
+    ],
+    "characterStates": [
+      {
+        "characterId": "max-mayfield",
+        "locationId": "hawkins-middle-school",
+        "status": "present"
+      }
+    ],
+    "visual": {
+      "theme": "tense",
+      "fog": 0.3,
+      "glow": "#C62828"
+    }
+  },
+  {
+    "momentId": "s03e04-sauna-test",
+    "locationStates": [
+      {
+        "locationId": "hawkins-pool",
+        "status": "active",
+        "emphasis": 0.9
+      }
+    ],
+    "characterStates": [
+      {
+        "characterId": "billy-hargrove",
+        "locationId": "hawkins-pool",
+        "status": "present"
+      },
+      {
+        "characterId": "max-mayfield",
+        "locationId": "hawkins-pool",
+        "status": "present"
+      },
+      {
+        "characterId": "eleven",
+        "locationId": "hawkins-pool",
+        "status": "present"
+      }
+    ],
+    "visual": {
+      "theme": "nightmare",
+      "fog": 0.6,
+      "glow": "#C62828"
+    }
+  },
+  {
+    "momentId": "s03e04-flayed-converge",
+    "locationStates": [
+      {
+        "locationId": "brimborn-steelworks",
+        "status": "active",
+        "emphasis": 0.9
+      }
+    ],
+    "characterStates": [
+      {
+        "characterId": "billy-hargrove",
+        "locationId": "brimborn-steelworks",
+        "status": "present"
+      }
+    ],
+    "visual": {
+      "theme": "nightmare",
+      "fog": 0.7,
+      "glow": "#4A148C"
+    }
+  },
+  {
+    "momentId": "s03e05-scoops-infiltrate",
+    "locationStates": [
+      {
+        "locationId": "russian-base",
+        "status": "active",
+        "emphasis": 0.9
+      }
+    ],
+    "characterStates": [
+      {
+        "characterId": "robin-buckley",
+        "locationId": "russian-base",
+        "status": "present"
+      },
+      {
+        "characterId": "erica-sinclair",
+        "locationId": "russian-base",
+        "status": "present"
+      }
+    ],
+    "visual": {
+      "theme": "tense",
+      "fog": 0.4,
+      "glow": "#C62828"
+    }
+  },
+  {
+    "momentId": "s03e05-hopper-joyce-alexei",
+    "locationStates": [
+      {
+        "locationId": "murrays-bunker",
+        "status": "active",
+        "emphasis": 0.8
+      }
+    ],
+    "characterStates": [
+      {
+        "characterId": "jim-hopper",
+        "locationId": "murrays-bunker",
+        "status": "present"
+      },
+      {
+        "characterId": "joyce-byers",
+        "locationId": "murrays-bunker",
+        "status": "present"
+      },
+      {
+        "characterId": "alexei",
+        "locationId": "murrays-bunker",
+        "status": "present"
+      }
+    ],
+    "visual": {
+      "theme": "default",
+      "fog": 0.2,
+      "glow": "#FF9800"
+    }
+  },
+  {
+    "momentId": "s03e05-mind-flayer-attacks",
+    "locationStates": [
+      {
+        "locationId": "brimborn-steelworks",
+        "status": "active",
+        "emphasis": 0.9
+      }
+    ],
+    "characterStates": [
+      {
+        "characterId": "eleven",
+        "locationId": "brimborn-steelworks",
+        "status": "present"
+      }
+    ],
+    "visual": {
+      "theme": "nightmare",
+      "fog": 0.7,
+      "glow": "#4A148C"
+    }
+  },
+  {
+    "momentId": "s03e06-eleven-weakened",
+    "locationStates": [
+      {
+        "locationId": "hawkins-hospital",
+        "status": "active",
+        "emphasis": 0.8
+      }
+    ],
+    "characterStates": [
+      {
+        "characterId": "eleven",
+        "locationId": "hawkins-hospital",
+        "status": "present"
+      },
+      {
+        "characterId": "mike-wheeler",
+        "locationId": "hawkins-hospital",
+        "status": "present"
+      }
+    ],
+    "visual": {
+      "theme": "tense",
+      "fog": 0.4,
+      "glow": "#C62828"
+    }
+  },
+  {
+    "momentId": "s03e06-billys-speech",
+    "locationStates": [
+      {
+        "locationId": "brimborn-steelworks",
+        "status": "active",
+        "emphasis": 0.9
+      }
+    ],
+    "characterStates": [
+      {
+        "characterId": "billy-hargrove",
+        "locationId": "brimborn-steelworks",
+        "status": "present"
+      }
+    ],
+    "visual": {
+      "theme": "nightmare",
+      "fog": 0.7,
+      "glow": "#4A148C"
+    }
+  },
+  {
+    "momentId": "s03e07-fourth-of-july",
+    "locationStates": [
+      {
+        "locationId": "starcourt-mall",
+        "status": "active",
+        "emphasis": 0.8
+      }
+    ],
+    "characterStates": [
+      {
+        "characterId": "robin-buckley",
+        "locationId": "starcourt-mall",
+        "status": "present"
+      },
+      {
+        "characterId": "erica-sinclair",
+        "locationId": "starcourt-mall",
+        "status": "present"
+      }
+    ],
+    "visual": {
+      "theme": "default",
+      "fog": 0.2,
+      "glow": "#FF9800"
+    }
+  },
+  {
+    "momentId": "s03e07-alexei-shot",
+    "locationStates": [
+      {
+        "locationId": "starcourt-mall",
+        "status": "active",
+        "emphasis": 0.9
+      }
+    ],
+    "characterStates": [
+      {
+        "characterId": "alexei",
+        "locationId": "starcourt-mall",
+        "status": "present"
+      }
+    ],
+    "visual": {
+      "theme": "tense",
+      "fog": 0.5,
+      "glow": "#C62828"
+    }
+  },
+  {
+    "momentId": "s03e08-battle-begins",
+    "locationStates": [
+      {
+        "locationId": "starcourt-mall",
+        "status": "active",
+        "emphasis": 0.9
+      },
+      {
+        "locationId": "russian-base",
+        "status": "active",
+        "emphasis": 0.8
+      }
+    ],
+    "characterStates": [
+      {
+        "characterId": "eleven",
+        "locationId": "starcourt-mall",
+        "status": "present"
+      },
+      {
+        "characterId": "jim-hopper",
+        "locationId": "russian-base",
+        "status": "present"
+      },
+      {
+        "characterId": "joyce-byers",
+        "locationId": "russian-base",
+        "status": "present"
+      }
+    ],
+    "visual": {
+      "theme": "nightmare",
+      "fog": 0.7,
+      "glow": "#C62828"
+    }
+  },
+  {
+    "momentId": "s03e08-hopper-vs-grigori",
+    "locationStates": [
+      {
+        "locationId": "russian-base",
+        "status": "active",
+        "emphasis": 1
+      }
+    ],
+    "characterStates": [
+      {
+        "characterId": "jim-hopper",
+        "locationId": "russian-base",
+        "status": "present"
+      },
+      {
+        "characterId": "grigori",
+        "locationId": "russian-base",
+        "status": "present"
+      }
+    ],
+    "visual": {
+      "theme": "nightmare",
+      "fog": 0.7,
+      "glow": "#C62828"
+    }
+  },
+  {
+    "momentId": "s03e08-key-shutdown",
+    "locationStates": [
+      {
+        "locationId": "russian-base",
+        "status": "active",
+        "emphasis": 1
+      }
+    ],
+    "characterStates": [
+      {
+        "characterId": "joyce-byers",
+        "locationId": "russian-base",
+        "status": "present"
+      },
+      {
+        "characterId": "jim-hopper",
+        "locationId": "russian-base",
+        "status": "present"
+      }
+    ],
+    "visual": {
+      "theme": "upside-down",
+      "fog": 0.8,
+      "glow": "#1A237E"
+    }
+  },
+  {
+    "momentId": "s03e08-mind-flayer-dies",
+    "locationStates": [
+      {
+        "locationId": "starcourt-mall",
+        "status": "active",
+        "emphasis": 0.8
+      }
+    ],
+    "characterStates": [
+      {
+        "characterId": "eleven",
+        "locationId": "starcourt-mall",
+        "status": "present"
+      }
+    ],
+    "visual": {
+      "theme": "default",
+      "fog": 0.3,
+      "glow": "#FF9800"
+    }
+  },
+  {
+    "momentId": "s03e08-hopper-letter",
+    "locationStates": [
+      {
+        "locationId": "byers-house",
+        "status": "active",
+        "emphasis": 0.8
+      }
+    ],
+    "characterStates": [
+      {
+        "characterId": "eleven",
+        "locationId": "byers-house",
+        "status": "present"
+      },
+      {
+        "characterId": "joyce-byers",
+        "locationId": "byers-house",
+        "status": "present"
+      }
+    ],
+    "visual": {
+      "theme": "default",
+      "fog": 0.1,
+      "glow": "#FF9800"
+    }
+  },
+  {
+    "momentId": "s04e01-hellfire-club",
+    "locationStates": [
+      {
+        "locationId": "hawkins-high",
+        "status": "active",
+        "emphasis": 0.9
+      }
+    ],
+    "characterStates": [
+      {
+        "characterId": "eddie-munson",
+        "locationId": "hawkins-high",
+        "status": "present"
+      },
+      {
+        "characterId": "dustin-henderson",
+        "locationId": "hawkins-high",
+        "status": "present"
+      },
+      {
+        "characterId": "mike-wheeler",
+        "locationId": "hawkins-high",
+        "status": "present"
+      }
+    ],
+    "visual": {
+      "theme": "default",
+      "fog": 0.1,
+      "glow": "#E65100"
+    }
+  },
+  {
+    "momentId": "s04e01-chrissy-visions",
+    "locationStates": [
+      {
+        "locationId": "the-junkyard",
+        "status": "active",
+        "emphasis": 0.8
+      }
+    ],
+    "characterStates": [
+      {
+        "characterId": "eddie-munson",
+        "locationId": "the-junkyard",
+        "status": "present"
+      }
+    ],
+    "visual": {
+      "theme": "tense",
+      "fog": 0.4,
+      "glow": "#311B92"
+    }
+  },
+  {
+    "momentId": "s04e01-chrissy-killed",
+    "locationStates": [
+      {
+        "locationId": "the-junkyard",
+        "status": "active",
+        "emphasis": 0.9
+      }
+    ],
+    "characterStates": [
+      {
+        "characterId": "eddie-munson",
+        "locationId": "the-junkyard",
+        "status": "present"
+      }
+    ],
+    "visual": {
+      "theme": "nightmare",
+      "fog": 0.7,
+      "glow": "#311B92"
+    }
+  },
+  {
+    "momentId": "s04e01-eddie-flees",
+    "locationStates": [
+      {
+        "locationId": "the-junkyard",
+        "status": "active",
+        "emphasis": 0.8
+      }
+    ],
+    "characterStates": [
+      {
+        "characterId": "eddie-munson",
+        "locationId": "the-junkyard",
+        "status": "present"
+      },
+      {
+        "characterId": "dustin-henderson",
+        "locationId": "the-junkyard",
+        "status": "present"
+      }
+    ],
+    "visual": {
+      "theme": "tense",
+      "fog": 0.5,
+      "glow": "#FF5722"
+    }
+  },
+  {
+    "momentId": "s04e02-nancy-investigates",
+    "locationStates": [
+      {
+        "locationId": "hawkins-high",
+        "status": "active",
+        "emphasis": 0.7
+      }
+    ],
+    "characterStates": [
+      {
+        "characterId": "robin-buckley",
+        "locationId": "hawkins-high",
+        "status": "present"
+      }
+    ],
+    "visual": {
+      "theme": "default",
+      "fog": 0.2,
+      "glow": "#607D8B"
+    }
+  },
+  {
+    "momentId": "s04e02-fred-killed",
+    "locationStates": [
+      {
+        "locationId": "hawkins-high",
+        "status": "active",
+        "emphasis": 0.8
+      }
+    ],
+    "characterStates": [],
+    "visual": {
+      "theme": "nightmare",
+      "fog": 0.7,
+      "glow": "#311B92"
+    }
+  },
+  {
+    "momentId": "s04e02-robin-pennhurst",
+    "locationStates": [
+      {
+        "locationId": "pennhurst",
+        "status": "active",
+        "emphasis": 0.9
+      }
+    ],
+    "characterStates": [
+      {
+        "characterId": "robin-buckley",
+        "locationId": "pennhurst",
+        "status": "present"
+      }
+    ],
+    "visual": {
+      "theme": "tense",
+      "fog": 0.3,
+      "glow": "#607D8B"
+    }
+  },
+  {
+    "momentId": "s04e03-eleven-bullied",
+    "locationStates": [
+      {
+        "locationId": "byers-california",
+        "status": "active",
+        "emphasis": 0.8
+      }
+    ],
+    "characterStates": [
+      {
+        "characterId": "eleven",
+        "locationId": "byers-california",
+        "status": "present"
+      }
+    ],
+    "visual": {
+      "theme": "default",
+      "fog": 0.1,
+      "glow": "#E91E63"
+    }
+  },
+  {
+    "momentId": "s04e03-agents-attack",
+    "locationStates": [
+      {
+        "locationId": "byers-california",
+        "status": "active",
+        "emphasis": 0.9
+      }
+    ],
+    "characterStates": [
+      {
+        "characterId": "eleven",
+        "locationId": "byers-california",
+        "status": "present"
+      },
+      {
+        "characterId": "joyce-byers",
+        "locationId": "byers-california",
+        "status": "present"
+      }
+    ],
+    "visual": {
+      "theme": "tense",
+      "fog": 0.5,
+      "glow": "#FF5722"
+    }
+  },
+  {
+    "momentId": "s04e04-max-visions",
+    "locationStates": [
+      {
+        "locationId": "hawkins-high",
+        "status": "active",
+        "emphasis": 0.7
+      }
+    ],
+    "characterStates": [
+      {
+        "characterId": "max-mayfield",
+        "locationId": "hawkins-high",
+        "status": "present"
+      }
+    ],
+    "visual": {
+      "theme": "tense",
+      "fog": 0.5,
+      "glow": "#311B92"
+    }
+  },
+  {
+    "momentId": "s04e04-max-taken",
+    "locationStates": [
+      {
+        "locationId": "hawkins-high",
+        "status": "active",
+        "emphasis": 0.9
+      }
+    ],
+    "characterStates": [
+      {
+        "characterId": "max-mayfield",
+        "locationId": "hawkins-high",
+        "status": "trapped"
+      },
+      {
+        "characterId": "vecna",
+        "locationId": "hawkins-high",
+        "status": "present"
+      }
+    ],
+    "visual": {
+      "theme": "nightmare",
+      "fog": 0.8,
+      "glow": "#311B92"
+    }
+  },
+  {
+    "momentId": "s04e04-running-up-that-hill",
+    "locationStates": [
+      {
+        "locationId": "hawkins-high",
+        "status": "active",
+        "emphasis": 1
+      }
+    ],
+    "characterStates": [
+      {
+        "characterId": "max-mayfield",
+        "locationId": "hawkins-high",
+        "status": "trapped"
+      }
+    ],
+    "visual": {
+      "theme": "nightmare",
+      "fog": 0.6,
+      "glow": "#FF4081"
+    }
+  },
+  {
+    "momentId": "s04e04-max-escapes",
+    "locationStates": [
+      {
+        "locationId": "hawkins-high",
+        "status": "active",
+        "emphasis": 0.9
+      }
+    ],
+    "characterStates": [
+      {
+        "characterId": "max-mayfield",
+        "locationId": "hawkins-high",
+        "status": "present"
+      }
+    ],
+    "visual": {
+      "theme": "default",
+      "fog": 0.2,
+      "glow": "#FF4081"
+    }
+  },
+  {
+    "momentId": "s04e05-eleven-enters-nina",
+    "locationStates": [
+      {
+        "locationId": "nina-project",
+        "status": "active",
+        "emphasis": 0.9
+      }
+    ],
+    "characterStates": [
+      {
+        "characterId": "eleven",
+        "locationId": "nina-project",
+        "status": "present"
+      },
+      {
+        "characterId": "sam-owens",
+        "locationId": "nina-project",
+        "status": "present"
+      }
+    ],
+    "visual": {
+      "theme": "default",
+      "fog": 0.3,
+      "glow": "#E91E63"
+    }
+  },
+  {
+    "momentId": "s04e05-eleven-memories",
+    "locationStates": [
+      {
+        "locationId": "nina-project",
+        "status": "active",
+        "emphasis": 0.5
+      },
+      {
+        "locationId": "hawkins-lab",
+        "status": "active",
+        "emphasis": 0.9
+      }
+    ],
+    "characterStates": [
+      {
+        "characterId": "eleven",
+        "locationId": "hawkins-lab",
+        "status": "present"
+      }
+    ],
+    "visual": {
+      "theme": "tense",
+      "fog": 0.4,
+      "glow": "#E91E63"
+    }
+  },
+  {
+    "momentId": "s04e05-eleven-powers-return",
+    "locationStates": [
+      {
+        "locationId": "nina-project",
+        "status": "active",
+        "emphasis": 1
+      }
+    ],
+    "characterStates": [
+      {
+        "characterId": "eleven",
+        "locationId": "nina-project",
+        "status": "present"
+      }
+    ],
+    "visual": {
+      "theme": "default",
+      "fog": 0.2,
+      "glow": "#E91E63"
+    }
+  },
+  {
+    "momentId": "s04e06-diving-for-vecna",
+    "locationStates": [
+      {
+        "locationId": "creel-house",
+        "status": "active",
+        "emphasis": 0.8
+      }
+    ],
+    "characterStates": [
+      {
+        "characterId": "steve-harrington",
+        "locationId": "creel-house",
+        "status": "present"
+      },
+      {
+        "characterId": "robin-buckley",
+        "locationId": "creel-house",
+        "status": "present"
+      },
+      {
+        "characterId": "nancy-wheeler",
+        "locationId": "creel-house",
+        "status": "present"
+      }
+    ],
+    "visual": {
+      "theme": "upside-down",
+      "fog": 0.6,
+      "glow": "#311B92"
+    }
+  },
+  {
+    "momentId": "s04e06-creel-house",
+    "locationStates": [
+      {
+        "locationId": "creel-house",
+        "status": "active",
+        "emphasis": 1
+      }
+    ],
+    "characterStates": [
+      {
+        "characterId": "robin-buckley",
+        "locationId": "creel-house",
+        "status": "present"
+      },
+      {
+        "characterId": "nancy-wheeler",
+        "locationId": "creel-house",
+        "status": "present"
+      }
+    ],
+    "visual": {
+      "theme": "upside-down",
+      "fog": 0.7,
+      "glow": "#311B92"
+    }
+  },
+  {
+    "momentId": "s04e07-young-henry",
+    "locationStates": [
+      {
+        "locationId": "creel-house",
+        "status": "active",
+        "emphasis": 0.9
+      },
+      {
+        "locationId": "hawkins-lab",
+        "status": "foreshadowed",
+        "emphasis": 0.3
+      }
+    ],
+    "characterStates": [
+      {
+        "characterId": "vecna",
+        "locationId": "creel-house",
+        "status": "present"
+      }
+    ],
+    "visual": {
+      "theme": "tense",
+      "fog": 0.3,
+      "glow": "#311B92"
+    }
+  },
+  {
+    "momentId": "s04e07-henry-kills-family",
+    "locationStates": [
+      {
+        "locationId": "creel-house",
+        "status": "active",
+        "emphasis": 1
+      }
+    ],
+    "characterStates": [
+      {
+        "characterId": "vecna",
+        "locationId": "creel-house",
+        "status": "present"
+      }
+    ],
+    "visual": {
+      "theme": "nightmare",
+      "fog": 0.8,
+      "glow": "#311B92"
+    }
+  },
+  {
+    "momentId": "s04e07-henry-becomes-one",
+    "locationStates": [
+      {
+        "locationId": "hawkins-lab",
+        "status": "active",
+        "emphasis": 0.9
+      }
+    ],
+    "characterStates": [
+      {
+        "characterId": "vecna",
+        "locationId": "hawkins-lab",
+        "status": "present"
+      }
+    ],
+    "visual": {
+      "theme": "tense",
+      "fog": 0.5,
+      "glow": "#607D8B"
+    }
+  },
+  {
+    "momentId": "s04e07-massacre",
+    "locationStates": [
+      {
+        "locationId": "hawkins-lab",
+        "status": "active",
+        "emphasis": 1
+      }
+    ],
+    "characterStates": [
+      {
+        "characterId": "vecna",
+        "locationId": "hawkins-lab",
+        "status": "present"
+      },
+      {
+        "characterId": "eleven",
+        "locationId": "hawkins-lab",
+        "status": "present"
+      }
+    ],
+    "visual": {
+      "theme": "nightmare",
+      "fog": 0.9,
+      "glow": "#B71C1C"
+    }
+  },
+  {
+    "momentId": "s04e07-vecna-born",
+    "locationStates": [
+      {
+        "locationId": "hawkins-lab",
+        "status": "active",
+        "emphasis": 0.9
+      }
+    ],
+    "characterStates": [
+      {
+        "characterId": "eleven",
+        "locationId": "hawkins-lab",
+        "status": "present"
+      },
+      {
+        "characterId": "vecna",
+        "locationId": "hawkins-lab",
+        "status": "present"
+      }
+    ],
+    "visual": {
+      "theme": "upside-down",
+      "fog": 0.8,
+      "glow": "#311B92"
+    }
+  },
+  {
+    "momentId": "s04e08-eleven-finds-papa",
+    "locationStates": [
+      {
+        "locationId": "nina-project",
+        "status": "active",
+        "emphasis": 0.9
+      }
+    ],
+    "characterStates": [
+      {
+        "characterId": "eleven",
+        "locationId": "nina-project",
+        "status": "present"
+      },
+      {
+        "characterId": "sam-owens",
+        "locationId": "nina-project",
+        "status": "present"
+      }
+    ],
+    "visual": {
+      "theme": "default",
+      "fog": 0.3,
+      "glow": "#607D8B"
+    }
+  },
+  {
+    "momentId": "s04e08-brenner-dies",
+    "locationStates": [
+      {
+        "locationId": "nina-project",
+        "status": "active",
+        "emphasis": 0.9
+      }
+    ],
+    "characterStates": [
+      {
+        "characterId": "eleven",
+        "locationId": "nina-project",
+        "status": "present"
+      },
+      {
+        "characterId": "sam-owens",
+        "locationId": "nina-project",
+        "status": "present"
+      }
+    ],
+    "visual": {
+      "theme": "tense",
+      "fog": 0.5,
+      "glow": "#B71C1C"
+    }
+  },
+  {
+    "momentId": "s04e08-eleven-to-hawkins",
+    "locationStates": [
+      {
+        "locationId": "nina-project",
+        "status": "active",
+        "emphasis": 0.7
+      }
+    ],
+    "characterStates": [
+      {
+        "characterId": "eleven",
+        "locationId": "nina-project",
+        "status": "present"
+      },
+      {
+        "characterId": "argyle",
+        "locationId": "nina-project",
+        "status": "present"
+      }
+    ],
+    "visual": {
+      "theme": "default",
+      "fog": 0.2,
+      "glow": "#E91E63"
+    }
+  },
+  {
+    "momentId": "s04e09-plan-takes-shape",
+    "locationStates": [
+      {
+        "locationId": "hawkins-high",
+        "status": "active",
+        "emphasis": 0.8
+      },
+      {
+        "locationId": "creel-house",
+        "status": "foreshadowed",
+        "emphasis": 0.5
+      }
+    ],
+    "characterStates": [
+      {
+        "characterId": "eleven",
+        "locationId": "hawkins-high",
+        "status": "present"
+      },
+      {
+        "characterId": "dustin-henderson",
+        "locationId": "hawkins-high",
+        "status": "present"
+      },
+      {
+        "characterId": "mike-wheeler",
+        "locationId": "hawkins-high",
+        "status": "present"
+      }
+    ],
+    "visual": {
+      "theme": "tense",
+      "fog": 0.4,
+      "glow": "#FF9800"
+    }
+  },
+  {
+    "momentId": "s04e09-eddie-guitar",
+    "locationStates": [
+      {
+        "locationId": "creel-house",
+        "status": "active",
+        "emphasis": 1
+      }
+    ],
+    "characterStates": [
+      {
+        "characterId": "eddie-munson",
+        "locationId": "creel-house",
+        "status": "present"
+      },
+      {
+        "characterId": "dustin-henderson",
+        "locationId": "creel-house",
+        "status": "present"
+      }
+    ],
+    "visual": {
+      "theme": "upside-down",
+      "fog": 0.6,
+      "glow": "#E65100"
+    }
+  },
+  {
+    "momentId": "s04e09-eddie-dies",
+    "locationStates": [
+      {
+        "locationId": "creel-house",
+        "status": "active",
+        "emphasis": 1
+      }
+    ],
+    "characterStates": [
+      {
+        "characterId": "eddie-munson",
+        "locationId": "creel-house",
+        "status": "dead"
+      },
+      {
+        "characterId": "dustin-henderson",
+        "locationId": "creel-house",
+        "status": "present"
+      }
+    ],
+    "visual": {
+      "theme": "upside-down",
+      "fog": 0.8,
+      "glow": "#B71C1C"
+    }
+  },
+  {
+    "momentId": "s04e09-eleven-vs-vecna",
+    "locationStates": [
+      {
+        "locationId": "creel-house",
+        "status": "active",
+        "emphasis": 1
+      }
+    ],
+    "characterStates": [
+      {
+        "characterId": "eleven",
+        "locationId": "creel-house",
+        "status": "present"
+      },
+      {
+        "characterId": "vecna",
+        "locationId": "creel-house",
+        "status": "present"
+      },
+      {
+        "characterId": "max-mayfield",
+        "locationId": "creel-house",
+        "status": "trapped"
+      }
+    ],
+    "visual": {
+      "theme": "upside-down",
+      "fog": 0.9,
+      "glow": "#311B92"
+    }
+  },
+  {
+    "momentId": "s04e09-vecna-struck",
+    "locationStates": [
+      {
+        "locationId": "creel-house",
+        "status": "active",
+        "emphasis": 1
+      }
+    ],
+    "characterStates": [
+      {
+        "characterId": "eleven",
+        "locationId": "creel-house",
+        "status": "present"
+      },
+      {
+        "characterId": "vecna",
+        "locationId": "creel-house",
+        "status": "present"
+      },
+      {
+        "characterId": "steve-harrington",
+        "locationId": "creel-house",
+        "status": "present"
+      },
+      {
+        "characterId": "nancy-wheeler",
+        "locationId": "creel-house",
+        "status": "present"
+      },
+      {
+        "characterId": "robin-buckley",
+        "locationId": "creel-house",
+        "status": "present"
+      }
+    ],
+    "visual": {
+      "theme": "nightmare",
+      "fog": 0.9,
+      "glow": "#FF5722"
+    }
+  },
+  {
+    "momentId": "s04e09-max-dies",
+    "locationStates": [
+      {
+        "locationId": "hawkins-high",
+        "status": "active",
+        "emphasis": 0.9
+      }
+    ],
+    "characterStates": [
+      {
+        "characterId": "max-mayfield",
+        "locationId": "hawkins-high",
+        "status": "dead"
+      },
+      {
+        "characterId": "eleven",
+        "locationId": "hawkins-high",
+        "status": "present"
+      }
+    ],
+    "visual": {
+      "theme": "nightmare",
+      "fog": 0.9,
+      "glow": "#B71C1C"
+    }
+  },
+  {
+    "momentId": "s04e09-gates-tear",
+    "locationStates": [
+      {
+        "locationId": "creel-house",
+        "status": "active",
+        "emphasis": 0.9
+      },
+      {
+        "locationId": "hawkins-lab",
+        "status": "active",
+        "emphasis": 0.8
+      },
+      {
+        "locationId": "hawkins-high",
+        "status": "active",
+        "emphasis": 0.7
+      }
+    ],
+    "characterStates": [
+      {
+        "characterId": "vecna",
+        "locationId": "creel-house",
+        "status": "present"
+      }
+    ],
+    "visual": {
+      "theme": "upside-down",
+      "fog": 1,
+      "glow": "#B71C1C"
+    }
+  },
+  {
+    "momentId": "s04e09-aftermath",
+    "locationStates": [
+      {
+        "locationId": "hawkins-hospital",
+        "status": "active",
+        "emphasis": 0.8
+      }
+    ],
+    "characterStates": [
+      {
+        "characterId": "eleven",
+        "locationId": "hawkins-hospital",
+        "status": "present"
+      },
+      {
+        "characterId": "max-mayfield",
+        "locationId": "hawkins-hospital",
+        "status": "trapped"
+      }
+    ],
+    "visual": {
+      "theme": "default",
+      "fog": 0.4,
+      "glow": "#607D8B"
+    }
+  },
+  {
+    "momentId": "s05e01-hawkins-quarantined",
+    "locationStates": [
+      {
+        "locationId": "hawkins-quarantine",
+        "status": "active",
+        "emphasis": 1
+      }
+    ],
+    "characterStates": [
+      {
+        "characterId": "dr-kay",
+        "locationId": "hawkins-quarantine",
+        "status": "present"
+      }
+    ],
+    "visual": {
+      "theme": "tense",
+      "fog": 0.5,
+      "glow": "#607D8B"
+    }
+  },
+  {
+    "momentId": "s05e01-demogorgon-attacks",
+    "locationStates": [
+      {
+        "locationId": "wheeler-house",
+        "status": "active",
+        "emphasis": 1
+      }
+    ],
+    "characterStates": [
+      {
+        "characterId": "holly-wheeler",
+        "locationId": "wheeler-house",
+        "status": "present"
+      },
+      {
+        "characterId": "demogorgon",
+        "locationId": "wheeler-house",
+        "status": "present"
+      }
+    ],
+    "visual": {
+      "theme": "nightmare",
+      "fog": 0.8,
+      "glow": "#B71C1C"
+    }
+  },
+  {
+    "momentId": "s05e01-holly-gone",
+    "locationStates": [
+      {
+        "locationId": "wheeler-house",
+        "status": "active",
+        "emphasis": 0.9
+      }
+    ],
+    "characterStates": [
+      {
+        "characterId": "mike-wheeler",
+        "locationId": "wheeler-house",
+        "status": "present"
+      },
+      {
+        "characterId": "nancy-wheeler",
+        "locationId": "wheeler-house",
+        "status": "present"
+      }
+    ],
+    "visual": {
+      "theme": "tense",
+      "fog": 0.6,
+      "glow": "#FF5722"
+    }
+  },
+  {
+    "momentId": "s05e02-eleven-searches",
+    "locationStates": [
+      {
+        "locationId": "upside-down-gate",
+        "status": "active",
+        "emphasis": 0.9
+      }
+    ],
+    "characterStates": [
+      {
+        "characterId": "eleven",
+        "locationId": "upside-down-gate",
+        "status": "present"
+      }
+    ],
+    "visual": {
+      "theme": "upside-down",
+      "fog": 0.7,
+      "glow": "#E91E63"
+    }
+  },
+  {
+    "momentId": "s05e02-hopper-reunion",
+    "locationStates": [
+      {
+        "locationId": "upside-down-gate",
+        "status": "active",
+        "emphasis": 0.9
+      }
+    ],
+    "characterStates": [
+      {
+        "characterId": "eleven",
+        "locationId": "upside-down-gate",
+        "status": "present"
+      },
+      {
+        "characterId": "jim-hopper",
+        "locationId": "upside-down-gate",
+        "status": "present"
+      }
+    ],
+    "visual": {
+      "theme": "upside-down",
+      "fog": 0.5,
+      "glow": "#FF9800"
+    }
+  },
+  {
+    "momentId": "s05e02-mr-whatsit",
+    "locationStates": [
+      {
+        "locationId": "holly-realm",
+        "status": "active",
+        "emphasis": 1
+      }
+    ],
+    "characterStates": [
+      {
+        "characterId": "holly-wheeler",
+        "locationId": "holly-realm",
+        "status": "trapped"
+      },
+      {
+        "characterId": "vecna",
+        "locationId": "holly-realm",
+        "status": "present"
+      }
+    ],
+    "visual": {
+      "theme": "nightmare",
+      "fog": 0.9,
+      "glow": "#311B92"
+    }
+  },
+  {
+    "momentId": "s05e03-turnbow-bait",
+    "locationStates": [
+      {
+        "locationId": "hawkins-quarantine",
+        "status": "active",
+        "emphasis": 0.8
+      }
+    ],
+    "characterStates": [
+      {
+        "characterId": "derek-turnbow",
+        "locationId": "hawkins-quarantine",
+        "status": "present"
+      },
+      {
+        "characterId": "dustin-henderson",
+        "locationId": "hawkins-quarantine",
+        "status": "present"
+      },
+      {
+        "characterId": "lucas-sinclair",
+        "locationId": "hawkins-quarantine",
+        "status": "present"
+      }
+    ],
+    "visual": {
+      "theme": "tense",
+      "fog": 0.4,
+      "glow": "#FF9800"
+    }
+  },
+  {
+    "momentId": "s05e03-trap-spring",
+    "locationStates": [
+      {
+        "locationId": "hawkins-quarantine",
+        "status": "active",
+        "emphasis": 0.9
+      }
+    ],
+    "characterStates": [
+      {
+        "characterId": "derek-turnbow",
+        "locationId": "hawkins-quarantine",
+        "status": "present"
+      },
+      {
+        "characterId": "steve-harrington",
+        "locationId": "hawkins-quarantine",
+        "status": "present"
+      }
+    ],
+    "visual": {
+      "theme": "tense",
+      "fog": 0.5,
+      "glow": "#E91E63"
+    }
+  },
+  {
+    "momentId": "s05e04-will-powers",
+    "locationStates": [
+      {
+        "locationId": "hawkins-quarantine",
+        "status": "active",
+        "emphasis": 0.8
+      }
+    ],
+    "characterStates": [
+      {
+        "characterId": "will-byers",
+        "locationId": "hawkins-quarantine",
+        "status": "present"
+      }
+    ],
+    "visual": {
+      "theme": "tense",
+      "fog": 0.4,
+      "glow": "#FF9800"
+    }
+  },
+  {
+    "momentId": "s05e04-kali-found",
+    "locationStates": [
+      {
+        "locationId": "hawkins-quarantine",
+        "status": "active",
+        "emphasis": 0.9
+      }
+    ],
+    "characterStates": [
+      {
+        "characterId": "kali-prasad-s5",
+        "locationId": "hawkins-quarantine",
+        "status": "present"
+      },
+      {
+        "characterId": "eleven",
+        "locationId": "hawkins-quarantine",
+        "status": "present"
+      },
+      {
+        "characterId": "jim-hopper",
+        "locationId": "hawkins-quarantine",
+        "status": "present"
+      }
+    ],
+    "visual": {
+      "theme": "tense",
+      "fog": 0.4,
+      "glow": "#9C27B0"
+    }
+  },
+  {
+    "momentId": "s05e04-vecna-takes-children",
+    "locationStates": [
+      {
+        "locationId": "holly-realm",
+        "status": "active",
+        "emphasis": 1
+      }
+    ],
+    "characterStates": [
+      {
+        "characterId": "vecna",
+        "locationId": "holly-realm",
+        "status": "present"
+      },
+      {
+        "characterId": "holly-wheeler",
+        "locationId": "holly-realm",
+        "status": "trapped"
+      }
+    ],
+    "visual": {
+      "theme": "nightmare",
+      "fog": 0.9,
+      "glow": "#311B92"
+    }
+  },
+  {
+    "momentId": "s05e05-max-holly-memories",
+    "locationStates": [
+      {
+        "locationId": "holly-realm",
+        "status": "active",
+        "emphasis": 1
+      }
+    ],
+    "characterStates": [
+      {
+        "characterId": "max-mayfield",
+        "locationId": "holly-realm",
+        "status": "present"
+      },
+      {
+        "characterId": "holly-wheeler",
+        "locationId": "holly-realm",
+        "status": "trapped"
+      }
+    ],
+    "visual": {
+      "theme": "nightmare",
+      "fog": 0.7,
+      "glow": "#311B92"
+    }
+  },
+  {
+    "momentId": "s05e05-demogorgon-reanimated",
+    "locationStates": [
+      {
+        "locationId": "hawkins-quarantine",
+        "status": "active",
+        "emphasis": 0.8
+      }
+    ],
+    "characterStates": [
+      {
+        "characterId": "dustin-henderson",
+        "locationId": "hawkins-quarantine",
+        "status": "present"
+      },
+      {
+        "characterId": "mike-wheeler",
+        "locationId": "hawkins-quarantine",
+        "status": "present"
+      }
+    ],
+    "visual": {
+      "theme": "tense",
+      "fog": 0.5,
+      "glow": "#4CAF50"
+    }
+  },
+  {
+    "momentId": "s05e05-exotic-matter",
+    "locationStates": [
+      {
+        "locationId": "hawkins-quarantine",
+        "status": "active",
+        "emphasis": 0.8
+      }
+    ],
+    "characterStates": [
+      {
+        "characterId": "dustin-henderson",
+        "locationId": "hawkins-quarantine",
+        "status": "present"
+      }
+    ],
+    "visual": {
+      "theme": "tense",
+      "fog": 0.3,
+      "glow": "#00BCD4"
+    }
+  },
+  {
+    "momentId": "s05e06-matter-detonates",
+    "locationStates": [
+      {
+        "locationId": "hawkins-quarantine",
+        "status": "active",
+        "emphasis": 1
+      }
+    ],
+    "characterStates": [
+      {
+        "characterId": "dustin-henderson",
+        "locationId": "hawkins-quarantine",
+        "status": "present"
+      }
+    ],
+    "visual": {
+      "theme": "nightmare",
+      "fog": 0.8,
+      "glow": "#FF5722"
+    }
+  },
+  {
+    "momentId": "s05e06-demodogs-hospital",
+    "locationStates": [
+      {
+        "locationId": "hawkins-hospital",
+        "status": "active",
+        "emphasis": 0.9
+      }
+    ],
+    "characterStates": [
+      {
+        "characterId": "steve-harrington",
+        "locationId": "hawkins-hospital",
+        "status": "present"
+      },
+      {
+        "characterId": "robin-buckley",
+        "locationId": "hawkins-hospital",
+        "status": "present"
+      }
+    ],
+    "visual": {
+      "theme": "nightmare",
+      "fog": 0.7,
+      "glow": "#B71C1C"
+    }
+  },
+  {
+    "momentId": "s05e06-max-holly-escape",
+    "locationStates": [
+      {
+        "locationId": "holly-realm",
+        "status": "active",
+        "emphasis": 1
+      }
+    ],
+    "characterStates": [
+      {
+        "characterId": "max-mayfield",
+        "locationId": "holly-realm",
+        "status": "present"
+      },
+      {
+        "characterId": "holly-wheeler",
+        "locationId": "holly-realm",
+        "status": "trapped"
+      },
+      {
+        "characterId": "will-byers",
+        "locationId": "holly-realm",
+        "status": "present"
+      }
+    ],
+    "visual": {
+      "theme": "nightmare",
+      "fog": 0.6,
+      "glow": "#E91E63"
+    }
+  },
+  {
+    "momentId": "s05e07-will-comes-out",
+    "locationStates": [
+      {
+        "locationId": "hawkins-quarantine",
+        "status": "active",
+        "emphasis": 0.6
+      }
+    ],
+    "characterStates": [
+      {
+        "characterId": "will-byers",
+        "locationId": "hawkins-quarantine",
+        "status": "present"
+      },
+      {
+        "characterId": "mike-wheeler",
+        "locationId": "hawkins-quarantine",
+        "status": "present"
+      }
+    ],
+    "visual": {
+      "theme": "default",
+      "fog": 0.1,
+      "glow": "#FF9800"
+    }
+  },
+  {
+    "momentId": "s05e07-bridge-theory",
+    "locationStates": [
+      {
+        "locationId": "the-abyss",
+        "status": "active",
+        "emphasis": 0.9
+      }
+    ],
+    "characterStates": [
+      {
+        "characterId": "dustin-henderson",
+        "locationId": "the-abyss",
+        "status": "present"
+      }
+    ],
+    "visual": {
+      "theme": "upside-down",
+      "fog": 0.8,
+      "glow": "#311B92"
+    }
+  },
+  {
+    "momentId": "s05e07-henry-manipulates",
+    "locationStates": [
+      {
+        "locationId": "holly-realm",
+        "status": "active",
+        "emphasis": 1
+      }
+    ],
+    "characterStates": [
+      {
+        "characterId": "vecna",
+        "locationId": "holly-realm",
+        "status": "present"
+      },
+      {
+        "characterId": "holly-wheeler",
+        "locationId": "holly-realm",
+        "status": "trapped"
+      }
+    ],
+    "visual": {
+      "theme": "nightmare",
+      "fog": 0.9,
+      "glow": "#311B92"
+    }
+  },
+  {
+    "momentId": "s05e08-mind-flayer-emerges",
+    "locationStates": [
+      {
+        "locationId": "hawkins-quarantine",
+        "status": "active",
+        "emphasis": 1
+      }
+    ],
+    "characterStates": [
+      {
+        "characterId": "vecna",
+        "locationId": "hawkins-quarantine",
+        "status": "present"
+      }
+    ],
+    "visual": {
+      "theme": "upside-down",
+      "fog": 1,
+      "glow": "#B71C1C"
+    }
+  },
+  {
+    "momentId": "s05e08-kali-illusion",
+    "locationStates": [
+      {
+        "locationId": "hawkins-quarantine",
+        "status": "active",
+        "emphasis": 1
+      }
+    ],
+    "characterStates": [
+      {
+        "characterId": "kali-prasad-s5",
+        "locationId": "hawkins-quarantine",
+        "status": "present"
+      },
+      {
+        "characterId": "eleven",
+        "locationId": "hawkins-quarantine",
+        "status": "present"
+      }
+    ],
+    "visual": {
+      "theme": "nightmare",
+      "fog": 0.7,
+      "glow": "#9C27B0"
+    }
+  },
+  {
+    "momentId": "s05e08-kali-dies",
+    "locationStates": [
+      {
+        "locationId": "hawkins-quarantine",
+        "status": "active",
+        "emphasis": 1
+      }
+    ],
+    "characterStates": [
+      {
+        "characterId": "kali-prasad-s5",
+        "locationId": "hawkins-quarantine",
+        "status": "dead"
+      },
+      {
+        "characterId": "eleven",
+        "locationId": "hawkins-quarantine",
+        "status": "present"
+      }
+    ],
+    "visual": {
+      "theme": "nightmare",
+      "fog": 0.9,
+      "glow": "#B71C1C"
+    }
+  },
+  {
+    "momentId": "s05e08-final-battle",
+    "locationStates": [
+      {
+        "locationId": "hawkins-quarantine",
+        "status": "active",
+        "emphasis": 1
+      },
+      {
+        "locationId": "the-abyss",
+        "status": "foreshadowed",
+        "emphasis": 0.7
+      }
+    ],
+    "characterStates": [
+      {
+        "characterId": "eleven",
+        "locationId": "hawkins-quarantine",
+        "status": "present"
+      },
+      {
+        "characterId": "vecna",
+        "locationId": "hawkins-quarantine",
+        "status": "present"
+      },
+      {
+        "characterId": "will-byers",
+        "locationId": "hawkins-quarantine",
+        "status": "present"
+      }
+    ],
+    "visual": {
+      "theme": "upside-down",
+      "fog": 1,
+      "glow": "#E91E63"
+    }
+  },
+  {
+    "momentId": "s05e08-rightside-up",
+    "locationStates": [
+      {
+        "locationId": "wheeler-house",
+        "status": "active",
+        "emphasis": 0.8
+      }
+    ],
+    "characterStates": [
+      {
+        "characterId": "eleven",
+        "locationId": "wheeler-house",
+        "status": "present"
+      },
+      {
+        "characterId": "mike-wheeler",
+        "locationId": "wheeler-house",
+        "status": "present"
+      },
+      {
+        "characterId": "will-byers",
+        "locationId": "wheeler-house",
+        "status": "present"
+      },
+      {
+        "characterId": "dustin-henderson",
+        "locationId": "wheeler-house",
+        "status": "present"
+      },
+      {
+        "characterId": "lucas-sinclair",
+        "locationId": "wheeler-house",
+        "status": "present"
+      },
+      {
+        "characterId": "max-mayfield",
+        "locationId": "wheeler-house",
+        "status": "present"
+      }
+    ],
+    "visual": {
+      "theme": "default",
+      "fog": 0.1,
+      "glow": "#FF9800"
+    }
   }
 ]
