@@ -127,5 +127,348 @@
     "color": "#B71C1C",
     "image": "images/characters/demogorgon.png",
     "thumbnail": "images/characters/demogorgon.png"
+  },
+  {
+    "id": "max-mayfield",
+    "name": "Max Mayfield",
+    "aliases": [
+      "Madmax",
+      "Zoomer"
+    ],
+    "description": "A tomboy newcomer to Hawkins who joins the Party. Skilled at skateboarding and arcade games, she becomes a key ally against the Mind Flayer.",
+    "tags": [
+      "main",
+      "party",
+      "newcomer"
+    ],
+    "homeLocationId": "hawkins-middle-school",
+    "color": "#FF4081",
+    "image": "images/characters/max-mayfield.png",
+    "thumbnail": "images/characters/max-mayfield.png"
+  },
+  {
+    "id": "billy-hargrove",
+    "name": "Billy Hargrove",
+    "aliases": [],
+    "description": "Max's volatile stepbrother and a lifeguard at Hawkins Pool. He becomes the Mind Flayer's primary host, terrorizing Hawkins under its control.",
+    "tags": [
+      "antagonist",
+      "possessed"
+    ],
+    "homeLocationId": "hawkins-pool",
+    "color": "#D32F2F",
+    "image": "images/characters/billy-hargrove.png",
+    "thumbnail": "images/characters/billy-hargrove.png"
+  },
+  {
+    "id": "bob-newby",
+    "name": "Bob Newby",
+    "aliases": [
+      "Bob the Brain"
+    ],
+    "description": "Joyce's kind-hearted boyfriend and former Hawkins Middle AV club member. A RadioShack manager whose technical skills prove vital — and whose sacrifice saves the town.",
+    "tags": [
+      "adult",
+      "ally",
+      "sacrifice"
+    ],
+    "homeLocationId": "byers-house",
+    "color": "#795548",
+    "image": "images/characters/bob-newby.png",
+    "thumbnail": "images/characters/bob-newby.png"
+  },
+  {
+    "id": "sam-owens",
+    "name": "Dr. Sam Owens",
+    "aliases": [],
+    "description": "The replacement director at Hawkins Lab. Unlike Brenner, he genuinely cares about Eleven's wellbeing and helps Hopper forge her legal identity.",
+    "tags": [
+      "authority",
+      "ally"
+    ],
+    "homeLocationId": "hawkins-lab",
+    "color": "#607D8B",
+    "image": "images/characters/sam-owens.png",
+    "thumbnail": "images/characters/sam-owens.png"
+  },
+  {
+    "id": "kali-prasad",
+    "name": "Kali Prasad",
+    "aliases": [
+      "Eight",
+      "008"
+    ],
+    "description": "A Hawkins Lab subject with the power to create vivid illusions. She leads a gang in Chicago and helps Eleven understand the full scope of her abilities.",
+    "tags": [
+      "powered",
+      "lab-escapee"
+    ],
+    "homeLocationId": "chicago",
+    "color": "#9C27B0",
+    "image": "images/characters/kali-prasad.png",
+    "thumbnail": "images/characters/kali-prasad.png"
+  },
+  {
+    "id": "robin-buckley",
+    "name": "Robin Buckley",
+    "aliases": [],
+    "description": "A sharp-witted ice cream scooper at Scoops Ahoy who becomes Steve's partner in investigating the Russian base beneath Starcourt Mall. Fluent in four languages.",
+    "tags": [
+      "ally",
+      "scoops-troop"
+    ],
+    "homeLocationId": "starcourt-mall",
+    "color": "#00BCD4",
+    "image": "images/characters/robin-buckley.png",
+    "thumbnail": "images/characters/robin-buckley.png"
+  },
+  {
+    "id": "erica-sinclair",
+    "name": "Erica Sinclair",
+    "aliases": [],
+    "description": "Lucas's fearless little sister who infiltrates the Russian base through the air vents. A natural leader with zero patience for nonsense.",
+    "tags": [
+      "ally",
+      "scoops-troop"
+    ],
+    "homeLocationId": "wheeler-house",
+    "color": "#E91E63",
+    "image": "images/characters/erica-sinclair.png",
+    "thumbnail": "images/characters/erica-sinclair.png"
+  },
+  {
+    "id": "larry-kline",
+    "name": "Mayor Larry Kline",
+    "aliases": [],
+    "description": "The corrupt mayor of Hawkins who is in the Russians' pocket. He helps cover up the secret base beneath Starcourt Mall.",
+    "tags": [
+      "antagonist",
+      "authority"
+    ],
+    "homeLocationId": "hawkins-pd",
+    "color": "#795548",
+    "image": "images/characters/larry-kline.png",
+    "thumbnail": "images/characters/larry-kline.png"
+  },
+  {
+    "id": "grigori",
+    "name": "Grigori",
+    "aliases": [
+      "The Russian"
+    ],
+    "description": "A formidable Russian agent operating in Hawkins. He hunts Hopper and Joyce as they investigate the secret base, and is ultimately killed in the Key explosion.",
+    "tags": [
+      "antagonist",
+      "russian"
+    ],
+    "homeLocationId": "russian-base",
+    "color": "#B71C1C",
+    "image": "images/characters/grigori.png",
+    "thumbnail": "images/characters/grigori.png"
+  },
+  {
+    "id": "alexei",
+    "name": "Alexei",
+    "aliases": [
+      "Smirnoff"
+    ],
+    "description": "A brilliant Russian physicist forced to build the Key — a machine that opens gates to the Upside Down. He defects and bonds with Murray over Woody Woodpecker.",
+    "tags": [
+      "ally",
+      "russian",
+      "sacrifice"
+    ],
+    "homeLocationId": "murrays-bunker",
+    "color": "#4CAF50",
+    "image": "images/characters/alexei.png",
+    "thumbnail": "images/characters/alexei.png"
+  },
+  {
+    "id": "steve-harrington",
+    "name": "Steve Harrington",
+    "aliases": [
+      "Steve the Hair Harrington",
+      "Mama Steve"
+    ],
+    "description": "A popular Hawkins High student who evolves from Nancy's boyfriend into the Party's fierce protector. His babysitting skills and nail bat make him an unlikely hero.",
+    "tags": [
+      "main",
+      "ally",
+      "party"
+    ],
+    "homeLocationId": "wheeler-house",
+    "color": "#E91E63",
+    "image": "images/characters/steve-harrington.png",
+    "thumbnail": "images/characters/steve-harrington.png"
+  },
+  {
+    "id": "nancy-wheeler",
+    "name": "Nancy Wheeler",
+    "aliases": [],
+    "description": "Mike's older sister and a determined investigative journalist. She uncovers the truth about Hawkins Lab and becomes a skilled fighter against the Upside Down.",
+    "tags": [
+      "main",
+      "ally"
+    ],
+    "homeLocationId": "wheeler-house",
+    "color": "#9C27B0",
+    "image": "images/characters/nancy-wheeler.png",
+    "thumbnail": "images/characters/nancy-wheeler.png"
+  },
+  {
+    "id": "vecna",
+    "name": "Vecna",
+    "aliases": [
+      "Henry Creel",
+      "001",
+      "Peter Ballard"
+    ],
+    "description": "A being of immense psychic power, formerly Henry Creel — the first child experimented on by Dr. Brenner. He becomes the ruler of the Upside Down and the mastermind behind every horror that has plagued Hawkins.",
+    "tags": [
+      "antagonist",
+      "powered",
+      "upside-down"
+    ],
+    "homeLocationId": "creel-house",
+    "color": "#311B92",
+    "image": "images/characters/vecna.png",
+    "thumbnail": "images/characters/vecna.png"
+  },
+  {
+    "id": "eddie-munson",
+    "name": "Eddie Munson",
+    "aliases": [
+      "The Freak"
+    ],
+    "description": "The eccentric leader of the Hellfire Club, Hawkins High's D&D group. A metalhead outcast who becomes an unlikely hero when Vecna targets Hawkins.",
+    "tags": [
+      "ally",
+      "hellfire",
+      "sacrifice"
+    ],
+    "homeLocationId": "hawkins-high",
+    "color": "#E65100",
+    "image": "images/characters/eddie-munson.png",
+    "thumbnail": "images/characters/eddie-munson.png"
+  },
+  {
+    "id": "argyle",
+    "name": "Argyle",
+    "aliases": [],
+    "description": "Jonathan's stoner best friend and pizza delivery driver. He becomes the unlikely getaway driver for the California crew on their cross-country road trip.",
+    "tags": [
+      "ally",
+      "california"
+    ],
+    "homeLocationId": "byers-california",
+    "color": "#4CAF50",
+    "image": "images/characters/argyle.png",
+    "thumbnail": "images/characters/argyle.png"
+  },
+  {
+    "id": "jason-carver",
+    "name": "Jason Carver",
+    "aliases": [],
+    "description": "The popular basketball captain at Hawkins High who leads a vigilante hunt for Eddie after his girlfriend Chrissy's death. His fanaticism mirrors the town's hysteria.",
+    "tags": [
+      "antagonist",
+      "hawkins-high"
+    ],
+    "homeLocationId": "hawkins-high",
+    "color": "#795548",
+    "image": "images/characters/jason-carver.png",
+    "thumbnail": "images/characters/jason-carver.png"
+  },
+  {
+    "id": "dmitri",
+    "name": "Dmitri Antonov",
+    "aliases": [
+      "Enzo"
+    ],
+    "description": "A Russian prison guard who helps Hopper survive the Kamchatka gulag. He risks everything to aid Hopper's escape, earning the codename \"Enzo.\"",
+    "tags": [
+      "ally",
+      "russian"
+    ],
+    "homeLocationId": "nina-project",
+    "color": "#607D8B",
+    "image": "images/characters/dmitri.png",
+    "thumbnail": "images/characters/dmitri.png"
+  },
+  {
+    "id": "jonathan-byers",
+    "name": "Jonathan Byers",
+    "aliases": [],
+    "description": "Will's older brother — a quiet, introspective photographer who sees the world differently. He becomes Nancy's partner in investigating Hawkins Lab.",
+    "tags": [
+      "main",
+      "ally"
+    ],
+    "homeLocationId": "byers-house",
+    "color": "#795548",
+    "image": "images/characters/jonathan-byers.png",
+    "thumbnail": "images/characters/jonathan-byers.png"
+  },
+  {
+    "id": "dr-kay",
+    "name": "Dr. Kay",
+    "aliases": [],
+    "description": "The ruthless leader of the military quarantine around Hawkins. She hunts Eleven relentlessly, viewing her as a national security threat rather than a person.",
+    "tags": [
+      "antagonist",
+      "authority",
+      "military"
+    ],
+    "homeLocationId": "hawkins-quarantine",
+    "color": "#607D8B",
+    "image": "images/characters/dr-kay.png",
+    "thumbnail": "images/characters/dr-kay.png"
+  },
+  {
+    "id": "derek-turnbow",
+    "name": "Derek Turnbow",
+    "aliases": [],
+    "description": "Holly Wheeler's classmate who becomes a target of Vecna's manipulation. The group uses him as bait in a dangerous plan to lure out the Demogorgon.",
+    "tags": [
+      "ally",
+      "child"
+    ],
+    "homeLocationId": "wheeler-house",
+    "color": "#FF9800",
+    "image": "images/characters/derek-turnbow.png",
+    "thumbnail": "images/characters/derek-turnbow.png"
+  },
+  {
+    "id": "holly-wheeler",
+    "name": "Holly Wheeler",
+    "aliases": [],
+    "description": "Mike and Nancy's younger sister, now older and drawn into the Upside Down conflict. Vecna kidnaps her, and she develops a psychic connection to Max inside Henry's realm.",
+    "tags": [
+      "main",
+      "party",
+      "powered"
+    ],
+    "homeLocationId": "wheeler-house",
+    "color": "#E91E63",
+    "image": "images/characters/holly-wheeler.png",
+    "thumbnail": "images/characters/holly-wheeler.png"
+  },
+  {
+    "id": "kali-prasad-s5",
+    "name": "Kali Prasad",
+    "aliases": [
+      "Eight",
+      "008"
+    ],
+    "description": "Returns to help Eleven fight Vecna. Her illusion powers prove critical in the final battle — but she is killed confronting the Mind Flayer.",
+    "tags": [
+      "powered",
+      "sacrifice",
+      "ally"
+    ],
+    "homeLocationId": "hawkins-quarantine",
+    "color": "#9C27B0",
+    "image": "images/characters/kali-prasad.png",
+    "thumbnail": "images/characters/kali-prasad.png"
   }
 ]

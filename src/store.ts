@@ -5,6 +5,7 @@ import {
   momentStatesById,
   charactersById,
   locationsById,
+  episodesById,
 } from './data/catalog'
 import type { Character, Location, Moment, MomentState } from './data/catalog'
 
@@ -19,43 +20,79 @@ interface AtlasStore {
   currentMomentId: string
   selectedEntity: SelectedEntity | null
   isPlaying: boolean
+  currentSeason: number
   setMoment: (id: string) => void
   setSelected: (entity: SelectedEntity) => void
   clearSelected: () => void
   setPlaying: (playing: boolean) => void
+  setCurrentSeason: (season: number) => void
 }
 
 export const useAtlasStore = create<AtlasStore>((set) => ({
   currentMomentId: 's01e01-cold-open',
   selectedEntity: null,
   isPlaying: false,
+  currentSeason: 1,
   setMoment: (id) => set({ currentMomentId: id }),
   setSelected: (entity) => set({ selectedEntity: entity }),
   clearSelected: () => set({ selectedEntity: null }),
   setPlaying: (playing) => set({ isPlaying: playing }),
+  setCurrentSeason: (season) => set({ currentSeason: season }),
 }))
 
 // ─── useTimeline ──────────────────────────────────────────────────────────────
 
+function getSeason(moment: Moment): number {
+  const ep = episodesById.get(moment.episodeId)
+  return ep?.season ?? 1
+}
+
 export function useTimeline() {
   const currentMomentId = useAtlasStore((s) => s.currentMomentId)
+  const currentSeason = useAtlasStore((s) => s.currentSeason)
   const setMoment = useAtlasStore((s) => s.setMoment)
-  const currentIndex = momentsSorted.findIndex((m) => m.id === currentMomentId)
+  const setCurrentSeason = useAtlasStore((s) => s.setCurrentSeason)
+
+  const seasonMoments = momentsSorted.filter((m) => getSeason(m) === currentSeason)
+  const currentIndex = seasonMoments.findIndex((m) => m.id === currentMomentId)
   const currentMoment = momentsById.get(currentMomentId) ?? momentsSorted[0]
 
   return {
-    moments: momentsSorted,
+    moments: seasonMoments,
     currentMoment,
-    currentIndex,
-    seek: setMoment,
+    currentIndex: currentIndex >= 0 ? currentIndex : 0,
+    seek: (id: string) => {
+      const m = momentsById.get(id)
+      if (m) {
+        const s = getSeason(m)
+        if (s !== currentSeason) setCurrentSeason(s)
+        setMoment(id)
+      }
+    },
     next: () => {
-      if (currentIndex < momentsSorted.length - 1) setMoment(momentsSorted[currentIndex + 1].id)
+      // Try next in current season first
+      if (currentIndex >= 0 && currentIndex < seasonMoments.length - 1) {
+        setMoment(seasonMoments[currentIndex + 1].id)
+      } else if (currentSeason < 5) {
+        // Advance to next season's first moment
+        const nextSeason = currentSeason + 1
+        setCurrentSeason(nextSeason)
+        const nextFirst = momentsSorted.find((m) => getSeason(m) === nextSeason)
+        if (nextFirst) setMoment(nextFirst.id)
+      }
     },
     prev: () => {
-      if (currentIndex > 0) setMoment(momentsSorted[currentIndex - 1].id)
+      if (currentIndex > 0) {
+        setMoment(seasonMoments[currentIndex - 1].id)
+      } else if (currentSeason > 1) {
+        const prevSeason = currentSeason - 1
+        setCurrentSeason(prevSeason)
+        const prevSeasonMoments = momentsSorted.filter((m) => getSeason(m) === prevSeason)
+        if (prevSeasonMoments.length > 0) setMoment(prevSeasonMoments[prevSeasonMoments.length - 1].id)
+      }
     },
-    hasNext: currentIndex < momentsSorted.length - 1,
-    hasPrev: currentIndex > 0,
+    hasNext: currentIndex < seasonMoments.length - 1 || currentSeason < 4,
+    hasPrev: currentIndex > 0 || currentSeason > 1,
   }
 }
 

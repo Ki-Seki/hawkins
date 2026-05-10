@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from 'react'
 import { motion } from 'framer-motion'
 import { useAtlasStore, useTimeline } from './store'
+import { momentsSorted, episodesById } from './data/catalog'
 import { HawkinsMap } from './components/Map'
 import { Timeline } from './components/Timeline'
 import { InfoCard } from './components/InfoCard'
@@ -123,6 +124,21 @@ export default function App() {
           e.preventDefault()
           setPlaying(!isPlaying)
           break
+        case '1':
+        case '2':
+        case '3':
+        case '4':
+        case '5': {
+          e.preventDefault()
+          const season = Number(e.key)
+          useAtlasStore.getState().setCurrentSeason(season)
+          const first = momentsSorted.find((m) => {
+            const ep = episodesById.get(m.episodeId)
+            return ep?.season === season
+          })
+          if (first) useAtlasStore.getState().setMoment(first.id)
+          break
+        }
       }
     }
 
@@ -168,7 +184,7 @@ export default function App() {
 
       {/* Keyboard shortcuts hint */}
       <div className="fixed bottom-16 left-4 text-white/30 text-xs font-mono pointer-events-none z-10" aria-hidden="true">
-        <p>← → Navigate • Space Play/Pause • Esc Close</p>
+        <p>← → Navigate • Space Play/Pause • 1-5 Seasons • Esc Close</p>
       </div>
     </div>
   )

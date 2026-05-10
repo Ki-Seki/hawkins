@@ -25,7 +25,7 @@ export interface Character {
 export interface Location {
   id: string
   name: string
-  type: 'house' | 'school' | 'lab' | 'woods' | 'road' | 'other'
+  type: 'house' | 'school' | 'lab' | 'woods' | 'road' | 'mall' | 'bunker' | 'hospital' | 'store' | 'prison' | 'other'
   description: string
   tags: string[]
   map: {
@@ -122,7 +122,7 @@ const CharacterSchema = z.object({
 const LocationSchema = z.object({
   id: z.string(),
   name: z.string(),
-  type: z.enum(['house', 'school', 'lab', 'woods', 'road', 'other']),
+  type: z.enum(['house', 'school', 'lab', 'woods', 'road', 'mall', 'bunker', 'hospital', 'store', 'prison', 'other']),
   description: z.string(),
   tags: z.array(z.string()),
   map: z.object({
@@ -225,7 +225,23 @@ export const locations = LocationSchema.array().parse(rawLocations) as Location[
 export const episodes = EpisodeSchema.array().parse(rawEpisodes) as Episode[]
 export const events = EventSchema.array().parse(rawEvents) as StrangerEvent[]
 export const moments = MomentSchema.array().parse(rawMoments) as Moment[]
-export const momentStates = MomentStateSchema.array().parse(rawMomentStates) as MomentState[]
+// Apply defaults: fill unspecified locations as dim/0.1 so moment-states
+// only need to list active, foreshadowed, or non-default locations.
+function applyDefaults(ms: MomentState): MomentState {
+  const allLocationIds = locations.map((l) => l.id)
+  const specifiedIds = new Set(ms.locationStates.map((ls) => ls.locationId))
+  const defaults = allLocationIds
+    .filter((id) => !specifiedIds.has(id))
+    .map((id) => ({ locationId: id, status: 'dim' as const, emphasis: 0.1 }))
+  return {
+    ...ms,
+    locationStates: [...ms.locationStates, ...defaults],
+  }
+}
+
+export const momentStates = MomentStateSchema.array()
+  .parse(rawMomentStates)
+  .map(applyDefaults)
 // Not typed to avoid pulling MapLayout into every catalog consumer; cast in HawkinsMap if needed
 export const mapLayout = MapLayoutSchema.parse(rawMapLayout)
 

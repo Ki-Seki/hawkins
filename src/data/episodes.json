@@ -1,10 +1,254 @@
 [
-  { "id": "s01e01", "season": 1, "episode": 1, "title": "The Vanishing of Will Byers" },
-  { "id": "s01e02", "season": 1, "episode": 2, "title": "The Weirdo on Maple Street" },
-  { "id": "s01e03", "season": 1, "episode": 3, "title": "Holly, Jolly" },
-  { "id": "s01e04", "season": 1, "episode": 4, "title": "The Body" },
-  { "id": "s01e05", "season": 1, "episode": 5, "title": "The Flea and the Acrobat" },
-  { "id": "s01e06", "season": 1, "episode": 6, "title": "The Monster" },
-  { "id": "s01e07", "season": 1, "episode": 7, "title": "The Bathtub" },
-  { "id": "s01e08", "season": 1, "episode": 8, "title": "The Upside Down" }
+  {
+    "id": "s01e01",
+    "season": 1,
+    "episode": 1,
+    "title": "The Vanishing of Will Byers"
+  },
+  {
+    "id": "s01e02",
+    "season": 1,
+    "episode": 2,
+    "title": "The Weirdo on Maple Street"
+  },
+  {
+    "id": "s01e03",
+    "season": 1,
+    "episode": 3,
+    "title": "Holly, Jolly"
+  },
+  {
+    "id": "s01e04",
+    "season": 1,
+    "episode": 4,
+    "title": "The Body"
+  },
+  {
+    "id": "s01e05",
+    "season": 1,
+    "episode": 5,
+    "title": "The Flea and the Acrobat"
+  },
+  {
+    "id": "s01e06",
+    "season": 1,
+    "episode": 6,
+    "title": "The Monster"
+  },
+  {
+    "id": "s01e07",
+    "season": 1,
+    "episode": 7,
+    "title": "The Bathtub"
+  },
+  {
+    "id": "s01e08",
+    "season": 1,
+    "episode": 8,
+    "title": "The Upside Down"
+  },
+  {
+    "id": "s02e01",
+    "season": 2,
+    "episode": 1,
+    "title": "MADMAX"
+  },
+  {
+    "id": "s02e02",
+    "season": 2,
+    "episode": 2,
+    "title": "Trick or Treat, Freak"
+  },
+  {
+    "id": "s02e03",
+    "season": 2,
+    "episode": 3,
+    "title": "The Pollywog"
+  },
+  {
+    "id": "s02e04",
+    "season": 2,
+    "episode": 4,
+    "title": "Will the Wise"
+  },
+  {
+    "id": "s02e05",
+    "season": 2,
+    "episode": 5,
+    "title": "Dig Dug"
+  },
+  {
+    "id": "s02e06",
+    "season": 2,
+    "episode": 6,
+    "title": "The Spy"
+  },
+  {
+    "id": "s02e07",
+    "season": 2,
+    "episode": 7,
+    "title": "The Lost Sister"
+  },
+  {
+    "id": "s02e08",
+    "season": 2,
+    "episode": 8,
+    "title": "The Mind Flayer"
+  },
+  {
+    "id": "s02e09",
+    "season": 2,
+    "episode": 9,
+    "title": "The Gate"
+  },
+  {
+    "id": "s03e01",
+    "season": 3,
+    "episode": 1,
+    "title": "Suzie, Do You Copy?"
+  },
+  {
+    "id": "s03e02",
+    "season": 3,
+    "episode": 2,
+    "title": "The Mall Rats"
+  },
+  {
+    "id": "s03e03",
+    "season": 3,
+    "episode": 3,
+    "title": "The Case of the Missing Lifeguard"
+  },
+  {
+    "id": "s03e04",
+    "season": 3,
+    "episode": 4,
+    "title": "The Sauna Test"
+  },
+  {
+    "id": "s03e05",
+    "season": 3,
+    "episode": 5,
+    "title": "The Flayed"
+  },
+  {
+    "id": "s03e06",
+    "season": 3,
+    "episode": 6,
+    "title": "E Pluribus Unum"
+  },
+  {
+    "id": "s03e07",
+    "season": 3,
+    "episode": 7,
+    "title": "The Bite"
+  },
+  {
+    "id": "s03e08",
+    "season": 3,
+    "episode": 8,
+    "title": "The Battle of Starcourt"
+  },
+  {
+    "id": "s04e01",
+    "season": 4,
+    "episode": 1,
+    "title": "The Hellfire Club"
+  },
+  {
+    "id": "s04e02",
+    "season": 4,
+    "episode": 2,
+    "title": "Vecna's Curse"
+  },
+  {
+    "id": "s04e03",
+    "season": 4,
+    "episode": 3,
+    "title": "The Monster and the Superhero"
+  },
+  {
+    "id": "s04e04",
+    "season": 4,
+    "episode": 4,
+    "title": "Dear Billy"
+  },
+  {
+    "id": "s04e05",
+    "season": 4,
+    "episode": 5,
+    "title": "The Nina Project"
+  },
+  {
+    "id": "s04e06",
+    "season": 4,
+    "episode": 6,
+    "title": "The Dive"
+  },
+  {
+    "id": "s04e07",
+    "season": 4,
+    "episode": 7,
+    "title": "The Massacre at Hawkins Lab"
+  },
+  {
+    "id": "s04e08",
+    "season": 4,
+    "episode": 8,
+    "title": "Papa"
+  },
+  {
+    "id": "s04e09",
+    "season": 4,
+    "episode": 9,
+    "title": "The Piggyback"
+  },
+  {
+    "id": "s05e01",
+    "season": 5,
+    "episode": 1,
+    "title": "The Crawl"
+  },
+  {
+    "id": "s05e02",
+    "season": 5,
+    "episode": 2,
+    "title": "The Vanishing of Holly Wheeler"
+  },
+  {
+    "id": "s05e03",
+    "season": 5,
+    "episode": 3,
+    "title": "The Turnbow Trap"
+  },
+  {
+    "id": "s05e04",
+    "season": 5,
+    "episode": 4,
+    "title": "Sorcerer"
+  },
+  {
+    "id": "s05e05",
+    "season": 5,
+    "episode": 5,
+    "title": "Shock Jock"
+  },
+  {
+    "id": "s05e06",
+    "season": 5,
+    "episode": 6,
+    "title": "Escape from Camazotz"
+  },
+  {
+    "id": "s05e07",
+    "season": 5,
+    "episode": 7,
+    "title": "The Bridge"
+  },
+  {
+    "id": "s05e08",
+    "season": 5,
+    "episode": 8,
+    "title": "The Rightside Up"
+  }
 ]

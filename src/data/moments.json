@@ -5,9 +5,15 @@
     "timeLabel": "Evening — November 6, 1983",
     "sortKey": 10101,
     "episodeId": "s01e01",
-    "eventIds": ["eleven-escapes"],
-    "activeCharacterIds": ["eleven"],
-    "activeLocationIds": ["hawkins-lab"],
+    "eventIds": [
+      "eleven-escapes"
+    ],
+    "activeCharacterIds": [
+      "eleven"
+    ],
+    "activeLocationIds": [
+      "hawkins-lab"
+    ],
     "focusLocationId": "hawkins-lab",
     "summary": "An unseen creature breaks free from a corridor in Hawkins Lab. A scientist is dragged into the darkness. Eleven flees into the night.",
     "nextMomentId": "s01e01-benny-finds-eleven"
@@ -19,8 +25,12 @@
     "sortKey": 10101.5,
     "episodeId": "s01e01",
     "eventIds": [],
-    "activeCharacterIds": ["eleven"],
-    "activeLocationIds": ["bennys-burgers"],
+    "activeCharacterIds": [
+      "eleven"
+    ],
+    "activeLocationIds": [
+      "bennys-burgers"
+    ],
     "focusLocationId": "bennys-burgers",
     "summary": "Eleven breaks into Benny's Burgers, ravenous. Benny Hammond finds her eating fries and tries to help — calling Social Services. She doesn't understand.",
     "nextMomentId": "s01e01-will-vanishes"
@@ -31,9 +41,16 @@
     "timeLabel": "Night — November 6, 1983",
     "sortKey": 10102,
     "episodeId": "s01e01",
-    "eventIds": ["will-disappears"],
-    "activeCharacterIds": ["will-byers", "demogorgon"],
-    "activeLocationIds": ["mirkwood"],
+    "eventIds": [
+      "will-disappears"
+    ],
+    "activeCharacterIds": [
+      "will-byers",
+      "demogorgon"
+    ],
+    "activeLocationIds": [
+      "mirkwood"
+    ],
     "focusLocationId": "mirkwood",
     "summary": "Cycling home through Mirkwood, Will encounters something terrifying. His bike is found abandoned. Will is gone.",
     "nextMomentId": "s01e01-party-dnd"
@@ -45,8 +62,15 @@
     "sortKey": 10102.5,
     "episodeId": "s01e01",
     "eventIds": [],
-    "activeCharacterIds": ["mike-wheeler", "dustin-henderson", "lucas-sinclair", "will-byers"],
-    "activeLocationIds": ["wheeler-house"],
+    "activeCharacterIds": [
+      "mike-wheeler",
+      "dustin-henderson",
+      "lucas-sinclair",
+      "will-byers"
+    ],
+    "activeLocationIds": [
+      "wheeler-house"
+    ],
     "focusLocationId": "wheeler-house",
     "summary": "The Party's D&D campaign reaches its climax in the Wheeler basement. Will rolls a 7 — the Demogorgon attacks. The game ends. Will bikes home alone into the dark.",
     "nextMomentId": "s01e01-party-finds-eleven"
@@ -57,9 +81,18 @@
     "timeLabel": "Next day — November 7, 1983",
     "sortKey": 10103,
     "episodeId": "s01e01",
-    "eventIds": ["party-finds-eleven"],
-    "activeCharacterIds": ["eleven", "mike-wheeler", "dustin-henderson", "lucas-sinclair"],
-    "activeLocationIds": ["mirkwood"],
+    "eventIds": [
+      "party-finds-eleven"
+    ],
+    "activeCharacterIds": [
+      "eleven",
+      "mike-wheeler",
+      "dustin-henderson",
+      "lucas-sinclair"
+    ],
+    "activeLocationIds": [
+      "mirkwood"
+    ],
     "focusLocationId": "mirkwood",
     "summary": "Searching for Will in the rain, the Party finds a terrified, shaved-head girl wearing a hospital gown. She shows them the number tattooed on her wrist: 011.",
     "nextMomentId": "s01e02-eleven-at-wheeler"
@@ -71,8 +104,13 @@
     "sortKey": 10201,
     "episodeId": "s01e02",
     "eventIds": [],
-    "activeCharacterIds": ["eleven", "mike-wheeler"],
-    "activeLocationIds": ["wheeler-house"],
+    "activeCharacterIds": [
+      "eleven",
+      "mike-wheeler"
+    ],
+    "activeLocationIds": [
+      "wheeler-house"
+    ],
     "focusLocationId": "wheeler-house",
     "summary": "Mike sneaks Eleven into his basement. She sleeps in the fort, discovers the TV set, and begins to trust Mike. The hunt for Will intensifies.",
     "nextMomentId": "s01e02-bennys-death"
@@ -84,8 +122,12 @@
     "sortKey": 10201.5,
     "episodeId": "s01e02",
     "eventIds": [],
-    "activeCharacterIds": ["eleven"],
-    "activeLocationIds": ["bennys-burgers"],
+    "activeCharacterIds": [
+      "eleven"
+    ],
+    "activeLocationIds": [
+      "bennys-burgers"
+    ],
     "focusLocationId": "bennys-burgers",
     "summary": "A woman from Social Services arrives — but she's an agent from Hawkins Lab. Benny is shot. Eleven uses her power to kill the agents and escapes again.",
     "nextMomentId": "s01e02-joyce-hears-will"
@@ -97,8 +139,13 @@
     "sortKey": 10202,
     "episodeId": "s01e02",
     "eventIds": [],
-    "activeCharacterIds": ["joyce-byers", "will-byers"],
-    "activeLocationIds": ["byers-house"],
+    "activeCharacterIds": [
+      "joyce-byers",
+      "will-byers"
+    ],
+    "activeLocationIds": [
+      "byers-house"
+    ],
     "focusLocationId": "byers-house",
     "summary": "The phone rings — and Will is on the line, his voice distorted and terrified. Before Joyce can speak, the phone melts from the heat of the call.",
     "nextMomentId": "s01e03-barb-taken"
@@ -109,9 +156,15 @@
     "timeLabel": "November 9, 1983",
     "sortKey": 10301,
     "episodeId": "s01e03",
-    "eventIds": ["barb-taken"],
-    "activeCharacterIds": ["demogorgon"],
-    "activeLocationIds": ["mirkwood"],
+    "eventIds": [
+      "barb-taken"
+    ],
+    "activeCharacterIds": [
+      "demogorgon"
+    ],
+    "activeLocationIds": [
+      "mirkwood"
+    ],
     "focusLocationId": "mirkwood",
     "summary": "Left alone at the Harrington pool, Barb Holland is dragged through a portal by the Demogorgon. She is never seen alive again.",
     "nextMomentId": "s01e03-joyce-investigates"
@@ -123,8 +176,12 @@
     "sortKey": 10301.5,
     "episodeId": "s01e03",
     "eventIds": [],
-    "activeCharacterIds": ["joyce-byers"],
-    "activeLocationIds": ["byers-house"],
+    "activeCharacterIds": [
+      "joyce-byers"
+    ],
+    "activeLocationIds": [
+      "byers-house"
+    ],
     "focusLocationId": "byers-house",
     "summary": "The lights in the Byers house flicker and surge. Joyce follows them down the hallway — something is in the walls. She tears at the wallpaper. A face pushes through.",
     "nextMomentId": "s01e03-christmas-lights"
@@ -135,9 +192,16 @@
     "timeLabel": "November 10, 1983",
     "sortKey": 10302,
     "episodeId": "s01e03",
-    "eventIds": ["joyce-christmas-lights"],
-    "activeCharacterIds": ["joyce-byers", "will-byers"],
-    "activeLocationIds": ["byers-house"],
+    "eventIds": [
+      "joyce-christmas-lights"
+    ],
+    "activeCharacterIds": [
+      "joyce-byers",
+      "will-byers"
+    ],
+    "activeLocationIds": [
+      "byers-house"
+    ],
     "focusLocationId": "byers-house",
     "summary": "Joyce strings Christmas lights across the living room wall and paints letters. The lights flash — Will is spelling out a word. He is alive.",
     "nextMomentId": "s01e04-decoy-body"
@@ -148,9 +212,16 @@
     "timeLabel": "November 11, 1983",
     "sortKey": 10401,
     "episodeId": "s01e04",
-    "eventIds": ["decoy-body-found"],
-    "activeCharacterIds": ["jim-hopper", "joyce-byers"],
-    "activeLocationIds": ["hawkins-quarry"],
+    "eventIds": [
+      "decoy-body-found"
+    ],
+    "activeCharacterIds": [
+      "jim-hopper",
+      "joyce-byers"
+    ],
+    "activeLocationIds": [
+      "hawkins-quarry"
+    ],
     "focusLocationId": "hawkins-quarry",
     "summary": "A body is recovered from Sattler Quarry. The town believes Will is dead. Joyce refuses to accept it — she can still feel him.",
     "nextMomentId": "s01e04-hopper-suspects"
@@ -162,8 +233,13 @@
     "sortKey": 10402,
     "episodeId": "s01e04",
     "eventIds": [],
-    "activeCharacterIds": ["jim-hopper"],
-    "activeLocationIds": ["hawkins-pd", "hawkins-lab"],
+    "activeCharacterIds": [
+      "jim-hopper"
+    ],
+    "activeLocationIds": [
+      "hawkins-pd",
+      "hawkins-lab"
+    ],
     "focusLocationId": "hawkins-pd",
     "summary": "The autopsy doesn't add up. Hopper traces the evidence back to Hawkins Lab and a classified project called MKUltra.",
     "nextMomentId": "s01e04-joyce-refuses"
@@ -174,9 +250,15 @@
     "timeLabel": "November 11, 1983",
     "sortKey": 10402.5,
     "episodeId": "s01e04",
-    "eventIds": ["decoy-body-found"],
-    "activeCharacterIds": ["joyce-byers"],
-    "activeLocationIds": ["byers-house"],
+    "eventIds": [
+      "decoy-body-found"
+    ],
+    "activeCharacterIds": [
+      "joyce-byers"
+    ],
+    "activeLocationIds": [
+      "byers-house"
+    ],
     "focusLocationId": "byers-house",
     "summary": "The town holds a funeral for Will. Joyce stands alone in her conviction: that is not her son. She can still feel him. The town thinks she's lost her mind.",
     "nextMomentId": "s01e05-upside-down-theory"
@@ -188,8 +270,15 @@
     "sortKey": 10501,
     "episodeId": "s01e05",
     "eventIds": [],
-    "activeCharacterIds": ["eleven", "mike-wheeler", "dustin-henderson", "lucas-sinclair"],
-    "activeLocationIds": ["hawkins-middle-school"],
+    "activeCharacterIds": [
+      "eleven",
+      "mike-wheeler",
+      "dustin-henderson",
+      "lucas-sinclair"
+    ],
+    "activeLocationIds": [
+      "hawkins-middle-school"
+    ],
     "focusLocationId": "hawkins-middle-school",
     "summary": "Mr. Clarke explains theoretical dimensions. Eleven demonstrates the Upside Down using a folded piece of paper — a dimension parallel to ours, dark and decaying.",
     "nextMomentId": "s01e05-search-for-gate"
@@ -201,8 +290,14 @@
     "sortKey": 10501.5,
     "episodeId": "s01e05",
     "eventIds": [],
-    "activeCharacterIds": ["mike-wheeler", "dustin-henderson", "lucas-sinclair"],
-    "activeLocationIds": ["mirkwood"],
+    "activeCharacterIds": [
+      "mike-wheeler",
+      "dustin-henderson",
+      "lucas-sinclair"
+    ],
+    "activeLocationIds": [
+      "mirkwood"
+    ],
     "focusLocationId": "mirkwood",
     "summary": "Armed with compasses, the boys search Mirkwood for the Gate. Lucas and Mike fight over Eleven's trust. The compasses spin wildly — then suddenly agree on a direction.",
     "nextMomentId": "s01e05-eleven-compasses"
@@ -214,8 +309,15 @@
     "sortKey": 10502,
     "episodeId": "s01e05",
     "eventIds": [],
-    "activeCharacterIds": ["eleven", "mike-wheeler", "dustin-henderson", "lucas-sinclair"],
-    "activeLocationIds": ["mirkwood"],
+    "activeCharacterIds": [
+      "eleven",
+      "mike-wheeler",
+      "dustin-henderson",
+      "lucas-sinclair"
+    ],
+    "activeLocationIds": [
+      "mirkwood"
+    ],
     "focusLocationId": "mirkwood",
     "summary": "All compasses in Mirkwood spin wildly, pointing toward the Gate. Eleven secretly redirects them, afraid of what they might find.",
     "nextMomentId": "s01e06-hopper-infiltrates"
@@ -226,9 +328,16 @@
     "timeLabel": "November 13, 1983",
     "sortKey": 10601,
     "episodeId": "s01e06",
-    "eventIds": ["hopper-infiltrates-lab"],
-    "activeCharacterIds": ["jim-hopper"],
-    "activeLocationIds": ["hawkins-lab", "upside-down-gate"],
+    "eventIds": [
+      "hopper-infiltrates-lab"
+    ],
+    "activeCharacterIds": [
+      "jim-hopper"
+    ],
+    "activeLocationIds": [
+      "hawkins-lab",
+      "upside-down-gate"
+    ],
     "focusLocationId": "hawkins-lab",
     "summary": "Hopper breaks into the lab and finds a portal to a dark mirror world. Vines creep the walls. He barely escapes before agents catch him.",
     "nextMomentId": "s01e06-eleven-truth"
@@ -240,8 +349,13 @@
     "sortKey": 10602,
     "episodeId": "s01e06",
     "eventIds": [],
-    "activeCharacterIds": ["eleven", "mike-wheeler"],
-    "activeLocationIds": ["wheeler-house"],
+    "activeCharacterIds": [
+      "eleven",
+      "mike-wheeler"
+    ],
+    "activeLocationIds": [
+      "wheeler-house"
+    ],
     "focusLocationId": "wheeler-house",
     "summary": "Mike discovers Eleven has been keeping secrets. She confesses: she made contact with the Demogorgon. She opened the Gate. It's all her fault.",
     "nextMomentId": "s01e06-lucas-reconciles"
@@ -253,8 +367,15 @@
     "sortKey": 10602.5,
     "episodeId": "s01e06",
     "eventIds": [],
-    "activeCharacterIds": ["eleven", "mike-wheeler", "dustin-henderson", "lucas-sinclair"],
-    "activeLocationIds": ["wheeler-house"],
+    "activeCharacterIds": [
+      "eleven",
+      "mike-wheeler",
+      "dustin-henderson",
+      "lucas-sinclair"
+    ],
+    "activeLocationIds": [
+      "wheeler-house"
+    ],
     "focusLocationId": "wheeler-house",
     "summary": "Lucas returns after witnessing Eleven's power firsthand. He apologizes. The Party is whole again — and they realize Eleven may be the only one who can find Will.",
     "nextMomentId": "s01e06-eleven-powers"
@@ -266,8 +387,15 @@
     "sortKey": 10603,
     "episodeId": "s01e06",
     "eventIds": [],
-    "activeCharacterIds": ["eleven", "mike-wheeler", "dustin-henderson", "lucas-sinclair"],
-    "activeLocationIds": ["wheeler-house"],
+    "activeCharacterIds": [
+      "eleven",
+      "mike-wheeler",
+      "dustin-henderson",
+      "lucas-sinclair"
+    ],
+    "activeLocationIds": [
+      "wheeler-house"
+    ],
     "focusLocationId": "wheeler-house",
     "summary": "In Mike's basement, Eleven flips a game board with her mind to prove what she can do. The boys stare in awe. She points at the wall: Will is on the other side.",
     "nextMomentId": "s01e07-bathtub"
@@ -278,9 +406,18 @@
     "timeLabel": "November 14, 1983",
     "sortKey": 10701,
     "episodeId": "s01e07",
-    "eventIds": ["eleven-sensory-deprivation"],
-    "activeCharacterIds": ["eleven", "mike-wheeler", "dustin-henderson", "lucas-sinclair"],
-    "activeLocationIds": ["hawkins-middle-school"],
+    "eventIds": [
+      "eleven-sensory-deprivation"
+    ],
+    "activeCharacterIds": [
+      "eleven",
+      "mike-wheeler",
+      "dustin-henderson",
+      "lucas-sinclair"
+    ],
+    "activeLocationIds": [
+      "hawkins-middle-school"
+    ],
     "focusLocationId": "hawkins-middle-school",
     "summary": "The Party floods the school gym with Epsom salt to recreate Eleven's sensory deprivation tank. She enters the Void — and finds Will. He is hiding in Castle Byers.",
     "nextMomentId": "s01e07-tunnel-search"
@@ -292,8 +429,13 @@
     "sortKey": 10701.5,
     "episodeId": "s01e07",
     "eventIds": [],
-    "activeCharacterIds": ["jim-hopper"],
-    "activeLocationIds": ["hawkins-lab", "upside-down-gate"],
+    "activeCharacterIds": [
+      "jim-hopper"
+    ],
+    "activeLocationIds": [
+      "hawkins-lab",
+      "upside-down-gate"
+    ],
     "focusLocationId": "upside-down-gate",
     "summary": "Hopper and Joyce enter the Gate and descend into the Upside Down's tunnels beneath Hawkins Lab. The walls pulse with tendrils. They follow the vines deeper.",
     "nextMomentId": "s01e07-hopper-deal"
@@ -305,8 +447,12 @@
     "sortKey": 10702,
     "episodeId": "s01e07",
     "eventIds": [],
-    "activeCharacterIds": ["jim-hopper"],
-    "activeLocationIds": ["hawkins-lab"],
+    "activeCharacterIds": [
+      "jim-hopper"
+    ],
+    "activeLocationIds": [
+      "hawkins-lab"
+    ],
     "focusLocationId": "hawkins-lab",
     "summary": "Hopper cuts a deal with Dr. Brenner: give up Joyce and Jonathan's location in exchange for safe passage through the Gate to find Will.",
     "nextMomentId": "s01e08-encounter"
@@ -318,8 +464,12 @@
     "sortKey": 10702.5,
     "episodeId": "s01e08",
     "eventIds": [],
-    "activeCharacterIds": ["demogorgon"],
-    "activeLocationIds": ["mirkwood"],
+    "activeCharacterIds": [
+      "demogorgon"
+    ],
+    "activeLocationIds": [
+      "mirkwood"
+    ],
     "focusLocationId": "mirkwood",
     "summary": "In the woods near the Byers house, something moves through the trees. A deer carcass is found torn apart. The Demogorgon is hunting — and it's getting closer.",
     "nextMomentId": "s01e08-into-the-upside-down"
@@ -330,9 +480,17 @@
     "timeLabel": "November 15, 1983",
     "sortKey": 10801,
     "episodeId": "s01e08",
-    "eventIds": ["hopper-infiltrates-lab"],
-    "activeCharacterIds": ["jim-hopper", "joyce-byers"],
-    "activeLocationIds": ["hawkins-lab", "upside-down-gate"],
+    "eventIds": [
+      "hopper-infiltrates-lab"
+    ],
+    "activeCharacterIds": [
+      "jim-hopper",
+      "joyce-byers"
+    ],
+    "activeLocationIds": [
+      "hawkins-lab",
+      "upside-down-gate"
+    ],
     "focusLocationId": "upside-down-gate",
     "summary": "Joyce and Hopper suit up and step through the Gate at Hawkins Lab into the Upside Down — a suffocating mirror of the real world, choked with spores.",
     "nextMomentId": "s01e08-demogorgon-school"
@@ -343,9 +501,19 @@
     "timeLabel": "November 15, 1983",
     "sortKey": 10802,
     "episodeId": "s01e08",
-    "eventIds": ["final-showdown"],
-    "activeCharacterIds": ["demogorgon", "eleven", "mike-wheeler", "dustin-henderson", "lucas-sinclair"],
-    "activeLocationIds": ["hawkins-middle-school"],
+    "eventIds": [
+      "final-showdown"
+    ],
+    "activeCharacterIds": [
+      "demogorgon",
+      "eleven",
+      "mike-wheeler",
+      "dustin-henderson",
+      "lucas-sinclair"
+    ],
+    "activeLocationIds": [
+      "hawkins-middle-school"
+    ],
     "focusLocationId": "hawkins-middle-school",
     "summary": "The Demogorgon tears through the wall of the school classroom. As it advances on the Party, Eleven stands between them — this is her choice.",
     "nextMomentId": "s01e08-eleven-sacrifice"
@@ -356,9 +524,16 @@
     "timeLabel": "November 15, 1983",
     "sortKey": 10803,
     "episodeId": "s01e08",
-    "eventIds": ["final-showdown"],
-    "activeCharacterIds": ["eleven", "demogorgon"],
-    "activeLocationIds": ["hawkins-middle-school"],
+    "eventIds": [
+      "final-showdown"
+    ],
+    "activeCharacterIds": [
+      "eleven",
+      "demogorgon"
+    ],
+    "activeLocationIds": [
+      "hawkins-middle-school"
+    ],
     "focusLocationId": "hawkins-middle-school",
     "summary": "Eleven disintegrates the Demogorgon with all her remaining power. In doing so, she disintegrates herself — vanishing with a soft 'Goodbye, Mike.'",
     "nextMomentId": "s01e08-will-rescued"
@@ -369,9 +544,17 @@
     "timeLabel": "November 15, 1983",
     "sortKey": 10804,
     "episodeId": "s01e08",
-    "eventIds": ["will-rescued"],
-    "activeCharacterIds": ["will-byers", "joyce-byers", "jim-hopper"],
-    "activeLocationIds": ["byers-house"],
+    "eventIds": [
+      "will-rescued"
+    ],
+    "activeCharacterIds": [
+      "will-byers",
+      "joyce-byers",
+      "jim-hopper"
+    ],
+    "activeLocationIds": [
+      "byers-house"
+    ],
     "focusLocationId": "byers-house",
     "summary": "Joyce and Hopper find Will wrapped in vines in the Upside Down. He is resuscitated. He comes home. The Byers house is full of light.",
     "nextMomentId": "s01e08-epilogue"
@@ -383,10 +566,2206 @@
     "sortKey": 10805,
     "episodeId": "s01e08",
     "eventIds": [],
-    "activeCharacterIds": ["will-byers", "mike-wheeler", "dustin-henderson", "lucas-sinclair", "joyce-byers", "jim-hopper"],
-    "activeLocationIds": ["byers-house", "wheeler-house"],
+    "activeCharacterIds": [
+      "will-byers",
+      "mike-wheeler",
+      "dustin-henderson",
+      "lucas-sinclair",
+      "joyce-byers",
+      "jim-hopper"
+    ],
+    "activeLocationIds": [
+      "byers-house",
+      "wheeler-house"
+    ],
     "focusLocationId": "byers-house",
     "summary": "Will has nightmares. Hopper leaves food in a box in the woods. Joyce watches her son eat dinner, grateful. In the dark, something stirs.",
+    "nextMomentId": null
+  },
+  {
+    "id": "s02e01-arcade-mystery",
+    "title": "The Madmax Score",
+    "timeLabel": "October 28, 1984",
+    "sortKey": 20101,
+    "episodeId": "s02e01",
+    "eventIds": [],
+    "activeCharacterIds": [
+      "dustin-henderson",
+      "lucas-sinclair",
+      "mike-wheeler",
+      "will-byers"
+    ],
+    "activeLocationIds": [
+      "palace-arcade"
+    ],
+    "focusLocationId": "palace-arcade",
+    "summary": "A mysterious player called MADMAX beats Dustin's high score at the arcade. The Party is stunned — then a new girl walks into class.",
+    "nextMomentId": "s02e01-will-halloween-vision"
+  },
+  {
+    "id": "s02e01-will-halloween-vision",
+    "title": "The Shadow Monster",
+    "timeLabel": "October 28, 1984",
+    "sortKey": 20102,
+    "episodeId": "s02e01",
+    "eventIds": [
+      "shadow-monster-vision"
+    ],
+    "activeCharacterIds": [
+      "will-byers"
+    ],
+    "activeLocationIds": [
+      "pumpkin-patch"
+    ],
+    "focusLocationId": "pumpkin-patch",
+    "summary": "Trick-or-treating near the pumpkin patch, Will is pulled into a vision. A massive spider-like shadow looms over Hawkins. He can't move. He can't scream.",
+    "nextMomentId": "s02e01-max-arrives"
+  },
+  {
+    "id": "s02e01-max-arrives",
+    "title": "The New Girl",
+    "timeLabel": "October 29, 1984",
+    "sortKey": 20103,
+    "episodeId": "s02e01",
+    "eventIds": [],
+    "activeCharacterIds": [
+      "max-mayfield",
+      "mike-wheeler",
+      "dustin-henderson",
+      "lucas-sinclair"
+    ],
+    "activeLocationIds": [
+      "hawkins-middle-school"
+    ],
+    "focusLocationId": "hawkins-middle-school",
+    "summary": "Max Mayfield arrives at Hawkins Middle. She's fierce, she's fearless, and she's about to shake up the Party. Lucas and Dustin are both smitten.",
+    "nextMomentId": "s02e02-halloween-night"
+  },
+  {
+    "id": "s02e02-halloween-night",
+    "title": "Halloween Night",
+    "timeLabel": "October 31, 1984",
+    "sortKey": 20201,
+    "episodeId": "s02e02",
+    "eventIds": [],
+    "activeCharacterIds": [
+      "mike-wheeler",
+      "dustin-henderson",
+      "lucas-sinclair",
+      "will-byers",
+      "max-mayfield"
+    ],
+    "activeLocationIds": [
+      "hawkins-middle-school"
+    ],
+    "focusLocationId": "hawkins-middle-school",
+    "summary": "The Party dresses up for Halloween. Will keeps having episodes — brief flashes of the shadow monster. The others don't notice. He's alone with the visions.",
+    "nextMomentId": "s02e02-shadow-vision"
+  },
+  {
+    "id": "s02e02-shadow-vision",
+    "title": "Will Pulled Under",
+    "timeLabel": "October 31, 1984",
+    "sortKey": 20202,
+    "episodeId": "s02e02",
+    "eventIds": [
+      "shadow-monster-vision"
+    ],
+    "activeCharacterIds": [
+      "will-byers"
+    ],
+    "activeLocationIds": [
+      "pumpkin-patch"
+    ],
+    "focusLocationId": "pumpkin-patch",
+    "summary": "The shadow monster pulls Will fully into the Upside Down vision. He sees the creature extend its tendrils into Hawkins. When he snaps back, he's freezing cold.",
+    "nextMomentId": "s02e02-eleven-cabin"
+  },
+  {
+    "id": "s02e02-eleven-cabin",
+    "title": "Eleven in Hiding",
+    "timeLabel": "October 1984",
+    "sortKey": 20203,
+    "episodeId": "s02e02",
+    "eventIds": [],
+    "activeCharacterIds": [
+      "eleven",
+      "jim-hopper"
+    ],
+    "activeLocationIds": [
+      "hopper-cabin"
+    ],
+    "focusLocationId": "hopper-cabin",
+    "summary": "Flashback: Hopper has been hiding Eleven in his cabin for almost a year. She watches soap operas, practices her powers, and waits. She's going stir-crazy.",
+    "nextMomentId": "s02e03-dart-found"
+  },
+  {
+    "id": "s02e03-dart-found",
+    "title": "Dart",
+    "timeLabel": "November 1, 1984",
+    "sortKey": 20301,
+    "episodeId": "s02e03",
+    "eventIds": [
+      "dart-escape"
+    ],
+    "activeCharacterIds": [
+      "dustin-henderson"
+    ],
+    "activeLocationIds": [
+      "hawkins-middle-school"
+    ],
+    "focusLocationId": "hawkins-middle-school",
+    "summary": "Dustin finds a strange creature in the trash at school. He names it Dart. It's cute, it purrs, and it's definitely not from this dimension.",
+    "nextMomentId": "s02e03-will-map"
+  },
+  {
+    "id": "s02e03-will-map",
+    "title": "The Tunnel Map",
+    "timeLabel": "November 2, 1984",
+    "sortKey": 20302,
+    "episodeId": "s02e03",
+    "eventIds": [],
+    "activeCharacterIds": [
+      "will-byers",
+      "joyce-byers"
+    ],
+    "activeLocationIds": [
+      "byers-house"
+    ],
+    "focusLocationId": "byers-house",
+    "summary": "Will draws page after page of strange lines. Joyce realizes they're a map — the shadow monster is showing Will the Upside Down tunnels spreading beneath Hawkins.",
+    "nextMomentId": "s02e03-dart-escapes"
+  },
+  {
+    "id": "s02e03-dart-escapes",
+    "title": "Dart Escapes",
+    "timeLabel": "November 2, 1984",
+    "sortKey": 20303,
+    "episodeId": "s02e03",
+    "eventIds": [
+      "dart-escape"
+    ],
+    "activeCharacterIds": [
+      "dustin-henderson"
+    ],
+    "activeLocationIds": [
+      "hawkins-middle-school"
+    ],
+    "focusLocationId": "hawkins-middle-school",
+    "summary": "Dart molts — growing larger, sprouting a face-splitting maw. He escapes from the science class terrarium. Dustin realizes with horror: it's a baby Demogorgon.",
+    "nextMomentId": "s02e04-will-possessed"
+  },
+  {
+    "id": "s02e04-will-possessed",
+    "title": "Taken Over",
+    "timeLabel": "November 3, 1984",
+    "sortKey": 20401,
+    "episodeId": "s02e04",
+    "eventIds": [
+      "will-possessed"
+    ],
+    "activeCharacterIds": [
+      "will-byers",
+      "joyce-byers",
+      "jim-hopper"
+    ],
+    "activeLocationIds": [
+      "hawkins-hospital"
+    ],
+    "focusLocationId": "hawkins-hospital",
+    "summary": "Will collapses. His body temperature plummets. When he wakes, something is different — he's cold, distant, speaking in a voice that isn't quite his own.",
+    "nextMomentId": "s02e04-joyce-realizes"
+  },
+  {
+    "id": "s02e04-joyce-realizes",
+    "title": "Something Else Is Here",
+    "timeLabel": "November 3, 1984",
+    "sortKey": 20402,
+    "episodeId": "s02e04",
+    "eventIds": [
+      "will-possessed"
+    ],
+    "activeCharacterIds": [
+      "joyce-byers",
+      "will-byers"
+    ],
+    "activeLocationIds": [
+      "byers-house"
+    ],
+    "focusLocationId": "byers-house",
+    "summary": "Joyce lights candles around Will. He recoils from the heat. She realizes: the thing inside Will is afraid of warmth. Her son is still in there — but something else is, too.",
+    "nextMomentId": "s02e05-bob-decodes"
+  },
+  {
+    "id": "s02e05-bob-decodes",
+    "title": "Bob Figures It Out",
+    "timeLabel": "November 5, 1984",
+    "sortKey": 20501,
+    "episodeId": "s02e05",
+    "eventIds": [
+      "bob-decodes-map"
+    ],
+    "activeCharacterIds": [
+      "bob-newby",
+      "joyce-byers",
+      "jim-hopper"
+    ],
+    "activeLocationIds": [
+      "byers-house"
+    ],
+    "focusLocationId": "byers-house",
+    "summary": "Bob Newby looks at Will's drawings and sees it: they're a map. He helps the group understand the tunnel network spreading beneath the town like roots.",
+    "nextMomentId": "s02e05-hopper-trapped"
+  },
+  {
+    "id": "s02e05-hopper-trapped",
+    "title": "Hopper in the Tunnels",
+    "timeLabel": "November 5, 1984",
+    "sortKey": 20502,
+    "episodeId": "s02e05",
+    "eventIds": [
+      "tunnel-fire"
+    ],
+    "activeCharacterIds": [
+      "jim-hopper"
+    ],
+    "activeLocationIds": [
+      "hawkins-tunnels"
+    ],
+    "focusLocationId": "hawkins-tunnels",
+    "summary": "Hopper descends into the tunnels to burn them. The flamethrower works — until it doesn't. Vines wrap around his legs. He's trapped underground, alone.",
+    "nextMomentId": "s02e05-eleven-opens-rift"
+  },
+  {
+    "id": "s02e05-eleven-opens-rift",
+    "title": "Eleven Opens the Rift",
+    "timeLabel": "November 5, 1984",
+    "sortKey": 20503,
+    "episodeId": "s02e05",
+    "eventIds": [
+      "tunnel-fire"
+    ],
+    "activeCharacterIds": [
+      "eleven",
+      "jim-hopper"
+    ],
+    "activeLocationIds": [
+      "hawkins-tunnels",
+      "hopper-cabin"
+    ],
+    "focusLocationId": "hopper-cabin",
+    "summary": "From the cabin, Eleven senses Hopper is in danger. She channels all her power and tears open a rift in the tunnels. Hopper crawls through to safety.",
+    "nextMomentId": "s02e06-will-betrays"
+  },
+  {
+    "id": "s02e06-will-betrays",
+    "title": "Will Speaks for the Shadow",
+    "timeLabel": "November 8, 1984",
+    "sortKey": 20601,
+    "episodeId": "s02e06",
+    "eventIds": [],
+    "activeCharacterIds": [
+      "will-byers",
+      "sam-owens"
+    ],
+    "activeLocationIds": [
+      "hawkins-lab"
+    ],
+    "focusLocationId": "hawkins-lab",
+    "summary": "Under the Mind Flayer's control, Will feeds Dr. Owens false information about the tunnels. He's become the shadow monster's spy inside the group.",
+    "nextMomentId": "s02e06-tunnel-ambush"
+  },
+  {
+    "id": "s02e06-tunnel-ambush",
+    "title": "The Ambush",
+    "timeLabel": "November 8, 1984",
+    "sortKey": 20602,
+    "episodeId": "s02e06",
+    "eventIds": [],
+    "activeCharacterIds": [
+      "mike-wheeler",
+      "dustin-henderson",
+      "lucas-sinclair",
+      "max-mayfield",
+      "steve-harrington"
+    ],
+    "activeLocationIds": [
+      "the-junkyard"
+    ],
+    "focusLocationId": "the-junkyard",
+    "summary": "The kids set a trap for Dart at the junkyard. Instead, Demodogs swarm them. Steve Harrington fights them off with a baseball bat, protecting the kids.",
+    "nextMomentId": "s02e06-nancy-jonathan"
+  },
+  {
+    "id": "s02e06-nancy-jonathan",
+    "title": "The Tape",
+    "timeLabel": "November 8, 1984",
+    "sortKey": 20603,
+    "episodeId": "s02e06",
+    "eventIds": [],
+    "activeCharacterIds": [
+      "nancy-wheeler",
+      "jonathan-byers"
+    ],
+    "activeLocationIds": [
+      "murrays-bunker"
+    ],
+    "focusLocationId": "murrays-bunker",
+    "summary": "Nancy and Jonathan bring the recorded confession to Murray Bauman. Together, they craft a plan to expose Hawkins Lab to the world.",
+    "nextMomentId": "s02e07-eleven-chicago"
+  },
+  {
+    "id": "s02e07-eleven-chicago",
+    "title": "Eight",
+    "timeLabel": "November 9, 1984",
+    "sortKey": 20701,
+    "episodeId": "s02e07",
+    "eventIds": [
+      "eleven-finds-kali"
+    ],
+    "activeCharacterIds": [
+      "eleven",
+      "kali-prasad"
+    ],
+    "activeLocationIds": [
+      "chicago"
+    ],
+    "focusLocationId": "chicago",
+    "summary": "Eleven finds Kali Prasad — Eight — in Chicago. She has the power to create illusions. She's angry, dangerous, and everything Eleven might become.",
+    "nextMomentId": "s02e07-kali-training"
+  },
+  {
+    "id": "s02e07-kali-training",
+    "title": "Learning to Channel Anger",
+    "timeLabel": "November 9, 1984",
+    "sortKey": 20702,
+    "episodeId": "s02e07",
+    "eventIds": [],
+    "activeCharacterIds": [
+      "eleven",
+      "kali-prasad"
+    ],
+    "activeLocationIds": [
+      "chicago"
+    ],
+    "focusLocationId": "chicago",
+    "summary": "Kali teaches Eleven to focus on anger and pain to amplify her powers. It works — Eleven's abilities grow stronger. But at what cost?",
+    "nextMomentId": "s02e07-eleven-returns"
+  },
+  {
+    "id": "s02e07-eleven-returns",
+    "title": "Eleven Chooses Hawkins",
+    "timeLabel": "November 9, 1984",
+    "sortKey": 20703,
+    "episodeId": "s02e07",
+    "eventIds": [],
+    "activeCharacterIds": [
+      "eleven"
+    ],
+    "activeLocationIds": [
+      "chicago"
+    ],
+    "focusLocationId": "chicago",
+    "summary": "Seeing a photo of Mike and Hopper, Eleven realizes where she belongs. She leaves Kali's gang and heads back to Hawkins. Her friends need her.",
+    "nextMomentId": "s02e08-lab-lockdown"
+  },
+  {
+    "id": "s02e08-lab-lockdown",
+    "title": "The Lab Falls",
+    "timeLabel": "November 11, 1984",
+    "sortKey": 20801,
+    "episodeId": "s02e08",
+    "eventIds": [
+      "bob-sacrifice"
+    ],
+    "activeCharacterIds": [
+      "jim-hopper",
+      "joyce-byers",
+      "bob-newby",
+      "sam-owens",
+      "will-byers"
+    ],
+    "activeLocationIds": [
+      "hawkins-lab"
+    ],
+    "focusLocationId": "hawkins-lab",
+    "summary": "Demodogs breach the lab. Alarms blare. Bob volunteers to reboot the mainframe so the group can escape through the lockdown doors.",
+    "nextMomentId": "s02e08-bob-sacrifice"
+  },
+  {
+    "id": "s02e08-bob-sacrifice",
+    "title": "Bob's Last Stand",
+    "timeLabel": "November 11, 1984",
+    "sortKey": 20802,
+    "episodeId": "s02e08",
+    "eventIds": [
+      "bob-sacrifice"
+    ],
+    "activeCharacterIds": [
+      "bob-newby"
+    ],
+    "activeLocationIds": [
+      "hawkins-lab"
+    ],
+    "focusLocationId": "hawkins-lab",
+    "summary": "Bob reboots the system. The doors open. He smiles at Joyce — and the Demodogs take him down. He bought them their lives with his own.",
+    "nextMomentId": "s02e08-exorcism"
+  },
+  {
+    "id": "s02e08-exorcism",
+    "title": "The Heat Plan",
+    "timeLabel": "November 11, 1984",
+    "sortKey": 20803,
+    "episodeId": "s02e08",
+    "eventIds": [
+      "mind-flayer-exorcism"
+    ],
+    "activeCharacterIds": [
+      "will-byers",
+      "joyce-byers"
+    ],
+    "activeLocationIds": [
+      "byers-house"
+    ],
+    "focusLocationId": "byers-house",
+    "summary": "Joyce, Jonathan, and Nancy use heat to force the Mind Flayer out of Will. His body convulses. The shadow creature erupts from his mouth and crashes through the ceiling.",
+    "nextMomentId": "s02e09-eleven-closes-gate"
+  },
+  {
+    "id": "s02e09-eleven-closes-gate",
+    "title": "Closing the Gate",
+    "timeLabel": "November 12, 1984",
+    "sortKey": 20901,
+    "episodeId": "s02e09",
+    "eventIds": [
+      "eleven-closes-gate"
+    ],
+    "activeCharacterIds": [
+      "eleven",
+      "jim-hopper"
+    ],
+    "activeLocationIds": [
+      "hawkins-lab",
+      "upside-down-gate"
+    ],
+    "focusLocationId": "upside-down-gate",
+    "summary": "Eleven stands before the Gate. She screams. The rift shrinks, sealing inch by inch. Above, the Demodogs collapse. Below, the Mind Flayer roars in rage.",
+    "nextMomentId": "s02e09-gate-closed"
+  },
+  {
+    "id": "s02e09-gate-closed",
+    "title": "The Gate Is Sealed",
+    "timeLabel": "November 12, 1984",
+    "sortKey": 20902,
+    "episodeId": "s02e09",
+    "eventIds": [
+      "eleven-closes-gate"
+    ],
+    "activeCharacterIds": [
+      "eleven",
+      "jim-hopper",
+      "joyce-byers"
+    ],
+    "activeLocationIds": [
+      "hawkins-lab"
+    ],
+    "focusLocationId": "hawkins-lab",
+    "summary": "The Gate closes with a thunderous boom. The tunnels seal. The Upside Down is cut off — for now. Eleven collapses, exhausted. Hopper catches her.",
+    "nextMomentId": "s02e09-snow-ball"
+  },
+  {
+    "id": "s02e09-snow-ball",
+    "title": "The Snow Ball",
+    "timeLabel": "December 1984",
+    "sortKey": 20903,
+    "episodeId": "s02e09",
+    "eventIds": [],
+    "activeCharacterIds": [
+      "eleven",
+      "mike-wheeler",
+      "dustin-henderson",
+      "lucas-sinclair",
+      "max-mayfield",
+      "will-byers"
+    ],
+    "activeLocationIds": [
+      "hawkins-middle-school"
+    ],
+    "focusLocationId": "hawkins-middle-school",
+    "summary": "The Hawkins Middle Snow Ball dance. Mike and Eleven share a slow dance. Dustin gets turned down by every girl — then Nancy dances with him. For one night, everything is normal.",
+    "nextMomentId": "s02e09-mind-flayer-watches"
+  },
+  {
+    "id": "s02e04-eleven-discovers-truth",
+    "title": "The Truth About Terry",
+    "timeLabel": "November 3, 1984",
+    "sortKey": 20401.5,
+    "episodeId": "s02e04",
+    "eventIds": [],
+    "activeCharacterIds": [
+      "eleven"
+    ],
+    "activeLocationIds": [
+      "hopper-cabin"
+    ],
+    "focusLocationId": "hopper-cabin",
+    "summary": "Eleven hacks into Hopper's radio and discovers he's been hiding the truth about her mother. She finds files about Terry Ives. The betrayal cuts deep.",
+    "nextMomentId": "s02e04-joyce-realizes"
+  },
+  {
+    "id": "s02e05-dustin-seeks-help",
+    "title": "Dustin Seeks Help",
+    "timeLabel": "November 4, 1984",
+    "sortKey": 20501.5,
+    "episodeId": "s02e05",
+    "eventIds": [],
+    "activeCharacterIds": [
+      "dustin-henderson"
+    ],
+    "activeLocationIds": [
+      "hawkins-middle-school"
+    ],
+    "focusLocationId": "hawkins-middle-school",
+    "summary": "Dustin tries to get the Party to help with Dart, but no one believes him. He turns to the one person who might understand — Steve Harrington.",
+    "nextMomentId": "s02e05-hopper-trapped"
+  },
+  {
+    "id": "s02e08-demodog-attack",
+    "title": "Demodogs Swarm the Lab",
+    "timeLabel": "November 11, 1984",
+    "sortKey": 20801.5,
+    "episodeId": "s02e08",
+    "eventIds": [],
+    "activeCharacterIds": [
+      "jim-hopper",
+      "sam-owens"
+    ],
+    "activeLocationIds": [
+      "hawkins-lab"
+    ],
+    "focusLocationId": "hawkins-lab",
+    "summary": "Dozens of Demodogs pour into the lab through the vents. Scientists scatter. The facility that once held the Gate is now overrun by its creatures.",
+    "nextMomentId": "s02e08-bob-sacrifice"
+  },
+  {
+    "id": "s02e09-mind-flayer-watches",
+    "title": "The Mind Flayer Watches",
+    "timeLabel": "December 1984",
+    "sortKey": 20903.5,
+    "episodeId": "s02e09",
+    "eventIds": [],
+    "activeCharacterIds": [
+      "will-byers"
+    ],
+    "activeLocationIds": [
+      "hawkins-middle-school"
+    ],
+    "focusLocationId": "hawkins-middle-school",
+    "summary": "At the Snow Ball, Will blinks — and for a flash, he's back in the Upside Down. The Mind Flayer still looms over Hawkins. The Gate is closed, but the monster waits.",
+    "nextMomentId": null
+  },
+  {
+    "id": "s03e01-rats-melting",
+    "title": "The Rats",
+    "timeLabel": "June 28, 1985",
+    "sortKey": 30101,
+    "episodeId": "s03e01",
+    "eventIds": [
+      "rats-exploding"
+    ],
+    "activeCharacterIds": [],
+    "activeLocationIds": [
+      "brimborn-steelworks"
+    ],
+    "focusLocationId": "brimborn-steelworks",
+    "summary": "Hawkins rats swarm into the steelworks and explode, their bodies melting into a writhing mass. Something ancient is rebuilding itself.",
+    "nextMomentId": "s03e01-scoops-ahoy"
+  },
+  {
+    "id": "s03e01-scoops-ahoy",
+    "title": "Scoops Ahoy",
+    "timeLabel": "June 28, 1985",
+    "sortKey": 30102,
+    "episodeId": "s03e01",
+    "eventIds": [],
+    "activeCharacterIds": [
+      "robin-buckley"
+    ],
+    "activeLocationIds": [
+      "starcourt-mall"
+    ],
+    "focusLocationId": "starcourt-mall",
+    "summary": "Steve Harrington and Robin Buckley work the counter at Scoops Ahoy. Robin is bored, witty, and way too smart for this job.",
+    "nextMomentId": "s03e01-dustin-intercepts"
+  },
+  {
+    "id": "s03e01-dustin-intercepts",
+    "title": "The Russian Signal",
+    "timeLabel": "June 29, 1985",
+    "sortKey": 30103,
+    "episodeId": "s03e01",
+    "eventIds": [],
+    "activeCharacterIds": [
+      "dustin-henderson"
+    ],
+    "activeLocationIds": [
+      "hawkins-middle-school"
+    ],
+    "focusLocationId": "hawkins-middle-school",
+    "summary": "Dustin intercepts a coded Russian transmission on his radio. No one believes him — except Steve and Robin, who hear it too.",
+    "nextMomentId": "s03e02-eleven-and-mike"
+  },
+  {
+    "id": "s03e02-eleven-and-mike",
+    "title": "Summer Romance",
+    "timeLabel": "July 1, 1985",
+    "sortKey": 30201,
+    "episodeId": "s03e02",
+    "eventIds": [],
+    "activeCharacterIds": [
+      "eleven",
+      "mike-wheeler"
+    ],
+    "activeLocationIds": [
+      "starcourt-mall"
+    ],
+    "focusLocationId": "starcourt-mall",
+    "summary": "Mike and Eleven are inseparable — and driving Hopper crazy. He tries to have 'the talk' with them, but they won't stop kissing.",
+    "nextMomentId": "s03e02-hopper-frustrated"
+  },
+  {
+    "id": "s03e02-hopper-frustrated",
+    "title": "Hopper's Frustration",
+    "timeLabel": "July 1, 1985",
+    "sortKey": 30202,
+    "episodeId": "s03e02",
+    "eventIds": [],
+    "activeCharacterIds": [
+      "jim-hopper",
+      "joyce-byers"
+    ],
+    "activeLocationIds": [
+      "hawkins-pd"
+    ],
+    "focusLocationId": "hawkins-pd",
+    "summary": "Hopper vents to Joyce about Mike and Eleven. Their chemistry is effortless — a reminder of what he lost. Joyce suggests he write a letter.",
+    "nextMomentId": "s03e02-magnets-fall"
+  },
+  {
+    "id": "s03e02-magnets-fall",
+    "title": "Magnets Stop Working",
+    "timeLabel": "July 2, 1985",
+    "sortKey": 30203,
+    "episodeId": "s03e02",
+    "eventIds": [],
+    "activeCharacterIds": [
+      "joyce-byers"
+    ],
+    "activeLocationIds": [
+      "byers-house"
+    ],
+    "focusLocationId": "byers-house",
+    "summary": "Joyce's fridge magnets fall off. She investigates — something is interfering with electromagnetic fields in Hawkins. It's happening again.",
+    "nextMomentId": "s03e03-billy-at-lake"
+  },
+  {
+    "id": "s03e03-billy-at-lake",
+    "title": "Billy at the Lake",
+    "timeLabel": "July 3, 1985",
+    "sortKey": 30301,
+    "episodeId": "s03e03",
+    "eventIds": [
+      "mind-flayer-forms"
+    ],
+    "activeCharacterIds": [
+      "billy-hargrove"
+    ],
+    "activeLocationIds": [
+      "lovers-lake"
+    ],
+    "focusLocationId": "lovers-lake",
+    "summary": "Billy sees something at Lovers Lake. A flash of light, a woman's scream — then nothing. He drives away, but something has changed inside him.",
+    "nextMomentId": "s03e03-billy-possessed"
+  },
+  {
+    "id": "s03e03-billy-possessed",
+    "title": "Billy Is Taken",
+    "timeLabel": "July 3, 1985",
+    "sortKey": 30302,
+    "episodeId": "s03e03",
+    "eventIds": [],
+    "activeCharacterIds": [
+      "billy-hargrove"
+    ],
+    "activeLocationIds": [
+      "hawkins-pool"
+    ],
+    "focusLocationId": "hawkins-pool",
+    "summary": "The Mind Flayer takes Billy as its host. His eyes darken, his veins blacken. He begins collecting people — luring them to the steelworks to be consumed.",
+    "nextMomentId": "s03e03-max-suspicious"
+  },
+  {
+    "id": "s03e03-max-suspicious",
+    "title": "Max Knows Something's Wrong",
+    "timeLabel": "July 3, 1985",
+    "sortKey": 30303,
+    "episodeId": "s03e03",
+    "eventIds": [],
+    "activeCharacterIds": [
+      "max-mayfield"
+    ],
+    "activeLocationIds": [
+      "hawkins-middle-school"
+    ],
+    "focusLocationId": "hawkins-middle-school",
+    "summary": "Max notices Billy acting stranger than usual. She's seen his dark side before — but this is different. He's not just angry. He's empty.",
+    "nextMomentId": "s03e04-sauna-test"
+  },
+  {
+    "id": "s03e04-sauna-test",
+    "title": "The Sauna Test",
+    "timeLabel": "July 4, 1985",
+    "sortKey": 30401,
+    "episodeId": "s03e04",
+    "eventIds": [
+      "sauna-test"
+    ],
+    "activeCharacterIds": [
+      "billy-hargrove",
+      "max-mayfield",
+      "eleven"
+    ],
+    "activeLocationIds": [
+      "hawkins-pool"
+    ],
+    "focusLocationId": "hawkins-pool",
+    "summary": "The kids trap Billy in the school sauna. The heat forces the Mind Flayer to surface — Billy's eyes go black, his strength multiplies. He nearly kills Eleven.",
+    "nextMomentId": "s03e04-flayed-converge"
+  },
+  {
+    "id": "s03e04-flayed-converge",
+    "title": "The Flayed Converge",
+    "timeLabel": "July 4, 1985",
+    "sortKey": 30402,
+    "episodeId": "s03e04",
+    "eventIds": [],
+    "activeCharacterIds": [
+      "billy-hargrove"
+    ],
+    "activeLocationIds": [
+      "brimborn-steelworks"
+    ],
+    "focusLocationId": "brimborn-steelworks",
+    "summary": "Billy delivers more people to the steelworks. They drink a strange chemical and melt — their bodies joining the growing mass. The Mind Flayer is building.",
+    "nextMomentId": "s03e05-scoops-infiltrate"
+  },
+  {
+    "id": "s03e05-scoops-infiltrate",
+    "title": "Into the Base",
+    "timeLabel": "July 4, 1985",
+    "sortKey": 30501,
+    "episodeId": "s03e05",
+    "eventIds": [
+      "scoops-troop-infiltration"
+    ],
+    "activeCharacterIds": [
+      "robin-buckley",
+      "erica-sinclair"
+    ],
+    "activeLocationIds": [
+      "russian-base"
+    ],
+    "focusLocationId": "russian-base",
+    "summary": "Steve, Robin, Dustin, and Erica sneak into the Russian base through the mall's elevator shaft. They discover a massive operation — the Russians are opening a gate.",
+    "nextMomentId": "s03e05-hopper-joyce-alexei"
+  },
+  {
+    "id": "s03e05-hopper-joyce-alexei",
+    "title": "Alexei Talks",
+    "timeLabel": "July 4, 1985",
+    "sortKey": 30502,
+    "episodeId": "s03e05",
+    "eventIds": [],
+    "activeCharacterIds": [
+      "jim-hopper",
+      "joyce-byers",
+      "alexei"
+    ],
+    "activeLocationIds": [
+      "murrays-bunker"
+    ],
+    "focusLocationId": "murrays-bunker",
+    "summary": "Hopper and Joyce bring the Russian scientist Alexei to Murray's bunker. After initial resistance, Alexei explains: the Key opens a door to the Upside Down.",
+    "nextMomentId": "s03e05-mind-flayer-attacks"
+  },
+  {
+    "id": "s03e05-mind-flayer-attacks",
+    "title": "The Monster Attacks",
+    "timeLabel": "July 4, 1985",
+    "sortKey": 30503,
+    "episodeId": "s03e05",
+    "eventIds": [
+      "mind-flayer-forms"
+    ],
+    "activeCharacterIds": [
+      "eleven"
+    ],
+    "activeLocationIds": [
+      "brimborn-steelworks"
+    ],
+    "focusLocationId": "brimborn-steelworks",
+    "summary": "The Mind Flayer, now fully formed, attacks the kids at the steelworks. Eleven fights it — but it bites her leg, injecting a piece of itself.",
+    "nextMomentId": "s03e06-eleven-weakened"
+  },
+  {
+    "id": "s03e06-eleven-weakened",
+    "title": "Eleven's Powers Fade",
+    "timeLabel": "July 5, 1985",
+    "sortKey": 30601,
+    "episodeId": "s03e06",
+    "eventIds": [],
+    "activeCharacterIds": [
+      "eleven",
+      "mike-wheeler"
+    ],
+    "activeLocationIds": [
+      "hawkins-hospital"
+    ],
+    "focusLocationId": "hawkins-hospital",
+    "summary": "The bite from the Mind Flayer is spreading. Eleven's powers weaken — she can't move objects, can't reach into the Void. She's vulnerable for the first time.",
+    "nextMomentId": "s03e06-billys-speech"
+  },
+  {
+    "id": "s03e06-billys-speech",
+    "title": "We'll Kill You All",
+    "timeLabel": "July 5, 1985",
+    "sortKey": 30602,
+    "episodeId": "s03e06",
+    "eventIds": [],
+    "activeCharacterIds": [
+      "billy-hargrove"
+    ],
+    "activeLocationIds": [
+      "brimborn-steelworks"
+    ],
+    "focusLocationId": "brimborn-steelworks",
+    "summary": "The Mind Flayer speaks through Billy at the steelworks: 'You built the Gate. You opened it. And now we're going to kill you all.'",
+    "nextMomentId": "s03e07-fourth-of-july"
+  },
+  {
+    "id": "s03e07-fourth-of-july",
+    "title": "The Fourth of July",
+    "timeLabel": "July 5, 1985",
+    "sortKey": 30701,
+    "episodeId": "s03e07",
+    "eventIds": [],
+    "activeCharacterIds": [
+      "robin-buckley",
+      "erica-sinclair"
+    ],
+    "activeLocationIds": [
+      "starcourt-mall"
+    ],
+    "focusLocationId": "starcourt-mall",
+    "summary": "The fair at Starcourt Mall. Fireworks, cotton candy, and underneath it all — a Russian machine tearing reality apart.",
+    "nextMomentId": "s03e07-alexei-shot"
+  },
+  {
+    "id": "s03e07-alexei-shot",
+    "title": "Alexei's Last Firework",
+    "timeLabel": "July 5, 1985",
+    "sortKey": 30702,
+    "episodeId": "s03e07",
+    "eventIds": [
+      "alexei-killed"
+    ],
+    "activeCharacterIds": [
+      "alexei"
+    ],
+    "activeLocationIds": [
+      "starcourt-mall"
+    ],
+    "focusLocationId": "starcourt-mall",
+    "summary": "Alexei watches the fireworks with wonder — his first American celebration. Then a gunshot. He falls into Murray's arms. He never sees the grand finale.",
+    "nextMomentId": "s03e08-battle-begins"
+  },
+  {
+    "id": "s03e08-battle-begins",
+    "title": "The Battle Begins",
+    "timeLabel": "July 5, 1985",
+    "sortKey": 30801,
+    "episodeId": "s03e08",
+    "eventIds": [
+      "battle-of-starcourt"
+    ],
+    "activeCharacterIds": [
+      "eleven",
+      "jim-hopper",
+      "joyce-byers"
+    ],
+    "activeLocationIds": [
+      "starcourt-mall",
+      "russian-base"
+    ],
+    "focusLocationId": "starcourt-mall",
+    "summary": "The Mind Flayer crashes through the mall. Joyce and Hopper head for the Key. The kids fight for their lives in the food court.",
+    "nextMomentId": "s03e08-hopper-vs-grigori"
+  },
+  {
+    "id": "s03e08-hopper-vs-grigori",
+    "title": "Hopper vs. Grigori",
+    "timeLabel": "July 5, 1985",
+    "sortKey": 30802,
+    "episodeId": "s03e08",
+    "eventIds": [
+      "battle-of-starcourt"
+    ],
+    "activeCharacterIds": [
+      "jim-hopper",
+      "grigori"
+    ],
+    "activeLocationIds": [
+      "russian-base"
+    ],
+    "focusLocationId": "russian-base",
+    "summary": "Hopper fights Grigori on the platform above the Key. Brutal, desperate, close-quarters — Hopper is outmatched but refuses to quit.",
+    "nextMomentId": "s03e08-key-shutdown"
+  },
+  {
+    "id": "s03e08-key-shutdown",
+    "title": "Shut It Down",
+    "timeLabel": "July 5, 1985",
+    "sortKey": 30803,
+    "episodeId": "s03e08",
+    "eventIds": [
+      "battle-of-starcourt"
+    ],
+    "activeCharacterIds": [
+      "joyce-byers",
+      "jim-hopper"
+    ],
+    "activeLocationIds": [
+      "russian-base"
+    ],
+    "focusLocationId": "russian-base",
+    "summary": "Joyce turns the keys. The Key explodes. Hopper is caught in the blast — standing in front of the gate as it collapses. He's gone.",
+    "nextMomentId": "s03e08-mind-flayer-dies"
+  },
+  {
+    "id": "s03e08-mind-flayer-dies",
+    "title": "The Mind Flayer Collapses",
+    "timeLabel": "July 5, 1985",
+    "sortKey": 30804,
+    "episodeId": "s03e08",
+    "eventIds": [
+      "battle-of-starcourt"
+    ],
+    "activeCharacterIds": [
+      "eleven"
+    ],
+    "activeLocationIds": [
+      "starcourt-mall"
+    ],
+    "focusLocationId": "starcourt-mall",
+    "summary": "With the gate closed, the Mind Flayer's body loses its anchor. It collapses in the mall parking lot. But Eleven's wound remains.",
+    "nextMomentId": "s03e08-hopper-letter"
+  },
+  {
+    "id": "s03e08-hopper-letter",
+    "title": "The Letter",
+    "timeLabel": "October 1985",
+    "sortKey": 30805,
+    "episodeId": "s03e08",
+    "eventIds": [
+      "hopper-letter"
+    ],
+    "activeCharacterIds": [
+      "eleven",
+      "joyce-byers"
+    ],
+    "activeLocationIds": [
+      "byers-house"
+    ],
+    "focusLocationId": "byers-house",
+    "summary": "The Byers family packs to leave Hawkins. Joyce hands Eleven a letter Hopper wrote but never gave her. As she reads it, we hear his voice: 'Keep growing up. I'll be right there.'",
+    "nextMomentId": "s04e01-hellfire-club"
+  },
+  {
+    "id": "s04e01-hellfire-club",
+    "title": "The Hellfire Club",
+    "timeLabel": "March 1986",
+    "sortKey": 40101,
+    "episodeId": "s04e01",
+    "eventIds": [],
+    "activeCharacterIds": [
+      "eddie-munson",
+      "dustin-henderson",
+      "mike-wheeler"
+    ],
+    "activeLocationIds": [
+      "hawkins-high"
+    ],
+    "focusLocationId": "hawkins-high",
+    "summary": "Eddie Munson leads a tense D&D campaign as the Hellfire Club's dungeon master. Dustin and Mike are fully immersed. The school's social lines are drawn: freaks vs. jocks.",
+    "nextMomentId": "s04e01-chrissy-visions"
+  },
+  {
+    "id": "s04e01-chrissy-visions",
+    "title": "Chrissy Sees the Clock",
+    "timeLabel": "March 1986",
+    "sortKey": 40102,
+    "episodeId": "s04e01",
+    "eventIds": [
+      "vecna-curse-hawkins"
+    ],
+    "activeCharacterIds": [
+      "eddie-munson"
+    ],
+    "activeLocationIds": [
+      "the-junkyard"
+    ],
+    "focusLocationId": "the-junkyard",
+    "summary": "Cheerleader Chrissy Maxfield is haunted by waking nightmares — a grandfather clock ticking in the walls, visions of her mother's cruelty. She seeks drugs from Eddie.",
+    "nextMomentId": "s04e01-chrissy-killed"
+  },
+  {
+    "id": "s04e01-chrissy-killed",
+    "title": "Vecna Takes Chrissy",
+    "timeLabel": "March 1986",
+    "sortKey": 40103,
+    "episodeId": "s04e01",
+    "eventIds": [
+      "chrissy-killed"
+    ],
+    "activeCharacterIds": [
+      "eddie-munson"
+    ],
+    "activeLocationIds": [
+      "the-junkyard"
+    ],
+    "focusLocationId": "the-junkyard",
+    "summary": "In Eddie's trailer, Chrissy is lifted into the air. Her bones snap one by one, her eyes go dark. Eddie watches in horror, then runs.",
+    "nextMomentId": "s04e01-eddie-flees"
+  },
+  {
+    "id": "s04e01-eddie-flees",
+    "title": "Eddie Runs",
+    "timeLabel": "March 1986",
+    "sortKey": 40104,
+    "episodeId": "s04e01",
+    "eventIds": [
+      "chrissy-killed"
+    ],
+    "activeCharacterIds": [
+      "eddie-munson",
+      "dustin-henderson"
+    ],
+    "activeLocationIds": [
+      "the-junkyard"
+    ],
+    "focusLocationId": "the-junkyard",
+    "summary": "Eddie flees the trailer in a panic, calling Dustin for help. The police find Chrissy's body. Eddie becomes the prime suspect — a satanic drug dealer, they say.",
+    "nextMomentId": "s04e02-nancy-investigates"
+  },
+  {
+    "id": "s04e02-nancy-investigates",
+    "title": "Nancy Investigates",
+    "timeLabel": "March 1986",
+    "sortKey": 40201,
+    "episodeId": "s04e02",
+    "eventIds": [
+      "vecna-curse-hawkins"
+    ],
+    "activeCharacterIds": [
+      "robin-buckley"
+    ],
+    "activeLocationIds": [
+      "hawkins-high"
+    ],
+    "focusLocationId": "hawkins-high",
+    "summary": "Nancy hears about Chrissy's death at the school newspaper and begins investigating. The pattern — snapped limbs, sunken eyes — matches no known cause of death.",
+    "nextMomentId": "s04e02-fred-killed"
+  },
+  {
+    "id": "s04e02-fred-killed",
+    "title": "Fred Benson Dies",
+    "timeLabel": "March 1986",
+    "sortKey": 40202,
+    "episodeId": "s04e02",
+    "eventIds": [
+      "vecna-curse-hawkins"
+    ],
+    "activeCharacterIds": [],
+    "activeLocationIds": [
+      "hawkins-high"
+    ],
+    "focusLocationId": "hawkins-high",
+    "summary": "Nancy's colleague Fred Benson is cursed by Vecna — haunted by a past accident. He's found dead in the same gruesome manner as Chrissy. Two deaths, same pattern.",
+    "nextMomentId": "s04e02-robin-pennhurst"
+  },
+  {
+    "id": "s04e02-robin-pennhurst",
+    "title": "Robin Finds the Clue",
+    "timeLabel": "March 1986",
+    "sortKey": 40203,
+    "episodeId": "s04e02",
+    "eventIds": [
+      "vecna-curse-hawkins"
+    ],
+    "activeCharacterIds": [
+      "robin-buckley"
+    ],
+    "activeLocationIds": [
+      "pennhurst"
+    ],
+    "focusLocationId": "pennhurst",
+    "summary": "Robin discovers an old newspaper clipping about the Creel family murders in 1959 — a father who went mad and killed his own family. The connection to Vecna begins to form.",
+    "nextMomentId": "s04e03-eleven-bullied"
+  },
+  {
+    "id": "s04e03-eleven-bullied",
+    "title": "Eleven Can't Fight Back",
+    "timeLabel": "March 1986",
+    "sortKey": 40301,
+    "episodeId": "s04e03",
+    "eventIds": [
+      "eleven-nina"
+    ],
+    "activeCharacterIds": [
+      "eleven"
+    ],
+    "activeLocationIds": [
+      "byers-california"
+    ],
+    "focusLocationId": "byers-california",
+    "summary": "Without her powers, Eleven is bullied at school in California. A girl smashes an egg on her head. She can't fight back. She writes to Mike, pretending everything is fine.",
+    "nextMomentId": "s04e03-agents-attack"
+  },
+  {
+    "id": "s04e03-agents-attack",
+    "title": "The Byers House Raid",
+    "timeLabel": "March 1986",
+    "sortKey": 40302,
+    "episodeId": "s04e03",
+    "eventIds": [
+      "hopper-kamchatka"
+    ],
+    "activeCharacterIds": [
+      "eleven",
+      "joyce-byers"
+    ],
+    "activeLocationIds": [
+      "byers-california"
+    ],
+    "focusLocationId": "byers-california",
+    "summary": "Government agents storm the Byers' California home. Eleven uses her fury to stop a helicopter — but it's not enough. She's taken by Dr. Owens to the NINA facility.",
+    "nextMomentId": "s04e04-max-visions"
+  },
+  {
+    "id": "s04e04-max-visions",
+    "title": "Max Sees the Clock",
+    "timeLabel": "March 1986",
+    "sortKey": 40401,
+    "episodeId": "s04e04",
+    "eventIds": [
+      "max-escapes-vecna"
+    ],
+    "activeCharacterIds": [
+      "max-mayfield"
+    ],
+    "activeLocationIds": [
+      "hawkins-high"
+    ],
+    "focusLocationId": "hawkins-high",
+    "summary": "Max begins seeing Vecna's grandfather clock. At Billy's grave, she hears his voice. The curse has found her — grief and guilt are its doorways.",
+    "nextMomentId": "s04e04-max-taken"
+  },
+  {
+    "id": "s04e04-max-taken",
+    "title": "Vecna Takes Max",
+    "timeLabel": "March 1986",
+    "sortKey": 40402,
+    "episodeId": "s04e04",
+    "eventIds": [
+      "max-escapes-vecna"
+    ],
+    "activeCharacterIds": [
+      "max-mayfield",
+      "vecna"
+    ],
+    "activeLocationIds": [
+      "hawkins-high"
+    ],
+    "focusLocationId": "hawkins-high",
+    "summary": "Max is pulled into Vecna's mind — a dark, twisted version of her memories. She relives Billy's death, her own isolation, the Party falling apart. She begins to give up.",
+    "nextMomentId": "s04e04-running-up-that-hill"
+  },
+  {
+    "id": "s04e04-running-up-that-hill",
+    "title": "Running Up That Hill",
+    "timeLabel": "March 1986",
+    "sortKey": 40403,
+    "episodeId": "s04e04",
+    "eventIds": [
+      "max-escapes-vecna"
+    ],
+    "activeCharacterIds": [
+      "max-mayfield"
+    ],
+    "activeLocationIds": [
+      "hawkins-high"
+    ],
+    "focusLocationId": "hawkins-high",
+    "summary": "Dustin, Lucas, and Steve put headphones on Max. Kate Bush's \"Running Up That Hill\" floods her ears. The music cuts through Vecna's grip. Max runs — and breaks free.",
+    "nextMomentId": "s04e04-max-escapes"
+  },
+  {
+    "id": "s04e04-max-escapes",
+    "title": "Max Breaks Free",
+    "timeLabel": "March 1986",
+    "sortKey": 40404,
+    "episodeId": "s04e04",
+    "eventIds": [
+      "max-escapes-vecna"
+    ],
+    "activeCharacterIds": [
+      "max-mayfield"
+    ],
+    "activeLocationIds": [
+      "hawkins-high"
+    ],
+    "focusLocationId": "hawkins-high",
+    "summary": "Max tears through the red mental landscape, clawing her way back to reality. She gasps awake in the cemetery, alive. The spell is broken — for now.",
+    "nextMomentId": "s04e05-eleven-enters-nina"
+  },
+  {
+    "id": "s04e05-eleven-enters-nina",
+    "title": "Eleven Enters NINA",
+    "timeLabel": "March 1986",
+    "sortKey": 40501,
+    "episodeId": "s04e05",
+    "eventIds": [
+      "eleven-nina"
+    ],
+    "activeCharacterIds": [
+      "eleven",
+      "sam-owens"
+    ],
+    "activeLocationIds": [
+      "nina-project"
+    ],
+    "focusLocationId": "nina-project",
+    "summary": "Dr. Owens shows Eleven the NINA tank — a sensory deprivation chamber that lets her relive her suppressed memories from Hawkins Lab. She descends into the past.",
+    "nextMomentId": "s04e05-eleven-memories"
+  },
+  {
+    "id": "s04e05-eleven-memories",
+    "title": "Memories of the Lab",
+    "timeLabel": "September 1979 (flashback)",
+    "sortKey": 40502,
+    "episodeId": "s04e05",
+    "eventIds": [
+      "eleven-nina"
+    ],
+    "activeCharacterIds": [
+      "eleven"
+    ],
+    "activeLocationIds": [
+      "nina-project",
+      "hawkins-lab"
+    ],
+    "focusLocationId": "hawkins-lab",
+    "summary": "Through NINA, Eleven relives her childhood at Hawkins Lab. She sees other children — 002, 008, the orderly who was kind to her. A memory she buried is surfacing.",
+    "nextMomentId": "s04e05-eleven-powers-return"
+  },
+  {
+    "id": "s04e05-eleven-powers-return",
+    "title": "The Power Returns",
+    "timeLabel": "March 1986",
+    "sortKey": 40503,
+    "episodeId": "s04e05",
+    "eventIds": [
+      "eleven-nina"
+    ],
+    "activeCharacterIds": [
+      "eleven"
+    ],
+    "activeLocationIds": [
+      "nina-project"
+    ],
+    "focusLocationId": "nina-project",
+    "summary": "As Eleven processes her suppressed trauma, her telekinetic power begins to resurface. She crushes the NINA tank's machinery. She's not powerless — she just forgot.",
+    "nextMomentId": "s04e06-diving-for-vecna"
+  },
+  {
+    "id": "s04e06-diving-for-vecna",
+    "title": "Diving into the Upside Down",
+    "timeLabel": "March 1986",
+    "sortKey": 40601,
+    "episodeId": "s04e06",
+    "eventIds": [
+      "creel-house-investigation"
+    ],
+    "activeCharacterIds": [
+      "steve-harrington",
+      "robin-buckley",
+      "nancy-wheeler"
+    ],
+    "activeLocationIds": [
+      "creel-house"
+    ],
+    "focusLocationId": "creel-house",
+    "summary": "Steve dives into Lovers Lake and surfaces in the Upside Down. The group follows, discovering the dark mirror of Hawkins — and the trail leading to Vecna's lair.",
+    "nextMomentId": "s04e06-creel-house"
+  },
+  {
+    "id": "s04e06-creel-house",
+    "title": "Inside the Creel House",
+    "timeLabel": "March 1986",
+    "sortKey": 40602,
+    "episodeId": "s04e06",
+    "eventIds": [
+      "creel-house-investigation"
+    ],
+    "activeCharacterIds": [
+      "robin-buckley",
+      "nancy-wheeler"
+    ],
+    "activeLocationIds": [
+      "creel-house"
+    ],
+    "focusLocationId": "creel-house",
+    "summary": "In the Upside Down's version of the Creel House, Nancy and Robin find clues linking Vecna to the 1959 murders. The grandfather clock ticks. They're getting closer.",
+    "nextMomentId": "s04e07-young-henry"
+  },
+  {
+    "id": "s04e07-young-henry",
+    "title": "Young Henry Creel",
+    "timeLabel": "September 1959 (flashback)",
+    "sortKey": 40701,
+    "episodeId": "s04e07",
+    "eventIds": [
+      "massacre-at-hawkins-lab",
+      "vecna-is-one"
+    ],
+    "activeCharacterIds": [
+      "vecna"
+    ],
+    "activeLocationIds": [
+      "creel-house",
+      "hawkins-lab"
+    ],
+    "focusLocationId": "creel-house",
+    "summary": "Through NINA, Eleven watches young Henry Creel move into the Creel house in 1959. He discovers spiders, telepathy, and the darkness within himself.",
+    "nextMomentId": "s04e07-henry-kills-family"
+  },
+  {
+    "id": "s04e07-henry-kills-family",
+    "title": "The Creel Murders",
+    "timeLabel": "September 1959 (flashback)",
+    "sortKey": 40702,
+    "episodeId": "s04e07",
+    "eventIds": [
+      "massacre-at-hawkins-lab"
+    ],
+    "activeCharacterIds": [
+      "vecna"
+    ],
+    "activeLocationIds": [
+      "creel-house"
+    ],
+    "focusLocationId": "creel-house",
+    "summary": "Henry uses his powers to kill his mother and sister, framing his father Victor. The house fills with clock chimes and broken bodies. This was the first massacre.",
+    "nextMomentId": "s04e07-henry-becomes-one"
+  },
+  {
+    "id": "s04e07-henry-becomes-one",
+    "title": "Henry Becomes 001",
+    "timeLabel": "1959–1979 (flashback)",
+    "sortKey": 40703,
+    "episodeId": "s04e07",
+    "eventIds": [
+      "vecna-is-one"
+    ],
+    "activeCharacterIds": [
+      "vecna"
+    ],
+    "activeLocationIds": [
+      "hawkins-lab"
+    ],
+    "focusLocationId": "hawkins-lab",
+    "summary": "Dr. Brenner captures Henry and brands him 001 — the first. For twenty years, Brenner tries to replicate his power in other children, including Eleven.",
+    "nextMomentId": "s04e07-massacre"
+  },
+  {
+    "id": "s04e07-massacre",
+    "title": "The Massacre",
+    "timeLabel": "September 8, 1979 (flashback)",
+    "sortKey": 40704,
+    "episodeId": "s04e07",
+    "eventIds": [
+      "massacre-at-hawkins-lab"
+    ],
+    "activeCharacterIds": [
+      "vecna",
+      "eleven"
+    ],
+    "activeLocationIds": [
+      "hawkins-lab"
+    ],
+    "focusLocationId": "hawkins-lab",
+    "summary": "Henry — disguised as the friendly orderly — kills every child and staff member at Hawkins Lab. Only Eleven survives, overpowering him and casting him into the Upside Down.",
+    "nextMomentId": "s04e07-vecna-born"
+  },
+  {
+    "id": "s04e07-vecna-born",
+    "title": "Vecna Is Born",
+    "timeLabel": "September 8, 1979 (flashback)",
+    "sortKey": 40705,
+    "episodeId": "s04e07",
+    "eventIds": [
+      "vecna-is-one"
+    ],
+    "activeCharacterIds": [
+      "eleven",
+      "vecna"
+    ],
+    "activeLocationIds": [
+      "hawkins-lab"
+    ],
+    "focusLocationId": "hawkins-lab",
+    "summary": "Henry is struck by Eleven's power and hurled into the Upside Down. Lightning fuses with his flesh. He becomes Vecna — and begins building his dark kingdom.",
+    "nextMomentId": "s04e08-eleven-finds-papa"
+  },
+  {
+    "id": "s04e08-eleven-finds-papa",
+    "title": "Papa Returns",
+    "timeLabel": "March 1986",
+    "sortKey": 40801,
+    "episodeId": "s04e08",
+    "eventIds": [
+      "eleven-nina"
+    ],
+    "activeCharacterIds": [
+      "eleven",
+      "sam-owens"
+    ],
+    "activeLocationIds": [
+      "nina-project"
+    ],
+    "focusLocationId": "nina-project",
+    "summary": "Eleven's powers are back, but NINA is compromised. Dr. Brenner — Papa — is alive, working with Owens. He wants to complete Eleven's training. She must choose.",
+    "nextMomentId": "s04e08-brenner-dies"
+  },
+  {
+    "id": "s04e08-brenner-dies",
+    "title": "Brenner's End",
+    "timeLabel": "March 1986",
+    "sortKey": 40802,
+    "episodeId": "s04e08",
+    "eventIds": [
+      "eleven-nina"
+    ],
+    "activeCharacterIds": [
+      "eleven",
+      "sam-owens"
+    ],
+    "activeLocationIds": [
+      "nina-project"
+    ],
+    "focusLocationId": "nina-project",
+    "summary": "Military forces storm the NINA facility. Brenner is shot carrying Eleven to safety. He dies reaching for her. Papa is gone — and Eleven is finally free of him.",
+    "nextMomentId": "s04e08-eleven-to-hawkins"
+  },
+  {
+    "id": "s04e08-eleven-to-hawkins",
+    "title": "Eleven Goes to Hawkins",
+    "timeLabel": "March 1986",
+    "sortKey": 40803,
+    "episodeId": "s04e08",
+    "eventIds": [
+      "eleven-nina"
+    ],
+    "activeCharacterIds": [
+      "eleven",
+      "argyle"
+    ],
+    "activeLocationIds": [
+      "nina-project"
+    ],
+    "focusLocationId": "nina-project",
+    "summary": "With her powers fully restored, Eleven projects into Max's mind to save her from Vecna. Argyle drives the California crew toward Hawkins. The race is on.",
+    "nextMomentId": "s04e09-plan-takes-shape"
+  },
+  {
+    "id": "s04e09-plan-takes-shape",
+    "title": "The Piggyback Plan",
+    "timeLabel": "March 28, 1986",
+    "sortKey": 40901,
+    "episodeId": "s04e09",
+    "eventIds": [
+      "four-gates-open"
+    ],
+    "activeCharacterIds": [
+      "eleven",
+      "dustin-henderson",
+      "mike-wheeler"
+    ],
+    "activeLocationIds": [
+      "hawkins-high",
+      "creel-house"
+    ],
+    "focusLocationId": "hawkins-high",
+    "summary": "The group devises a three-pronged attack: the Hawkins crew fights Vecna's body at the Creel House, Eleven enters Max's mind, and Eddie creates a diversion in the Upside Down.",
+    "nextMomentId": "s04e09-eddie-guitar"
+  },
+  {
+    "id": "s04e09-eddie-guitar",
+    "title": "Eddie's Master of Puppets",
+    "timeLabel": "March 28, 1986",
+    "sortKey": 40902,
+    "episodeId": "s04e09",
+    "eventIds": [
+      "eddie-guitar-solo"
+    ],
+    "activeCharacterIds": [
+      "eddie-munson",
+      "dustin-henderson"
+    ],
+    "activeLocationIds": [
+      "creel-house"
+    ],
+    "focusLocationId": "creel-house",
+    "summary": "In the Upside Down, Eddie shreds Metallica's \"Master of Puppets\" on his guitar, drawing the Demobats away from the Creel House. Dustin watches from the gate.",
+    "nextMomentId": "s04e09-eddie-dies"
+  },
+  {
+    "id": "s04e09-eddie-dies",
+    "title": "Eddie's Sacrifice",
+    "timeLabel": "March 28, 1986",
+    "sortKey": 40903,
+    "episodeId": "s04e09",
+    "eventIds": [
+      "eddie-guitar-solo"
+    ],
+    "activeCharacterIds": [
+      "eddie-munson",
+      "dustin-henderson"
+    ],
+    "activeLocationIds": [
+      "creel-house"
+    ],
+    "focusLocationId": "creel-house",
+    "summary": "Eddie's guitar strings break. The Demobats swarm. He fights them with a trash can lid, buying every second he can. He dies in Dustin's arms. \"I didn't run away this time.\"",
+    "nextMomentId": "s04e09-eleven-vs-vecna"
+  },
+  {
+    "id": "s04e09-eleven-vs-vecna",
+    "title": "Eleven vs. Vecna",
+    "timeLabel": "March 28, 1986",
+    "sortKey": 40904,
+    "episodeId": "s04e09",
+    "eventIds": [
+      "eleven-vs-vecna-mind"
+    ],
+    "activeCharacterIds": [
+      "eleven",
+      "vecna",
+      "max-mayfield"
+    ],
+    "activeLocationIds": [
+      "creel-house"
+    ],
+    "focusLocationId": "creel-house",
+    "summary": "Inside Max's mind, Eleven confronts Vecna. He's stronger than before — but so is she. She fights for Max's life, for Hawkins, for everyone she's lost.",
+    "nextMomentId": "s04e09-vecna-struck"
+  },
+  {
+    "id": "s04e09-vecna-struck",
+    "title": "Vecna Is Hit",
+    "timeLabel": "March 28, 1986",
+    "sortKey": 40905,
+    "episodeId": "s04e09",
+    "eventIds": [
+      "eleven-vs-vecna-mind",
+      "four-gates-open"
+    ],
+    "activeCharacterIds": [
+      "eleven",
+      "vecna",
+      "steve-harrington",
+      "nancy-wheeler",
+      "robin-buckley"
+    ],
+    "activeLocationIds": [
+      "creel-house"
+    ],
+    "focusLocationId": "creel-house",
+    "summary": "Nancy, Steve, and Robin attack Vecna's physical form with Molotov cocktails and shotgun blasts. Eleven strikes from within. Vecna burns — but the gates keep opening.",
+    "nextMomentId": "s04e09-max-dies"
+  },
+  {
+    "id": "s04e09-max-dies",
+    "title": "Max's Heart Stops",
+    "timeLabel": "March 28, 1986",
+    "sortKey": 40906,
+    "episodeId": "s04e09",
+    "eventIds": [
+      "max-coma"
+    ],
+    "activeCharacterIds": [
+      "max-mayfield",
+      "eleven"
+    ],
+    "activeLocationIds": [
+      "hawkins-high"
+    ],
+    "focusLocationId": "hawkins-high",
+    "summary": "Vecna breaks Max's bones in the mind void. Lucas holds her body as her heart stops. Eleven screams — and restarts it with everything she has. Max lives. Barely.",
+    "nextMomentId": "s04e09-gates-tear"
+  },
+  {
+    "id": "s04e09-gates-tear",
+    "title": "The Gates Rip Hawkins Apart",
+    "timeLabel": "March 28, 1986",
+    "sortKey": 40907,
+    "episodeId": "s04e09",
+    "eventIds": [
+      "four-gates-open"
+    ],
+    "activeCharacterIds": [
+      "vecna"
+    ],
+    "activeLocationIds": [
+      "creel-house",
+      "hawkins-lab",
+      "hawkins-high"
+    ],
+    "focusLocationId": "hawkins-lab",
+    "summary": "Four gates converge across Hawkins, tearing the earth apart. Ash falls like snow. The Upside Down bleeds into the real world. Hawkins is breaking.",
+    "nextMomentId": "s04e09-aftermath"
+  },
+  {
+    "id": "s04e09-aftermath",
+    "title": "Hawkins Falls Silent",
+    "timeLabel": "March 29, 1986",
+    "sortKey": 40908,
+    "episodeId": "s04e09",
+    "eventIds": [
+      "four-gates-open",
+      "max-coma"
+    ],
+    "activeCharacterIds": [
+      "eleven",
+      "max-mayfield"
+    ],
+    "activeLocationIds": [
+      "hawkins-hospital"
+    ],
+    "focusLocationId": "hawkins-hospital",
+    "summary": "The gates close — or do they? Hawkins is quarantined. Max lies in a coma, her mind gone. Eleven reaches for her, but finds only silence. The battle is over. The war isn't.",
+    "nextMomentId": "s05e01-hawkins-quarantined"
+  },
+  {
+    "id": "s05e01-hawkins-quarantined",
+    "title": "Hawkins Under Quarantine",
+    "timeLabel": "1987",
+    "sortKey": 50101,
+    "episodeId": "s05e01",
+    "eventIds": [
+      "hawkins-quarantine"
+    ],
+    "activeCharacterIds": [
+      "dr-kay"
+    ],
+    "activeLocationIds": [
+      "hawkins-quarantine"
+    ],
+    "focusLocationId": "hawkins-quarantine",
+    "summary": "Hawkins is a military zone. Armed patrols, razor wire, refugee camps. Dr. Kay leads the operation. The town that hid the Upside Down is now caged by it.",
+    "nextMomentId": "s05e01-demogorgon-attacks"
+  },
+  {
+    "id": "s05e01-demogorgon-attacks",
+    "title": "The Wheeler House Attack",
+    "timeLabel": "1987",
+    "sortKey": 50102,
+    "episodeId": "s05e01",
+    "eventIds": [
+      "holly-taken"
+    ],
+    "activeCharacterIds": [
+      "holly-wheeler",
+      "demogorgon"
+    ],
+    "activeLocationIds": [
+      "wheeler-house"
+    ],
+    "focusLocationId": "wheeler-house",
+    "summary": "A Demogorgon crashes through the Wheeler home. Holly screams. The creature takes her through a gate — the same way Will was taken four years ago. History repeating.",
+    "nextMomentId": "s05e01-holly-gone"
+  },
+  {
+    "id": "s05e01-holly-gone",
+    "title": "Holly Is Gone",
+    "timeLabel": "1987",
+    "sortKey": 50103,
+    "episodeId": "s05e01",
+    "eventIds": [
+      "holly-taken"
+    ],
+    "activeCharacterIds": [
+      "mike-wheeler",
+      "nancy-wheeler"
+    ],
+    "activeLocationIds": [
+      "wheeler-house"
+    ],
+    "focusLocationId": "wheeler-house",
+    "summary": "The Wheeler family reels. Holly is gone — vanished into the Upside Down. Mike and Nancy stare at the hole in the wall. They know this horror. They've lived it before.",
+    "nextMomentId": "s05e02-eleven-searches"
+  },
+  {
+    "id": "s05e02-eleven-searches",
+    "title": "Eleven Searches for Hopper",
+    "timeLabel": "1987",
+    "sortKey": 50201,
+    "episodeId": "s05e02",
+    "eventIds": [
+      "eleven-finds-hopper-ud"
+    ],
+    "activeCharacterIds": [
+      "eleven"
+    ],
+    "activeLocationIds": [
+      "upside-down-gate"
+    ],
+    "focusLocationId": "upside-down-gate",
+    "summary": "Eleven pushes deeper into the Upside Down, following a psychic thread. She finds Hopper — alive, scarred, surviving in the dark. He's been waiting.",
+    "nextMomentId": "s05e02-hopper-reunion"
+  },
+  {
+    "id": "s05e02-hopper-reunion",
+    "title": "Eleven Finds Hopper",
+    "timeLabel": "1987",
+    "sortKey": 50202,
+    "episodeId": "s05e02",
+    "eventIds": [
+      "eleven-finds-hopper-ud"
+    ],
+    "activeCharacterIds": [
+      "eleven",
+      "jim-hopper"
+    ],
+    "activeLocationIds": [
+      "upside-down-gate"
+    ],
+    "focusLocationId": "upside-down-gate",
+    "summary": "\"Papa?\" \"Not even close.\" Hopper holds Eleven. She's taller now. He's thinner. But they're together. The Upside Down couldn't take everything.",
+    "nextMomentId": "s05e02-mr-whatsit"
+  },
+  {
+    "id": "s05e02-mr-whatsit",
+    "title": "Mr. Whatsit Revealed",
+    "timeLabel": "1987",
+    "sortKey": 50203,
+    "episodeId": "s05e02",
+    "eventIds": [
+      "mr-whatsit-revealed"
+    ],
+    "activeCharacterIds": [
+      "holly-wheeler",
+      "vecna"
+    ],
+    "activeLocationIds": [
+      "holly-realm"
+    ],
+    "focusLocationId": "holly-realm",
+    "summary": "In the psychic realm, Holly's imaginary friend \"Mr. Whatsit\" reveals itself — it's Henry Creel. He's been whispering to her for years. The grooming is complete.",
+    "nextMomentId": "s05e03-turnbow-bait"
+  },
+  {
+    "id": "s05e03-turnbow-bait",
+    "title": "The Turnbow Trap",
+    "timeLabel": "1987",
+    "sortKey": 50301,
+    "episodeId": "s05e03",
+    "eventIds": [
+      "turnbow-trap"
+    ],
+    "activeCharacterIds": [
+      "derek-turnbow",
+      "dustin-henderson",
+      "lucas-sinclair"
+    ],
+    "activeLocationIds": [
+      "hawkins-quarantine"
+    ],
+    "focusLocationId": "hawkins-quarantine",
+    "summary": "The group sets a trap using Derek Turnbow as bait to draw out the Demogorgon. It's reckless, desperate, and the only plan they have left.",
+    "nextMomentId": "s05e03-trap-spring"
+  },
+  {
+    "id": "s05e03-trap-spring",
+    "title": "The Trap Springs",
+    "timeLabel": "1987",
+    "sortKey": 50302,
+    "episodeId": "s05e03",
+    "eventIds": [
+      "turnbow-trap"
+    ],
+    "activeCharacterIds": [
+      "derek-turnbow",
+      "steve-harrington"
+    ],
+    "activeLocationIds": [
+      "hawkins-quarantine"
+    ],
+    "focusLocationId": "hawkins-quarantine",
+    "summary": "The Demogorgon takes the bait. Steve swings his nail bat. The creature goes down — but it's just one. The Upside Down has many more.",
+    "nextMomentId": "s05e04-will-powers"
+  },
+  {
+    "id": "s05e04-will-powers",
+    "title": "Will's Powers Awaken",
+    "timeLabel": "1987",
+    "sortKey": 50401,
+    "episodeId": "s05e04",
+    "eventIds": [
+      "will-psychic-abilities"
+    ],
+    "activeCharacterIds": [
+      "will-byers"
+    ],
+    "activeLocationIds": [
+      "hawkins-quarantine"
+    ],
+    "focusLocationId": "hawkins-quarantine",
+    "summary": "Will feels the gates pulsing. He can sense the hive mind, see through the Upside Down's eyes. Four years of connection have given him power. He's not just a victim anymore.",
+    "nextMomentId": "s05e04-kali-found"
+  },
+  {
+    "id": "s05e04-kali-found",
+    "title": "Kali at the Military Base",
+    "timeLabel": "1987",
+    "sortKey": 50402,
+    "episodeId": "s05e04",
+    "eventIds": [
+      "kali-returns"
+    ],
+    "activeCharacterIds": [
+      "kali-prasad-s5",
+      "eleven",
+      "jim-hopper"
+    ],
+    "activeLocationIds": [
+      "hawkins-quarantine"
+    ],
+    "focusLocationId": "hawkins-quarantine",
+    "summary": "Hopper and Eleven find Kali imprisoned at the military base. She's been caught, experimented on. But her illusion powers are intact — and they're exactly what they need.",
+    "nextMomentId": "s05e04-vecna-takes-children"
+  },
+  {
+    "id": "s05e04-vecna-takes-children",
+    "title": "Vecna Takes the Children",
+    "timeLabel": "1987",
+    "sortKey": 50403,
+    "episodeId": "s05e04",
+    "eventIds": [
+      "vecna-kidnaps-children"
+    ],
+    "activeCharacterIds": [
+      "vecna",
+      "holly-wheeler"
+    ],
+    "activeLocationIds": [
+      "holly-realm"
+    ],
+    "focusLocationId": "holly-realm",
+    "summary": "Vecna pulls more children into his psychic realm, building an army of minds. Holly watches helplessly. She's no longer a guest — she's a prisoner.",
+    "nextMomentId": "s05e05-max-holly-memories"
+  },
+  {
+    "id": "s05e05-max-holly-memories",
+    "title": "Inside Henry's Mind",
+    "timeLabel": "1987",
+    "sortKey": 50501,
+    "episodeId": "s05e05",
+    "eventIds": [
+      "max-holly-navigate-memories"
+    ],
+    "activeCharacterIds": [
+      "max-mayfield",
+      "holly-wheeler"
+    ],
+    "activeLocationIds": [
+      "holly-realm"
+    ],
+    "focusLocationId": "holly-realm",
+    "summary": "Max and Holly navigate Henry Creel's memories — his spider obsession, his mother's cruelty, the moment he first killed. Understanding the monster is the first step to defeating him.",
+    "nextMomentId": "s05e05-demogorgon-reanimated"
+  },
+  {
+    "id": "s05e05-demogorgon-reanimated",
+    "title": "The Demogorgon Rises",
+    "timeLabel": "1987",
+    "sortKey": 50502,
+    "episodeId": "s05e05",
+    "eventIds": [
+      "demogorgon-reanimated"
+    ],
+    "activeCharacterIds": [
+      "dustin-henderson",
+      "mike-wheeler"
+    ],
+    "activeLocationIds": [
+      "hawkins-quarantine"
+    ],
+    "focusLocationId": "hawkins-quarantine",
+    "summary": "Using the exotic matter sphere, the group reanimates a Demogorgon — turning the Upside Down's own weapon against it. Dustin grins. \"Science rules.\"",
+    "nextMomentId": "s05e05-exotic-matter"
+  },
+  {
+    "id": "s05e05-exotic-matter",
+    "title": "The Exotic Matter Sphere",
+    "timeLabel": "1987",
+    "sortKey": 50503,
+    "episodeId": "s05e05",
+    "eventIds": [
+      "demogorgon-reanimated"
+    ],
+    "activeCharacterIds": [
+      "dustin-henderson"
+    ],
+    "activeLocationIds": [
+      "hawkins-quarantine"
+    ],
+    "focusLocationId": "hawkins-quarantine",
+    "summary": "Dustin discovers the exotic matter sphere — a concentrated fragment of Upside Down energy. It could close the gates forever. Or tear them wide open.",
+    "nextMomentId": "s05e06-matter-detonates"
+  },
+  {
+    "id": "s05e06-matter-detonates",
+    "title": "The Detonation",
+    "timeLabel": "1987",
+    "sortKey": 50601,
+    "episodeId": "s05e06",
+    "eventIds": [
+      "exotic-matter-detonates"
+    ],
+    "activeCharacterIds": [
+      "dustin-henderson"
+    ],
+    "activeLocationIds": [
+      "hawkins-quarantine"
+    ],
+    "focusLocationId": "hawkins-quarantine",
+    "summary": "The exotic matter detonates. The blast tears new pathways between dimensions, destabilizing every gate in Hawkins. The Upside Down bleeds through faster than ever.",
+    "nextMomentId": "s05e06-demodogs-hospital"
+  },
+  {
+    "id": "s05e06-demodogs-hospital",
+    "title": "Demodogs at the Hospital",
+    "timeLabel": "1987",
+    "sortKey": 50602,
+    "episodeId": "s05e06",
+    "eventIds": [
+      "demodogs-hospital"
+    ],
+    "activeCharacterIds": [
+      "steve-harrington",
+      "robin-buckley"
+    ],
+    "activeLocationIds": [
+      "hawkins-hospital"
+    ],
+    "focusLocationId": "hawkins-hospital",
+    "summary": "Demodogs swarm Hawkins Memorial Hospital. Steve and Robin fight to protect the patients. The nail bat swings. Robin fires a shotgun. They hold the line.",
+    "nextMomentId": "s05e06-max-holly-escape"
+  },
+  {
+    "id": "s05e06-max-holly-escape",
+    "title": "Escape from the Psychic Realm",
+    "timeLabel": "1987",
+    "sortKey": 50603,
+    "episodeId": "s05e06",
+    "eventIds": [
+      "max-holly-escape"
+    ],
+    "activeCharacterIds": [
+      "max-mayfield",
+      "holly-wheeler",
+      "will-byers"
+    ],
+    "activeLocationIds": [
+      "holly-realm"
+    ],
+    "focusLocationId": "holly-realm",
+    "summary": "Will opens a psychic bridge from outside. Max pushes Holly through it, then tears herself free. They emerge gasping, changed. The realm is behind them.",
+    "nextMomentId": "s05e07-will-comes-out"
+  },
+  {
+    "id": "s05e07-will-comes-out",
+    "title": "Will Comes Out",
+    "timeLabel": "1987",
+    "sortKey": 50701,
+    "episodeId": "s05e07",
+    "eventIds": [
+      "will-comes-out"
+    ],
+    "activeCharacterIds": [
+      "will-byers",
+      "mike-wheeler"
+    ],
+    "activeLocationIds": [
+      "hawkins-quarantine"
+    ],
+    "focusLocationId": "hawkins-quarantine",
+    "summary": "Will tells Mike who he really is. No fanfare, no drama — just two friends on a porch. Mike hugs him. \"I know.\" The world is ending, and Will is finally free.",
+    "nextMomentId": "s05e07-bridge-theory"
+  },
+  {
+    "id": "s05e07-bridge-theory",
+    "title": "The Bridge to the Abyss",
+    "timeLabel": "1987",
+    "sortKey": 50702,
+    "episodeId": "s05e07",
+    "eventIds": [
+      "upside-down-is-bridge"
+    ],
+    "activeCharacterIds": [
+      "dustin-henderson"
+    ],
+    "activeLocationIds": [
+      "the-abyss"
+    ],
+    "focusLocationId": "the-abyss",
+    "summary": "Dustin pieces it together: the Upside Down isn't the source — it's a bridge. Beyond it lies the Abyss, a dimension of pure shadow. The Mind Flayer doesn't live in Hawkins. It lives there.",
+    "nextMomentId": "s05e07-henry-manipulates"
+  },
+  {
+    "id": "s05e07-henry-manipulates",
+    "title": "Henry's Army",
+    "timeLabel": "1987",
+    "sortKey": 50703,
+    "episodeId": "s05e07",
+    "eventIds": [
+      "vecna-kidnaps-children"
+    ],
+    "activeCharacterIds": [
+      "vecna",
+      "holly-wheeler"
+    ],
+    "activeLocationIds": [
+      "holly-realm"
+    ],
+    "focusLocationId": "holly-realm",
+    "summary": "Henry manipulates the kidnapped children, weaving their minds into his hive. He's building something — not just an army, but a conduit. A way to bring the Abyss into Hawkins.",
+    "nextMomentId": "s05e08-mind-flayer-emerges"
+  },
+  {
+    "id": "s05e08-mind-flayer-emerges",
+    "title": "The Mind Flayer Rises",
+    "timeLabel": "1987",
+    "sortKey": 50801,
+    "episodeId": "s05e08",
+    "eventIds": [
+      "mind-flayer-kaiju"
+    ],
+    "activeCharacterIds": [
+      "vecna"
+    ],
+    "activeLocationIds": [
+      "hawkins-quarantine"
+    ],
+    "focusLocationId": "hawkins-quarantine",
+    "summary": "The Mind Flayer manifests physically — a towering kaiju of shadow and vine that rises over Hawkins. The sky goes dark. This is the endgame.",
+    "nextMomentId": "s05e08-kali-illusion"
+  },
+  {
+    "id": "s05e08-kali-illusion",
+    "title": "Kali's Illusion",
+    "timeLabel": "1987",
+    "sortKey": 50802,
+    "episodeId": "s05e08",
+    "eventIds": [
+      "kali-sacrifice"
+    ],
+    "activeCharacterIds": [
+      "kali-prasad-s5",
+      "eleven"
+    ],
+    "activeLocationIds": [
+      "hawkins-quarantine"
+    ],
+    "focusLocationId": "hawkins-quarantine",
+    "summary": "Kali projects massive illusions — a false army, a fake Eleven — confusing the Mind Flayer. The effort burns through her. She collapses. But she bought them time.",
+    "nextMomentId": "s05e08-kali-dies"
+  },
+  {
+    "id": "s05e08-kali-dies",
+    "title": "Kali's Sacrifice",
+    "timeLabel": "1987",
+    "sortKey": 50803,
+    "episodeId": "s05e08",
+    "eventIds": [
+      "kali-sacrifice"
+    ],
+    "activeCharacterIds": [
+      "kali-prasad-s5",
+      "eleven"
+    ],
+    "activeLocationIds": [
+      "hawkins-quarantine"
+    ],
+    "focusLocationId": "hawkins-quarantine",
+    "summary": "Kali dies in Eleven's arms. Her last words: \"Finish it, little sister.\" The illusion fades. But the opening it created is real. Eleven faces the Mind Flayer alone.",
+    "nextMomentId": "s05e08-final-battle"
+  },
+  {
+    "id": "s05e08-final-battle",
+    "title": "Eleven vs. Henry",
+    "timeLabel": "1987",
+    "sortKey": 50804,
+    "episodeId": "s05e08",
+    "eventIds": [
+      "eleven-defeats-henry"
+    ],
+    "activeCharacterIds": [
+      "eleven",
+      "vecna",
+      "will-byers"
+    ],
+    "activeLocationIds": [
+      "hawkins-quarantine",
+      "the-abyss"
+    ],
+    "focusLocationId": "hawkins-quarantine",
+    "summary": "Will bridges their psychic link. Eleven channels everything — every loss, every friend, every moment of love — and strikes Henry Creel. He shatters. The Mind Flayer dissolves. It's over.",
+    "nextMomentId": "s05e08-rightside-up"
+  },
+  {
+    "id": "s05e08-rightside-up",
+    "title": "The Rightside Up",
+    "timeLabel": "18 months later — 1988",
+    "sortKey": 50805,
+    "episodeId": "s05e08",
+    "eventIds": [
+      "life-after-hawkins"
+    ],
+    "activeCharacterIds": [
+      "eleven",
+      "mike-wheeler",
+      "will-byers",
+      "dustin-henderson",
+      "lucas-sinclair",
+      "max-mayfield"
+    ],
+    "activeLocationIds": [
+      "wheeler-house"
+    ],
+    "focusLocationId": "wheeler-house",
+    "summary": "Eighteen months later. Hawkins is rebuilding. The Party plays D&D in Mike's basement one last time. Eleven smiles. The gates are closed. The world is, at last, right-side up.",
     "nextMomentId": null
   }
 ]

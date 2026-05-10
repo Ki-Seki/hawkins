@@ -3,90 +3,1117 @@
     "id": "will-disappears",
     "title": "Will Vanishes",
     "description": "While cycling home through Mirkwood after a D&D session, Will Byers is taken by the Demogorgon and dragged into the Upside Down.",
-    "episodeIds": ["s01e01"],
-    "locationIds": ["mirkwood"],
-    "characterIds": ["will-byers", "demogorgon"],
-    "tags": ["inciting-incident", "disappearance"]
+    "episodeIds": [
+      "s01e01"
+    ],
+    "locationIds": [
+      "mirkwood"
+    ],
+    "characterIds": [
+      "will-byers",
+      "demogorgon"
+    ],
+    "tags": [
+      "inciting-incident",
+      "disappearance"
+    ]
   },
   {
     "id": "eleven-escapes",
     "title": "Eleven Escapes Hawkins Lab",
     "description": "Subject 011 breaks free from Hawkins Lab after a traumatic sensory deprivation experiment goes wrong, using her powers to kill her guards.",
-    "episodeIds": ["s01e01"],
-    "locationIds": ["hawkins-lab"],
-    "characterIds": ["eleven"],
-    "tags": ["escape", "powers"]
+    "episodeIds": [
+      "s01e01"
+    ],
+    "locationIds": [
+      "hawkins-lab"
+    ],
+    "characterIds": [
+      "eleven"
+    ],
+    "tags": [
+      "escape",
+      "powers"
+    ]
   },
   {
     "id": "party-finds-eleven",
     "title": "The Party Finds Eleven",
     "description": "Mike, Dustin, and Lucas discover a shaved-head girl in the forest while searching for Will. She can only say her lab number: 'Eleven'.",
-    "episodeIds": ["s01e01"],
-    "locationIds": ["mirkwood"],
-    "characterIds": ["eleven", "mike-wheeler", "dustin-henderson", "lucas-sinclair"],
-    "tags": ["first-meeting"]
+    "episodeIds": [
+      "s01e01"
+    ],
+    "locationIds": [
+      "mirkwood"
+    ],
+    "characterIds": [
+      "eleven",
+      "mike-wheeler",
+      "dustin-henderson",
+      "lucas-sinclair"
+    ],
+    "tags": [
+      "first-meeting"
+    ]
   },
   {
     "id": "joyce-christmas-lights",
     "title": "Will Speaks Through the Lights",
     "description": "Joyce realizes Will is communicating with her through electrical disturbances. She strings Christmas lights across the wall and he spells out letters.",
-    "episodeIds": ["s01e03", "s01e04"],
-    "locationIds": ["byers-house"],
-    "characterIds": ["joyce-byers", "will-byers"],
-    "tags": ["communication", "supernatural"]
+    "episodeIds": [
+      "s01e03",
+      "s01e04"
+    ],
+    "locationIds": [
+      "byers-house"
+    ],
+    "characterIds": [
+      "joyce-byers",
+      "will-byers"
+    ],
+    "tags": [
+      "communication",
+      "supernatural"
+    ]
   },
   {
     "id": "barb-taken",
     "title": "Barb Is Taken",
     "description": "Barbara Holland is dragged into the Upside Down by the Demogorgon while waiting at the Harrington pool. She does not survive.",
-    "episodeIds": ["s01e03"],
-    "locationIds": ["mirkwood"],
-    "characterIds": ["demogorgon"],
-    "tags": ["death", "taken"]
+    "episodeIds": [
+      "s01e03"
+    ],
+    "locationIds": [
+      "mirkwood"
+    ],
+    "characterIds": [
+      "demogorgon"
+    ],
+    "tags": [
+      "death",
+      "taken"
+    ]
   },
   {
     "id": "decoy-body-found",
     "title": "Body Found at the Quarry",
     "description": "A body believed to be Will's is found in Sattler Quarry. Joyce refuses to believe it is real — she is right; it is a fake planted by the lab.",
-    "episodeIds": ["s01e04"],
-    "locationIds": ["hawkins-quarry"],
-    "characterIds": ["will-byers", "jim-hopper", "joyce-byers"],
-    "tags": ["deception", "lab-cover-up"]
+    "episodeIds": [
+      "s01e04"
+    ],
+    "locationIds": [
+      "hawkins-quarry"
+    ],
+    "characterIds": [
+      "will-byers",
+      "jim-hopper",
+      "joyce-byers"
+    ],
+    "tags": [
+      "deception",
+      "lab-cover-up"
+    ]
   },
   {
     "id": "hopper-infiltrates-lab",
     "title": "Hopper Infiltrates the Lab",
     "description": "Chief Hopper breaks into Hawkins Lab and discovers the Gate — a portal to the Upside Down — confirming that the government is hiding the truth about Will.",
-    "episodeIds": ["s01e06", "s01e07"],
-    "locationIds": ["hawkins-lab", "upside-down-gate"],
-    "characterIds": ["jim-hopper"],
-    "tags": ["investigation", "discovery"]
+    "episodeIds": [
+      "s01e06",
+      "s01e07"
+    ],
+    "locationIds": [
+      "hawkins-lab",
+      "upside-down-gate"
+    ],
+    "characterIds": [
+      "jim-hopper"
+    ],
+    "tags": [
+      "investigation",
+      "discovery"
+    ]
   },
   {
     "id": "eleven-sensory-deprivation",
     "title": "Eleven Locates Will",
     "description": "Using a makeshift sensory deprivation tank in the Hawkins Middle School gym, Eleven reaches out into the Void and finds Will alive in the Upside Down.",
-    "episodeIds": ["s01e07"],
-    "locationIds": ["hawkins-middle-school"],
-    "characterIds": ["eleven", "will-byers", "mike-wheeler", "dustin-henderson", "lucas-sinclair"],
-    "tags": ["powers", "discovery"]
+    "episodeIds": [
+      "s01e07"
+    ],
+    "locationIds": [
+      "hawkins-middle-school"
+    ],
+    "characterIds": [
+      "eleven",
+      "will-byers",
+      "mike-wheeler",
+      "dustin-henderson",
+      "lucas-sinclair"
+    ],
+    "tags": [
+      "powers",
+      "discovery"
+    ]
   },
   {
     "id": "final-showdown",
     "title": "The Final Showdown",
     "description": "The Demogorgon attacks the Party in the Hawkins Middle School classroom. Eleven sacrifices herself to destroy the creature, disintegrating alongside it.",
-    "episodeIds": ["s01e08"],
-    "locationIds": ["hawkins-middle-school"],
-    "characterIds": ["eleven", "demogorgon", "mike-wheeler", "dustin-henderson", "lucas-sinclair"],
-    "tags": ["climax", "sacrifice", "powers"]
+    "episodeIds": [
+      "s01e08"
+    ],
+    "locationIds": [
+      "hawkins-middle-school"
+    ],
+    "characterIds": [
+      "eleven",
+      "demogorgon",
+      "mike-wheeler",
+      "dustin-henderson",
+      "lucas-sinclair"
+    ],
+    "tags": [
+      "climax",
+      "sacrifice",
+      "powers"
+    ]
   },
   {
     "id": "will-rescued",
     "title": "Will Is Rescued",
     "description": "Joyce and Hopper enter the Upside Down through the Gate at Hawkins Lab and pull Will's body free. He is resuscitated and returns home.",
-    "episodeIds": ["s01e08"],
-    "locationIds": ["hawkins-lab", "upside-down-gate", "byers-house"],
-    "characterIds": ["will-byers", "joyce-byers", "jim-hopper"],
-    "tags": ["rescue", "resolution"]
+    "episodeIds": [
+      "s01e08"
+    ],
+    "locationIds": [
+      "hawkins-lab",
+      "upside-down-gate",
+      "byers-house"
+    ],
+    "characterIds": [
+      "will-byers",
+      "joyce-byers",
+      "jim-hopper"
+    ],
+    "tags": [
+      "rescue",
+      "resolution"
+    ]
+  },
+  {
+    "id": "shadow-monster-vision",
+    "title": "Will Sees the Shadow Monster",
+    "description": "While trick-or-treating at the pumpkin patch, Will has a terrifying vision of a massive spider-like shadow looming over Hawkins — the Mind Flayer.",
+    "episodeIds": [
+      "s02e01",
+      "s02e02"
+    ],
+    "locationIds": [
+      "pumpkin-patch"
+    ],
+    "characterIds": [
+      "will-byers"
+    ],
+    "tags": [
+      "visions",
+      "mind-flayer"
+    ]
+  },
+  {
+    "id": "dart-escape",
+    "title": "Dart Escapes",
+    "description": "Dustin's new pet 'Dart' — a tiny creature from the Upside Down — escapes from his terrarium and molts into a larger form, revealing itself as a baby Demogorgon.",
+    "episodeIds": [
+      "s02e03"
+    ],
+    "locationIds": [
+      "hawkins-middle-school"
+    ],
+    "characterIds": [
+      "dustin-henderson"
+    ],
+    "tags": [
+      "demogorgon",
+      "discovery"
+    ]
+  },
+  {
+    "id": "will-possessed",
+    "title": "Will Possessed by the Mind Flayer",
+    "description": "The Mind Flayer takes hold of Will, using him as a spy. His personality changes, his body temperature drops, and he begins speaking for the shadow monster.",
+    "episodeIds": [
+      "s02e04",
+      "s02e05"
+    ],
+    "locationIds": [
+      "byers-house",
+      "hawkins-hospital"
+    ],
+    "characterIds": [
+      "will-byers",
+      "joyce-byers"
+    ],
+    "tags": [
+      "possession",
+      "mind-flayer"
+    ]
+  },
+  {
+    "id": "bob-decodes-map",
+    "title": "Bob Decodes the Tunnel Map",
+    "description": "Using his technical skills, Bob realizes Will's drawings form a map of the Upside Down tunnels spreading beneath Hawkins. He helps the group understand the threat.",
+    "episodeIds": [
+      "s02e05"
+    ],
+    "locationIds": [
+      "byers-house"
+    ],
+    "characterIds": [
+      "bob-newby"
+    ],
+    "tags": [
+      "discovery",
+      "tunnels"
+    ]
+  },
+  {
+    "id": "tunnel-fire",
+    "title": "The Tunnel Fire",
+    "description": "Hopper becomes trapped in the Upside Down tunnels while trying to burn them. Eleven uses her powers to open a rift and save him.",
+    "episodeIds": [
+      "s02e05"
+    ],
+    "locationIds": [
+      "hawkins-tunnels"
+    ],
+    "characterIds": [
+      "jim-hopper",
+      "eleven"
+    ],
+    "tags": [
+      "tunnels",
+      "danger",
+      "powers"
+    ]
+  },
+  {
+    "id": "eleven-finds-kali",
+    "title": "Eleven Finds Kali",
+    "description": "Eleven tracks down Kali Prasad (Eight) in Chicago, another Hawkins Lab escapee. Kali teaches her to channel anger into stronger powers.",
+    "episodeIds": [
+      "s02e07"
+    ],
+    "locationIds": [
+      "chicago"
+    ],
+    "characterIds": [
+      "eleven",
+      "kali-prasad"
+    ],
+    "tags": [
+      "powers",
+      "lab-escapee"
+    ]
+  },
+  {
+    "id": "bob-sacrifice",
+    "title": "Bob's Sacrifice",
+    "description": "During the lab lockdown, Bob stays behind to reboot the power system so the others can escape. He succeeds — but is killed by the Demodogs.",
+    "episodeIds": [
+      "s02e08"
+    ],
+    "locationIds": [
+      "hawkins-lab"
+    ],
+    "characterIds": [
+      "bob-newby",
+      "sam-owens"
+    ],
+    "tags": [
+      "sacrifice",
+      "death"
+    ]
+  },
+  {
+    "id": "mind-flayer-exorcism",
+    "title": "Exorcising the Mind Flayer",
+    "description": "The group uses heat and sensory deprivation to force the Mind Flayer out of Will. Joyce, Jonathan, and Nancy work together as the shadow creature escapes.",
+    "episodeIds": [
+      "s02e08"
+    ],
+    "locationIds": [
+      "byers-house"
+    ],
+    "characterIds": [
+      "will-byers",
+      "joyce-byers"
+    ],
+    "tags": [
+      "mind-flayer",
+      "exorcism"
+    ]
+  },
+  {
+    "id": "eleven-closes-gate",
+    "title": "Eleven Closes the Gate",
+    "description": "Eleven channels all her power to close the Gate beneath Hawkins Lab, severing the Mind Flayer's connection to the physical world. The Demodogs drop dead.",
+    "episodeIds": [
+      "s02e09"
+    ],
+    "locationIds": [
+      "hawkins-lab",
+      "upside-down-gate"
+    ],
+    "characterIds": [
+      "eleven",
+      "jim-hopper"
+    ],
+    "tags": [
+      "powers",
+      "climax",
+      "gate"
+    ]
+  },
+  {
+    "id": "rats-exploding",
+    "title": "The Exploding Rats",
+    "description": "Hawkins rats begin exploding, their bodies melting into a single mass. Something is consuming them from the inside — the Mind Flayer is building a new body.",
+    "episodeIds": [
+      "s03e01"
+    ],
+    "locationIds": [
+      "hawkins"
+    ],
+    "characterIds": [],
+    "tags": [
+      "mind-flayer",
+      "mystery"
+    ]
+  },
+  {
+    "id": "sauna-test",
+    "title": "The Sauna Test",
+    "description": "The kids trap Billy in a sauna to test if he's been taken over by the Mind Flayer. He is — and nearly kills them before breaking free.",
+    "episodeIds": [
+      "s03e04"
+    ],
+    "locationIds": [
+      "hawkins-pool"
+    ],
+    "characterIds": [
+      "billy-hargrove",
+      "max-mayfield",
+      "eleven"
+    ],
+    "tags": [
+      "mind-flayer",
+      "confrontation"
+    ]
+  },
+  {
+    "id": "scoops-troop-infiltration",
+    "title": "The Scoops Troop Infiltrates",
+    "description": "Steve, Robin, Dustin, and Erica discover the Russian base beneath Starcourt Mall and sneak in through the air vents.",
+    "episodeIds": [
+      "s03e05",
+      "s03e06"
+    ],
+    "locationIds": [
+      "russian-base",
+      "starcourt-mall"
+    ],
+    "characterIds": [
+      "robin-buckley",
+      "erica-sinclair"
+    ],
+    "tags": [
+      "infiltration",
+      "discovery"
+    ]
+  },
+  {
+    "id": "mind-flayer-forms",
+    "title": "The Mind Flayer Takes Form",
+    "description": "At Brimborn Steelworks, the melted remains of Hawkins residents coalesce into a massive spider-like creature — the Mind Flayer's physical avatar.",
+    "episodeIds": [
+      "s03e05"
+    ],
+    "locationIds": [
+      "brimborn-steelworks"
+    ],
+    "characterIds": [],
+    "tags": [
+      "mind-flayer",
+      "creature"
+    ]
+  },
+  {
+    "id": "alexei-killed",
+    "title": "Alexei Is Shot",
+    "description": "At the Fourth of July fair, Murray's new friend Alexei is shot by a Russian agent. He dies in Murray's arms, never getting to see fireworks.",
+    "episodeIds": [
+      "s03e07"
+    ],
+    "locationIds": [
+      "starcourt-mall"
+    ],
+    "characterIds": [
+      "alexei"
+    ],
+    "tags": [
+      "death",
+      "sacrifice"
+    ]
+  },
+  {
+    "id": "battle-of-starcourt",
+    "title": "The Battle of Starcourt",
+    "description": "The final confrontation at Starcourt Mall. The Mind Flayer attacks, Hopper fights Grigori, and Joyce shuts down the Key — closing the gate but apparently killing Hopper.",
+    "episodeIds": [
+      "s03e08"
+    ],
+    "locationIds": [
+      "starcourt-mall",
+      "russian-base"
+    ],
+    "characterIds": [
+      "eleven",
+      "jim-hopper",
+      "joyce-byers",
+      "grigori"
+    ],
+    "tags": [
+      "climax",
+      "battle"
+    ]
+  },
+  {
+    "id": "hopper-letter",
+    "title": "El, You Are Not Ready",
+    "description": "Hopper's unscribed letter to Eleven, read in voiceover. He talks about growing up, letting go, and the importance of moving on. A goodbye he never got to give.",
+    "episodeIds": [
+      "s03e08"
+    ],
+    "locationIds": [
+      "byers-house"
+    ],
+    "characterIds": [
+      "jim-hopper",
+      "eleven",
+      "joyce-byers"
+    ],
+    "tags": [
+      "emotional",
+      "letter"
+    ]
+  },
+  {
+    "id": "chrissy-killed",
+    "title": "Chrissy's Death",
+    "description": "Vecna curses and kills Chrissy Maxfield in Eddie's trailer, witnessed by Eddie who flees in terror — becoming Hawkins' most wanted.",
+    "episodeIds": [
+      "s04e01"
+    ],
+    "locationIds": [
+      "the-junkyard"
+    ],
+    "characterIds": [
+      "eddie-munson"
+    ],
+    "tags": [
+      "death",
+      "vecna-curse"
+    ]
+  },
+  {
+    "id": "vecna-curse-hawkins",
+    "title": "Vecna's Curse Spreads",
+    "description": "A pattern of gruesome deaths terrorizes Hawkins. Victims are haunted by their trauma before being levitated and killed with snapped limbs and sunken eyes.",
+    "episodeIds": [
+      "s04e01",
+      "s04e02",
+      "s04e04"
+    ],
+    "locationIds": [
+      "hawkins-high",
+      "creel-house"
+    ],
+    "characterIds": [
+      "vecna"
+    ],
+    "tags": [
+      "vecna-curse",
+      "horror"
+    ]
+  },
+  {
+    "id": "eleven-nina",
+    "title": "Eleven Regains Her Powers",
+    "description": "Through the NINA tank, Eleven relives suppressed Hawkins Lab memories, confronting what happened on September 8, 1979 — and gradually restoring her lost abilities.",
+    "episodeIds": [
+      "s04e05",
+      "s04e07"
+    ],
+    "locationIds": [
+      "nina-project"
+    ],
+    "characterIds": [
+      "eleven"
+    ],
+    "tags": [
+      "powers",
+      "memory",
+      "lab"
+    ]
+  },
+  {
+    "id": "max-escapes-vecna",
+    "title": "Max Breaks Free",
+    "description": "Trapped in Vecna's mind, Max hears her friends play \"Running Up That Hill\" — the music gives her the strength to break Vecna's grip and escape.",
+    "episodeIds": [
+      "s04e04"
+    ],
+    "locationIds": [
+      "hawkins-high"
+    ],
+    "characterIds": [
+      "max-mayfield",
+      "vecna"
+    ],
+    "tags": [
+      "emotional",
+      "music",
+      "escape"
+    ]
+  },
+  {
+    "id": "creel-house-investigation",
+    "title": "The Creel House Mystery",
+    "description": "The Hawkins group investigates the abandoned Creel house, discovering its connection to the 1959 murders and finding a portal to the Upside Down within.",
+    "episodeIds": [
+      "s04e06"
+    ],
+    "locationIds": [
+      "creel-house"
+    ],
+    "characterIds": [
+      "steve-harrington",
+      "robin-buckley",
+      "nancy-wheeler"
+    ],
+    "tags": [
+      "investigation",
+      "supernatural"
+    ]
+  },
+  {
+    "id": "hopper-kamchatka",
+    "title": "Hopper in Kamchatka",
+    "description": "Hopper survives the Key explosion and is imprisoned in a Russian gulag in Kamchatka, where he fights Demogorgons and befriends guard Dmitri.",
+    "episodeIds": [
+      "s04e01",
+      "s04e03"
+    ],
+    "locationIds": [
+      "nina-project"
+    ],
+    "characterIds": [
+      "jim-hopper",
+      "dmitri"
+    ],
+    "tags": [
+      "survival",
+      "russian",
+      "prison"
+    ]
+  },
+  {
+    "id": "massacre-at-hawkins-lab",
+    "title": "The Massacre at Hawkins Lab",
+    "description": "Eleven's memories reveal the truth: Henry Creel (001) slaughtered the other children and staff at Hawkins Lab on September 8, 1979. Eleven defeated him and sent him to the Upside Down.",
+    "episodeIds": [
+      "s04e07"
+    ],
+    "locationIds": [
+      "hawkins-lab"
+    ],
+    "characterIds": [
+      "eleven",
+      "vecna"
+    ],
+    "tags": [
+      "revelation",
+      "massacre",
+      "origin"
+    ]
+  },
+  {
+    "id": "vecna-is-one",
+    "title": "Vecna's True Identity Revealed",
+    "description": "The truth connects: Vecna is Henry Creel, the first test subject — 001. He is the architect of the Upside Down's horrors, not a victim of them.",
+    "episodeIds": [
+      "s04e07"
+    ],
+    "locationIds": [
+      "hawkins-lab"
+    ],
+    "characterIds": [
+      "vecna"
+    ],
+    "tags": [
+      "revelation",
+      "identity"
+    ]
+  },
+  {
+    "id": "eddie-guitar-solo",
+    "title": "Eddie's Guitar Solo",
+    "description": "To buy his friends time in the Upside Down, Eddie plays Metallica's \"Master of Puppets\" on his guitar, drawing the attention of the Demobats. His final heroic act.",
+    "episodeIds": [
+      "s04e09"
+    ],
+    "locationIds": [
+      "creel-house"
+    ],
+    "characterIds": [
+      "eddie-munson",
+      "dustin-henderson"
+    ],
+    "tags": [
+      "sacrifice",
+      "heroic",
+      "music"
+    ]
+  },
+  {
+    "id": "four-gates-open",
+    "title": "The Four Gates Open",
+    "description": "With each of Vecna's kills, a gate tears open in Hawkins. Four gates rip through the town and converge, merging into a massive wound that threatens to consume everything.",
+    "episodeIds": [
+      "s04e09"
+    ],
+    "locationIds": [
+      "creel-house",
+      "hawkins-lab",
+      "hawkins-high"
+    ],
+    "characterIds": [
+      "vecna"
+    ],
+    "tags": [
+      "apocalypse",
+      "upside-down",
+      "gates"
+    ]
+  },
+  {
+    "id": "eleven-vs-vecna-mind",
+    "title": "Eleven Fights Vecna in the Mind Void",
+    "description": "Eleven projects into Max's mind to confront Vecna directly. She battles him in a psychic void, trying to save Max and stop the gates from opening.",
+    "episodeIds": [
+      "s04e09"
+    ],
+    "locationIds": [
+      "creel-house"
+    ],
+    "characterIds": [
+      "eleven",
+      "vecna",
+      "max-mayfield"
+    ],
+    "tags": [
+      "climax",
+      "psychic",
+      "battle"
+    ]
+  },
+  {
+    "id": "max-coma",
+    "title": "Max Dies and Returns",
+    "description": "Vecna breaks Max's bones and stops her heart. Eleven uses her power to restart it, but Max falls into a coma — alive but gone, her mind trapped.",
+    "episodeIds": [
+      "s04e09"
+    ],
+    "locationIds": [
+      "hawkins-hospital"
+    ],
+    "characterIds": [
+      "max-mayfield",
+      "eleven"
+    ],
+    "tags": [
+      "death",
+      "coma",
+      "emotional"
+    ]
+  },
+  {
+    "id": "hawkins-quarantine",
+    "title": "Hawkins Under Quarantine",
+    "description": "The military establishes a full quarantine around Hawkins after the gates ripped the town apart. Armed patrols, refugee camps, and a media blackout define the new reality.",
+    "episodeIds": [
+      "s05e01"
+    ],
+    "locationIds": [
+      "hawkins-quarantine"
+    ],
+    "characterIds": [
+      "dr-kay"
+    ],
+    "tags": [
+      "military",
+      "quarantine"
+    ]
+  },
+  {
+    "id": "holly-taken",
+    "title": "Holly Vanishes",
+    "description": "A Demogorgon attacks the Wheeler home and drags Holly through a gate into the Upside Down — mirroring Will's disappearance from Season 1.",
+    "episodeIds": [
+      "s05e01"
+    ],
+    "locationIds": [
+      "wheeler-house"
+    ],
+    "characterIds": [
+      "holly-wheeler",
+      "demogorgon"
+    ],
+    "tags": [
+      "disappearance",
+      "mirroring"
+    ]
+  },
+  {
+    "id": "mr-whatsit-revealed",
+    "title": "Mr. Whatsit Is Vecna",
+    "description": "Holly's imaginary friend \"Mr. Whatsit\" is revealed to be Vecna/Henry Creel, who has been grooming her through psychic contact since childhood.",
+    "episodeIds": [
+      "s05e02"
+    ],
+    "locationIds": [
+      "holly-realm"
+    ],
+    "characterIds": [
+      "holly-wheeler",
+      "vecna"
+    ],
+    "tags": [
+      "revelation",
+      "manipulation"
+    ]
+  },
+  {
+    "id": "turnbow-trap",
+    "title": "The Turnbow Trap",
+    "description": "The group uses Derek Turnbow as Demogorgon bait to study the creatures' behavior and find a way to fight back against the Upside Down invasion.",
+    "episodeIds": [
+      "s05e03"
+    ],
+    "locationIds": [
+      "hawkins-quarantine"
+    ],
+    "characterIds": [
+      "derek-turnbow"
+    ],
+    "tags": [
+      "plan",
+      "dangerous"
+    ]
+  },
+  {
+    "id": "eleven-finds-hopper-ud",
+    "title": "Eleven Finds Hopper",
+    "description": "Eleven locates Hopper alive in the Upside Down, where he has been surviving since the Starcourt explosion. Their reunion is bittersweet — the world is ending around them.",
+    "episodeIds": [
+      "s05e02"
+    ],
+    "locationIds": [
+      "upside-down-gate"
+    ],
+    "characterIds": [
+      "eleven",
+      "jim-hopper"
+    ],
+    "tags": [
+      "reunion",
+      "emotional"
+    ]
+  },
+  {
+    "id": "will-psychic-abilities",
+    "title": "Will Unlocks His Powers",
+    "description": "Will's long connection to the Upside Down finally manifests as psychic abilities. He can sense the gates, communicate through the hive mind, and project into Henry's realm.",
+    "episodeIds": [
+      "s05e04"
+    ],
+    "locationIds": [
+      "hawkins-quarantine"
+    ],
+    "characterIds": [
+      "will-byers"
+    ],
+    "tags": [
+      "powers",
+      "awakening"
+    ]
+  },
+  {
+    "id": "kali-returns",
+    "title": "Kali Returns to Hawkins",
+    "description": "Hopper and Eleven find Kali (Eight) at the military base. She's been captured, but her illusion powers are exactly what they need for the final battle against Vecna.",
+    "episodeIds": [
+      "s05e04"
+    ],
+    "locationIds": [
+      "hawkins-quarantine"
+    ],
+    "characterIds": [
+      "kali-prasad-s5",
+      "eleven",
+      "jim-hopper"
+    ],
+    "tags": [
+      "reunion",
+      "ally"
+    ]
+  },
+  {
+    "id": "vecna-kidnaps-children",
+    "title": "Vecna Takes the Children",
+    "description": "Vecna kidnaps multiple children, pulling them into his psychic realm to build his army. Holly and Max navigate his memories from inside.",
+    "episodeIds": [
+      "s05e04",
+      "s05e05"
+    ],
+    "locationIds": [
+      "holly-realm"
+    ],
+    "characterIds": [
+      "vecna",
+      "holly-wheeler",
+      "max-mayfield"
+    ],
+    "tags": [
+      "kidnapping",
+      "psychic"
+    ]
+  },
+  {
+    "id": "max-holly-navigate-memories",
+    "title": "Inside Henry's Mind",
+    "description": "Max and Holly navigate Henry Creel's childhood memories inside his psychic realm — his spider obsession, his mother's cruelty, the roots of his transformation into Vecna.",
+    "episodeIds": [
+      "s05e05"
+    ],
+    "locationIds": [
+      "holly-realm"
+    ],
+    "characterIds": [
+      "max-mayfield",
+      "holly-wheeler"
+    ],
+    "tags": [
+      "psychic",
+      "memories"
+    ]
+  },
+  {
+    "id": "demogorgon-reanimated",
+    "title": "The Demogorgon Rises",
+    "description": "The group reanimates a Demogorgon using the exotic matter sphere — turning the Upside Down's own weapons against it in a desperate bid for leverage.",
+    "episodeIds": [
+      "s05e05"
+    ],
+    "locationIds": [
+      "hawkins-quarantine"
+    ],
+    "characterIds": [
+      "dustin-henderson"
+    ],
+    "tags": [
+      "science",
+      "weapon"
+    ]
+  },
+  {
+    "id": "exotic-matter-detonates",
+    "title": "The Exotic Matter Detonates",
+    "description": "The exotic matter sphere detonates, tearing open new pathways between dimensions. The blast destabilizes the gates and accelerates the Upside Down's invasion of Hawkins.",
+    "episodeIds": [
+      "s05e06"
+    ],
+    "locationIds": [
+      "hawkins-quarantine"
+    ],
+    "characterIds": [
+      "dustin-henderson"
+    ],
+    "tags": [
+      "explosion",
+      "escalation"
+    ]
+  },
+  {
+    "id": "demodogs-hospital",
+    "title": "Demodogs Attack the Hospital",
+    "description": "A swarm of Demodogs storms Hawkins Memorial Hospital, where the injured and comatose are being treated. The group fights to protect the defenseless.",
+    "episodeIds": [
+      "s05e06"
+    ],
+    "locationIds": [
+      "hawkins-hospital"
+    ],
+    "characterIds": [
+      "steve-harrington",
+      "robin-buckley"
+    ],
+    "tags": [
+      "battle",
+      "horror"
+    ]
+  },
+  {
+    "id": "max-holly-escape",
+    "title": "Escape from the Psychic Realm",
+    "description": "Max and Holly escape Henry's psychic realm separately — Max through sheer willpower, Holly through a psychic bridge opened by Will. They emerge changed.",
+    "episodeIds": [
+      "s05e06"
+    ],
+    "locationIds": [
+      "holly-realm"
+    ],
+    "characterIds": [
+      "max-mayfield",
+      "holly-wheeler",
+      "will-byers"
+    ],
+    "tags": [
+      "escape",
+      "psychic"
+    ]
+  },
+  {
+    "id": "will-comes-out",
+    "title": "Will Comes Out",
+    "description": "Will finally tells the group who he really is. After years of hiding, he comes out to his friends and family. They accept him completely. It's quiet and small and everything.",
+    "episodeIds": [
+      "s05e07"
+    ],
+    "locationIds": [
+      "hawkins-quarantine"
+    ],
+    "characterIds": [
+      "will-byers",
+      "mike-wheeler"
+    ],
+    "tags": [
+      "emotional",
+      "identity"
+    ]
+  },
+  {
+    "id": "upside-down-is-bridge",
+    "title": "The Upside Down Is a Bridge",
+    "description": "Dustin theorizes the Upside Down isn't a destination — it's a bridge to something deeper: the Abyss, a dimension of pure shadow where the Mind Flayer truly lives.",
+    "episodeIds": [
+      "s05e07"
+    ],
+    "locationIds": [
+      "the-abyss"
+    ],
+    "characterIds": [
+      "dustin-henderson"
+    ],
+    "tags": [
+      "revelation",
+      "science"
+    ]
+  },
+  {
+    "id": "mind-flayer-kaiju",
+    "title": "The Mind Flayer Manifests",
+    "description": "The Mind Flayer emerges from the Abyss as a massive physical entity — a kaiju of shadow and vine that towers over Hawkins. The final battle begins.",
+    "episodeIds": [
+      "s05e08"
+    ],
+    "locationIds": [
+      "hawkins-quarantine"
+    ],
+    "characterIds": [
+      "vecna"
+    ],
+    "tags": [
+      "climax",
+      "kaiju",
+      "horror"
+    ]
+  },
+  {
+    "id": "kali-sacrifice",
+    "title": "Kali's Sacrifice",
+    "description": "Kali uses her illusion powers to confuse the Mind Flayer, buying Eleven time to strike. The effort kills her — but her sacrifice turns the tide of the battle.",
+    "episodeIds": [
+      "s05e08"
+    ],
+    "locationIds": [
+      "hawkins-quarantine"
+    ],
+    "characterIds": [
+      "kali-prasad-s5",
+      "eleven"
+    ],
+    "tags": [
+      "death",
+      "sacrifice",
+      "heroic"
+    ]
+  },
+  {
+    "id": "eleven-defeats-henry",
+    "title": "Eleven Defeats Henry",
+    "description": "In the final confrontation, Eleven faces Henry Creel one last time. With help from Will's psychic link and the combined strength of everyone she loves, she destroys him.",
+    "episodeIds": [
+      "s05e08"
+    ],
+    "locationIds": [
+      "hawkins-quarantine",
+      "the-abyss"
+    ],
+    "characterIds": [
+      "eleven",
+      "vecna",
+      "will-byers"
+    ],
+    "tags": [
+      "climax",
+      "victory",
+      "final-battle"
+    ]
+  },
+  {
+    "id": "life-after-hawkins",
+    "title": "The Rightside Up",
+    "description": "Eighteen months later. The gates are closed. Hawkins is rebuilding. The Party is growing up. Life, at last, returns to something resembling normal.",
+    "episodeIds": [
+      "s05e08"
+    ],
+    "locationIds": [
+      "wheeler-house"
+    ],
+    "characterIds": [
+      "eleven",
+      "mike-wheeler",
+      "will-byers",
+      "dustin-henderson",
+      "lucas-sinclair",
+      "max-mayfield"
+    ],
+    "tags": [
+      "epilogue",
+      "hope",
+      "ending"
+    ]
   }
 ]
