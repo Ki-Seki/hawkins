@@ -1,8 +1,12 @@
 import { AnimatePresence, motion } from 'framer-motion'
 import { useEffect, useRef, useState, useMemo, useCallback, memo } from 'react'
 import { useAtlasStore, useMomentState } from '../store'
-import { mapLayout } from '../data/catalog'
+import { mapLayout, locationsById, momentsSorted } from '../data/catalog'
 import type { Location, Character } from '../data/catalog'
+
+const FOCUS_SCALE = 1.8
+const FOCUS_DURATION = 0.8
+const BASE_SCALE = 1.15
 
 // ─── ThemeOverlay ─────────────────────────────────────────────────────────────
 
@@ -217,6 +221,77 @@ const CharacterMarker = memo(function CharacterMarker({
   )
 })
 
+// ─── CharacterMovementLines ──────────────────────────────────────────────────
+
+interface MovementLine {
+  characterId: string
+  color: string
+  fromX: number
+  fromY: number
+  toX: number
+  toY: number
+}
+
+function CharacterMovementLines({
+  currentMomentId,
+  containerSize,
+}: {
+  currentMomentId: string
+  containerSize: { w: number; h: number }
+}) {
+  const currentIdx = momentsSorted.findIndex((m) => m.id === currentMomentId)
+  const prevMomentId = currentIdx > 0 ? momentsSorted[currentIdx - 1].id : currentMomentId
+
+  const currentResolved = useMomentState(currentMomentId)
+  const prevResolved = useMomentState(prevMomentId)
+  const hasPrev = currentIdx > 0
+
+  const lines = useMemo(() => {
+    if (!currentResolved || !prevResolved || !hasPrev) return []
+    const result: MovementLine[] = []
+    for (const curChar of currentResolved.activeCharacters) {
+      const prevChar = prevResolved.activeCharacters.find((c) => c.id === curChar.id)
+      if (!prevChar || prevChar.locationId === curChar.locationId) continue
+      const fromLoc = locationsById.get(prevChar.locationId)
+      const toLoc = locationsById.get(curChar.locationId)
+      if (!fromLoc || !toLoc) continue
+      result.push({
+        characterId: curChar.id,
+        color: curChar.color,
+        fromX: (fromLoc.map.x / 100) * containerSize.w,
+        fromY: (fromLoc.map.y / 100) * containerSize.h,
+        toX: (toLoc.map.x / 100) * containerSize.w,
+        toY: (toLoc.map.y / 100) * containerSize.h,
+      })
+    }
+    return result
+  }, [currentResolved, prevResolved, containerSize, hasPrev])
+
+  if (lines.length === 0) return null
+
+  return (
+    <>
+      {lines.map((line) => (
+        <motion.line
+          key={`${line.characterId}-${line.fromX}-${line.toX}`}
+          x1={line.fromX}
+          y1={line.fromY}
+          x2={line.toX}
+          y2={line.toY}
+          stroke={line.color}
+          strokeWidth={1.5}
+          strokeDasharray="6 4"
+          strokeLinecap="round"
+          opacity={0.6}
+          initial={{ pathLength: 0, opacity: 0 }}
+          animate={{ pathLength: 1, opacity: 0.6 }}
+          transition={{ duration: 0.6, ease: 'easeOut' }}
+        />
+      ))}
+    </>
+  )
+}
+
 // ─── HawkinsMap ───────────────────────────────────────────────────────────────
 
 export function HawkinsMap() {
@@ -256,53 +331,86 @@ export function HawkinsMap() {
 
   const layout = mapLayout as { svgPath: string }
 
+  // Camera: compute transform for focusLocationId
+  const focusLocation = resolved?.moment.focusLocationId
+    ? locationsById.get(resolved.moment.focusLocationId)
+    : null
+  const cameraTransform = useMemo(() => {
+    if (!focusLocation) {
+      const tx = (size.w * (1 - BASE_SCALE)) / 2
+      const ty = (size.h * (1 - BASE_SCALE)) / 2
+      return { scale: BASE_SCALE, x: tx, y: ty }
+    }
+    const cx = (focusLocation.map.x / 100) * size.w
+    const cy = (focusLocation.map.y / 100) * size.h
+    const tx = size.w / 2 - cx * FOCUS_SCALE
+    const ty = size.h / 2 - cy * FOCUS_SCALE
+    return { scale: FOCUS_SCALE, x: tx, y: ty }
+  }, [focusLocation, size.w, size.h])
+
   return (
-    <div ref={containerRef} className="relative w-full h-full" onClick={handleMapClick}>
-      <img
-        src={`${import.meta.env.BASE_URL}${layout.svgPath}`}
-        alt="Hawkins map"
-        className="absolute inset-0 w-full h-full"
-        style={{ objectFit: 'fill' }}
-        draggable={false}
-      />
-
-      <ThemeOverlay momentId={currentMomentId} />
-
-      <AnimatePresence mode="wait">
-        <motion.svg
-          key={currentMomentId}
+    <div ref={containerRef} className="relative w-full h-full overflow-hidden" style={{ backgroundColor: '#0d0d14' }} onClick={handleMapClick}>
+      <motion.div
+        className="relative w-full h-full"
+        animate={{ scale: cameraTransform.scale, x: cameraTransform.x, y: cameraTransform.y }}
+        transition={{ duration: FOCUS_DURATION, ease: [0.25, 0.1, 0.25, 1] }}
+        style={{ transformOrigin: '0 0' }}
+      >
+        <img
+          src={`${import.meta.env.BASE_URL}${layout.svgPath}`}
+          alt="Hawkins map"
           className="absolute inset-0 w-full h-full"
-          viewBox={`0 0 ${size.w} ${size.h}`}
-          preserveAspectRatio="none"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          exit={{ opacity: 0 }}
-          transition={{ duration: 0.4 }}
-        >
-          {resolved?.activeLocations.map((loc) => (
-            <LocationMarker
-              key={loc.id}
-              location={loc}
-              containerSize={size}
-              isSelected={selectedEntity?.type === 'location' && selectedEntity.id === loc.id}
-            />
-          ))}
-          {resolved?.activeLocations.map((loc) => {
-            const chars = charsByLocation[loc.id] ?? []
-            return chars.map((char, idx) => (
-              <CharacterMarker
-                key={char.id}
-                character={char}
-                locationX={loc.map.x}
-                locationY={loc.map.y}
+          style={{ objectFit: 'cover' }}
+          draggable={false}
+        />
+
+        <ThemeOverlay momentId={currentMomentId} />
+
+        {/* Map edge fade — blends map edges into background */}
+        <div
+          className="absolute inset-0 pointer-events-none"
+          style={{
+            background: 'radial-gradient(ellipse at center, transparent 50%, #0d0d14 100%)',
+          }}
+        />
+
+        <AnimatePresence mode="wait">
+          <motion.svg
+            key={currentMomentId}
+            className="absolute inset-0 w-full h-full"
+            viewBox={`0 0 ${size.w} ${size.h}`}
+            preserveAspectRatio="none"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 0.4 }}
+          >
+            <CharacterMovementLines currentMomentId={currentMomentId} containerSize={size} />
+            {resolved?.activeLocations.map((loc) => (
+              <LocationMarker
+                key={loc.id}
+                location={loc}
                 containerSize={size}
-                index={idx}
-                isSelected={selectedEntity?.type === 'character' && selectedEntity.id === char.id}
+                isSelected={selectedEntity?.type === 'location' && selectedEntity.id === loc.id}
               />
-            ))
-          })}
-        </motion.svg>
-      </AnimatePresence>
+            ))}
+            {resolved?.activeLocations.map((loc) => {
+              const chars = charsByLocation[loc.id] ?? []
+              return chars.map((char, idx) => (
+                <CharacterMarker
+                  key={char.id}
+                  character={char}
+                  locationX={loc.map.x}
+                  locationY={loc.map.y}
+                  containerSize={size}
+                  index={idx}
+                  isSelected={selectedEntity?.type === 'character' && selectedEntity.id === char.id}
+                />
+              ))
+            })}
+          </motion.svg>
+        </AnimatePresence>
+      </motion.div>
     </div>
   )
 }

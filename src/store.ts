@@ -5,7 +5,7 @@ import {
   momentStatesById,
   charactersById,
   locationsById,
-  episodesById,
+  getSeason,
 } from './data/catalog'
 import type { Character, Location, Moment, MomentState } from './data/catalog'
 
@@ -41,11 +41,6 @@ export const useAtlasStore = create<AtlasStore>((set) => ({
 }))
 
 // ─── useTimeline ──────────────────────────────────────────────────────────────
-
-function getSeason(moment: Moment): number {
-  const ep = episodesById.get(moment.episodeId)
-  return ep?.season ?? 1
-}
 
 export function useTimeline() {
   const currentMomentId = useAtlasStore((s) => s.currentMomentId)
@@ -91,7 +86,7 @@ export function useTimeline() {
         if (prevSeasonMoments.length > 0) setMoment(prevSeasonMoments[prevSeasonMoments.length - 1].id)
       }
     },
-    hasNext: currentIndex < seasonMoments.length - 1 || currentSeason < 4,
+    hasNext: currentIndex < seasonMoments.length - 1 || currentSeason < 5,
     hasPrev: currentIndex > 0 || currentSeason > 1,
   }
 }

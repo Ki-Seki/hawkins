@@ -32,7 +32,7 @@ export function InfoCard() {
           animate={{ x: 0, opacity: 1 }}
           exit={{ x: 40, opacity: 0 }}
           transition={{ duration: 0.25, ease: 'easeOut' }}
-          className="fixed right-0 top-0 bottom-14 z-20 w-80 bg-dim/95 backdrop-blur-md border-l border-white/10 flex flex-col overflow-hidden"
+          className="fixed right-0 top-0 bottom-14 z-20 w-full sm:w-80 bg-dim/95 backdrop-blur-md border-l border-white/10 flex flex-col overflow-hidden"
           role="dialog"
           aria-labelledby="infocard-title"
           aria-describedby="infocard-description"

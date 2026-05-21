@@ -1,6 +1,6 @@
 # Hawkins
 
-An interactive spatio-temporal map of Hawkins, Indiana from _Stranger Things_ — explore key moments from Season 1 on an animated SVG map.
+An interactive spatio-temporal map of Hawkins, Indiana from _Stranger Things_ — explore key moments across all 5 seasons on an animated map.
 
 **[View Live Demo →](https://ki-seki.github.io/hawkins/)**
 
