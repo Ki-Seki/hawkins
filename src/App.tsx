@@ -1,10 +1,63 @@
 import { useEffect, useRef, useState } from 'react'
-import { motion } from 'framer-motion'
+import { AnimatePresence, motion } from 'framer-motion'
 import { useAtlasStore, useTimeline } from './store'
 import { momentsSorted, episodesById } from './data/catalog'
 import { HawkinsMap } from './components/Map'
 import { Timeline } from './components/Timeline'
 import { InfoCard } from './components/InfoCard'
+
+// ─── HelpOverlay ─────────────────────────────────────────────────────────────
+
+const SHORTCUTS = [
+  { keys: ['←', '→'], label: 'Navigate moments' },
+  { keys: ['Space'], label: 'Play / Pause autoplay' },
+  { keys: ['1', '–', '5'], label: 'Jump to season' },
+  { keys: ['Esc'], label: 'Close panel' },
+  { keys: ['?'], label: 'Toggle this help' },
+]
+
+function HelpOverlay({ onClose }: { onClose: () => void }) {
+  return (
+    <motion.div
+      className="fixed inset-0 z-50 flex items-center justify-center"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+      transition={{ duration: 0.2 }}
+    >
+      <div className="absolute inset-0 bg-black/70 backdrop-blur-sm" onClick={onClose} />
+      <motion.div
+        className="relative bg-dim/95 border border-white/10 rounded-xl p-6 sm:p-8 max-w-sm w-[calc(100%-2rem)]"
+        initial={{ scale: 0.9, opacity: 0 }}
+        animate={{ scale: 1, opacity: 1 }}
+        exit={{ scale: 0.9, opacity: 0 }}
+        transition={{ duration: 0.2, ease: 'easeOut' }}
+      >
+        <h2 className="text-white font-display text-lg mb-5 tracking-wide">Keyboard Shortcuts</h2>
+        <div className="space-y-3">
+          {SHORTCUTS.map(({ keys, label }) => (
+            <div key={label} className="flex items-center justify-between gap-4">
+              <span className="text-white/60 text-sm font-sans">{label}</span>
+              <div className="flex items-center gap-1">
+                {keys.map((k, i) => (
+                  <kbd
+                    key={i}
+                    className="inline-flex items-center justify-center min-w-[1.75rem] h-6 px-1.5 rounded bg-white/10 border border-white/15 text-white/80 font-mono text-[11px]"
+                  >
+                    {k}
+                  </kbd>
+                ))}
+              </div>
+            </div>
+          ))}
+        </div>
+        <p className="text-white/25 text-[10px] font-mono mt-5 text-center tracking-wider uppercase">
+          Press Esc or click outside to close
+        </p>
+      </motion.div>
+    </motion.div>
+  )
+}
 
 // ─── IntroAnimation ───────────────────────────────────────────────────────────
 
@@ -68,6 +121,7 @@ export default function App() {
   const { currentMoment, next, prev, hasNext, hasPrev } = useTimeline()
   const timerRef = useRef<ReturnType<typeof setInterval> | null>(null)
   const [showIntro, setShowIntro] = useState(true)
+  const [showHelp, setShowHelp] = useState(false)
 
   // Pause autoplay on user interaction
   useEffect(() => {
@@ -116,7 +170,9 @@ export default function App() {
           break
         case 'Escape':
           e.preventDefault()
-          if (selectedEntity) {
+          if (showHelp) {
+            setShowHelp(false)
+          } else if (selectedEntity) {
             clearSelected()
           }
           break
@@ -139,12 +195,16 @@ export default function App() {
           if (first) useAtlasStore.getState().setMoment(first.id)
           break
         }
+        case '?':
+          e.preventDefault()
+          setShowHelp((v) => !v)
+          break
       }
     }
 
     window.addEventListener('keydown', handleKeyDown)
     return () => window.removeEventListener('keydown', handleKeyDown)
-  }, [hasNext, hasPrev, next, prev, selectedEntity, clearSelected, isPlaying, setPlaying])
+  }, [hasNext, hasPrev, next, prev, selectedEntity, clearSelected, isPlaying, setPlaying, showHelp])
 
   return (
     <div className="relative w-screen h-screen overflow-hidden bg-dim" role="application" aria-label="Hawkins Interactive Map">
@@ -162,15 +222,15 @@ export default function App() {
       </div>
 
       {/* Moment title overlay (top-left) */}
-      <div className="absolute top-4 left-4 pointer-events-none z-10 max-w-xs" role="status" aria-live="polite">
-        <div className="bg-black/50 backdrop-blur-sm border border-white/10 rounded-lg px-4 py-3">
-          <p className="text-hawkins-amber/80 font-mono text-[10px] uppercase tracking-[0.2em] mb-1">
+      <div className="absolute top-3 left-3 sm:top-4 sm:left-4 pointer-events-none z-10 max-w-[200px] sm:max-w-xs" role="status" aria-live="polite">
+        <div className="bg-black/50 backdrop-blur-sm border border-white/10 rounded-lg px-3 py-2 sm:px-4 sm:py-3">
+          <p className="text-hawkins-amber/80 font-mono text-[9px] sm:text-[10px] uppercase tracking-[0.2em] mb-1">
             {currentMoment?.timeLabel}
           </p>
-          <h1 className="text-white font-display text-xl leading-tight font-medium">
+          <h1 className="text-white font-display text-base sm:text-xl leading-tight font-medium">
             {currentMoment?.title}
           </h1>
-          <p className="text-white/55 text-xs mt-1.5 leading-relaxed font-sans">
+          <p className="text-white/55 text-[10px] sm:text-xs mt-1 sm:mt-1.5 leading-relaxed font-sans line-clamp-2 sm:line-clamp-none">
             {currentMoment?.summary}
           </p>
         </div>
@@ -183,9 +243,14 @@ export default function App() {
       <InfoCard />
 
       {/* Keyboard shortcuts hint */}
-      <div className="fixed bottom-16 left-4 text-white/30 text-xs font-mono pointer-events-none z-10" aria-hidden="true">
-        <p>← → Navigate • Space Play/Pause • 1-5 Seasons • Esc Close</p>
+      <div className="hidden md:block fixed bottom-16 left-4 text-white/30 text-xs font-mono pointer-events-none z-10" aria-hidden="true">
+        <p>← → Navigate • Space Play/Pause • 1-5 Seasons • Esc Close • ? Help</p>
       </div>
+
+      {/* Help overlay */}
+      <AnimatePresence>
+        {showHelp && <HelpOverlay onClose={() => setShowHelp(false)} />}
+      </AnimatePresence>
     </div>
   )
 }

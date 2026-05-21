@@ -1,17 +1,20 @@
+import { useState, useRef, useCallback } from 'react'
+import { motion } from 'framer-motion'
 import { useTimeline, useAtlasStore } from '../store'
-import { episodesById, momentsSorted } from '../data/catalog'
+import { episodesById, momentsSorted, getSeason } from '../data/catalog'
+import type { Moment } from '../data/catalog'
 
 const SEASONS = [1, 2, 3, 4, 5] as const
-
-function getSeason(moment: { episodeId: string }): number {
-  const ep = episodesById.get(moment.episodeId)
-  return ep?.season ?? 1
-}
 
 function getEpisodeLabel(episodeId: string): string {
   const ep = episodesById.get(episodeId)
   if (!ep) return ''
   return `S${String(ep.season).padStart(2, '0')}E${String(ep.episode).padStart(2, '0')}`
+}
+
+interface TooltipState {
+  moment: Moment
+  x: number
 }
 
 export function Timeline() {
@@ -20,6 +23,17 @@ export function Timeline() {
   const setPlaying = useAtlasStore((s) => s.setPlaying)
   const currentSeason = useAtlasStore((s) => s.currentSeason)
   const setCurrentSeason = useAtlasStore((s) => s.setCurrentSeason)
+  const [tooltip, setTooltip] = useState<TooltipState | null>(null)
+  const dotsRef = useRef<HTMLDivElement>(null)
+
+  const handleDotHover = useCallback((m: Moment, e: React.MouseEvent) => {
+    const rect = (e.currentTarget as HTMLElement).getBoundingClientRect()
+    const containerRect = dotsRef.current?.getBoundingClientRect()
+    if (!containerRect) return
+    setTooltip({ moment: m, x: rect.left + rect.width / 2 - containerRect.left })
+  }, [])
+
+  const handleDotLeave = useCallback(() => setTooltip(null), [])
 
   return (
     <div
@@ -30,7 +44,18 @@ export function Timeline() {
         borderTop: '1px solid rgba(245,127,23,0.12)',
       }}
     >
-      <div className="flex items-center h-full px-5 gap-3">
+      {/* Season progress bar */}
+      <div className="absolute top-0 left-0 right-0 h-[2px] bg-white/5">
+        <motion.div
+          className="h-full bg-hawkins-amber/60"
+          initial={false}
+          animate={{ width: moments.length > 1 ? `${(currentIndex / (moments.length - 1)) * 100}%` : '0%' }}
+          transition={{ duration: 0.4, ease: 'easeOut' }}
+          style={{ boxShadow: '0 0 6px rgba(245,127,23,0.3)' }}
+        />
+      </div>
+
+      <div className="flex items-center h-full px-3 sm:px-5 gap-2 sm:gap-3">
 
         {/* Season selector */}
         <div className="flex-shrink-0 flex items-center gap-1">
@@ -57,7 +82,7 @@ export function Timeline() {
         </div>
 
         {/* Episode + moment title */}
-        <div className="flex-shrink-0 flex items-center gap-2 min-w-0 w-44">
+        <div className="hidden sm:flex flex-shrink-0 items-center gap-2 min-w-0 w-44">
           <span
             className="font-mono text-[11px] tracking-[0.25em] uppercase text-hawkins-amber flex-shrink-0"
             style={{ textShadow: '0 0 10px rgba(245,127,23,0.6)' }}
@@ -83,7 +108,7 @@ export function Timeline() {
         </button>
 
         {/* Timeline dots */}
-        <div className="flex-1 flex items-center gap-[3px] overflow-x-auto" style={{ scrollbarWidth: 'none' }}>
+        <div ref={dotsRef} className="relative flex-1 flex items-center gap-[3px] overflow-x-auto" style={{ scrollbarWidth: 'none' }}>
           {moments.map((m, idx) => {
             const isActive = m.id === currentMoment?.id
             const isPast = idx < currentIndex
@@ -91,7 +116,8 @@ export function Timeline() {
               <button
                 key={m.id}
                 onClick={() => seek(m.id)}
-                title={m.title}
+                onMouseEnter={(e) => handleDotHover(m, e)}
+                onMouseLeave={handleDotLeave}
                 className={[
                   'flex-shrink-0 rounded-full transition-all duration-300',
                   isActive
@@ -106,6 +132,21 @@ export function Timeline() {
               />
             )
           })}
+          {tooltip && (
+            <div
+              className="absolute bottom-full mb-2 pointer-events-none z-50"
+              style={{ left: tooltip.x, transform: 'translateX(-50%)' }}
+            >
+              <div className="bg-black/90 backdrop-blur-sm border border-white/10 rounded px-2.5 py-1.5 whitespace-nowrap">
+                <p className="text-hawkins-amber/80 font-mono text-[9px] tracking-[0.15em] uppercase">
+                  {getEpisodeLabel(tooltip.moment.episodeId)}
+                </p>
+                <p className="text-white/90 font-mono text-[10px] tracking-wide mt-0.5">
+                  {tooltip.moment.title}
+                </p>
+              </div>
+            </div>
+          )}
         </div>
 
         {/* Next */}

@@ -256,6 +256,11 @@ export const momentStatesById = new Map(momentStates.map((ms) => [ms.momentId, m
 // Sorted moments for timeline (cached)
 export const momentsSorted = [...moments].sort((a, b) => a.sortKey - b.sortKey)
 
+export function getSeason(moment: Moment): number {
+  const ep = episodesById.get(moment.episodeId)
+  return ep?.season ?? 1
+}
+
 // Helper to get entity by type and id
 export function getEntityById(
   type: 'character' | 'location' | 'event',
